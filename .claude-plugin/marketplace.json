@@ -1,0 +1,20 @@
+{
+  "name": "biostat-superpowers",
+  "owner": {
+    "name": "Amiee Huang, Shuang Song, Zongxin Yang",
+    "url": "https://github.com/z-x-yang"
+  },
+  "metadata": {
+    "description": "Biomedical statistics research skills for Claude Code and Codex",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "biostat-superpowers",
+      "source": "./",
+      "description": "Study design, data preparation, analysis, causal inference, missing data, method critique, and reproducible reporting for biomedical research (R + Python).",
+      "version": "0.1.0",
+      "strict": true
+    }
+  ]
+}

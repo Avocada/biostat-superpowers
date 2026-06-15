@@ -1,0 +1,41 @@
+{
+  "name": "biostat-superpowers",
+  "version": "0.1.0",
+  "description": "Biomedical statistics research superpowers: composable skills for study design, data prep, analysis, causal inference, missing data, method critique, and reproducible reporting (R + Python).",
+  "author": {
+    "name": "Amiee Huang, Shuang Song, Zongxin Yang",
+    "url": "https://github.com/z-x-yang"
+  },
+  "homepage": "https://github.com/z-x-yang/biostat-superpowers",
+  "repository": "https://github.com/z-x-yang/biostat-superpowers",
+  "license": "MIT",
+  "keywords": [
+    "biostatistics",
+    "epidemiology",
+    "causal-inference",
+    "clinical-research",
+    "missing-data",
+    "reproducibility",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Biostatistics Superpowers",
+    "shortDescription": "Rigorous biomedical statistics workflows for coding agents",
+    "longDescription": "Use Biostatistics Superpowers to take a biomedical research question through its whole lifecycle: framing the estimand and study design, preparing and auditing data, choosing and fitting the right model in R or Python, identifying causal effects from observational data, handling missing data, critiquing the method, and producing reproducible, publication-ready reporting.",
+    "developerName": "Amiee Huang, Shuang Song, Zongxin Yang",
+    "category": "Research",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Help me design and analyze this biomedical study.",
+      "Critique the statistical methods in this analysis.",
+      "I have a clinical dataset and a research question — where do I start?"
+    ],
+    "websiteURL": "https://github.com/z-x-yang/biostat-superpowers",
+    "screenshots": []
+  }
+}

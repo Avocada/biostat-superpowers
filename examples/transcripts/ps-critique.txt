@@ -1,0 +1,154 @@
+---
+
+## Critique: Anticoagulant X vs Warfarin for Stroke in AF Patients
+
+**Skills used:** `biostat-superpowers:biostatistics` (orchestrator) → `biostat-superpowers:causal-inference`
+
+**Goal:** Causal — estimate the effect of initiating anticoagulant X vs. warfarin on stroke risk in AF patients from observational data.
+
+---
+
+## 1. Estimand
+
+The proposed design has **no coherent estimand.** Here is what it should be:
+
+> The effect of **initiating anticoagulant X vs. initiating warfarin** on **first stroke (ischemic + hemorrhagic)** in **AF patients newly starting anticoagulation**, measured over a defined follow-up horizon, as an **intention-to-treat risk difference/ratio** (or hazard ratio with care), estimating the **ATT** (effect in those who chose X, using warfarin initiators as the counterfactual).
+
+The proposed "ever used X during the study period" definition answers no clinical question and identifies no effect. It is determined retrospectively and does not correspond to a treatment decision point.
+
+---
+
+## 2. Design Flaws
+
+### Flaw 1 — Immortal Time Bias (Fatal)
+
+**What it is.** "Ever used X during the study period" is assigned at the *end* of follow-up. A patient counted as "exposed" must have survived long enough to fill their first X prescription. The time between study entry and that first fill is attributed to the exposed arm, yet no stroke could occur during that window — it is, by definition, immortal. This time is misclassified as exposed follow-up, artificially deflating event rates in the X arm.
+
+**Why it's fatal.** This produces a spurious survival advantage for X that has nothing to do with the drug.
+
+**Fix.** Adopt a **new-user (incident user) design**: index date = date of first X or warfarin prescription fill, with no prior use of either in a washout window (≥ 6–12 months). Eligibility, treatment assignment, and follow-up all begin at the same moment (time zero). This emulates a target trial.
+
+---
+
+### Flaw 2 — Prevalent User Bias
+
+Including patients who started X or warfarin *before* the study entry date produces a survivor cohort: early stoppers, tolerability failures, and those with immediate adverse events have already been filtered out. The remaining "prevalent users" are systematically different from new starters and represent a biased, drug-tolerant subset.
+
+**Fix.** Restrict to **incident users only** — first prescription in the data, no prior dispensing in the washout window.
+
+---
+
+### Flaw 3 — Adjustment for INR During Follow-Up (Mediator Adjustment, Fatal)
+
+INR is the pharmacodynamic endpoint of warfarin. The causal pathway is:
+
+```
+Warfarin → ↑ INR (therapeutic range 2–3) → ↓ Stroke
+```
+
+INR measured post-baseline is a **mediator** of warfarin's effect. Adjusting for it in the model:
+
+1. **Blocks the causal pathway** — the analysis is no longer estimating the total effect of warfarin; it is estimating a meaningless direct effect of warfarin conditional on INR.
+2. Is **asymmetric**: anticoagulant X (a DOAC) has no INR, so this variable applies only in the warfarin arm, introducing non-comparability.
+3. Asks a clinically incoherent question: "What is the effect of X vs warfarin, holding INR fixed?" — INR cannot be "held fixed" independently of which drug you take.
+
+**Fix.** Remove INR from the adjustment set entirely. If time-in-therapeutic-range (TTR) is scientifically interesting, analyze it as a pre-specified secondary analysis of mediation or as an effect modifier — never as an adjustor in the primary model.
+
+---
+
+### Flaw 4 — Adjustment for Medication Adherence During Follow-Up (Post-Treatment Variable, Fatal)
+
+Adherence measured *during* follow-up is a **post-treatment variable**. Including it in the propensity score or outcome model:
+
+1. **Violates the fundamental rule** of PS analysis: the PS must be estimated from baseline (pre-treatment) covariates only.
+2. Adherence during follow-up is a **time-varying mediator/confounder**: treatment affects adherence behavior, which affects the outcome. Standard PS matching cannot handle this — you need g-methods.
+3. Conditioning on it opens collider paths and introduces bias in unpredictable directions.
+
+**What is salvageable.** *Baseline* adherence proxies (e.g., proportion of days covered for other medications in the 12 months before index date, pharmacy fill regularity) are valid PS covariates — they measure pre-treatment medication-taking behavior as a confounder of treatment initiation.
+
+**Fix for time-varying adherence.** If time-varying adherence matters for the causal question (e.g., per-protocol effect conditional on continued treatment), use a **marginal structural model (MSM)** with time-varying inverse probability of treatment weights, or **g-computation**. Not static PS matching.
+
+---
+
+### Flaw 5 — Propensity Score Built on Post-Baseline Variables
+
+Combining flaws 3 and 4: the PS as described is estimated from variables measured *after* treatment. A PS requires `P(treatment = X | baseline covariates)`. Post-baseline variables can't be "at baseline" by definition. This destroys the PS's purpose as a balancing score and makes the matched comparison uninterpretable.
+
+---
+
+## 3. Correct Design (Target Trial Emulation)
+
+| Element | Specification |
+|---|---|
+| **Eligibility** | Diagnosed AF, indication for anticoagulation, no anticoagulant use in prior 12 months (washout), ≥ 1 prior AF-related encounter |
+| **Treatment strategies** | Initiate X (any approved dose) vs. initiate warfarin |
+| **Time zero** | Date of first dispensing — eligibility, assignment, and follow-up coincide |
+| **Outcome** | First stroke (ischemic, hemorrhagic, or combined) — pre-specify separately |
+| **Follow-up** | Until outcome, death, disenrollment, end of study, or pre-specified horizon |
+| **Causal contrast** | ITT (primary) + per-protocol with IPCW for switchers/discontinuers (secondary) |
+| **Effect measure** | Risk difference and risk ratio at fixed time points; HR with log-rank if proportionality holds |
+
+**Baseline-only adjustment set** for the PS (all measured before index date):
+
+- Demographics: age, sex, race/ethnicity
+- CHA₂DS₂-VASc components (CHF, hypertension, diabetes, prior stroke/TIA, vascular disease)
+- HAS-BLED components (bleeding history, renal/hepatic dysfunction, alcohol use, NSAIDs, antiplatelets)
+- AF type (paroxysmal / persistent / permanent), time since AF diagnosis
+- Renal function (CrCl/eGFR), weight
+- Concomitant medications at baseline (antiplatelets, NSAIDs, PPIs)
+- Healthcare utilization (proxy for access and detection)
+- Prior anticoagulant use outside the washout window (if any)
+
+---
+
+## 4. Diagnostics Required
+
+| Diagnostic | Threshold / What to Look For |
+|---|---|
+| **Standardized mean differences (SMDs)** for all PS covariates, before and after matching | All SMDs < 0.10 post-match; Love plot required |
+| **PS overlap plot** by treatment group | Substantial common support; flag any structural non-positivity (PS < 0.05 or > 0.95) |
+| **Effective sample size** post-matching | Report matched pairs, excluded patients, and caliper-rejection rate |
+| **Caliper choice** documented | Typically 0.2 × SD(log-PS); sensitivity to caliper width |
+| **Follow-up time distribution by arm** | KM curves for censoring time — detect informative censoring |
+| **Timing verification** | No post-baseline covariates in PS; time-zero alignment confirmed; outcome clock starts at index date |
+| **Variance inflation / PS c-statistic** | C-statistic 0.6–0.85 is typical; near-1.0 signals near-deterministic treatment — positivity failure |
+| **Covariate balance plot** (Love plot) | Visual confirmation of SMDs before/after |
+
+---
+
+## 5. Sensitivity Analyses Required
+
+| Analysis | Purpose |
+|---|---|
+| **E-value** for the primary HR/RR | Minimum RR that an unmeasured confounder (associated equally with treatment and outcome) would need to explain away the effect; benchmark against known confounders |
+| **Negative control outcome** (e.g., accidental injury, appendicitis) | Should show no X vs warfarin association if confounding is balanced; detection means residual confounding |
+| **Negative control exposure** (a drug choice that shares confounders but has no stroke mechanism) | Same purpose |
+| **Alternative time-zero definitions** | ±30-day grace periods around first fill; sensitivity to washout window length (6 vs. 12 months) |
+| **ITT vs. per-protocol** | ITT: intention regardless of switches; per-protocol: censor at switch/discontinuation, reweight with IPCW |
+| **PS trimming** | Results after trimming 5% most extreme PS values; tests sensitivity to positivity assumption |
+| **Caliper width sensitivity** | Re-run with 0.1 and 0.3 × SD(log-PS) |
+| **High-dimensional PS (HDPS)** | Automated confounder detection using healthcare utilization codes; guards against omitted confounders |
+| **Restricting to patients with strong indication** (CHA₂DS₂-VASc ≥ 2) | Tests whether indication confounding drives results |
+
+---
+
+## 6. Summary of Flaws vs. Fixes
+
+| Flaw | Severity | Fix |
+|---|---|---|
+| "Ever used X" exposure definition | Fatal — immortal time bias | New-user design; index date = first fill |
+| Prevalent users included | Serious | Incident users only with washout window |
+| INR during follow-up in PS/model | Fatal — mediator adjustment | Remove; study as secondary mediation analysis if desired |
+| Adherence during follow-up in PS/model | Fatal — post-treatment variable | Baseline adherence proxies in PS; MSM/g-computation if time-varying adherence matters |
+| Post-baseline variables in PS | Fatal — destroys PS validity | Baseline-only PS |
+| No estimand stated | Fatal — analysis is uninterpretable | Specify target trial per above |
+
+---
+
+## 7. Causal Claim Strength
+
+**As proposed: zero.** The design cannot recover any causal estimand. Immortal time bias alone would produce spurious protection from X; adding mediator adjustment for INR would additionally distort the warfarin arm's effect estimate. The analysis would likely overstate X's benefit in a way that mirrors the structural biases, not the drug's true pharmacology.
+
+**After the fixes above:** The design can recover a valid **intention-to-treat effect** under the no-unmeasured-confounding assumption, backed by the E-value sensitivity analysis. Whether that assumption holds for X vs. warfarin in AF (a well-studied comparison) depends on whether channeling bias (sicker/older patients steered to warfarin) is adequately balanced — which is why baseline CHA₂DS₂-VASc and HAS-BLED components in the PS are non-negotiable.
+
+> **Note for high-stakes use:** This analysis design — if executed for regulatory or clinical-guideline purposes — warrants review by a qualified pharmacoepidemiologist. The fixes above are methodologically necessary but not sufficient to guarantee unbiased results; the no-unmeasured-confounding assumption remains untestable and requires domain judgment about the treatment-selection process in your data source.

@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Project outputs (examples may generate these)
+results/
+outputs/
+*.log
+
+# Node (only if tooling is added)
+node_modules/
+
+# Kaggle submission draft — kept out of the public repo
+SUBMISSION.md

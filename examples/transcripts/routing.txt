@@ -1,0 +1,16 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+1. → **`study-design-and-power`** — pure sample-size/power question for a specified RCT design with a binary endpoint.
+
+2. → **`data-understanding-preprocessing`** — explicitly asks about leakage, eligibility criteria, and time-zero integrity before any model is fit.
+
+3. → **`statistical-analysis`** — the estimand and design are already fixed; the task is to fit, diagnose, and interpret a specific inferential model.
+
+4. → **`causal-inference`** — observational EHR data with a causal verb ("cause"); needs a DAG, identification strategy, and confounding adjustment before any estimate is credible.
+
+5. → **`predictive-modeling`** — the goal is discriminative accuracy (AUC), not causal estimation; requires leakage-safe CV, calibration, and honest out-of-sample validation.
+
+6. → **`missing-data`** — 50 % missingness on a key covariate triggers MCAR/MAR/MNAR diagnosis, imputation-model specification, and Rubin's-rules pooling before anything else proceeds.
+
+7. → **`method-evaluation`** — pre-submission adversarial review of an existing propensity-score analysis: assumptions, diagnostics, overlap, stress tests, readiness rating.
+
+8. → **`reporting-and-reproducibility`** — the analysis is done; the task is structured output (Table 1) and guideline-aligned (STROBE/CONSORT) written results.

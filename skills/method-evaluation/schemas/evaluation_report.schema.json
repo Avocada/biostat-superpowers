@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/z-x-yang/biostat-superpowers/skills/method-evaluation/method-evaluation-report.schema.json",
+  "title": "Statistical Method Evaluation Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation_scope",
+    "method_summary",
+    "assumptions",
+    "diagnostic_plan",
+    "stress_test_plan",
+    "comparison",
+    "strengths",
+    "limitations",
+    "recommended_improvements",
+    "integration_handoff",
+    "readiness",
+    "open_questions"
+  ],
+  "properties": {
+    "evaluation_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "goal_type", "unit_of_analysis", "outcome", "estimand_or_metric"],
+      "properties": {
+        "question": {"type": "string"},
+        "goal_type": {
+          "type": "string",
+          "enum": ["descriptive", "inferential", "causal", "predictive", "forecasting", "uncertainty_quantification", "mixed", "unknown"]
+        },
+        "unit_of_analysis": {"type": "string"},
+        "outcome": {"type": "string"},
+        "estimand_or_metric": {"type": "string"},
+        "population_or_deployment_context": {"type": "string"}
+      }
+    },
+    "method_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method_family", "method_name", "model_or_procedure", "validation_design"],
+      "properties": {
+        "method_family": {"type": "string"},
+        "method_name": {"type": "string"},
+        "model_or_procedure": {"type": "string"},
+        "validation_design": {"type": "string"},
+        "fitted_status": {"type": "string", "enum": ["not_fit", "fit_described", "fit_results_available", "unknown"]},
+        "data_inputs": {"type": "array", "items": {"type": "string"}},
+        "software_or_package": {"type": "string"}
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/assumption"}
+    },
+    "diagnostic_plan": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/check"}
+    },
+    "stress_test_plan": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/check"}
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseline_required", "candidate_methods", "fairness_rules", "selection_rule"],
+      "properties": {
+        "baseline_required": {"type": "boolean"},
+        "candidate_methods": {"type": "array", "items": {"type": "string"}},
+        "fairness_rules": {"type": "array", "items": {"type": "string"}},
+        "selection_rule": {"type": "string"},
+        "results_summary": {"type": "string"}
+      }
+    },
+    "strengths": {"type": "array", "items": {"type": "string"}},
+    "limitations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/risk"}
+    },
+    "recommended_improvements": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/recommendation"}
+    },
+    "integration_handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data_understanding_preprocessing", "statistical_analysis"],
+      "properties": {
+        "data_understanding_preprocessing": {"type": "array", "items": {"type": "string"}},
+        "statistical_analysis": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rating", "rationale", "blocking_items"],
+      "properties": {
+        "rating": {"type": "string", "enum": ["ready", "conditionally_ready", "needs_revision", "not_ready", "insufficient_information"]},
+        "rationale": {"type": "string"},
+        "blocking_items": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "open_questions": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "assumption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "why_it_matters", "evidence_needed", "risk_level"],
+      "properties": {
+        "name": {"type": "string"},
+        "why_it_matters": {"type": "string"},
+        "evidence_needed": {"type": "string"},
+        "diagnostic": {"type": "string"},
+        "risk_level": {"type": "string", "enum": ["low", "medium", "high", "critical", "unknown"]}
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "purpose", "implementation_owner", "failure_signal"],
+      "properties": {
+        "name": {"type": "string"},
+        "purpose": {"type": "string"},
+        "implementation_owner": {"type": "string", "enum": ["method-evaluation", "data-understanding-preprocessing", "statistical-analysis", "user", "mixed"]},
+        "failure_signal": {"type": "string"},
+        "priority": {"type": "string", "enum": ["required", "recommended", "optional"]}
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["issue", "severity", "impact", "mitigation"],
+      "properties": {
+        "issue": {"type": "string"},
+        "severity": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+        "impact": {"type": "string"},
+        "mitigation": {"type": "string"}
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "reason", "owner", "priority"],
+      "properties": {
+        "action": {"type": "string"},
+        "reason": {"type": "string"},
+        "owner": {"type": "string", "enum": ["method-evaluation", "data-understanding-preprocessing", "statistical-analysis", "user", "mixed"]},
+        "priority": {"type": "string", "enum": ["required", "recommended", "optional"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+Now I'll synthesize both skills into a full plan and reviewer-attack map.
+
+---
+
+## Causal Analysis Plan: Hydrocortisone → 28-Day Mortality in Sepsis
+
+---
+
+### 1. Estimand — Target Trial Emulation
+
+> **The causal effect of initiating IV hydrocortisone within [X] hours of sepsis-3 onset (vs. no hydrocortisone in that window) on 28-day all-cause mortality in ICU adults meeting Sepsis-3 criteria at admission, expressed as a risk difference (primary) and risk ratio (secondary).**
+
+You must specify this target trial precisely before fitting anything:
+
+| Component | Decision needed |
+|---|---|
+| **Eligibility** | Sepsis-3 (suspected infection + SOFA ≥ 2 from baseline), age ≥ 18, ICU admission. Exclude: chronic corticosteroid users, adrenal insufficiency, corticosteroids before time zero |
+| **Time zero** | The earliest moment eligibility is met — NOT ICU admission, NOT first hydrocortisone dose. These must coincide or immortal-time bias is baked in |
+| **Exposure window** | Define "early": ≤ 6h or ≤ 24h from time zero. Pick one primary definition; others are sensitivity analyses |
+| **Contrast** | ATE (population average) or ATT (effect among the treated). ATT is more defensible if hydrocortisone is reserved for the sickest — document which you're estimating |
+| **Follow-up** | 28 days from time zero; all patients are administratively censored there |
+
+---
+
+### 2. DAG and Adjustment Set
+
+```
+Age, Comorbidities ──────────────────┐
+                                     ▼
+Sepsis severity (SOFA, lactate, ───► Hydrocortisone ──────► 28-day Mortality
+  vasopressor need, MAP)               (A)                       (Y)
+                                     ▲         ▲
+Source of infection ─────────────────┘         │
+Calendar year / site ──────────────────────────┘
+```
+
+**Adjust for (confounders, measured at or before time zero):**
+- SOFA score at time zero (or its components separately)
+- Vasopressor requirement and dose at time zero
+- Serum lactate at time zero
+- Age, sex
+- Charlson Comorbidity Index (or key comorbidities: diabetes, immunosuppression, CKD)
+- Source of infection (pulmonary, abdominal, urinary, unknown)
+- Fluid resuscitation volume in first 6h *only if* time zero precedes it
+- Calendar year (prescribing patterns shift)
+- ICU/site (if multicenter)
+
+**Do NOT adjust for (post-treatment variables — mediators):**
+- Vasopressor duration *after* time zero
+- SOFA trajectory after time zero
+- ICU length of stay
+- Any laboratory value measured after hydrocortisone could have been given
+
+**Do NOT adjust for (instruments — would induce bias):**
+- Variables that affect hydrocortisone use only through severity (they're already captured by severity variables)
+
+---
+
+### 3. Identification Strategy and Estimators
+
+The dominant threat is **confounding by indication**: hydrocortisone is given to sicker patients, so unadjusted it looks harmful (or benefit is masked). No natural experiment exists here, so you rely on conditional exchangeability.
+
+**Primary estimator: TMLE (Targeted Minimum Loss-Based Estimation)**
+
+Why: doubly robust (consistent if either the outcome model or propensity model is correctly specified), semiparametrically efficient, gives honest confidence intervals for binary outcomes.
+
+```
+Propensity model:  P(A=1 | L)  ← logistic or SuperLearner ensemble
+Outcome model:     E[Y | A, L]  ← logistic or SuperLearner ensemble
+TMLE targeting step updates outcome model toward the causal estimand
+→ Risk difference = E[Ŷ(A=1)] − E[Ŷ(A=0)]
+→ Bootstrap or influence-function SEs
+```
+
+**Secondary estimator: stabilized IPTW**
+
+```
+Stabilized weight = P(A=aᵢ) / P(A=aᵢ | L)
+Report: weight distribution, effective sample size (ESS = (Σwᵢ)² / Σwᵢ²)
+Trim at 1st/99th percentile; run sensitivity at 5th/95th
+Marginal structural model: logistic regression of Y on A, weighted
+```
+
+**Tertiary: PS matching (1:1, caliper = 0.2 × SD(logit PS))**
+
+Estimates ATT. Use for comparison and as a robustness check; document that it estimates a different estimand than TMLE/IPTW.
+
+**Baseline (for transparency, not primary): Multivariable logistic regression**
+
+Outcome model only, no doubly-robust protection. Report alongside but do not lead with it.
+
+---
+
+### 4. Overlap / Positivity Check — Do This Before Estimating
+
+```r
+# R: after fitting PS model
+ps <- predict(ps_model, type = "response")
+ggplot() +
+  geom_density(aes(ps[A==1]), fill="blue", alpha=0.4) +
+  geom_density(aes(ps[A==0]), fill="red", alpha=0.4)
+```
+
+- If tails don't overlap: trim to the overlap region and restate that the estimand is now restricted to that population
+- Report ESS after weighting — if ESS < ~30% of N, positivity is failing and IPTW estimates are unstable
+- Check SMDs before and after weighting/matching for every covariate (target SMD < 0.10)
+
+---
+
+### 5. Sensitivity Analyses (pre-specify all of these)
+
+| Analysis | What it tests |
+|---|---|
+| **E-value** (VanderWeele & Ding 2017) | How strong must an unmeasured confounder be (on both exposure and outcome sides) to explain away the estimate and its CI bound nearest null |
+| **Negative control outcome** | An outcome hydrocortisone cannot biologically cause (e.g., traumatic injury mortality). "Effect" there = residual confounding signal |
+| **Negative control exposure** | A severity marker with no hydrocortisone-mediated pathway (e.g., early albumin). Detect confounding by indication |
+| **Alternative time-zero** | ≤ 6h vs. ≤ 12h vs. ≤ 24h exposure window |
+| **Alternative adjustment sets** | More parsimonious (age + SOFA only); more saturated (add individual SOFA components) |
+| **Subgroup: septic shock vs. non-shock** | Pre-specified; hydrocortisone guidelines are shock-specific (IDSA/SSC 2021) |
+| **Weight trimming** | Symmetric 1/99 vs. 5/95; asymmetric (trim treated only) |
+| **Missing data** | Compare complete-case vs. multiple imputation (with all confounders in imputation model) |
+| **Estimator comparison** | TMLE vs. IPTW vs. PS-match vs. regression — convergence increases credibility |
+
+---
+
+### 6. What Reviewers Will Attack
+
+These are the questions a hostile reviewer *will* raise, roughly in order of lethality:
+
+---
+
+**Attack 1 — Immortal time bias (most lethal)**
+
+> "Patients classified as 'exposed' must have survived long enough to receive hydrocortisone. Patients who died in the first 6 hours before receiving it are misclassified, creating immortal time that artificially favors the exposed group."
+
+*Defense:* Explicitly align time zero, eligibility, and treatment decision simultaneously. Use clone-censor-weight (CCW) if needed, or demonstrate that very-early deaths are excluded from eligibility by your cohort definition. Provide a flowchart showing when deaths occur relative to your exposure window.
+
+---
+
+**Attack 2 — Confounding by indication (never fully defeats, must quantify)**
+
+> "Hydrocortisone in sepsis is a last-resort intervention for refractory shock. The treated group is intrinsically sicker in ways SOFA and lactate don't fully capture — clinician gestalt, trajectory of deterioration, family conversations. Residual confounding by indication cannot be ruled out."
+
+*Defense:* E-value (report it prominently). Negative controls. Subgroup restricted to vasopressor-dependent shock where treatment is near-universal at high severity (though this creates a positivity problem of its own). Do not claim "proves causation" — instead: "under the assumption of no unmeasured confounding, the estimated effect is X; an unmeasured confounder would need association strength of [E-value] with both treatment and outcome to explain this away."
+
+---
+
+**Attack 3 — Treatment version heterogeneity**
+
+> "Hydrocortisone is administered at different doses (200 mg/day continuous infusion vs. 50 mg q6h boluses), durations (3–10 days), and often with fludrocortisone. Binary 'received any hydrocortisone' pools meaningfully different interventions. The SUTVA consistency assumption is violated."
+
+*Defense:* Restrict to a specific regimen if sample size permits; otherwise define precisely what version was most common in your cohort and acknowledge this as a limitation. Check sensitivity by restricting to continuous infusion only.
+
+---
+
+**Attack 4 — Protopathic bias**
+
+> "Hydrocortisone may be triggered by early signals of deterioration — a falling MAP, rising vasopressor dose — that are measured *after* time zero but *before* the outcome. These are early-outcome signals masquerading as confounders."
+
+*Defense:* Fix time zero tightly. All covariates must be measured *at* time zero (within a 1-hour window), not in the hours following. Sensitivity analysis excluding patients in whom vasopressor requirement changed between ICU admission and your time zero.
+
+---
+
+**Attack 5 — Sepsis definition and selection bias**
+
+> "ICD-coded sepsis has poor sensitivity and specificity. Your cohort definition will include non-sepsis patients and exclude true sepsis patients systematically. If misclassification correlates with both treatment and outcome, your estimate is biased."
+
+*Defense:* Use Sepsis-3 criteria operationalized from clinical data (SOFA, culture orders, antibiotic administration) rather than ICD codes alone. Report how many patients were identified by each criterion. Sensitivity analysis using explicit ICD-10 codes (A41.x, R65.20, R65.21) as an alternative definition.
+
+---
+
+**Attack 6 — Missing data is not missing at random**
+
+> "Lactate and SOFA components are often missing in patients who are less sick (not ordered) or too unstable for tests. Missingness is informative. Complete-case analysis introduces selection bias."
+
+*Defense:* Report missingness rates per confounder. If any key confounder is > 5% missing, use multiple imputation (include all confounders + outcome in the imputation model). Sensitivity: complete case vs. imputed. Never say "we excluded patients with missing data" without showing balance between excluded and included.
+
+---
+
+**Attack 7 — Positivity violations inflate uncertainty or bias estimates**
+
+> "In patients with very high SOFA or refractory shock on 3+ vasopressors, essentially everyone received hydrocortisone. IPTW assigns extreme weights to these patients; the effective sample size is tiny and the estimate is extrapolated."
+
+*Defense:* Report ESS. Show PS overlap plot. If a severity stratum has PS > 0.95 or < 0.05, report trimmed vs. untrimmed sensitivity and state explicitly that the estimand is restricted.
+
+---
+
+**Attack 8 — Competing risks ignored**
+
+> "28-day mortality is a terminal event, but early deaths (within 24–48h) may occur before hydrocortisone could be expected to act. Early deaths among the treated may reflect a different mechanism than late deaths."
+
+*Defense:* Report a survival curve (Kaplan-Meier by treatment group) and note the timing of event separation. Consider a 7-day mortality secondary outcome. If the treatment effect is concentrated in very early deaths, that's mechanistically implausible and needs explanation.
+
+---
+
+**Attack 9 — No pre-registration / post-hoc analysis**
+
+> "Without a pre-registered analysis plan, there is no way to distinguish your primary analysis from the most favorable of multiple specifications tested."
+
+*Defense:* You cannot retroactively pre-register, but you can: (a) write a transparent methods section that names all deviations from your original plan, (b) correct for multiple comparisons in secondary analyses, and (c) report all sensitivity analyses including unfavorable ones. A posted analysis plan (even on OSF post-hoc, clearly dated) is better than nothing.
+
+---
+
+**Attack 10 — Causal language without identification proof**
+
+> "The paper uses 'effect' and 'caused' but the study is observational. Causal language requires a corresponding identification argument, not just adjustment."
+
+*Defense:* In the Methods, explicitly invoke the target trial framework. Name the three assumptions (exchangeability, positivity, consistency), state the evidence for each, and acknowledge that exchangeability is untestable. Causal language is defensible if the identification argument is made explicit — it's not defensible if it's implicit.
+
+---
+
+### Open Questions for You to Answer Before Analysis
+
+1. **What is your time zero operationally** — ICU admission timestamp, first vasopressor, first antibiotic, or time sepsis-3 criteria were first met in the chart?
+2. **How many patients received hydrocortisone in your cohort** — do you have sufficient power for the ATT subgroup (septic shock)?
+3. **Which confounders have > 5% missingness** — particularly lactate, bilirubin, creatinine at time zero?
+4. **Is this single-center or multicenter** — site is a confounder and its absence changes the DAG?
+5. **Dose and duration data available** — can you narrow to a specific regimen for the consistency assumption?
+
+---
+
+This plan will survive a rigorous peer review if you (a) pre-specify every sensitivity analysis, (b) report the E-value prominently, (c) show the PS overlap plot, and (d) never use causal language without the identification argument explicit in the text. The two attacks that can sink the paper outright are immortal-time bias and a complete failure of PS overlap — fix those first.

@@ -1,0 +1,108 @@
+## Statistical Method Evaluation Report
+
+**Skills used:** `biostat-superpowers:biostatistics` (orchestrator) → `biostat-superpowers:method-evaluation` (critic)
+
+---
+
+### 1. Evaluation Scope
+
+Pre-submission review of an observational analysis examining whether a continuous biomarker is associated with patient outcomes. User seeks a readiness judgment for journal submission.
+
+### 2. Method Summary
+
+| Component | What was done |
+|---|---|
+| Exposure | Continuous biomarker dichotomized at its sample median |
+| Comparison | Two-sample t-test between "high" and "low" groups |
+| Result | p = 0.04 |
+| Claim | "Biomarker X *causes* worse outcomes" |
+| Missing data | 23% of patients excluded (complete-case analysis) |
+| Confounding adjustment | None described |
+
+---
+
+### 3. Problems — Severity Rated
+
+#### FATAL (must fix before any submission)
+
+**F1 — Causal language on observational data.**
+"Causes" is a causal claim. A t-test on observational data, with no DAG, no adjustment set, and no identification strategy, cannot support it. This is not a phrasing preference — it is a false claim. Reviewers at any serious journal will reject on this alone. The correct language is "associated with" or "independently associated with" (if adjusted). Route: `causal-inference` if you want to pursue a causal estimand; otherwise rewrite as association.
+
+**F2 — Median split on a continuous biomarker.**
+Dichotomizing a continuous variable at the median is widely condemned (Altman & Royston 2006, *BMJ*; Harrell *RMS* §2.5; MacCallum et al. 2002). It:
+- Discards the shape of the dose-response relationship
+- Maximally misclassifies patients near the cutpoint (those just above vs. just below the median are most similar yet treated as opposites)
+- Loses substantial statistical power — roughly equivalent to discarding one-third of your sample
+- Makes the result dataset-specific: the median shifts in every new cohort, so the "groups" are not transportable
+- Can inflate the false positive rate if the cutpoint was explored rather than pre-specified
+
+The right approach is to keep the biomarker continuous: use linear regression (or logistic/survival depending on outcome type) with a restricted cubic spline to allow nonlinearity. If a threshold genuinely matters clinically, pre-specify it before looking at outcomes or use threshold-finding methods with correction.
+
+**F3 — 23% of patients excluded with no justification.**
+Dropping nearly one-quarter of your sample via complete-case analysis is only unbiased under Missing Completely at Random (MCAR) — the strongest and most rarely defensible assumption. If the patients with missing biomarker data differ systematically from those with complete data (e.g., sicker patients, those who died early, those with fewer clinic visits), your complete-case estimate is biased, not merely imprecise. You must:
+
+1. Characterize who is missing: compare completers vs. non-completers on all key covariates (Table 1 by missingness).
+2. Test whether MCAR is plausible (Little's test; pattern matrix; substantive reasoning).
+3. If MAR is more plausible (almost always), use multiple imputation (MI) with all analysis variables and the outcome in the imputation model, and pool with Rubin's rules.
+4. Run a sensitivity analysis under a range of MNAR assumptions.
+
+Route: `missing-data` skill owns this.
+
+---
+
+#### SERIOUS (high rejection risk even if fatals are fixed)
+
+**S1 — No confounder adjustment.**
+A biomarker level is almost never independent of age, disease severity, comorbidities, or treatment. An unadjusted t-test answers "do the two groups differ on average?" not "is the biomarker associated with outcomes above and beyond known prognostic factors?" Even for an associational claim, journals expect at minimum a multivariable model. Specify your adjustment set from a DAG before fitting.
+
+**S2 — No effect size or confidence interval.**
+p = 0.04 tells you almost nothing by itself. What is the mean difference (or OR/HR) and its 95% CI? A statistically significant result with a clinically trivial effect size is not a finding worth publishing. A wide CI with p = 0.04 means you are underpowered and the estimate is unreliable.
+
+**S3 — p = 0.04 is fragile given the analytic choices made.**
+The median split inflated your false positive rate (type I error). The complete-case analysis may have introduced selection bias. The lack of confounder adjustment means residual confounding could be driving the signal. Any one of these, let alone all three together, could explain a p-value of 0.04 without any real association existing. This specific p-value should be treated with particular skepticism.
+
+---
+
+#### ROUTINE (address in revision)
+
+**R1 — T-test assumptions not verified.** Normality within groups (especially with 23% excluded), equal variances (use Welch's correction by default), independence of observations. If the outcome is binary or time-to-event, a t-test is the wrong test entirely.
+
+**R2 — Multiple testing.** If this biomarker is one of several analyzed, a Bonferroni or FDR correction is required and p = 0.04 likely no longer clears the threshold.
+
+**R3 — Reporting guideline.** Observational studies should follow STROBE. Review the STROBE checklist before submission.
+
+---
+
+### 4. Readiness Rating
+
+> **NOT READY — do not submit.**
+
+Three fatal flaws, two serious risks. A reviewer who checks any single one of F1, F2, or F3 will recommend rejection. The current analysis would also draw a post-publication critique if it somehow cleared peer review.
+
+---
+
+### 5. Recommended Fixes (Ordered by Priority)
+
+| Priority | Fix | Owner skill |
+|---|---|---|
+| 1 | Replace median split with continuous biomarker in regression with spline | `statistical-analysis` |
+| 2 | Change "causes" → "is associated with"; specify estimand as associational | Language (you); `causal-inference` if causal claim is intended |
+| 3 | Characterize missing data, run multiple imputation, sensitivity under MNAR | `missing-data` |
+| 4 | Add confounder-adjusted model; define adjustment set with a DAG | `causal-inference` → `statistical-analysis` |
+| 5 | Report effect size + 95% CI as primary result; relegate p-value to context | `reporting-and-reproducibility` |
+| 6 | Verify t-test assumptions; choose correct test for your outcome type | `statistical-analysis` |
+| 7 | Apply STROBE checklist; address multiple testing if applicable | `reporting-and-reproducibility` |
+
+---
+
+### 6. Open Questions (Need Your Input)
+
+- **What is the outcome?** Binary, continuous, time-to-event? This determines the correct model family.
+- **Is this a primary analysis or exploratory?** If exploratory, say so explicitly in the paper.
+- **Was the median cutpoint pre-specified before data collection, or chosen after seeing the data?** If the latter, it is data dredging.
+- **Is a causal claim actually the goal?** If yes, you need a target trial emulation framework and a defensible DAG — the current design cannot support it without major additions.
+- **What are the key confounders in your domain?** Needed to build the adjustment set.
+
+---
+
+**Bottom line:** Three separate fatal methodological problems compound each other here. The good news is all three are fixable with established methods. Fix the continuous variable analysis first — it is the fastest win and restructures everything downstream.

@@ -1,0 +1,127 @@
+version: 1
+purpose: >
+  Catalog of statistical stress tests for method evaluation. Select tests that
+  match the estimand, data structure, validation design, and method family.
+
+global_tests:
+  missing_data_policy:
+    question: Do conclusions change under plausible missing-data decisions?
+    design:
+      - Compare complete-case, indicator, imputation, and domain-specific structural-missing handling when defensible.
+      - Refit preprocessing within training folds only.
+      - Report row counts and variables affected by each policy.
+    failure_signals:
+      - Direction or practical conclusion changes across plausible policies.
+      - Exclusions alter the target population.
+      - Missingness is outcome-dependent or group-dependent.
+    delegate_to:
+      - data-understanding-preprocessing for missingness profiling and preprocessing policy.
+      - statistical-analysis for executable sensitivity code.
+
+  influential_observations:
+    question: Are results dominated by a small number of observations, clusters, or time periods?
+    design:
+      - Review leverage, residuals, Cook's distance, dfbeta, cluster deletion, or leave-one-period-out analyses as applicable.
+      - Compare primary estimates with influential units excluded only as a sensitivity check.
+    failure_signals:
+      - Main effect appears only with one observation, site, group, or period included.
+      - Standard errors or convergence change materially after exclusion.
+
+  distribution_shift:
+    question: Does performance or inference survive plausible train/test, temporal, site, or population shifts?
+    design:
+      - Compare metrics by time, site, subgroup, outcome prevalence, and feature distribution strata.
+      - Use temporal or group-aware validation when deployment requires it.
+      - Check calibration and residual patterns by subgroup.
+    failure_signals:
+      - Large subgroup performance gaps.
+      - Calibration failure in deployment-like strata.
+      - Validation split is easier than deployment.
+
+  feature_set_ablation:
+    question: Are conclusions or predictions dependent on high-risk feature groups?
+    design:
+      - Compare primary model to ablations removing leakage-prone, proxy, high-cardinality, post-treatment, or expensive features.
+      - Test prespecified feature groups, not arbitrary cherry-picked subsets.
+    failure_signals:
+      - Performance collapses after removing a questionable feature group.
+      - Interpretation depends on proxy variables.
+
+  preprocessing_perturbation:
+    question: Are results stable across defensible transforms, caps, encodings, and scaling decisions?
+    design:
+      - Vary outlier caps, transformations, rare-level thresholds, target transforms, and scaling only within training data.
+      - Keep the same validation scheme.
+    failure_signals:
+      - Rankings or conclusions change under small, defensible preprocessing differences.
+      - A transformation is chosen because it improves final test results.
+
+  validation_scheme:
+    question: Is the validation design aligned with the real generalization target?
+    design:
+      - Compare random, stratified, group-aware, temporal, blocked, rolling-origin, or nested validation when relevant.
+      - Reserve final holdout for final evaluation only.
+    failure_signals:
+      - Random validation is much better than group/time-aware validation.
+      - Hyperparameters or thresholds were selected on final test results.
+
+method_specific_tests:
+  regression:
+    - residual_pattern:
+        design: Check residuals versus fitted values and continuous predictors for nonlinearity, heteroskedasticity, and omitted structure.
+        failure_signals: Systematic residual pattern; variance grows with fitted value; model-scale mismatch.
+    - link_and_distribution:
+        design: Check whether outcome scale supports Gaussian, binomial, Poisson, negative-binomial, ordinal, Cox, or other likelihood assumptions.
+        failure_signals: Overdispersion, separation, sparse cells, non-proportional odds or hazards, excess zeros without model support.
+    - collinearity_and_identifiability:
+        design: Review condition numbers, variance inflation, aliasing, sparse interactions, and estimable contrasts.
+        failure_signals: Unstable signs, huge intervals, aliased coefficients, convergence warnings.
+
+  machine_learning_prediction:
+    - baseline_gap:
+        design: Compare against null, domain, and simple statistical baselines under the same split and metric.
+        failure_signals: Complex model does not beat a simple baseline; improvement is within noise.
+    - calibration:
+        design: Assess calibration curves, Brier/log loss, reliability by subgroup, and threshold stability for probability models.
+        failure_signals: Good ranking but poor probability calibration where probabilities are used for decisions.
+    - tuning_stability:
+        design: Repeat cross-validation or bootstrap model selection; examine hyperparameter and feature-importance stability.
+        failure_signals: Selected model changes sharply across folds or seeds.
+
+  time_series_forecasting:
+    - residual_autocorrelation:
+        design: Check ACF/PACF and residual whiteness after fitting; inspect seasonality left in residuals.
+        failure_signals: Remaining autocorrelation, seasonal spikes, biased forecast errors.
+    - rolling_origin:
+        design: Use rolling-origin or blocked backtesting with no future information in features or scaling.
+        failure_signals: Performance degrades in later origins; random split was optimistic.
+    - shock_and_regime:
+        design: Evaluate performance around shocks, level shifts, holidays, outages, or policy changes.
+        failure_signals: Error spikes in known regimes without model adaptation.
+
+  experiments:
+    - randomization_balance:
+        design: Check assignment integrity, balance on prespecified baseline variables, blocking, and attrition.
+        failure_signals: Broken randomization, differential attrition, interference, noncompliance.
+    - measurement_system:
+        design: Review repeatability, reproducibility, calibration, operational definitions, and blinded measurement when relevant.
+        failure_signals: Measurement error comparable to treatment effect or differing by arm.
+    - factorial_interactions:
+        design: Examine prespecified interactions and effect hierarchy in factorial designs.
+        failure_signals: Main-effect conclusions ignore large interactions.
+
+  observational_causal:
+    - confounding_sensitivity:
+        design: Assess covariate balance, overlap/positivity, unmeasured confounding sensitivity, and negative controls when available.
+        failure_signals: Poor overlap, extreme weights, untreated confounding paths, causal claims from associational models.
+    - specification_sensitivity:
+        design: Compare adjustment sets, functional forms, propensity models, matching/caliper choices, and weighting truncation.
+        failure_signals: Effect reverses or disappears under defensible specifications.
+
+  resampling_simulation:
+    - bootstrap_stability:
+        design: Use adequate resamples, preserve clustering/time structure, and inspect interval stability.
+        failure_signals: Bootstrap distribution is highly skewed, multimodal, or dominated by degenerate resamples.
+    - simulation_recovery:
+        design: Simulate data under plausible data-generating processes and check whether the method recovers known effects or calibrated uncertainty.
+        failure_signals: Biased recovery, undercovered intervals, high Type I error, poor power.

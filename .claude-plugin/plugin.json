@@ -1,0 +1,24 @@
+{
+  "name": "biostat-superpowers",
+  "description": "Biomedical statistics research superpowers: a hierarchy of composable skills for study design, data preparation, analysis, causal inference, missing data, method critique, and reproducible reporting (R + Python).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Amiee Huang, Shuang Song, Zongxin Yang",
+    "url": "https://github.com/z-x-yang"
+  },
+  "homepage": "https://github.com/z-x-yang/biostat-superpowers",
+  "repository": "https://github.com/z-x-yang/biostat-superpowers",
+  "license": "MIT",
+  "keywords": [
+    "biostatistics",
+    "epidemiology",
+    "causal-inference",
+    "clinical-research",
+    "statistics",
+    "missing-data",
+    "reproducibility",
+    "skills",
+    "R",
+    "python"
+  ]
+}
