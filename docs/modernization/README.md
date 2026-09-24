@@ -60,3 +60,5 @@ Original groundwork verification checked fork ancestry, branch/remotes, the base
 See [INSTALL_V2.md](INSTALL_V2.md) for the separate runtime installation and additional `biostat-workflow` skill. The original specialist policies remain unchanged.
 
 The revised [version 1 figure](figures/modern_ai_agent_system_v1.png) and [version 2 figure](figures/modern_ai_agent_system_v2.png) omit Jev, the separate model-routing diamond and the System 2 label. These are conceptual illustrations; the implementation scope and review limitations are defined in the architecture documents above. Deterministic lifecycle routing remains implemented in the controller.
+
+The [RHC paired reproduction](../../examples/rhc_comparison/RESULTS.md) applies the installed runtime to the original real-data example, with explicit limits on causal readiness and efficiency claims.

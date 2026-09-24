@@ -36,3 +36,6 @@ SUBMISSION.md
 *.egg-info/
 build/
 dist/
+
+# Optional case-study environments
+.venv-*/

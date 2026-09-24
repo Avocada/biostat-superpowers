@@ -1,0 +1,213 @@
+{
+  "notice": "Paired same-estimator reproduction and workflow audit, not a controlled autonomous-agent comparison.",
+  "run": {
+    "created_utc": "2026-09-24T03:03:49.190525+00:00",
+    "input_sha256": "9ef4ab578be4b40ad5d97d3a7e08ffdc1f9f76aeeefee51b4996e4221556f8e8",
+    "original_script_sha256": "fc039e567afc4adaf9446b82258279e10e7c336fc9827f18b36bd2f647dcae83",
+    "runner_sha256": "6959d0f0077d754f74ee0d0712f9934ef30d61a9e1ca98299808471d434920a0",
+    "python": "3.11.6 (main, Nov  2 2023, 04:39:43) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "statsmodels": "0.15.0",
+      "matplotlib": "3.11.2",
+      "mcp": "2.2.0",
+      "biostat-superpowers-runtime": "0.2.0"
+    },
+    "runtime_import": "/Users/amiee/.codex/biostat-superpowers-v2/biostat_workflow/__init__.py",
+    "baseline": {
+      "rr_naive": 1.2403585232169791,
+      "rr_iptw": 1.1584091244356693,
+      "rd_iptw": 0.049989166023954146,
+      "or_naive": 1.3876979429142369,
+      "or_adj": 1.3667704070933047,
+      "smd_before": 0.13978067593511068,
+      "smd_after": 0.01831082281038554,
+      "evalue": 1.586781129987088,
+      "n": 5735,
+      "treated": 2184,
+      "events": 1918,
+      "compute_seconds": 0.53599795899936,
+      "timing_notice": "Ordered same-process execution; imports/warm-up and workflow overhead differ. Not a speed benchmark.",
+      "warnings": []
+    },
+    "modernized": {
+      "rr_naive": 1.2403585232169791,
+      "rr_iptw": 1.1584091244356693,
+      "rd_iptw": 0.049989166023954146,
+      "or_naive": 1.3876979429142369,
+      "or_adj": 1.3667704070933047,
+      "smd_before": 0.13978067593511068,
+      "smd_after": 0.01831082281038554,
+      "evalue": 1.586781129987088,
+      "n": 5735,
+      "treated": 2184,
+      "events": 1918,
+      "compute_seconds": 0.1008622910012491,
+      "timing_notice": "Ordered same-process execution; imports/warm-up and workflow overhead differ. Not a speed benchmark.",
+      "warnings": []
+    },
+    "causal_readiness": "blocked at missing_data; timing/identification also unresolved",
+    "jev": "not installed or used",
+    "llm_tokens": null,
+    "llm_cost": null,
+    "historical_model_run_comparison": false
+  },
+  "diagnostics": {
+    "max_abs_smd_after": 0.06953162226688415,
+    "count_smd_above_0_1": 0,
+    "mean_abs_smd_fixed_denominator": 0.01842830429078189,
+    "clipped_by_arm": {
+      "0": 83,
+      "1": 2
+    },
+    "ess_by_arm": {
+      "0": 2131.516102917971,
+      "1": 1139.961362134801
+    },
+    "propensity_quantiles_by_arm": {
+      "0": [
+        0.002384841275857875,
+        0.01400465548742853,
+        0.2244407721612484,
+        0.8111489188247971,
+        0.9640515645382541
+      ],
+      "1": [
+        0.01836976977133039,
+        0.0751468958341441,
+        0.5586362040778043,
+        0.9357425737786975,
+        0.9848288302758673
+      ]
+    },
+    "weight_quantiles": [
+      0.38859135633329184,
+      0.7692436519561626,
+      2.1397584352447683,
+      4.028801901631107,
+      19.040976460331297
+    ],
+    "sensitivity": [
+      {
+        "clip": 0,
+        "rr": 1.1574719079564428,
+        "rd": 0.04969325975301214,
+        "n": 5735
+      },
+      {
+        "clip": 0.01,
+        "rr": 1.1574665943143385,
+        "rd": 0.04969181105377757,
+        "n": 5735
+      },
+      {
+        "clip": 0.02,
+        "rr": 1.1584091244356693,
+        "rd": 0.049989166023954146,
+        "n": 5735
+      },
+      {
+        "clip": 0.05,
+        "rr": 1.1674574539608609,
+        "rd": 0.05285267069432886,
+        "n": 5735
+      }
+    ],
+    "bootstrap": {
+      "attempted": 500,
+      "successful": 500,
+      "failures": [],
+      "warnings": [],
+      "seed": 20260924,
+      "compute_seconds": 20.351017125009093,
+      "rr_percentile_95": [
+        1.0526570135473137,
+        1.2730606281577383
+      ],
+      "rd_percentile_95": [
+        0.017460916153061917,
+        0.08165698791956337
+      ],
+      "interpretation": "Exploratory interval for inherited single-imputation estimator; not a validated causal interval."
+    }
+  },
+  "profile": {
+    "n": 5735,
+    "columns": 62,
+    "patient_id_unique": true,
+    "missing_counts": {
+      "cat2": 4535,
+      "dschdte": 1,
+      "dthdte": 2013,
+      "adld3p": 4296,
+      "urin1": 3028
+    },
+    "treatment_counts": {
+      "No RHC": 3551,
+      "RHC": 2184
+    },
+    "outcome_counts": {
+      "No": 3817,
+      "Yes": 1918
+    },
+    "row_exclusions": 0,
+    "source": "https://hbiostat.org/data/repo/rhc.csv",
+    "input_sha256": "9ef4ab578be4b40ad5d97d3a7e08ffdc1f9f76aeeefee51b4996e4221556f8e8"
+  },
+  "workflow_checkpoint": {
+    "goal": "causal",
+    "stage": "missing_data",
+    "estimand_ready": true,
+    "data_ready": true,
+    "identification_ready": false,
+    "missing_data_required": true,
+    "missing_data_ready": false,
+    "analysis_ready": false,
+    "evaluation": "pending",
+    "report_ready": false,
+    "revision_count": 0,
+    "no_progress_count": 1,
+    "iteration_count": 3,
+    "stop_reason": null,
+    "fatal_flaw": null
+  },
+  "memory": {
+    "reopened_usable": true,
+    "context_bytes": 1885,
+    "changed_input_usable": false
+  },
+  "mcp_calls": [
+    {
+      "tool": "get_article",
+      "arguments": {
+        "provider": "pubmed",
+        "article_id": "8782638"
+      },
+      "seconds": 1.8060051249922253,
+      "is_error": false
+    },
+    {
+      "tool": "get_article",
+      "arguments": {
+        "provider": "pubmed",
+        "article_id": "28693043"
+      },
+      "seconds": 1.6791460840031505,
+      "is_error": false
+    },
+    {
+      "tool": "build_reference_list",
+      "arguments": {
+        "artifact_ids": [
+          "aa55974588b8462780c35ec69773ebe2",
+          "409a72c1870e46578998c155d4f92837"
+        ]
+      },
+      "seconds": 0.008373708988074213,
+      "is_error": false
+    }
+  ],
+  "runtime_commit": "dba3280ba4011a3cfdf9483590d528427908149a"
+}
