@@ -1,0 +1,2 @@
+# Optional tokenizer for the measurement demo; the memory/controller runtime is stdlib-only.
+tiktoken==0.12.0

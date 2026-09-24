@@ -1,6 +1,12 @@
 # Modernization groundwork
 
-Prepared 2026-09-23. This branch establishes a development baseline and a proposed implementation plan. It does not implement the proposed components.
+Prepared 2026-09-23. This branch establishes the development baseline and now includes the first executable workflow-controller increment. An optional project-memory layer and paired context-token demo are also implemented; an optional local MCP server is now implemented. Jev (TypeSafe AI) routing is optional and deferred; the next priority is end-to-end behavioral evaluation.
+
+See [WORKFLOW_CONTROLLER.md](WORKFLOW_CONTROLLER.md) for the architecture, state/result contract, stop policies, demo commands, validation, and remaining work. The optional standard-library Python runtime is in `biostat_workflow/`; existing declarative and installed skills are unchanged.
+
+See [MEMORY.md](MEMORY.md) for confirmed project memory, context selection, invalidation, the measured token comparison, and its limitations.
+
+See [MCP_SERVER.md](MCP_SERVER.md) for the optional stdio server, UCI retrieval, local profiling/visualization, resource catalog, setup and protocol demo. See [CLINICAL_TRIALS.md](CLINICAL_TRIALS.md) for live trial search, details, pagination and comparison charts. [LITERATURE.md](LITERATURE.md) covers PubMed/Europe PMC citation retrieval and provenance-preserving reference lists. [REVIEWED_HANDOFF.md](REVIEWED_HANDOFF.md) connects source-reviewed proposals to confirmed project memory and versioned workflow checkpoints.
 
 ## Repository setup
 
@@ -27,11 +33,11 @@ The upstream clone is a complete Git repository used as the backing store for in
 | Fast/slow decision routing | No dedicated runtime policy identified | Measurable escalation policy with a careful default |
 | Build automation | No tracked `.github/` workflows or top-level `tests/` found | Lightweight structural checks, followed by behavioral evaluation |
 
-The existing graph, loop and evaluation are primarily instructions and examples. A future runtime must demonstrate execution behavior before those capabilities are advertised as implemented.
+The baseline graph, loop and evaluation were primarily instructions and examples. The new controller executes prerequisite routing and bounded revision loops with synthetic handoffs. It does not yet execute statistical specialists or evaluate model behavior.
 
 ## Proposed scope
 
-Starting candidates come from the earlier before/after diagram: memory, MCP connections and fast/slow decision routing. These are planning assumptions, not a finalized requirement list. The specific meaning of “Jev / Laya” from the earlier conversation remains unresolved; no dependency or model is selected on that basis.
+The planned MCP milestone is considered complete. Jev refers to TypeSafe AI’s structured decision model. Its integration is deferred by user decision: the existing deterministic lifecycle router needs no model calls, and an additional intent-routing service has not demonstrated a net benefit. See the routing decision in [ROADMAP.md](ROADMAP.md). No Jev dependency or API integration is enabled; Laya is outside the current scope.
 
 See [ROADMAP.md](ROADMAP.md) for staged work and acceptance criteria. Keep the original methodology skills usable independently of any new runtime. Preserve upstream attribution and MIT licensing.
 
@@ -47,4 +53,10 @@ git status --short --branch
 git log -1 --oneline
 ```
 
-Groundwork verification consists of checking fork ancestry, branch/remotes, the baseline commit, documentation links and the final diff. No model or analysis tests are claimed for this documentation-only change.
+Original groundwork verification checked fork ancestry, branch/remotes, the baseline commit, documentation links and the diff. Controller validation now uses `python3 -B -m unittest discover -s tests -v` and the synthetic demos documented above. No model-quality or clinical-analysis validation is claimed.
+
+## Optional installation and workflow illustrations
+
+See [INSTALL_V2.md](INSTALL_V2.md) for the separate runtime installation and additional `biostat-workflow` skill. The original specialist policies remain unchanged.
+
+The revised [version 1 figure](figures/modern_ai_agent_system_v1.png) and [version 2 figure](figures/modern_ai_agent_system_v2.png) omit Jev, the separate model-routing diamond and the System 2 label. These are conceptual illustrations; the implementation scope and review limitations are defined in the architecture documents above. Deterministic lifecycle routing remains implemented in the controller.

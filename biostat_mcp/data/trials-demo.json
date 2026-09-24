@@ -1,0 +1,274 @@
+{
+  "notice": "Entirely synthetic schema fixtures. NCT identifiers are test placeholders; never treat these records as registry data.",
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00000001",
+          "briefTitle": "SYNTHETIC semaglutide obesity fixture 1"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-01-01"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Obesity"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL"
+          },
+          "enrollmentInfo": {
+            "count": 100,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Semaglutide",
+              "type": "DRUG"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "SYNTHETIC: Adults with obesity; exclude pregnancy.",
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "healthyVolunteers": false
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Synthetic percentage weight change",
+              "timeFrame": "Week 52"
+            }
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "facility": "Synthetic research center",
+              "city": "Example city",
+              "country": "Example country"
+            }
+          ]
+        }
+      },
+      "hasResults": false,
+      "syntheticFixtureNotice": "Synthetic test record; not retrieved from ClinicalTrials.gov. NCT ID is a placeholder."
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00000002",
+          "briefTitle": "SYNTHETIC semaglutide obesity fixture 2"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-01-01"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Obesity"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL"
+          },
+          "enrollmentInfo": {
+            "count": 200,
+            "type": "ACTUAL"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Semaglutide",
+              "type": "DRUG"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "SYNTHETIC: Adults with obesity; exclude pregnancy.",
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "healthyVolunteers": false
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Synthetic percentage weight change",
+              "timeFrame": "Week 52"
+            }
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "facility": "Synthetic research center",
+              "city": "Example city",
+              "country": "Example country"
+            }
+          ]
+        }
+      },
+      "hasResults": true,
+      "resultsSection": {
+        "outcomeMeasuresModule": {
+          "outcomeMeasures": []
+        }
+      },
+      "syntheticFixtureNotice": "Synthetic test record; not retrieved from ClinicalTrials.gov. NCT ID is a placeholder."
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00000003",
+          "briefTitle": "SYNTHETIC semaglutide obesity fixture 3"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-01-01"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Obesity"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL"
+          },
+          "enrollmentInfo": {
+            "count": 300,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Semaglutide",
+              "type": "DRUG"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "SYNTHETIC: Adults with obesity; exclude pregnancy.",
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "healthyVolunteers": false
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Synthetic percentage weight change",
+              "timeFrame": "Week 52"
+            }
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "facility": "Synthetic research center",
+              "city": "Example city",
+              "country": "Example country"
+            }
+          ]
+        }
+      },
+      "hasResults": false,
+      "syntheticFixtureNotice": "Synthetic test record; not retrieved from ClinicalTrials.gov. NCT ID is a placeholder."
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00000004",
+          "briefTitle": "SYNTHETIC semaglutide obesity fixture 4"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {
+            "date": "2026-01-01"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Obesity"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE3"
+          ],
+          "designInfo": {
+            "allocation": "RANDOMIZED",
+            "interventionModel": "PARALLEL"
+          },
+          "enrollmentInfo": {
+            "count": 400,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Semaglutide",
+              "type": "DRUG"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "SYNTHETIC: Adults with obesity; exclude pregnancy.",
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "healthyVolunteers": false
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Synthetic percentage weight change",
+              "timeFrame": "Week 52"
+            }
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "facility": "Synthetic research center",
+              "city": "Example city",
+              "country": "Example country"
+            }
+          ]
+        }
+      },
+      "hasResults": false,
+      "syntheticFixtureNotice": "Synthetic test record; not retrieved from ClinicalTrials.gov. NCT ID is a placeholder."
+    }
+  ]
+}

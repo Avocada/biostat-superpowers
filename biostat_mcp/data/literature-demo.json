@@ -1,0 +1,92 @@
+{
+  "notice": "Synthetic fixtures. Identifiers are test placeholders, not source data.",
+  "pubmed": [
+    {
+      "id": "90000001",
+      "title": "SYNTHETIC semaglutide study 1",
+      "abstract": "Synthetic abstract mentioning NCT00000001. Not clinical evidence.",
+      "doi": "10.9999/synthetic-1"
+    },
+    {
+      "id": "90000002",
+      "title": "SYNTHETIC semaglutide study 2",
+      "abstract": "Synthetic abstract mentioning NCT00000001. Not clinical evidence.",
+      "doi": "10.9999/synthetic-2"
+    },
+    {
+      "id": "90000003",
+      "title": "SYNTHETIC semaglutide study 3",
+      "abstract": "Synthetic abstract mentioning NCT00000001. Not clinical evidence.",
+      "doi": "10.9999/synthetic-3"
+    }
+  ],
+  "europepmc": [
+    {
+      "id": "90000001",
+      "source": "MED",
+      "pmid": "90000001",
+      "title": "SYNTHETIC semaglutide study 1",
+      "doi": "10.9999/SYNTHETIC-1",
+      "abstractText": "<h4>Background</h4>Synthetic abstract mentioning NCT00000001. Not clinical evidence.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Synthetic research group"
+          }
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Journal Article"
+        ]
+      },
+      "journalInfo": {
+        "journal": {
+          "title": "Synthetic journal"
+        }
+      },
+      "firstPublicationDate": "2026-01-01",
+      "isOpenAccess": "N"
+    },
+    {
+      "id": "90000002",
+      "source": "MED",
+      "pmid": "90000002",
+      "title": "SYNTHETIC semaglutide study 2",
+      "doi": "10.9999/SYNTHETIC-2",
+      "abstractText": "<h4>Background</h4>Synthetic abstract mentioning NCT00000001. Not clinical evidence.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Synthetic research group"
+          }
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Journal Article"
+        ]
+      },
+      "journalInfo": {
+        "journal": {
+          "title": "Synthetic journal"
+        }
+      },
+      "firstPublicationDate": "2026-01-01",
+      "isOpenAccess": "N"
+    },
+    {
+      "id": "PPRdemo1",
+      "source": "PPR",
+      "title": "SYNTHETIC preprint",
+      "doi": "10.9999/synthetic-preprint",
+      "abstractText": "Synthetic preprint mentioning NCT00000001. Not clinical evidence.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "firstPublicationDate": "2026-01-02"
+    }
+  ]
+}

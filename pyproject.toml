@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biostat-superpowers-runtime"
+version = "0.2.0"
+description = "Optional workflow, project memory, and local MCP access for biostat-superpowers"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp==2.2.0", "vl-convert-python==1.9.0.post1"]
+memory-demo = ["tiktoken==0.12.0"]
+
+[project.scripts]
+biostat-mcp = "biostat_mcp.server:main"
+biostat-mcp-demo = "biostat_mcp.demo:main"
+
+[tool.setuptools.packages.find]
+include = ["biostat_workflow*", "biostat_mcp*"]
+
+[tool.setuptools.package-data]
+biostat_mcp = ["data/*.json", "data/*.csv"]

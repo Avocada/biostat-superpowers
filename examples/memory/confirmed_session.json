@@ -1,0 +1,66 @@
+{
+  "notice": "Entirely synthetic study-planning conversation. No real participants or study results. Decisions are fixture inputs, not statistical recommendations.",
+  "project_id": "synthetic-cohort",
+  "run_id": "planning-01",
+  "input_description": "Synthetic cohort contract version 1; no patient-level rows are stored.",
+  "decisions": [
+    {
+      "key": "estimand",
+      "value": "Average treatment effect of A versus B on 30-day event risk, expressed as an absolute risk difference.",
+      "discussion": "The initial request was to compare treatment outcomes, but compare can mean several things. We discussed an association, a prediction target, and an intervention contrast. An association would describe differences without claiming they were caused by treatment. A prediction target would prioritize out-of-sample performance and calibration. The investigator chose an intervention contrast for this synthetic example. We also discussed whether to target all eligible adults or only treated adults, and whether a relative or absolute scale would be easiest to interpret. The confirmed decision below resolves those choices; neither causal identification nor successful model fitting follows just from choosing the target.",
+      "stages": ["design", "identification", "analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "population",
+      "value": "Adults eligible for either treatment at the index encounter; exclude prior treatment users using a prespecified lookback.",
+      "discussion": "The working population originally included every available encounter, which would mix incident users and people already on treatment. We discussed whether eligibility should be determined before treatment assignment and whether repeated encounters could contribute more than once. This fixture keeps a single eligible index encounter per person. Exclusion rules must be documented before evaluating outcomes, and the eventual analysis must report counts for every exclusion. The confirmed population statement is a planning decision, not evidence that those filters were applied correctly. The preprocessing specialist must still inspect the actual analysis table and establish that the lookback fields are available before time zero.",
+      "stages": ["design", "preparation", "identification", "analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "time_zero",
+      "value": "Eligibility, treatment assignment, and follow-up start coincide at the index encounter; follow for 30 days.",
+      "discussion": "We considered starting follow-up at the first prescription, at the admission date, or after a stabilization period. These alternatives describe different designs and cannot simply be exchanged after looking at results. The fixture chooses the index encounter and requires a timing audit rather than assuming the database timestamps are comparable. We also discussed what happens when an outcome occurs on the index date or when a treatment record is entered late. Those details belong in the data contract. The final timing statement records the agreed target; a later discovery that the data cannot support it must invalidate the affected analysis and trigger a design or preparation revision.",
+      "stages": ["preparation", "identification", "analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "data_contract",
+      "value": "One row per eligible person; baseline covariates precede treatment; preserve person ID and record every exclusion reason.",
+      "discussion": "The source system could contain repeated visits, duplicated extracts, and variables measured after treatment. We discussed keeping a long table during cleaning and creating one analysis row per eligible person only after validating chronology. We rejected collapsing repeated records by taking whichever value was most convenient because that might select future information. The analysis table must preserve identifiers for audit purposes even if they are not model predictors. A checksum will identify the input version. No real data were loaded for this conversation. The memory stores only this contract and its version dependency, while the actual profiling output and exclusion ledger would remain in a separately controlled artifact location.",
+      "data_bound": true,
+      "stages": ["preparation", "missing_data", "analysis", "evaluation"]
+    },
+    {
+      "key": "missingness",
+      "value": "Use a reviewed multiple-imputation plan for incomplete baseline confounders, with a missing-not-at-random sensitivity analysis.",
+      "discussion": "The draft planning note assumed that dropping incomplete rows would be harmless. We discussed how this changes the analyzed population and may introduce selection problems. The alternatives were a defensible complete-case analysis, multiple imputation, or a redesigned target that the available variables could support. This fixture adopts an imputation plan subject to review. That does not establish the missingness mechanism, choose a valid imputation model automatically, or justify ignoring a missing-not-at-random scenario. The specialist must still document missingness patterns, auxiliary variables, model compatibility, pooling, and sensitivity checks. The stored sentence is a confirmed plan that later workers can retrieve without replaying this entire discussion.",
+      "data_bound": true,
+      "stages": ["preparation", "missing_data", "analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "identification_plan",
+      "value": "Review the causal diagram and a prespecified baseline adjustment set; check overlap and do not adjust for post-treatment mediators.",
+      "discussion": "The first candidate adjustment strategy was to include all variables in the extract. We discussed why availability is not a sufficient basis for deciding what to adjust for, and why a variable can predict treatment without being an appropriate adjustment variable. The synthetic plan now requires a causal diagram and a review of measurement timing before fitting an effect model. The exact named adjustment set is intentionally left to the specialist working with the data contract. This record is therefore an agreed process constraint, not a certificate of identifiability. If overlap is inadequate or important confounders are absent, the workflow must revise the design or escalate instead of treating a stored plan as permission to claim an effect.",
+      "data_bound": true,
+      "stages": ["identification", "analysis", "evaluation"]
+    },
+    {
+      "key": "analysis_plan",
+      "value": "Prespecify one primary estimator after identification review; report the risk difference with uncertainty and diagnostic evidence.",
+      "discussion": "We discussed fitting several candidate models and reporting the most favorable estimate. That would make the primary analysis depend on the observed results, so the fixture instead records a requirement to name the primary estimator after identification review and before outcome-driven selection. Secondary analyses will be labeled as such. The implementation specialist retains responsibility for model fitting, diagnostics, uncertainty estimates, and code reproducibility. This memory is useful because it preserves the agreed restriction across sessions, but it cannot replace the model specification or the results artifact. A new dataset version, an altered target, or a revised identification strategy requires reconsidering the dependent analysis rather than blindly recycling an old output.",
+      "data_bound": true,
+      "stages": ["analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "sensitivity",
+      "value": "Examine alternative eligibility and timing choices, missingness assumptions, and sensitivity to unmeasured confounding.",
+      "discussion": "The sensitivity discussion covered several ways the primary conclusion could be fragile. We separated planned checks of design assumptions from opportunistic attempts to find a preferred answer. Each sensitivity analysis needs a clear purpose, a prespecified interpretation rule, and a label distinguishing it from the primary analysis. This record preserves the agreed categories without pretending to provide results. The evaluator must inspect the actual evidence and may still decide that the analysis needs revision. In particular, listing a sensitivity method does not show that its assumptions are met or that the result is robust. The reporting worker should describe what was done and what remains uncertain instead of copying a planning promise as a completed check.",
+      "stages": ["identification", "analysis", "evaluation", "reporting"]
+    },
+    {
+      "key": "reporting",
+      "value": "Include participant flow, effect estimates with intervals, limitations, and reproducibility details; require a ready review before release.",
+      "discussion": "The planned audience includes a collaborator who did not attend the design discussion. We considered sending only a coefficient table, but that would omit the population, time horizon, exclusions, and assumptions needed to interpret it. The final report therefore needs enough context to connect the target to the analysis and to make limitations visible. Figure styling, file naming, and delivery order were discussed separately from scientific readiness. We agreed that an attractive report must not override a failed review. The controller will enforce that gate, while the reporting skill owns the content and reproducibility requirements. This is a reusable project preference and release constraint; it is not evidence that a particular report is complete.",
+      "stages": ["evaluation", "reporting"]
+    }
+  ]
+}

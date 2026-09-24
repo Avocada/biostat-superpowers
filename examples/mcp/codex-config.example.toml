@@ -1,0 +1,8 @@
+# Replace /ABSOLUTE/PATH/biostat-superpowers with your checkout path.
+# Merge this section into the MCP host configuration; do not replace other settings.
+[mcp_servers.biostat]
+command = "/ABSOLUTE/PATH/biostat-superpowers/.venv/bin/biostat-mcp"
+args = ["--artifact-dir", "/ABSOLUTE/PATH/biostat-superpowers/outputs/mcp"]
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+# Add "--offline" to args to restrict retrieval to the synthetic fixture.

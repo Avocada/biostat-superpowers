@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "notice": "Reference-only entries are links, not installed connectors or downloaded content. Verify access, terms and adapter contracts before integration.",
+  "entries": [
+    {
+      "name": "UCI Machine Learning Repository",
+      "category": "datasets",
+      "url": "https://archive.ics.uci.edu/",
+      "status": "available",
+      "scope": "Only Iris (53) and Heart Disease (45) are fetchable."
+    },
+    {
+      "name": "Vega-Lite",
+      "category": "visualization",
+      "url": "https://vega.github.io/vega-lite/examples/",
+      "status": "available",
+      "scope": "Three project-authored local templates; no full-gallery search."
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "category": "clinical research",
+      "url": "https://clinicaltrials.gov/",
+      "status": "available",
+      "scope": "API v2 trial search, paginated snapshots, details and selected-trial comparison charts."
+    },
+    {
+      "name": "PubMed",
+      "category": "literature",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "status": "available",
+      "scope": "Citation/abstract search, paginated source snapshots, article retrieval and identifier-based reference lists; no full-text downloads."
+    },
+    {
+      "name": "Europe PMC",
+      "category": "literature",
+      "url": "https://europepmc.org/",
+      "status": "available",
+      "scope": "Citation/abstract search, paginated source snapshots, article retrieval and identifier-based reference lists; no full-text downloads."
+    },
+    {
+      "name": "ClinVar",
+      "category": "genetics",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "gnomAD",
+      "category": "genetics",
+      "url": "https://gnomad.broadinstitute.org/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "GWAS Catalog",
+      "category": "genetics",
+      "url": "https://www.ebi.ac.uk/gwas/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Open Targets",
+      "category": "genetics",
+      "url": "https://platform.opentargets.org/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "GEO",
+      "category": "datasets",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "GDC",
+      "category": "datasets",
+      "url": "https://portal.gdc.cancer.gov/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "UCSC Genome Browser",
+      "category": "genetics",
+      "url": "https://genome.ucsc.edu/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Causal Inference: What If",
+      "category": "reference",
+      "url": "https://miguelhernan.org/whatifbook",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Regression Modeling Strategies",
+      "category": "reference",
+      "url": "https://hbiostat.org/rmsc/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Flexible Imputation of Missing Data",
+      "category": "reference",
+      "url": "https://stefvanbuuren.name/fimd/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Cochrane Handbook",
+      "category": "reference",
+      "url": "https://training.cochrane.org/handbook",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "EQUATOR Network",
+      "category": "reference",
+      "url": "https://www.equator-network.org/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Observable Plot",
+      "category": "visualization",
+      "url": "https://observablehq.com/plot/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Vega Datasets",
+      "category": "datasets",
+      "url": "https://github.com/vega/vega-datasets",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "ToolUniverse",
+      "category": "external tools",
+      "url": "https://github.com/mims-harvard/ToolUniverse",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "BioMCP",
+      "category": "external tools",
+      "url": "https://biomcp.org/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "Elicit",
+      "category": "research application",
+      "url": "https://elicit.com/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "ASReview",
+      "category": "research application",
+      "url": "https://asreview.nl/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    },
+    {
+      "name": "AntV",
+      "category": "visualization",
+      "url": "https://antv.antgroup.com/",
+      "status": "reference_only",
+      "scope": "No integration implemented."
+    }
+  ]
+}

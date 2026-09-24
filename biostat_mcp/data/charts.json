@@ -1,0 +1,29 @@
+[
+  {
+    "id": "histogram",
+    "name": "Numeric distribution",
+    "purpose": "Inspect the frequency distribution of one numeric variable.",
+    "requirements": {"x": "numeric", "y": "unused"},
+    "source": "https://vega.github.io/vega-lite/examples/histogram.html",
+    "authorship": "Project-authored template using the documented Vega-Lite grammar; not a copied gallery asset.",
+    "spec": {"mark": "bar", "encoding": {"x": {"field": "x", "type": "quantitative", "bin": {"maxbins": 12}}, "y": {"aggregate": "count", "type": "quantitative", "title": "Count"}}}
+  },
+  {
+    "id": "scatter",
+    "name": "Numeric relationship",
+    "purpose": "Inspect the relationship between two numeric variables; does not estimate a causal effect.",
+    "requirements": {"x": "numeric", "y": "numeric"},
+    "source": "https://vega.github.io/vega-lite/examples/point_2d.html",
+    "authorship": "Project-authored template using the documented Vega-Lite grammar; not a copied gallery asset.",
+    "spec": {"mark": {"type": "point", "filled": true}, "encoding": {"x": {"field": "x", "type": "quantitative"}, "y": {"field": "y", "type": "quantitative"}}}
+  },
+  {
+    "id": "boxplot",
+    "name": "Numeric distribution by group",
+    "purpose": "Compare numeric distributions across categories; whiskers use 1.5 times the interquartile range.",
+    "requirements": {"x": "categorical", "y": "numeric"},
+    "source": "https://vega.github.io/vega-lite/examples/boxplot_minmax_2D_vertical.html",
+    "authorship": "Project-authored template using the documented Vega-Lite grammar; this template uses 1.5 IQR whiskers.",
+    "spec": {"mark": {"type": "boxplot", "extent": 1.5}, "encoding": {"x": {"field": "x", "type": "nominal"}, "y": {"field": "y", "type": "quantitative"}}}
+  }
+]

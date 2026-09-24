@@ -31,3 +31,8 @@ node_modules/
 
 # Kaggle submission draft — kept out of the public repo
 SUBMISSION.md
+
+# Python packaging
+*.egg-info/
+build/
+dist/

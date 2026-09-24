@@ -1,0 +1,121 @@
+{
+  "measurement": "Exact text token counts: o200k_base; no API/model calls or billing measurement",
+  "fixture_sha256": "cf8834133ca65adacc38c07b38a2d2fb0f51f722319e72c776a0410a9efe0490",
+  "tokenizer_package": "tiktoken",
+  "tokenizer_version": "0.12.0",
+  "policy_sha256": {
+    "skills/biostatistics/SKILL.md": "5c4893a2effaccd1f0fcc55a024ce64c9aa376d4f6221bcf856014cbac1aa338",
+    "skills/causal-inference/SKILL.md": "c4ab6b0533957189b4b996f8a14a463c3add181861a9b7ced0aea97bee30a19f",
+    "skills/data-understanding-preprocessing/SKILL.md": "b320af850cf366bd17f71d64f98a1aa08b38cff2a389b603ff56137ff7e8f9e1",
+    "skills/method-evaluation/SKILL.md": "b8bc01b3046a1ae597498c7e2d94f05c766e783e5ef938658de6b868e8cceee3",
+    "skills/missing-data/SKILL.md": "ff2ff082ac2089dc09f70ae394e07e98c825ba7a7983c33d6297a150a84d8d4c",
+    "skills/predictive-modeling/SKILL.md": "a93d6a53fdebff9be9816d0b4faffc6335c4aedff0806c90373e1769dbc03001",
+    "skills/reporting-and-reproducibility/SKILL.md": "24179299615260735cb570b706ba59c3f0490dee0ad4063fa86af348d15c870e",
+    "skills/statistical-analysis/SKILL.md": "3ba7d4ced3b066bd9be113cf0ba7212f4441ff9ea7abc431e0761bbcb71271df",
+    "skills/study-design-and-power/SKILL.md": "8a95ff15a5fde6f0656e598ca1838f9be9ef6190ea1a45062a65770893ebc196"
+  },
+  "totals": {
+    "transcript_replay": 36115,
+    "all_confirmed_memory": 32090,
+    "stage_retrieval": 29236
+  },
+  "per_stage": [
+    {
+      "stage": "design",
+      "transcript_replay": 5054,
+      "all_confirmed_memory": 4479,
+      "stage_retrieval": 3692
+    },
+    {
+      "stage": "preparation",
+      "transcript_replay": 5576,
+      "all_confirmed_memory": 5001,
+      "stage_retrieval": 4471
+    },
+    {
+      "stage": "missing_data",
+      "transcript_replay": 4968,
+      "all_confirmed_memory": 4393,
+      "stage_retrieval": 3682
+    },
+    {
+      "stage": "identification",
+      "transcript_replay": 5036,
+      "all_confirmed_memory": 4461,
+      "stage_retrieval": 3986
+    },
+    {
+      "stage": "analysis",
+      "transcript_replay": 5179,
+      "all_confirmed_memory": 4604,
+      "stage_retrieval": 4511
+    },
+    {
+      "stage": "evaluation",
+      "transcript_replay": 5372,
+      "all_confirmed_memory": 4797,
+      "stage_retrieval": 4797
+    },
+    {
+      "stage": "reporting",
+      "transcript_replay": 4930,
+      "all_confirmed_memory": 4355,
+      "stage_retrieval": 4097
+    }
+  ],
+  "reduction_vs_transcript_percent": 19.05,
+  "reduction_vs_all_memory_percent": 8.89,
+  "project_context_only": {
+    "transcript": 1545,
+    "all_memory": 970,
+    "hand_curated_key_value_summary_without_provenance": 272
+  },
+  "short_context_counterexample": {
+    "one_fact_text": 21,
+    "one_fact_with_memory_provenance": 93
+  },
+  "all_required_decisions_present": true,
+  "same_seven_workflow_stages": {
+    "transcript_replay": [
+      "design",
+      "preparation",
+      "missing_data",
+      "identification",
+      "analysis",
+      "evaluation",
+      "reporting"
+    ],
+    "all_confirmed_memory": [
+      "design",
+      "preparation",
+      "missing_data",
+      "identification",
+      "analysis",
+      "evaluation",
+      "reporting"
+    ],
+    "stage_retrieval": [
+      "design",
+      "preparation",
+      "missing_data",
+      "identification",
+      "analysis",
+      "evaluation",
+      "reporting"
+    ]
+  },
+  "safety_checks": {
+    "other_project_records": 0,
+    "invalidated_on_data_change": 4,
+    "stale_stop_reason": "no_progress_threshold",
+    "stale_model_calls": 0
+  },
+  "memory_creation_model_calls": 0,
+  "setup": "Fixture provides explicit confirmed values; writes and retrieval are deterministic. No free LLM summarization assumed.",
+  "limitations": [
+    "Coverage checks are not clinical or LLM-quality validation.",
+    "Counts exclude message framing, hidden instructions, generated output, and reasoning tokens.",
+    "No dollar or latency savings measured; prompt-cache effects are excluded.",
+    "A host already sending the same compact context gets no further token saving from persistence alone."
+  ]
+}
