@@ -1,0 +1,63 @@
+column,role,type,missing_n,legacy_action,timing,outlier_action
+cat1,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+cat2,candidate covariate,str,4535,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+ca,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+sadmdte,outcome / follow-up / identifier,int64,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+dschdte,outcome / follow-up / identifier,float64,1,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+dthdte,outcome / follow-up / identifier,float64,2013,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+lstctdte,outcome / follow-up / identifier,int64,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+death,outcome / follow-up / identifier,str,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+cardiohx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+chfhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+dementhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+psychhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+chrpulhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+renalhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+liverhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+gibledhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+malighx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+immunhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+transhx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+amihx,candidate covariate,int64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+age,candidate covariate,float64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+sex,candidate covariate,str,0,one-hot; missing maps to reference,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+edu,candidate covariate,float64,0,median impute; standardize,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+surv2md1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+das2d3pc,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+t3d30,outcome / follow-up / identifier,int64,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+dth30,outcome / follow-up / identifier,str,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+aps1,candidate covariate,int64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+scoma1,candidate covariate,int64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+meanbp1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+wblc1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+hrt1,candidate covariate,int64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+resp1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+temp1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+pafi1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+alb1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+hema1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+bili1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+crea1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+sod1,candidate covariate,int64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+pot1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+paco21,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+ph1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+swang1,exposure,str,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+wtkilo1,candidate covariate,float64,0,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+dnr1,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+ninsclas,candidate covariate,str,0,one-hot; missing maps to reference,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+resp,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+card,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+neuro,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+gastr,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+renal,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+meta,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+hema,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+seps,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+trauma,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+ortho,candidate covariate,str,0,one-hot; missing maps to reference,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+adld3p,candidate covariate,float64,4296,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+urin1,candidate covariate,float64,3028,median impute; standardize,pre-exposure not established; day-1 or assessment timing needs adjudication,retain; no unsupported deletion
+race,candidate covariate,str,0,one-hot; missing maps to reference,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+income,candidate covariate,str,0,one-hot; missing maps to reference,history/demographic candidate; source verification still needed,retain; no unsupported deletion
+ptid,outcome / follow-up / identifier,int64,0,exclude from propensity model,history/demographic candidate; source verification still needed,retain; no unsupported deletion

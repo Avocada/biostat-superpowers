@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex analyst self-audit; not independent reviewer",
+  "scope": "crude association and exploratory legacy reproduction",
+  "causal_readiness": "not_ready",
+  "associational_calculation": "completed; independent evaluation pending",
+  "strengths": [
+    "identical input fingerprint",
+    "explicit denominator and endpoint checks",
+    "full-pipeline bootstrap within 200-replicate cap",
+    "all-term balance and weight diagnostics",
+    "offline figures and source provenance"
+  ],
+  "unresolved": [
+    {
+      "severity": "critical",
+      "issue": "within-day chronology and grace-period alignment unknown",
+      "action": "obtain original timing definitions and records",
+      "owner": "preparation/causal inference"
+    },
+    {
+      "severity": "high",
+      "issue": "sparse fields and sentinel values lack adjudication",
+      "action": "resolve structural blanks, timing and clinical validity; design MI and MNAR analysis",
+      "owner": "missing data/preparation"
+    },
+    {
+      "severity": "critical",
+      "issue": "no sufficient causal adjustment set or exchangeability evidence",
+      "action": "clinical DAG and identification review",
+      "owner": "causal inference"
+    },
+    {
+      "severity": "high",
+      "issue": "independent review pending",
+      "action": "later independent reviewer inspects artifacts",
+      "owner": "method evaluation"
+    }
+  ],
+  "approval": false
+}

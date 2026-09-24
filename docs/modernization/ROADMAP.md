@@ -60,3 +60,9 @@ Acceptance: existing skill-only usage still works, installation can be tested in
 - Revisit optional Jev intent routing only after measuring a bottleneck; Laya is outside the current scope.
 
 Next candidates: structured model-based evaluation cases, a review UI and checkpoint/replay of external tool execution beyond the implemented reviewed-handoff checkpoints. The deterministic controller tests are not a replacement for evaluation of actual agent behavior.
+
+## Broader RHC capability comparison
+
+A fresh-agent pilot is evaluating original skills versus the upgraded bundle on identical RHC inputs, including visual reporting, actual MCP usage, and a cold-restart follow-up with ordinary file reuse versus structured memory. Unlike the earlier paired-script audit, this pilot records actual model token usage. Report cached input separately, preserve the common task prompt, and do not generalize one run per arm into a proven component-level efficiency effect. Local CSV import and a summary-bar template extend the server for this concrete use case.
+
+The completed [fresh-agent RHC pilot](../../examples/rhc_agent_pilot/README.md) now includes both reports, fresh-session follow-ups, independent review and actual token telemetry. It demonstrated provenance and persistence, but no token savings or clear visual superiority. Prioritize a compact fingerprint-aware resume helper, scientific chart contracts, and replicated component ablations before efficiency claims.

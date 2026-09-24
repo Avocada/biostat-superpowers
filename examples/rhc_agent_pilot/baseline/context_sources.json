@@ -1,0 +1,113 @@
+{
+  "records_read": [
+    {
+      "path": "decision_log.md",
+      "sha256": "c0638ff5288520edf698fd4653e980880037c8fa976f55f62b8c2db85c8d7a07",
+      "used_for": "saved decisions 2\u20133, 5\u20139"
+    },
+    {
+      "path": "report.md",
+      "sha256": "fef7c9d026cfd4c106139c171d466c4c4180ee55ad978420da89e15a0fe8b941",
+      "used_for": "saved report and limitations"
+    },
+    {
+      "path": "results.json",
+      "sha256": "1d6569c97bb93c234cc0951f420ab74a171718860a2c8207d3e55f19f82df285",
+      "used_for": "fingerprint, counts, versions, original sensitivity point estimates"
+    },
+    {
+      "path": "analysis.py",
+      "sha256": "0b003243118d20c247ed4df4835cae01314768068e0162ada5a6378fbc4ec053",
+      "used_for": "AST-extracted exact functions and exclusion list; not executed wholesale"
+    },
+    {
+      "path": "input/SOURCE.md",
+      "sha256": "d693001e1e01cfefa39f2315508821b66be111081a4cb4e20da7e6003117a182",
+      "used_for": "source attribution and analysis-input fingerprint"
+    },
+    {
+      "path": "input/rhc_dictionary.html",
+      "sha256": "f255926741a2fae4b9ee0df8855e9b93f3607a1139bf569872dadd67ccb4d354",
+      "used_for": "selected swang1/dth30/adld3p/urin1 entries decoded cp1252"
+    },
+    {
+      "path": "input/rhc.csv",
+      "sha256": "811bad3c113c26acc64c00ed149993b09dd320cf2540b750738f5656233d2ec6",
+      "used_for": "verified unchanged before read; data for two fits"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "13f175f3f4cb6234bd4cf9bb2036e260bddf1bd36d5994b783fb10ef86ea3f25",
+      "used_for": "user-supplied scope instructions"
+    }
+  ],
+  "skills_read": [
+    "/Users/amiee/.codex/skills/biostatistics/SKILL.md",
+    "/Users/amiee/.codex/biostat-superpowers/skills/causal-inference/SKILL.md",
+    "/Users/amiee/.codex/biostat-superpowers/skills/method-evaluation/SKILL.md",
+    "/Users/amiee/.codex/biostat-superpowers/skills/statistical-analysis/SKILL.md",
+    "/Users/amiee/.codex/biostat-superpowers/skills/missing-data/SKILL.md"
+  ],
+  "reuse_checks": {
+    "input_sha256_verified": true,
+    "counts_and_ids_verified": true,
+    "versions_identical": true,
+    "retained_design_columns_identical": true,
+    "original_point_estimates": [
+      {
+        "clip": 0.01,
+        "maximum_absolute_point_estimate_difference": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "clip": 0.02,
+        "maximum_absolute_point_estimate_difference": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "clip": 0.05,
+        "maximum_absolute_point_estimate_difference": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      }
+    ],
+    "protected_files_unchanged": true
+  },
+  "protected_sha256": {
+    "report.html": "164f25c7d5bb99cd2dc42d20a1649b5ca2dd951e59a3a773fb3622f9d207aaa4",
+    "report.md": "fef7c9d026cfd4c106139c171d466c4c4180ee55ad978420da89e15a0fe8b941",
+    "results.json": "1d6569c97bb93c234cc0951f420ab74a171718860a2c8207d3e55f19f82df285",
+    "decision_log.md": "c0638ff5288520edf698fd4653e980880037c8fa976f55f62b8c2db85c8d7a07",
+    "analysis.py": "0b003243118d20c247ed4df4835cae01314768068e0162ada5a6378fbc4ec053",
+    "build_report.py": "161cc7a9e7b9c378b7c58b91d105a226e3d886f139513e3ff1d15f2b89b632ce",
+    "figures/sensitivity.png": "7056324723e66fb77d596296a72fa53061138210ff4114b91e7b8b51fa924d38",
+    "figures/missingness.png": "667e69f5b0021e939663f7a8c7b766acfd7073e186456e6c5677977ad5305a97",
+    "figures/diagnostics.png": "fc462f9b9ccec97f06596c03e8f29be688509e9c3b5bd925704822f48516057a",
+    "figures/effects.png": "e637afd208b355dc8b90b0fb5f8399f0b0cca226e279853f81a08a8aa6c23a8f",
+    "figures/flow.png": "97c6ccccb914d570c40da04b021ef5b57abd3b701b8ed9864b14465dd97d1f25"
+  },
+  "operations_rerun": "Actually reran SHA256 verification before model reuse, cohort/ID/exposure/outcome/count checks, missingness counts for the three named fields, both propensity fits, six sets of weights and weighted risks/RD/RR, clipping counts, weight maxima, Kish effective sample sizes and balance diagnostics. Verified identical retained design columns, software versions and reproduction of all three saved original point-estimate specifications to tolerance 1e-10. No bootstrap or intervals were computed; old intervals are not reused. Initial discovery, broad date audits, Table 1, original figures, alternative missingness models and restricted-history models were not rerun.",
+  "remaining_uncertainties": [
+    "Potential confounder deletion may increase residual confounding; neither specification is a justified sufficient adjustment set.",
+    "Within-day exposure/covariate ordering, eligibility and early-event selection remain unresolved.",
+    "Single median imputation and categorical reference-level missingness encoding remain; MAR/MNAR and cat2 structural missingness are unverified.",
+    "Prior audit flagged 11 recorded survivors with last contact before day 30; outcome ascertainment remains unresolved.",
+    "No new confidence intervals, bootstrap, multiple imputation or MNAR analysis; no statistical significance claim about estimates or their differences.",
+    "Balance and finite weights cannot establish causal identification or structural positivity. No human scientific approval or independent review is implied."
+  ],
+  "figure_inspection": {
+    "status": "visually inspected",
+    "file": "followup_comparison.png",
+    "checks": "Both labeled RD and RR axes, null references, six annotated points per panel, clipping bounds, legend and no-interval caption readable without overlap."
+  },
+  "scope": "ordinary files only; no delegation, runtime, SQLite, MCP, network or installations; other study arms not accessed",
+  "checks_after_generation": {
+    "initial_artifacts_unchanged": true,
+    "html_no_external_assets": true,
+    "embedded_figure_matches_inspected_png": true,
+    "six_estimates_all_patients_no_intervals": true
+  },
+  "followup_script_sha256": "616d48d4c724b6d53bbd7e3d1eff071901ce3265b238f704d7ff719836c8e7b5"
+}

@@ -1,0 +1,25 @@
+{
+  "baseline": {
+    "report.html": true,
+    "results.json": true,
+    "figures/sensitivity.png": true,
+    "figures/missingness.png": true,
+    "figures/diagnostics.png": true,
+    "figures/effects.png": true,
+    "figures/flow.png": true
+  },
+  "upgraded": {
+    "report.html": true,
+    "results.json": true,
+    "figures/uncertainty.svg": true,
+    "figures/sensitivity.png": true,
+    "figures/missingness.png": true,
+    "figures/missingness.svg": true,
+    "figures/sensitivity.svg": true,
+    "figures/uncertainty.png": true,
+    "figures/flow.svg": true,
+    "figures/diagnostics.png": true,
+    "figures/diagnostics.svg": true,
+    "figures/flow.png": true
+  }
+}

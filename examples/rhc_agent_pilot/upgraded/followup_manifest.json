@@ -1,0 +1,54 @@
+{
+  "followup.html": {
+    "sha256": "5136274c84f7a8dc1601a6b26daa20dd914e70a669ac2abe01bffcc287a2c16b",
+    "bytes": 140385
+  },
+  "FOLLOWUP.md": {
+    "sha256": "a18801ff0b04799b53306742b952272f6330ff340a28017bf9fc23326db90efc",
+    "bytes": 7098
+  },
+  "followup_results.json": {
+    "sha256": "dd70422a55c7bead1cbc337cd6d3f4da0b2b502004508518ff03b7265c0b57ff",
+    "bytes": 12111
+  },
+  "context_sources.json": {
+    "sha256": "b2419caac595dea4d7ade9e0e760d159bbf9ca16f76187b37f1e50a7c47a84df",
+    "bytes": 8486
+  },
+  "followup_analysis.py": {
+    "sha256": "d953e14a9727213fa0e1bd1db5904a798b6ece0065490a834fa76f377e2e610f",
+    "bytes": 12830
+  },
+  "build_followup_report.py": {
+    "sha256": "9d449d7c5cdb62925fc6eaf0c42de935d3300fea7c4d288e76635ad8f40f6864",
+    "bytes": 10460
+  },
+  "followup_memory_retrieval.json": {
+    "sha256": "a0add1e349e8144f42e66630adbe1cd61f55045d1373cb53750d5d5df1dddfae",
+    "bytes": 4082
+  },
+  "followup_memory_append.json": {
+    "sha256": "c1465d930f2c62791ff5f4eb361819f2a16d5695b06caf9a1ce15141c3263e33",
+    "bytes": 1267
+  },
+  "followup_workflow.json": {
+    "sha256": "35b379401ea109a298fce17557d71b953d2a185861f9181700145d5db1d95a29",
+    "bytes": 7165
+  },
+  "followup_balance.csv": {
+    "sha256": "1ace2daac751b3ca969412fd2bd863ce565763a5789c93ecd595e9abe65bb6be",
+    "bytes": 19340
+  },
+  "followup_validation.json": {
+    "sha256": "59dc82929bebcff3a16ebcb355a5ab8715737dd26a6b4e9928d48b0acf51de98",
+    "bytes": 639
+  },
+  "followup_figures/adjustment_comparison.png": {
+    "sha256": "8a65bc265cf59557924ee9c359a4c3bbcd4286a4d0f41f38fcef2e4ee3181a52",
+    "bytes": 98921
+  },
+  "followup_figures/adjustment_comparison.svg": {
+    "sha256": "457449aae7fcb3df1d2e710a7e107debbfd091debf620d89d58d765c198bd08e",
+    "bytes": 78568
+  }
+}

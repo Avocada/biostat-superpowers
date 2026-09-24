@@ -23,8 +23,8 @@ def result(operation, *args, **kwargs):
                           structured_content=payload, is_error=error)
 
 
-def create_server(artifact_dir: Path, offline: bool = False, demo_trials: bool = False, demo_literature: bool = False):
-    toolkit = Toolkit(artifact_dir, offline=offline)
+def create_server(artifact_dir: Path, offline: bool = False, demo_trials: bool = False, demo_literature: bool = False, input_dir: Path | None = None):
+    toolkit = Toolkit(artifact_dir, offline=offline, input_dir=input_dir)
     trials = TrialService(toolkit, demo=demo_trials)
     literature = LiteratureService(toolkit, demo=demo_literature)
     handoff = HandoffService(toolkit)
@@ -47,13 +47,18 @@ def create_server(artifact_dir: Path, offline: bool = False, demo_trials: bool =
         return result(toolkit.fetch_dataset, dataset_id)
 
     @server.tool(annotations=write, structured_output=False)
+    def import_local_csv(filename: str, source_reference: str = "", synthetic: bool = False) -> CallToolResult:
+        """Import a host-staged CSV from --input-dir by filename; no arbitrary paths. Requires unique nonempty headers. Data stay local. Source reference is host-supplied, not verified. Profile before plotting."""
+        return result(toolkit.import_local_csv, filename, source_reference, synthetic)
+
+    @server.tool(annotations=write, structured_output=False)
     def profile_dataset(artifact_id: str) -> CallToolResult:
         """Summarize column types, missingness and numeric distributions; save a profile artifact."""
         return result(toolkit.profile_dataset, artifact_id)
 
     @server.tool(annotations=read, structured_output=False)
     def list_chart_examples(query: str = "") -> CallToolResult:
-        """Return project-authored histogram, scatter and boxplot examples and their requirements."""
+        """Return project-authored histogram, scatter, boxplot and bar examples and their requirements."""
         return result(toolkit.list_chart_examples, query)
 
     @server.tool(annotations=write, structured_output=False)
@@ -185,12 +190,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--artifact-dir", type=Path, default=Path("outputs/mcp"))
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--input-dir", type=Path, help="Explicit local CSV staging directory; import disabled if omitted")
     parser.add_argument("--demo-trials", action="store_true", help="Synthetic trial fixture; requires --offline")
     parser.add_argument("--demo-literature", action="store_true", help="Synthetic literature; requires --offline")
     args = parser.parse_args()
     if (args.demo_trials or args.demo_literature) and not args.offline:
         parser.error("Demo flags require --offline")
-    create_server(args.artifact_dir, args.offline, args.demo_trials, args.demo_literature).run(transport="stdio")
+    create_server(args.artifact_dir, args.offline, args.demo_trials, args.demo_literature, args.input_dir).run(transport="stdio")
 
 
 if __name__ == "__main__":

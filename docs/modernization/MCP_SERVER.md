@@ -119,3 +119,11 @@ Later increments:
 6. Evaluate real-agent task quality, latency and token cost. Jev (TypeSafe AI) routing is optional and deferred pending measured benefit; MCP does not implement it. See [ROADMAP.md](ROADMAP.md).
 
 Sources: [official MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk), [UCI repository client/API usage](https://github.com/uci-ml-repo/ucimlrepo), [local Vega-Lite renderer](https://github.com/vega/vl-convert/tree/main/vl-convert-python).
+
+## Host-staged local data and summary bars
+
+The server also accepts `--input-dir /absolute/study/input`. With that explicitly configured, `import_local_csv(filename, source_reference, synthetic)` snapshots a regular CSV directly inside that directory. Import is disabled by default; absolute paths, traversal, symlinks and subdirectories are rejected. Existing byte/row/column limits apply, headers must be unique and nonempty, and bytes are copied without normalizing the source. The supplied source reference is labeled unverified. This is a local capability, not an upload service or a claim that source validity has been reviewed.
+
+A local snapshot uses the same checksum, profile-before-render and artifact provenance mechanisms as catalog datasets. `list_chart_examples` now also includes a `bar` template for precomputed category/value summaries. Use one row per category; aggregation and statistical inference remain the caller's responsibility. The original histogram, scatter and boxplot templates remain available. Purpose-built scientific figures such as effect intervals can still be rendered by the host; do not describe those as MCP-rendered figures.
+
+This path lets a host stage the public RHC study (removing its unlabeled archive row-number column explicitly) and then exercise actual MCP profiling and visualization. No unrestricted file reader or arbitrary Vega specification endpoint was added.

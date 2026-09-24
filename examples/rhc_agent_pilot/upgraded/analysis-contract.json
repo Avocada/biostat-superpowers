@@ -1,0 +1,14 @@
+{
+  "goal": "associational audit, not causal estimation",
+  "population": "all supplied SUPPORT rows",
+  "unit": "one patient / ptid",
+  "exposure": "swang1 == RHC on first qualifying study day",
+  "outcome": "supplied dth30 == Yes",
+  "primary": "unadjusted 30-day risk difference and risk ratio, RHC versus No RHC",
+  "causal_target": "hypothetical initiation during first qualifying day versus no initiation that day, 30-day all-cause mortality in eligible ICU adults; grace period handling unresolved",
+  "exclusions": "none if all exposure and outcome labels valid",
+  "uncertainty": "independent-patient Wald RD and log-RR; no site identifier available",
+  "secondary": "legacy IPTW reproduction; clipping, imputation and feature-set sensitivity; exploratory",
+  "input_fingerprint": "aec788f747388e40d6eacda72eaf237703d28b9014be42154e72be78aa63f61e",
+  "run_id": "rhc-audit-20260924"
+}

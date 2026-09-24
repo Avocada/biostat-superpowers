@@ -1,0 +1,63 @@
+column,role,type,missing_n,timing,action,outliers,primary_use
+cat1,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+cat2,legacy candidate; causal role unverified,str,4535,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+ca,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+sadmdte,excluded: ID/date/outcome/exposure,int64,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+dschdte,excluded: ID/date/outcome/exposure,float64,1,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+dthdte,excluded: ID/date/outcome/exposure,float64,2013,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+lstctdte,excluded: ID/date/outcome/exposure,int64,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+death,excluded: ID/date/outcome/exposure,str,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+cardiohx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+chfhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+dementhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+psychhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+chrpulhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+renalhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+liverhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+gibledhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+malighx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+immunhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+transhx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+amihx,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+age,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+sex,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+edu,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+surv2md1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+das2d3pc,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+t3d30,excluded: ID/date/outcome/exposure,int64,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,False
+dth30,excluded: ID/date/outcome/exposure,str,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,True
+aps1,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+scoma1,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+meanbp1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+wblc1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+hrt1,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+resp1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+temp1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+pafi1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+alb1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+hema1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+bili1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+crea1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+sod1,legacy candidate; causal role unverified,int64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+pot1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+paco21,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+ph1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+swang1,excluded: ID/date/outcome/exposure,str,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,True
+wtkilo1,legacy candidate; causal role unverified,float64,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+dnr1,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+ninsclas,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+resp,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+card,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+neuro,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+gastr,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+renal,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+meta,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+hema,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+seps,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+trauma,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+ortho,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+adld3p,legacy candidate; causal role unverified,float64,4296,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+urin1,legacy candidate; causal role unverified,float64,3028,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+race,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+income,legacy candidate; causal role unverified,str,0,unresolved within day,numeric; median fill if missing,retained; no clinical adjudication,False
+ptid,excluded: ID/date/outcome/exposure,int64,0,not adjustment covariate,excluded from X,retained; no clinical adjudication,False

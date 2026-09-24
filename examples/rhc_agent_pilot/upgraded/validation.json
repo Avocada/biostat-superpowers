@@ -1,0 +1,10 @@
+{
+  "input_counts": "passed",
+  "bootstrap_successes": 120,
+  "html_embedded_figures": 6,
+  "remote_image_or_script_dependencies": 0,
+  "sqlite_integrity": "ok",
+  "controller_success_claims": false,
+  "visual_inspection": "All six PNGs displayed and inspected locally; missingness legend overlap corrected and re-inspected. HTML source checked; no browser rendering test performed.",
+  "runtime_note": "Initial Matplotlib fontconfig discovery stalled before any model fit; interrupted and reused existing font metadata in a project-local cache. No global settings changed."
+}

@@ -1,0 +1,338 @@
+{
+  "causal": {
+    "transitions": [
+      {
+        "before": {
+          "goal": "causal",
+          "stage": "design",
+          "estimand_ready": false,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 0,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "design",
+          "skill": "study-design-and-power",
+          "reason": "Define the estimand or prediction target"
+        },
+        "result": {
+          "outcome": "complete",
+          "evidence": "analysis-contract.json: hypothetical target specified; operational timing remains a preparation gate",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": null
+        },
+        "after": {
+          "goal": "causal",
+          "stage": "preparation",
+          "estimand_ready": true,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 1,
+          "stop_reason": null,
+          "fatal_flaw": null
+        }
+      },
+      {
+        "before": {
+          "goal": "causal",
+          "stage": "preparation",
+          "estimand_ready": true,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 1,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "preparation",
+          "skill": "data-understanding-preprocessing",
+          "reason": "Establish the analysis-ready data contract"
+        },
+        "result": {
+          "outcome": "blocked",
+          "evidence": "Dictionary says first qualifying day, but no RHC or covariate timestamps within day. Cannot align eligibility, treatment and follow-up; missing-data and identification gates remain unresolved.",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": null
+        },
+        "after": {
+          "goal": "causal",
+          "stage": "preparation",
+          "estimand_ready": true,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 1,
+          "iteration_count": 2,
+          "stop_reason": "no_progress_threshold",
+          "fatal_flaw": null
+        }
+      }
+    ],
+    "terminal": {
+      "goal": "causal",
+      "stage": "preparation",
+      "estimand_ready": true,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 1,
+      "iteration_count": 2,
+      "stop_reason": "no_progress_threshold",
+      "fatal_flaw": null
+    },
+    "unresolved": [
+      "preparation/timing",
+      "missing-data mechanism and MI plan",
+      "causal identification",
+      "independent review"
+    ]
+  },
+  "associational": {
+    "transitions": [
+      {
+        "before": {
+          "goal": "inferential",
+          "stage": "design",
+          "estimand_ready": false,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 0,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "design",
+          "skill": "study-design-and-power",
+          "reason": "Define the estimand or prediction target"
+        },
+        "result": {
+          "outcome": "complete",
+          "evidence": "analysis-contract.json: supplied-label crude association is primary",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": null
+        },
+        "after": {
+          "goal": "inferential",
+          "stage": "preparation",
+          "estimand_ready": true,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 1,
+          "stop_reason": null,
+          "fatal_flaw": null
+        }
+      },
+      {
+        "before": {
+          "goal": "inferential",
+          "stage": "preparation",
+          "estimand_ready": true,
+          "data_ready": false,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 1,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "preparation",
+          "skill": "data-understanding-preprocessing",
+          "reason": "Establish the analysis-ready data contract"
+        },
+        "result": {
+          "outcome": "complete",
+          "evidence": "Validated 5735 unique IDs and complete binary treatment/outcome; no exclusions. Covariate missingness affects exploratory reproduction only.",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": false
+        },
+        "after": {
+          "goal": "inferential",
+          "stage": "analysis",
+          "estimand_ready": true,
+          "data_ready": true,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 2,
+          "stop_reason": null,
+          "fatal_flaw": null
+        }
+      },
+      {
+        "before": {
+          "goal": "inferential",
+          "stage": "analysis",
+          "estimand_ready": true,
+          "data_ready": true,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": false,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 2,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "analysis",
+          "skill": "statistical-analysis",
+          "reason": "Execute the goal-appropriate analysis"
+        },
+        "result": {
+          "outcome": "complete",
+          "evidence": "results.json and tables: primary crude risks and intervals; separate exploratory reproduction and diagnostics",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": null
+        },
+        "after": {
+          "goal": "inferential",
+          "stage": "evaluation",
+          "estimand_ready": true,
+          "data_ready": true,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": true,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 3,
+          "stop_reason": null,
+          "fatal_flaw": null
+        }
+      },
+      {
+        "before": {
+          "goal": "inferential",
+          "stage": "evaluation",
+          "estimand_ready": true,
+          "data_ready": true,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": true,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 0,
+          "iteration_count": 3,
+          "stop_reason": null,
+          "fatal_flaw": null
+        },
+        "route": {
+          "stage": "evaluation",
+          "skill": "method-evaluation",
+          "reason": "Critique before reporting"
+        },
+        "result": {
+          "outcome": "blocked",
+          "evidence": "Self-audit saved; independent review reserved for later reviewer per user. No human scientific approval. Deliverable is an audit report, not a completed reviewed analysis.",
+          "evaluation": null,
+          "revision_target": null,
+          "missing_data_required": null
+        },
+        "after": {
+          "goal": "inferential",
+          "stage": "evaluation",
+          "estimand_ready": true,
+          "data_ready": true,
+          "identification_ready": false,
+          "missing_data_required": false,
+          "missing_data_ready": false,
+          "analysis_ready": true,
+          "evaluation": "pending",
+          "report_ready": false,
+          "revision_count": 0,
+          "no_progress_count": 1,
+          "iteration_count": 4,
+          "stop_reason": "no_progress_threshold",
+          "fatal_flaw": null
+        }
+      }
+    ],
+    "terminal": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 1,
+      "iteration_count": 4,
+      "stop_reason": "no_progress_threshold",
+      "fatal_flaw": null
+    }
+  }
+}

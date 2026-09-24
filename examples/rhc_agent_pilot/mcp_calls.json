@@ -1,0 +1,60 @@
+[
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "import_local_csv",
+    "arguments": {
+      "filename": "rhc.csv",
+      "source_reference": "User-supplied public RHC snapshot; see input/SOURCE.md",
+      "synthetic": false
+    },
+    "status": "completed"
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "search_literature",
+    "arguments": {
+      "provider": "pubmed",
+      "query": "Connors right heart catheterization effectiveness 1996",
+      "page_size": 3
+    },
+    "status": "completed"
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "list_chart_examples",
+    "arguments": {
+      "query": "bar"
+    },
+    "status": "completed"
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "profile_dataset",
+    "arguments": {
+      "artifact_id": "3160fbf4c1c04a6b9240f701bb6582a7"
+    },
+    "status": "completed"
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "render_chart",
+    "arguments": {
+      "artifact_id": "3160fbf4c1c04a6b9240f701bb6582a7",
+      "profile_id": "c74883de0afd431daa369af1a4814b22",
+      "example_id": "histogram",
+      "x": "age",
+      "title": "Age distribution \u2022 supplied RHC cohort (N = 5,735)"
+    },
+    "status": "completed"
+  }
+]

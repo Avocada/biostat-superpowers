@@ -1,0 +1,79 @@
+[
+  {
+    "arm": "baseline",
+    "phase": "initial",
+    "seconds": 478.4891438484192,
+    "returncode": 0,
+    "timeout": false,
+    "usage": {
+      "input_tokens": 841553,
+      "cached_input_tokens": 783744,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13676,
+      "reasoning_output_tokens": 759,
+      "uncached_input_tokens": 57809
+    },
+    "completed_items": {
+      "agent_message": 5,
+      "command_execution": 15
+    }
+  },
+  {
+    "arm": "baseline",
+    "phase": "followup",
+    "seconds": 229.33459901809692,
+    "returncode": 0,
+    "timeout": false,
+    "usage": {
+      "input_tokens": 251706,
+      "cached_input_tokens": 210304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7012,
+      "reasoning_output_tokens": 159,
+      "uncached_input_tokens": 41402
+    },
+    "completed_items": {
+      "agent_message": 5,
+      "command_execution": 9
+    }
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "seconds": 590.9647600650787,
+    "returncode": 0,
+    "timeout": false,
+    "usage": {
+      "input_tokens": 883168,
+      "cached_input_tokens": 809728,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17000,
+      "reasoning_output_tokens": 534,
+      "uncached_input_tokens": 73440
+    },
+    "completed_items": {
+      "agent_message": 5,
+      "command_execution": 15,
+      "mcp_tool_call": 5
+    }
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "seconds": 324.0263481140137,
+    "returncode": 0,
+    "timeout": false,
+    "usage": {
+      "input_tokens": 582009,
+      "cached_input_tokens": 508288,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9753,
+      "reasoning_output_tokens": 187,
+      "uncached_input_tokens": 73721
+    },
+    "completed_items": {
+      "agent_message": 6,
+      "command_execution": 12
+    }
+  }
+]

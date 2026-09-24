@@ -1,0 +1,181 @@
+variable,group,level,observed_n,missing_n,summary
+cat1,No RHC,ARF,3551,0,1581 (44.5%)
+cat1,No RHC,MOSF w/Sepsis,3551,0,527 (14.8%)
+cat1,No RHC,COPD,3551,0,399 (11.2%)
+cat1,No RHC,Coma,3551,0,341 (9.6%)
+cat1,No RHC,CHF,3551,0,247 (7.0%)
+cat1,No RHC,MOSF w/Malignancy,3551,0,241 (6.8%)
+cat1,No RHC,Cirrhosis,3551,0,175 (4.9%)
+cat1,No RHC,Lung Cancer,3551,0,34 (1.0%)
+cat1,No RHC,Colon Cancer,3551,0,6 (0.2%)
+cat1,RHC,ARF,2184,0,909 (41.6%)
+cat1,RHC,MOSF w/Sepsis,2184,0,700 (32.1%)
+cat1,RHC,CHF,2184,0,209 (9.6%)
+cat1,RHC,MOSF w/Malignancy,2184,0,158 (7.2%)
+cat1,RHC,Coma,2184,0,95 (4.3%)
+cat1,RHC,COPD,2184,0,58 (2.7%)
+cat1,RHC,Cirrhosis,2184,0,49 (2.2%)
+cat1,RHC,Lung Cancer,2184,0,5 (0.2%)
+cat1,RHC,Colon Cancer,2184,0,1 (0.0%)
+cat2,No RHC,MOSF w/Sepsis,688,2863,406 (59.0%)
+cat2,No RHC,MOSF w/Malignancy,688,2863,171 (24.9%)
+cat2,No RHC,Coma,688,2863,70 (10.2%)
+cat2,No RHC,Cirrhosis,688,2863,27 (3.9%)
+cat2,No RHC,Lung Cancer,688,2863,13 (1.9%)
+cat2,No RHC,Colon Cancer,688,2863,1 (0.1%)
+cat2,RHC,MOSF w/Sepsis,512,1672,420 (82.0%)
+cat2,RHC,MOSF w/Malignancy,512,1672,58 (11.3%)
+cat2,RHC,Coma,512,1672,20 (3.9%)
+cat2,RHC,Cirrhosis,512,1672,11 (2.1%)
+cat2,RHC,Lung Cancer,512,1672,2 (0.4%)
+cat2,RHC,Colon Cancer,512,1672,1 (0.2%)
+ca,No RHC,No,3551,0,2652 (74.7%)
+ca,No RHC,Yes,3551,0,638 (18.0%)
+ca,No RHC,Metastatic,3551,0,261 (7.4%)
+ca,RHC,No,2184,0,1727 (79.1%)
+ca,RHC,Yes,2184,0,334 (15.3%)
+ca,RHC,Metastatic,2184,0,123 (5.6%)
+cardiohx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+cardiohx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+chfhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+chfhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+dementhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+dementhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+psychhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+psychhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+chrpulhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+chrpulhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+renalhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+renalhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+liverhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+liverhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+gibledhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+gibledhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+malighx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+malighx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+immunhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 1.00]"
+immunhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 1.00]"
+transhx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+transhx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+amihx,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 0.00]"
+amihx,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 0.00]"
+age,No RHC,"median [Q1, Q3]",3551,0,"64.59 [50.08, 74.97]"
+age,RHC,"median [Q1, Q3]",2184,0,"63.50 [50.21, 72.65]"
+sex,No RHC,Male,3551,0,1914 (53.9%)
+sex,No RHC,Female,3551,0,1637 (46.1%)
+sex,RHC,Male,2184,0,1278 (58.5%)
+sex,RHC,Female,2184,0,906 (41.5%)
+edu,No RHC,"median [Q1, Q3]",3551,0,"12.00 [10.00, 13.00]"
+edu,RHC,"median [Q1, Q3]",2184,0,"12.00 [10.00, 14.00]"
+surv2md1,No RHC,"median [Q1, Q3]",3551,0,"0.64 [0.49, 0.76]"
+surv2md1,RHC,"median [Q1, Q3]",2184,0,"0.60 [0.45, 0.72]"
+das2d3pc,No RHC,"median [Q1, Q3]",3551,0,"19.66 [15.73, 23.46]"
+das2d3pc,RHC,"median [Q1, Q3]",2184,0,"19.92 [16.71, 23.36]"
+aps1,No RHC,"median [Q1, Q3]",3551,0,"50.00 [38.00, 62.00]"
+aps1,RHC,"median [Q1, Q3]",2184,0,"60.00 [47.00, 74.00]"
+scoma1,No RHC,"median [Q1, Q3]",3551,0,"0.00 [0.00, 41.00]"
+scoma1,RHC,"median [Q1, Q3]",2184,0,"0.00 [0.00, 37.00]"
+meanbp1,No RHC,"median [Q1, Q3]",3551,0,"68.00 [53.00, 119.00]"
+meanbp1,RHC,"median [Q1, Q3]",2184,0,"57.00 [47.00, 73.00]"
+wblc1,No RHC,"median [Q1, Q3]",3551,0,"13.60 [8.20, 19.40]"
+wblc1,RHC,"median [Q1, Q3]",2184,0,"14.70 [8.60, 21.20]"
+hrt1,No RHC,"median [Q1, Q3]",3551,0,"120.00 [76.00, 140.00]"
+hrt1,RHC,"median [Q1, Q3]",2184,0,"125.00 [105.00, 145.00]"
+resp1,No RHC,"median [Q1, Q3]",3551,0,"30.00 [20.00, 39.00]"
+resp1,RHC,"median [Q1, Q3]",2184,0,"28.00 [12.00, 37.00]"
+temp1,No RHC,"median [Q1, Q3]",3551,0,"38.09 [36.20, 39.00]"
+temp1,RHC,"median [Q1, Q3]",2184,0,"38.09 [36.09, 39.00]"
+pafi1,No RHC,"median [Q1, Q3]",3551,0,"224.00 [148.80, 333.31]"
+pafi1,RHC,"median [Q1, Q3]",2184,0,"168.44 [110.00, 266.62]"
+alb1,No RHC,"median [Q1, Q3]",3551,0,"3.50 [2.70, 3.50]"
+alb1,RHC,"median [Q1, Q3]",2184,0,"3.50 [2.40, 3.50]"
+hema1,No RHC,"median [Q1, Q3]",3551,0,"31.00 [26.55, 39.00]"
+hema1,RHC,"median [Q1, Q3]",2184,0,"29.00 [26.00, 33.40]"
+bili1,No RHC,"median [Q1, Q3]",3551,0,"1.01 [0.70, 1.20]"
+bili1,RHC,"median [Q1, Q3]",2184,0,"1.01 [1.00, 1.70]"
+crea1,No RHC,"median [Q1, Q3]",3551,0,"1.30 [0.90, 2.00]"
+crea1,RHC,"median [Q1, Q3]",2184,0,"1.80 [1.20, 3.00]"
+sod1,No RHC,"median [Q1, Q3]",3551,0,"136.00 [133.00, 142.00]"
+sod1,RHC,"median [Q1, Q3]",2184,0,"136.00 [132.00, 141.00]"
+pot1,No RHC,"median [Q1, Q3]",3551,0,"3.80 [3.40, 4.60]"
+pot1,RHC,"median [Q1, Q3]",2184,0,"3.80 [3.40, 4.60]"
+paco21,No RHC,"median [Q1, Q3]",3551,0,"38.00 [32.00, 44.00]"
+paco21,RHC,"median [Q1, Q3]",2184,0,"36.00 [30.00, 40.00]"
+ph1,No RHC,"median [Q1, Q3]",3551,0,"7.40 [7.35, 7.46]"
+ph1,RHC,"median [Q1, Q3]",2184,0,"7.40 [7.32, 7.46]"
+wtkilo1,No RHC,"median [Q1, Q3]",3551,0,"67.50 [54.00, 81.20]"
+wtkilo1,RHC,"median [Q1, Q3]",2184,0,"74.00 [61.07, 86.80]"
+dnr1,No RHC,No,3551,0,3052 (85.9%)
+dnr1,No RHC,Yes,3551,0,499 (14.1%)
+dnr1,RHC,No,2184,0,2029 (92.9%)
+dnr1,RHC,Yes,2184,0,155 (7.1%)
+ninsclas,No RHC,Private,3551,0,967 (27.2%)
+ninsclas,No RHC,Medicare,3551,0,947 (26.7%)
+ninsclas,No RHC,Private & Medicare,3551,0,746 (21.0%)
+ninsclas,No RHC,Medicaid,3551,0,454 (12.8%)
+ninsclas,No RHC,Medicare & Medicaid,3551,0,251 (7.1%)
+ninsclas,No RHC,No insurance,3551,0,186 (5.2%)
+ninsclas,RHC,Private,2184,0,731 (33.5%)
+ninsclas,RHC,Medicare,2184,0,511 (23.4%)
+ninsclas,RHC,Private & Medicare,2184,0,490 (22.4%)
+ninsclas,RHC,Medicaid,2184,0,193 (8.8%)
+ninsclas,RHC,No insurance,2184,0,136 (6.2%)
+ninsclas,RHC,Medicare & Medicaid,2184,0,123 (5.6%)
+resp,No RHC,No,3551,0,2070 (58.3%)
+resp,No RHC,Yes,3551,0,1481 (41.7%)
+resp,RHC,No,2184,0,1552 (71.1%)
+resp,RHC,Yes,2184,0,632 (28.9%)
+card,No RHC,No,3551,0,2544 (71.6%)
+card,No RHC,Yes,3551,0,1007 (28.4%)
+card,RHC,No,2184,0,1260 (57.7%)
+card,RHC,Yes,2184,0,924 (42.3%)
+neuro,No RHC,No,3551,0,2976 (83.8%)
+neuro,No RHC,Yes,3551,0,575 (16.2%)
+neuro,RHC,No,2184,0,2066 (94.6%)
+neuro,RHC,Yes,2184,0,118 (5.4%)
+gastr,No RHC,No,3551,0,3029 (85.3%)
+gastr,No RHC,Yes,3551,0,522 (14.7%)
+gastr,RHC,No,2184,0,1764 (80.8%)
+gastr,RHC,Yes,2184,0,420 (19.2%)
+renal,No RHC,No,3551,0,3404 (95.9%)
+renal,No RHC,Yes,3551,0,147 (4.1%)
+renal,RHC,No,2184,0,2036 (93.2%)
+renal,RHC,Yes,2184,0,148 (6.8%)
+meta,No RHC,No,3551,0,3379 (95.2%)
+meta,No RHC,Yes,3551,0,172 (4.8%)
+meta,RHC,No,2184,0,2091 (95.7%)
+meta,RHC,Yes,2184,0,93 (4.3%)
+hema,No RHC,No,3551,0,3312 (93.3%)
+hema,No RHC,Yes,3551,0,239 (6.7%)
+hema,RHC,No,2184,0,2069 (94.7%)
+hema,RHC,Yes,2184,0,115 (5.3%)
+seps,No RHC,No,3551,0,3036 (85.5%)
+seps,No RHC,Yes,3551,0,515 (14.5%)
+seps,RHC,No,2184,0,1668 (76.4%)
+seps,RHC,Yes,2184,0,516 (23.6%)
+trauma,No RHC,No,3551,0,3533 (99.5%)
+trauma,No RHC,Yes,3551,0,18 (0.5%)
+trauma,RHC,No,2184,0,2150 (98.4%)
+trauma,RHC,Yes,2184,0,34 (1.6%)
+ortho,No RHC,No,3551,0,3548 (99.9%)
+ortho,No RHC,Yes,3551,0,3 (0.1%)
+ortho,RHC,No,2184,0,2180 (99.8%)
+ortho,RHC,Yes,2184,0,4 (0.2%)
+adld3p,No RHC,"median [Q1, Q3]",1049,2502,"0.00 [0.00, 2.00]"
+adld3p,RHC,"median [Q1, Q3]",390,1794,"0.00 [0.00, 1.00]"
+urin1,No RHC,"median [Q1, Q3]",1604,1947,"1965.00 [1180.00, 2885.00]"
+urin1,RHC,"median [Q1, Q3]",1103,1081,"1850.00 [990.00, 3097.50]"
+race,No RHC,white,3551,0,2753 (77.5%)
+race,No RHC,black,3551,0,585 (16.5%)
+race,No RHC,other,3551,0,213 (6.0%)
+race,RHC,white,2184,0,1707 (78.2%)
+race,RHC,black,2184,0,335 (15.3%)
+race,RHC,other,2184,0,142 (6.5%)
+income,No RHC,Under $11k,3551,0,2081 (58.6%)
+income,No RHC,$11-$25k,3551,0,713 (20.1%)
+income,No RHC,$25-$50k,3551,0,500 (14.1%)
+income,No RHC,> $50k,3551,0,257 (7.2%)
+income,RHC,Under $11k,2184,0,1145 (52.4%)
+income,RHC,$11-$25k,2184,0,452 (20.7%)
+income,RHC,$25-$50k,2184,0,393 (18.0%)
+income,RHC,> $50k,2184,0,194 (8.9%)

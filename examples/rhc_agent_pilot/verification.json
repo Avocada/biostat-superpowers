@@ -1,0 +1,25 @@
+{
+  "unit_tests": {
+    "passed": 135,
+    "command": ".venv/bin/python -m unittest discover -s tests -q"
+  },
+  "browser_checks": {
+    "pages": [
+      "index.html",
+      "baseline/report.html",
+      "upgraded/report.html",
+      "baseline/followup.html",
+      "upgraded/followup.html"
+    ],
+    "viewport": [
+      1440,
+      1100
+    ],
+    "broken_images": 0,
+    "horizontal_overflow": false,
+    "javascript_errors": []
+  },
+  "independent_review": "independent_review.md",
+  "initial_preservation": "initial_preservation.json",
+  "raw_data_and_transcripts_published": false
+}

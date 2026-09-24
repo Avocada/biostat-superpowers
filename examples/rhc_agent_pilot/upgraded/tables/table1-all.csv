@@ -1,0 +1,107 @@
+variable,group,denominator,observed,missing,summary
+cat1,No RHC,3551,3551,0,ARF: 1581 (44.5%); MOSF w/Sepsis: 527 (14.8%); COPD: 399 (11.2%); Coma: 341 (9.6%); CHF: 247 (7.0%); MOSF w/Malignancy: 241 (6.8%); Cirrhosis: 175 (4.9%); Lung Cancer: 34 (1.0%); Colon Cancer: 6 (0.2%)
+cat1,RHC,2184,2184,0,ARF: 909 (41.6%); MOSF w/Sepsis: 700 (32.1%); CHF: 209 (9.6%); MOSF w/Malignancy: 158 (7.2%); Coma: 95 (4.3%); COPD: 58 (2.7%); Cirrhosis: 49 (2.2%); Lung Cancer: 5 (0.2%); Colon Cancer: 1 (0.0%)
+cat2,No RHC,3551,688,2863,MOSF w/Sepsis: 406 (11.4%); MOSF w/Malignancy: 171 (4.8%); Coma: 70 (2.0%); Cirrhosis: 27 (0.8%); Lung Cancer: 13 (0.4%); Colon Cancer: 1 (0.0%)
+cat2,RHC,2184,512,1672,MOSF w/Sepsis: 420 (19.2%); MOSF w/Malignancy: 58 (2.7%); Coma: 20 (0.9%); Cirrhosis: 11 (0.5%); Lung Cancer: 2 (0.1%); Colon Cancer: 1 (0.0%)
+ca,No RHC,3551,3551,0,No: 2652 (74.7%); Yes: 638 (18.0%); Metastatic: 261 (7.4%)
+ca,RHC,2184,2184,0,No: 1727 (79.1%); Yes: 334 (15.3%); Metastatic: 123 (5.6%)
+cardiohx,No RHC,3551,3551,0,"0.16 (SD 0.366); median 0 [IQR 0, 0]"
+cardiohx,RHC,2184,2184,0,"0.204 (SD 0.403); median 0 [IQR 0, 0]"
+chfhx,No RHC,3551,3551,0,"0.168 (SD 0.374); median 0 [IQR 0, 0]"
+chfhx,RHC,2184,2184,0,"0.195 (SD 0.396); median 0 [IQR 0, 0]"
+dementhx,No RHC,3551,3551,0,"0.116 (SD 0.321); median 0 [IQR 0, 0]"
+dementhx,RHC,2184,2184,0,"0.0691 (SD 0.254); median 0 [IQR 0, 0]"
+psychhx,No RHC,3551,3551,0,"0.0805 (SD 0.272); median 0 [IQR 0, 0]"
+psychhx,RHC,2184,2184,0,"0.0458 (SD 0.209); median 0 [IQR 0, 0]"
+chrpulhx,No RHC,3551,3551,0,"0.218 (SD 0.413); median 0 [IQR 0, 0]"
+chrpulhx,RHC,2184,2184,0,"0.144 (SD 0.351); median 0 [IQR 0, 0]"
+renalhx,No RHC,3551,3551,0,"0.042 (SD 0.201); median 0 [IQR 0, 0]"
+renalhx,RHC,2184,2184,0,"0.0485 (SD 0.215); median 0 [IQR 0, 0]"
+liverhx,No RHC,3551,3551,0,"0.0746 (SD 0.263); median 0 [IQR 0, 0]"
+liverhx,RHC,2184,2184,0,"0.0623 (SD 0.242); median 0 [IQR 0, 0]"
+gibledhx,No RHC,3551,3551,0,"0.0369 (SD 0.189); median 0 [IQR 0, 0]"
+gibledhx,RHC,2184,2184,0,"0.0247 (SD 0.155); median 0 [IQR 0, 0]"
+malighx,No RHC,3551,3551,0,"0.246 (SD 0.43); median 0 [IQR 0, 0]"
+malighx,RHC,2184,2184,0,"0.203 (SD 0.403); median 0 [IQR 0, 0]"
+immunhx,No RHC,3551,3551,0,"0.255 (SD 0.436); median 0 [IQR 0, 1]"
+immunhx,RHC,2184,2184,0,"0.291 (SD 0.454); median 0 [IQR 0, 1]"
+transhx,No RHC,3551,3551,0,"0.0943 (SD 0.292); median 0 [IQR 0, 0]"
+transhx,RHC,2184,2184,0,"0.15 (SD 0.357); median 0 [IQR 0, 0]"
+amihx,No RHC,3551,3551,0,"0.0296 (SD 0.169); median 0 [IQR 0, 0]"
+amihx,RHC,2184,2184,0,"0.0435 (SD 0.204); median 0 [IQR 0, 0]"
+age,No RHC,3551,3551,0,"61.8 (SD 17.3); median 64.6 [IQR 50.1, 75]"
+age,RHC,2184,2184,0,"60.7 (SD 15.6); median 63.5 [IQR 50.2, 72.7]"
+sex,No RHC,3551,3551,0,Male: 1914 (53.9%); Female: 1637 (46.1%)
+sex,RHC,2184,2184,0,Male: 1278 (58.5%); Female: 906 (41.5%)
+edu,No RHC,3551,3551,0,"11.6 (SD 3.13); median 12 [IQR 10, 13]"
+edu,RHC,2184,2184,0,"11.9 (SD 3.16); median 12 [IQR 10, 14]"
+surv2md1,No RHC,3551,3551,0,"0.607 (SD 0.192); median 0.645 [IQR 0.488, 0.758]"
+surv2md1,RHC,2184,2184,0,"0.568 (SD 0.198); median 0.601 [IQR 0.449, 0.724]"
+das2d3pc,No RHC,3551,3551,0,"20.4 (SD 5.48); median 19.7 [IQR 15.7, 23.5]"
+das2d3pc,RHC,2184,2184,0,"20.7 (SD 5.03); median 19.9 [IQR 16.7, 23.4]"
+aps1,No RHC,3551,3551,0,"50.9 (SD 18.8); median 50 [IQR 38, 62]"
+aps1,RHC,2184,2184,0,"60.7 (SD 20.3); median 60 [IQR 47, 74]"
+scoma1,No RHC,3551,3551,0,"22.3 (SD 31.4); median 0 [IQR 0, 41]"
+scoma1,RHC,2184,2184,0,"19 (SD 28.3); median 0 [IQR 0, 37]"
+meanbp1,No RHC,3551,3551,0,"84.9 (SD 38.9); median 68 [IQR 53, 119]"
+meanbp1,RHC,2184,2184,0,"68.2 (SD 34.2); median 57 [IQR 47, 73]"
+wblc1,No RHC,3551,3551,0,"15.3 (SD 11.4); median 13.6 [IQR 8.2, 19.4]"
+wblc1,RHC,2184,2184,0,"16.3 (SD 12.5); median 14.7 [IQR 8.6, 21.2]"
+hrt1,No RHC,3551,3551,0,"113 (SD 40.9); median 120 [IQR 76, 140]"
+hrt1,RHC,2184,2184,0,"119 (SD 41.5); median 125 [IQR 105, 145]"
+resp1,No RHC,3551,3551,0,"29 (SD 13.9); median 30 [IQR 20, 39]"
+resp1,RHC,2184,2184,0,"26.7 (SD 14.2); median 28 [IQR 12, 37]"
+temp1,No RHC,3551,3551,0,"37.6 (SD 1.74); median 38.1 [IQR 36.2, 39]"
+temp1,RHC,2184,2184,0,"37.6 (SD 1.83); median 38.1 [IQR 36.1, 39]"
+pafi1,No RHC,3551,3551,0,"241 (SD 117); median 224 [IQR 149, 333]"
+pafi1,RHC,2184,2184,0,"192 (SD 106); median 168 [IQR 110, 267]"
+alb1,No RHC,3551,3551,0,"3.16 (SD 0.672); median 3.5 [IQR 2.7, 3.5]"
+alb1,RHC,2184,2184,0,"2.98 (SD 0.925); median 3.5 [IQR 2.4, 3.5]"
+hema1,No RHC,3551,3551,0,"32.7 (SD 8.79); median 31 [IQR 26.5, 39]"
+hema1,RHC,2184,2184,0,"30.5 (SD 7.42); median 29 [IQR 26, 33.4]"
+bili1,No RHC,3551,3551,0,"2 (SD 4.43); median 1.01 [IQR 0.7, 1.2]"
+bili1,RHC,2184,2184,0,"2.71 (SD 5.33); median 1.01 [IQR 1, 1.7]"
+crea1,No RHC,3551,3551,0,"1.92 (SD 2.03); median 1.3 [IQR 0.9, 2]"
+crea1,RHC,2184,2184,0,"2.47 (SD 2.05); median 1.8 [IQR 1.2, 3]"
+sod1,No RHC,3551,3551,0,"137 (SD 7.68); median 136 [IQR 133, 142]"
+sod1,RHC,2184,2184,0,"136 (SD 7.6); median 136 [IQR 132, 141]"
+pot1,No RHC,3551,3551,0,"4.08 (SD 1.04); median 3.8 [IQR 3.4, 4.6]"
+pot1,RHC,2184,2184,0,"4.05 (SD 1.01); median 3.8 [IQR 3.4, 4.6]"
+paco21,No RHC,3551,3551,0,"40 (SD 14.2); median 38 [IQR 32, 44]"
+paco21,RHC,2184,2184,0,"36.8 (SD 11); median 36 [IQR 30, 40]"
+ph1,No RHC,3551,3551,0,"7.39 (SD 0.107); median 7.4 [IQR 7.35, 7.46]"
+ph1,RHC,2184,2184,0,"7.38 (SD 0.114); median 7.4 [IQR 7.32, 7.46]"
+wtkilo1,No RHC,3551,3551,0,"65 (SD 29.5); median 67.5 [IQR 54, 81.2]"
+wtkilo1,RHC,2184,2184,0,"72.4 (SD 27.7); median 74 [IQR 61.1, 86.8]"
+dnr1,No RHC,3551,3551,0,No: 3052 (85.9%); Yes: 499 (14.1%)
+dnr1,RHC,2184,2184,0,No: 2029 (92.9%); Yes: 155 (7.1%)
+ninsclas,No RHC,3551,3551,0,Private: 967 (27.2%); Medicare: 947 (26.7%); Private & Medicare: 746 (21.0%); Medicaid: 454 (12.8%); Medicare & Medicaid: 251 (7.1%); No insurance: 186 (5.2%)
+ninsclas,RHC,2184,2184,0,Private: 731 (33.5%); Medicare: 511 (23.4%); Private & Medicare: 490 (22.4%); Medicaid: 193 (8.8%); No insurance: 136 (6.2%); Medicare & Medicaid: 123 (5.6%)
+resp,No RHC,3551,3551,0,No: 2070 (58.3%); Yes: 1481 (41.7%)
+resp,RHC,2184,2184,0,No: 1552 (71.1%); Yes: 632 (28.9%)
+card,No RHC,3551,3551,0,No: 2544 (71.6%); Yes: 1007 (28.4%)
+card,RHC,2184,2184,0,No: 1260 (57.7%); Yes: 924 (42.3%)
+neuro,No RHC,3551,3551,0,No: 2976 (83.8%); Yes: 575 (16.2%)
+neuro,RHC,2184,2184,0,No: 2066 (94.6%); Yes: 118 (5.4%)
+gastr,No RHC,3551,3551,0,No: 3029 (85.3%); Yes: 522 (14.7%)
+gastr,RHC,2184,2184,0,No: 1764 (80.8%); Yes: 420 (19.2%)
+renal,No RHC,3551,3551,0,No: 3404 (95.9%); Yes: 147 (4.1%)
+renal,RHC,2184,2184,0,No: 2036 (93.2%); Yes: 148 (6.8%)
+meta,No RHC,3551,3551,0,No: 3379 (95.2%); Yes: 172 (4.8%)
+meta,RHC,2184,2184,0,No: 2091 (95.7%); Yes: 93 (4.3%)
+hema,No RHC,3551,3551,0,No: 3312 (93.3%); Yes: 239 (6.7%)
+hema,RHC,2184,2184,0,No: 2069 (94.7%); Yes: 115 (5.3%)
+seps,No RHC,3551,3551,0,No: 3036 (85.5%); Yes: 515 (14.5%)
+seps,RHC,2184,2184,0,No: 1668 (76.4%); Yes: 516 (23.6%)
+trauma,No RHC,3551,3551,0,No: 3533 (99.5%); Yes: 18 (0.5%)
+trauma,RHC,2184,2184,0,No: 2150 (98.4%); Yes: 34 (1.6%)
+ortho,No RHC,3551,3551,0,No: 3548 (99.9%); Yes: 3 (0.1%)
+ortho,RHC,2184,2184,0,No: 2180 (99.8%); Yes: 4 (0.2%)
+adld3p,No RHC,3551,1049,2502,"1.24 (SD 1.86); median 0 [IQR 0, 2]"
+adld3p,RHC,2184,390,1794,"1.02 (SD 1.69); median 0 [IQR 0, 1]"
+urin1,No RHC,3551,1604,1947,"2.2e+03 (SD 1.45e+03); median 1.96e+03 [IQR 1.18e+03, 2.88e+03]"
+urin1,RHC,2184,1103,1081,"2.18e+03 (SD 1.64e+03); median 1.85e+03 [IQR 990, 3.1e+03]"
+race,No RHC,3551,3551,0,white: 2753 (77.5%); black: 585 (16.5%); other: 213 (6.0%)
+race,RHC,2184,2184,0,white: 1707 (78.2%); black: 335 (15.3%); other: 142 (6.5%)
+income,No RHC,3551,3551,0,Under $11k: 2081 (58.6%); $11-$25k: 713 (20.1%); $25-$50k: 500 (14.1%); > $50k: 257 (7.2%)
+income,RHC,2184,2184,0,Under $11k: 1145 (52.4%); $11-$25k: 452 (20.7%); $25-$50k: 393 (18.0%); > $50k: 194 (8.9%)

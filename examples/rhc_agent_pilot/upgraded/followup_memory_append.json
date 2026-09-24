@@ -1,0 +1,27 @@
+{
+  "item_id": "7b5db5732f0045889a97e1c9f5534338",
+  "project_id": "rhc-upgraded-pilot",
+  "run_id": "rhc-followup-sparse-two-20260924",
+  "key": "followup_exclude_adld3p_urin1",
+  "value": "User requested exploratory sensitivity excluding only adld3p and urin1, retaining all 5735 and all other original choices including cat2. Two PS refits and six point estimates completed; no new intervals. Confounder deletion is not causal repair; timing, missingness, identification and independent review gates remain unresolved.",
+  "source": "User follow-up request; followup_analysis.py; followup_results.json; followup_workflow.json",
+  "confirmed_by": "Codex analyst: implementation and numerical checks reviewed; not user scientific approval or independent review",
+  "created_at": "2026-09-24T10:58:13.361522+00:00",
+  "goal": "inferential",
+  "stages": [
+    "analysis",
+    "evaluation",
+    "reporting"
+  ],
+  "kind": "decision",
+  "input_fingerprint": "aec788f747388e40d6eacda72eaf237703d28b9014be42154e72be78aa63f61e",
+  "dependencies": [
+    "6e7e221e2bb14e20b09145fba49e6689",
+    "2f750bb462504a83ab0f6c3e6cb19279",
+    "a1d11495da414f8ea75d58142b734479",
+    "9810a9a830b743669ccb99d100504f65"
+  ],
+  "status": "active",
+  "reason": "",
+  "supersedes": null
+}

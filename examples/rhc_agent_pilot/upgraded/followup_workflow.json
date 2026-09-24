@@ -1,0 +1,237 @@
+{
+  "run_id": "rhc-followup-sparse-two-20260924",
+  "transitions": [
+    {
+      "before": {
+        "goal": "inferential",
+        "stage": "design",
+        "estimand_ready": false,
+        "data_ready": false,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": false,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 0,
+        "stop_reason": null,
+        "fatal_flaw": null
+      },
+      "route": {
+        "stage": "design",
+        "skill": "study-design-and-power",
+        "reason": "Define the estimand or prediction target"
+      },
+      "result": {
+        "outcome": "complete",
+        "evidence": "User follow-up: compare two exploratory weighting specifications at 0.01, 0.02, 0.05; point estimates only.",
+        "evaluation": null,
+        "revision_target": null,
+        "missing_data_required": null
+      },
+      "after": {
+        "goal": "inferential",
+        "stage": "preparation",
+        "estimand_ready": true,
+        "data_ready": false,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": false,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 1,
+        "stop_reason": null,
+        "fatal_flaw": null
+      }
+    },
+    {
+      "before": {
+        "goal": "inferential",
+        "stage": "preparation",
+        "estimand_ready": true,
+        "data_ready": false,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": false,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 1,
+        "stop_reason": null,
+        "fatal_flaw": null
+      },
+      "route": {
+        "stage": "preparation",
+        "skill": "data-understanding-preprocessing",
+        "reason": "Establish the analysis-ready data contract"
+      },
+      "result": {
+        "outcome": "complete",
+        "evidence": "Input fingerprints and unique IDs/complete labels rechecked; all 5735 retained. Legacy single-imputation encoding is a fixed computational sensitivity, not an accepted causal missing-data plan.",
+        "evaluation": null,
+        "revision_target": null,
+        "missing_data_required": false
+      },
+      "after": {
+        "goal": "inferential",
+        "stage": "analysis",
+        "estimand_ready": true,
+        "data_ready": true,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": false,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 2,
+        "stop_reason": null,
+        "fatal_flaw": null
+      }
+    },
+    {
+      "before": {
+        "goal": "inferential",
+        "stage": "analysis",
+        "estimand_ready": true,
+        "data_ready": true,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": false,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 2,
+        "stop_reason": null,
+        "fatal_flaw": null
+      },
+      "route": {
+        "stage": "analysis",
+        "skill": "statistical-analysis",
+        "reason": "Execute the goal-appropriate analysis"
+      },
+      "result": {
+        "outcome": "complete",
+        "evidence": "followup_results.json, followup_balance.csv: two propensity refits, six weighted estimates; original reproduced within 1e-10.",
+        "evaluation": null,
+        "revision_target": null,
+        "missing_data_required": null
+      },
+      "after": {
+        "goal": "inferential",
+        "stage": "evaluation",
+        "estimand_ready": true,
+        "data_ready": true,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": true,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 3,
+        "stop_reason": null,
+        "fatal_flaw": null
+      }
+    },
+    {
+      "before": {
+        "goal": "inferential",
+        "stage": "evaluation",
+        "estimand_ready": true,
+        "data_ready": true,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": true,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 0,
+        "iteration_count": 3,
+        "stop_reason": null,
+        "fatal_flaw": null
+      },
+      "route": {
+        "stage": "evaluation",
+        "skill": "method-evaluation",
+        "reason": "Critique before reporting"
+      },
+      "result": {
+        "outcome": "blocked",
+        "evidence": "Self-audit only; independent reviewer pending per user. No scientific approval or causal readiness.",
+        "evaluation": null,
+        "revision_target": null,
+        "missing_data_required": null
+      },
+      "after": {
+        "goal": "inferential",
+        "stage": "evaluation",
+        "estimand_ready": true,
+        "data_ready": true,
+        "identification_ready": false,
+        "missing_data_required": false,
+        "missing_data_ready": false,
+        "analysis_ready": true,
+        "evaluation": "pending",
+        "report_ready": false,
+        "revision_count": 0,
+        "no_progress_count": 1,
+        "iteration_count": 4,
+        "stop_reason": "no_progress_threshold",
+        "fatal_flaw": null
+      }
+    }
+  ],
+  "terminal": {
+    "goal": "inferential",
+    "stage": "evaluation",
+    "estimand_ready": true,
+    "data_ready": true,
+    "identification_ready": false,
+    "missing_data_required": false,
+    "missing_data_ready": false,
+    "analysis_ready": true,
+    "evaluation": "pending",
+    "report_ready": false,
+    "revision_count": 0,
+    "no_progress_count": 1,
+    "iteration_count": 4,
+    "stop_reason": "no_progress_threshold",
+    "fatal_flaw": null
+  },
+  "prior_causal_terminal_preserved": {
+    "goal": "causal",
+    "stage": "preparation",
+    "estimand_ready": true,
+    "data_ready": false,
+    "identification_ready": false,
+    "missing_data_required": false,
+    "missing_data_ready": false,
+    "analysis_ready": false,
+    "evaluation": "pending",
+    "report_ready": false,
+    "revision_count": 0,
+    "no_progress_count": 1,
+    "iteration_count": 2,
+    "stop_reason": "no_progress_threshold",
+    "fatal_flaw": null
+  },
+  "unresolved": [
+    "preparation/timing",
+    "missing-data mechanism and MI plan",
+    "causal identification",
+    "independent review"
+  ]
+}

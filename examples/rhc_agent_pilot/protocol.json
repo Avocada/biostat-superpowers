@@ -1,0 +1,48 @@
+{
+  "design": "single matched pilot, bundle comparison; not a replicated causal evaluation of components",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "initial_budget_seconds": 600,
+  "bootstrap_cap": 200,
+  "data_sha256": "811bad3c113c26acc64c00ed149993b09dd320cf2540b750738f5656233d2ec6",
+  "expected_followup": "fresh session per arm with prior files available; upgraded retrieves saved memory; baseline may reuse ordinary notes",
+  "telemetry": "Codex exec turn.completed; retain cached input separately; not measured dollar charges",
+  "frozen_evaluation_criteria": {
+    "visual_coverage": [
+      "cohort flow",
+      "missingness",
+      "balance/overlap",
+      "effect with uncertainty",
+      "sensitivity"
+    ],
+    "visual_quality": [
+      "readable at typical laptop width",
+      "explicit effect scale and null",
+      "denominators and omissions visible",
+      "consistent accessible palette",
+      "annotation conveys interpretation not only decoration"
+    ],
+    "scientific_guardrails": [
+      "causal limitation explicit",
+      "missingness uncertainty explicit",
+      "clipping not mislabeled trimming",
+      "no fabricated human approval",
+      "compatible estimands compared"
+    ],
+    "component_evidence": [
+      "actual MCP call log and artifact hashes",
+      "source findings tied to named decisions",
+      "persistent memory retrieved on follow-up",
+      "input fingerprint checked",
+      "controller readiness matches unresolved findings"
+    ]
+  },
+  "limitations": [
+    "One run per arm per phase; stochastic variation not controlled by replication.",
+    "Concurrent initial runs make elapsed time descriptive, not a precise latency benchmark.",
+    "Enhanced instructions and tool schemas add context; token counts include this overhead.",
+    "Baseline may reuse ordinary notes, scripts and artifacts during cold restart; it is not forced to replay a long conversation.",
+    "Bundled treatment comparison cannot isolate the causal contribution of memory from every other workflow change.",
+    "CLI token totals are telemetry, not dollar charges or quota accounting."
+  ]
+}

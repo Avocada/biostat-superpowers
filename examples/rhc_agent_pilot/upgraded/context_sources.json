@@ -1,0 +1,196 @@
+{
+  "input_sha256": "811bad3c113c26acc64c00ed149993b09dd320cf2540b750738f5656233d2ec6",
+  "composite_fingerprint": "aec788f747388e40d6eacda72eaf237703d28b9014be42154e72be78aa63f61e",
+  "memory_log": "followup_memory_retrieval.json",
+  "selected_records": [
+    {
+      "key": "profile",
+      "item_id": "6e7e221e2bb14e20b09145fba49e6689",
+      "source": "mcp_artifacts/c74883de0afd431daa369af1a4814b22/profile.json"
+    },
+    {
+      "key": "scope",
+      "item_id": "2f750bb462504a83ab0f6c3e6cb19279",
+      "source": "analysis-contract.json"
+    },
+    {
+      "key": "source",
+      "item_id": "a1d11495da414f8ea75d58142b734479",
+      "source": "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/literature.json"
+    },
+    {
+      "key": "timing",
+      "item_id": "9810a9a830b743669ccb99d100504f65",
+      "source": "input/rhc_dictionary.html"
+    }
+  ],
+  "retrieved_context_utf8_bytes": 2070,
+  "not_model_tokens": true,
+  "files_read": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "13f175f3f4cb6234bd4cf9bb2036e260bddf1bd36d5994b783fb10ef86ea3f25",
+      "read_mode": "content"
+    },
+    {
+      "path": "input/SOURCE.md",
+      "sha256": "d693001e1e01cfefa39f2315508821b66be111081a4cb4e20da7e6003117a182",
+      "read_mode": "content"
+    },
+    {
+      "path": "input/rhc.csv",
+      "sha256": "811bad3c113c26acc64c00ed149993b09dd320cf2540b750738f5656233d2ec6",
+      "read_mode": "content"
+    },
+    {
+      "path": "input/rhc_dictionary.html",
+      "sha256": "f255926741a2fae4b9ee0df8855e9b93f3607a1139bf569872dadd67ccb4d354",
+      "read_mode": "hash for fingerprint only"
+    },
+    {
+      "path": "input/legacy_analysis.py",
+      "sha256": "fc039e567afc4adaf9446b82258279e10e7c336fc9827f18b36bd2f647dcae83",
+      "read_mode": "hash for fingerprint only"
+    },
+    {
+      "path": "analysis-contract.json",
+      "sha256": "c95ddafa9d2545b971ea97c2428d50c36c1f32a55cfd7040a2032e7ace3a6b34",
+      "read_mode": "content"
+    },
+    {
+      "path": "analysis.py",
+      "sha256": "d1e9e133d0a91bb1e21ae8550cd10748656a782c885ec28394e71487e5239211",
+      "read_mode": "content"
+    },
+    {
+      "path": "results.json",
+      "sha256": "8040db0a08c70e162b570df65b77709e40f421091b2a2940b56097f33170321e",
+      "read_mode": "content"
+    },
+    {
+      "path": "decision-log.md",
+      "sha256": "ef6fd16df61595fbf62ff016fdd6c4c62eb2ad0e0f81f88c4506a7c20d7f9672",
+      "read_mode": "content"
+    },
+    {
+      "path": "workflow-transitions.json",
+      "sha256": "7f9be8ee5a76d3c68f5400866a8f6b9d3c520fda9c78b810dfd7984e8fe13465",
+      "read_mode": "content"
+    },
+    {
+      "path": "method-evaluation.json",
+      "sha256": "af63201c79a845f38856209205b8d14bcf9950c98df67c6279058a28b8a6b006",
+      "read_mode": "content"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "c2ace739f7566c2b7adb6d6d5c9850e83dcf81ce57d3a4f709529c4c97d83d87",
+      "read_mode": "content"
+    },
+    {
+      "path": "artifact-manifest.json",
+      "sha256": "a7a7d1a5e9234ab0b9b9e820ad7a79a3aa7413c409d7c71d651279fc4ad49513",
+      "read_mode": "content"
+    },
+    {
+      "path": "mcp_artifacts/c74883de0afd431daa369af1a4814b22/profile.json",
+      "sha256": "49dafa65577cc940830ae00ca7159a07378ab4e729b3d2602a83a891cafc22d9",
+      "read_mode": "content"
+    },
+    {
+      "path": "mcp_artifacts/c74883de0afd431daa369af1a4814b22/manifest.json",
+      "sha256": "303ba2b0f40f0dc4c4712bdb13508157b1a78b224261b6ac13140f300e22790d",
+      "read_mode": "content"
+    },
+    {
+      "path": "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/literature.json",
+      "sha256": "aa6f6716fd76f1ffec7248b31d732f2094bd7901cdd4eada952bb2974cc01eb6",
+      "read_mode": "content"
+    },
+    {
+      "path": "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/manifest.json",
+      "sha256": "84e2e1eb512742b06f2eb2af917a15417c05259120d0f49f1e7aecb0d4f97e00",
+      "read_mode": "content"
+    },
+    {
+      "path": "mcp_artifacts/3160fbf4c1c04a6b9240f701bb6582a7/source.json",
+      "sha256": "664c93faeae6bc6fa2db734f444b3088ebc77993b873e3e7730f6bbf705e63ab",
+      "read_mode": "content"
+    }
+  ],
+  "hash_only_manifest_checks": {
+    "figures/uncertainty.svg": true,
+    "figures/sensitivity.png": true,
+    "figures/missingness.png": true,
+    "figures/missingness.svg": true,
+    "figures/sensitivity.svg": true,
+    "figures/uncertainty.png": true,
+    "figures/flow.svg": true,
+    "figures/diagnostics.png": true,
+    "figures/diagnostics.svg": true,
+    "figures/flow.png": true,
+    "tables/missingness-patterns.csv": true,
+    "tables/table1-all.csv": true,
+    "tables/column-actions.csv": true,
+    "tables/balance-all.csv": true,
+    "tables/missingness-all.csv": true,
+    "tables/bootstrap.csv": true,
+    "tables/sensitivity.csv": true,
+    "tables/missingness-balance.csv": true,
+    "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/literature.json": true,
+    "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/records.xml": true,
+    "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/search.json": true,
+    "mcp_artifacts/bfde5f6401c24b459b16d2c4258926ec/manifest.json": true,
+    "mcp_artifacts/17dc396ce3f345b7a07bcecc96a38f78/provenance.json": true,
+    "mcp_artifacts/17dc396ce3f345b7a07bcecc96a38f78/figure.svg": true,
+    "mcp_artifacts/17dc396ce3f345b7a07bcecc96a38f78/manifest.json": true,
+    "mcp_artifacts/17dc396ce3f345b7a07bcecc96a38f78/figure.png": true,
+    "mcp_artifacts/17dc396ce3f345b7a07bcecc96a38f78/chart.vl.json": true,
+    "mcp_artifacts/c74883de0afd431daa369af1a4814b22/manifest.json": true,
+    "mcp_artifacts/c74883de0afd431daa369af1a4814b22/profile.json": true,
+    "mcp_artifacts/3160fbf4c1c04a6b9240f701bb6582a7/source.json": true,
+    "mcp_artifacts/3160fbf4c1c04a6b9240f701bb6582a7/data.csv": true,
+    "mcp_artifacts/3160fbf4c1c04a6b9240f701bb6582a7/manifest.json": true,
+    "analysis.py": true,
+    "build_report.py": true,
+    "results.json": true,
+    "analysis-contract.json": true,
+    "workflow-transitions.json": true,
+    "report.html": true,
+    "report.md": true,
+    "input/rhc.csv": true,
+    "input/legacy_analysis.py": true,
+    "input/rhc_dictionary.html": true,
+    "decision-log.md": true,
+    "method-evaluation.json": true,
+    "validation.json": true,
+    "memory-retrieval.txt": true,
+    "requirements-observed.txt": true
+  },
+  "protected_outputs_before_after": {
+    "report.html": "ff2c9dc20f412af2d72bea58fe6915d301fa0509dd1606e08cd79f1dcffc39b2",
+    "results.json": "8040db0a08c70e162b570df65b77709e40f421091b2a2940b56097f33170321e",
+    "figures/uncertainty.svg": "efa373c00c568746b8b251947917afbb99a89ca3d4c758d2e1207d0c8d06451c",
+    "figures/sensitivity.png": "2c2b3932540463175a72de7193cb6babbc76aaf393290d0ee9b37ecc7245e286",
+    "figures/missingness.png": "9f82b89777e0a5211171dc6e2d6becf9ac3be65ebfb12c784a2e77ed5ca60556",
+    "figures/missingness.svg": "562c85713a48f8e15dbc5da978931608bba41bd0bc02afcb978e448f0b2e2bfd",
+    "figures/sensitivity.svg": "7ffed86ef11df1a6e6819fd42514b45a932dbdb6c195f73b3455d7d08a77bf0f",
+    "figures/uncertainty.png": "afa66883a3a3e5b3dfdbe4bfea5825e174600c026eaa657676341a0d9dd6aaab",
+    "figures/flow.svg": "6f126a34904b428c7819e2b950771e3067c032c33222c8334b9db09300e4b238",
+    "figures/diagnostics.png": "677852be408c644bf6f809eb421fe073403abbc4934e5c25c7aba79b9f428bec",
+    "figures/diagnostics.svg": "b0137cd6d8e275aa54a7daae32bf6c77f4a086b3bbdd27343f66afad89b87ea4",
+    "figures/flow.png": "ee50e9cb722c476e91f7b2535420d52716cc6f2d66ddfe363dca68e61afa13ff"
+  },
+  "mcp": "Reused local MCP profile/literature/source artifacts; hashes matched original manifest; no network refetch or new MCP call. Host-staged source reference remains not independently verified.",
+  "memory_issues": "Initial raw-checksum lookup unavailable; resolved by reconstructing original composite fingerprint. Final required retrieval has no missing, stale, conflicting or omitted keys.",
+  "new_record": "followup_memory_append.json",
+  "policy_and_runtime_read": [
+    "/Users/amiee/.codex/skills/biostat-workflow/SKILL.md",
+    "/Users/amiee/.codex/skills/causal-inference/SKILL.md",
+    "/Users/amiee/.codex/skills/statistical-analysis/SKILL.md",
+    "/Users/amiee/.codex/skills/method-evaluation/SKILL.md",
+    "/Users/amiee/Projects_code/biostat-superpowers/docs/modernization/WORKFLOW_CONTROLLER.md",
+    "/Users/amiee/Projects_code/biostat-superpowers/docs/modernization/MEMORY.md",
+    "/Users/amiee/Projects_code/biostat-superpowers/biostat_workflow/memory.py"
+  ]
+}

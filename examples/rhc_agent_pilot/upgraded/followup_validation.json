@@ -1,0 +1,13 @@
+{
+  "six_estimates": true,
+  "all_patients_retained": true,
+  "original_estimates_reproduced": true,
+  "initial_outputs_unchanged": true,
+  "csv_and_composite_fingerprint_match": true,
+  "memory_final_issues": [],
+  "sqlite_integrity": "ok",
+  "figure_inspection": "Initial PNG inspected: legend obscured reduced 0.05 RR annotation. Legend moved; PNG regenerated without model refit and displayed again: all labels legible; nulls and both scales annotated; no intervals drawn.",
+  "html_check": "embedded PNG, inline CSS, no scripts or remote assets; not browser-render tested",
+  "independent_review": "pending",
+  "causal_ready": false
+}

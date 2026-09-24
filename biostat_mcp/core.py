@@ -162,10 +162,11 @@ def describe_columns(header, rows, variables):
 
 class Toolkit:
     def __init__(self, artifact_root: Path, *, offline: bool = False,
-                 fetch: Callable[[str], bytes] = download_uci):
+                 fetch: Callable[[str], bytes] = download_uci, input_dir: Optional[Path] = None):
         self.root = Path(artifact_root).expanduser().resolve()
         self.root.mkdir(parents=True, exist_ok=True)
         self.offline, self.fetch = offline, fetch
+        self.input_dir = Path(input_dir).expanduser().resolve() if input_dir is not None else None
 
     def list_datasets(self, query: str = ""):
         if len(query) > 200:
@@ -177,7 +178,7 @@ class Toolkit:
     def list_chart_examples(self, query: str = ""):
         if len(query) > 200:
             raise ServiceError("invalid_request", "Query must be at most 200 characters")
-        return {"scope": "Three project-authored Vega-Lite examples, not a scraped gallery",
+        return {"scope": "Project-authored Vega-Lite examples, not a scraped gallery",
                 "examples": [item for item in packaged_json("charts.json")
                              if query.lower() in json.dumps(item).lower()]}
 
@@ -282,6 +283,38 @@ class Toolkit:
                     "missing_tokens": sorted(MISSING)}
         return self._save("dataset", {"data.csv": raw, "source.json": json_bytes(source)}, metadata)
 
+    def import_local_csv(self, filename: str, source_reference: str = "", synthetic: bool = False):
+        """Snapshot one host-staged CSV from the explicit input directory, never arbitrary paths."""
+        if self.input_dir is None:
+            raise ServiceError("local_import_disabled", "Host must configure --input-dir before importing CSV files")
+        if (not isinstance(filename, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,119}\.csv", filename)
+                or ".." in filename):
+            raise ServiceError("invalid_request", "Use a plain CSV filename in the configured input directory")
+        if not isinstance(source_reference, str) or len(source_reference) > 1000 or type(synthetic) is not bool:
+            raise ServiceError("invalid_request", "Source reference must be at most 1000 characters; synthetic must be boolean")
+        path = self.input_dir / filename
+        if path.is_symlink() or not path.is_file() or path.resolve().parent != self.input_dir:
+            raise ServiceError("invalid_source", "Only regular files directly inside the configured input directory are allowed")
+        if path.stat().st_size > MAX_BYTES:
+            raise ServiceError("size_limit", "Dataset exceeds byte limit")
+        # No-follow protects the final path component if it changes between the checks and open.
+        import os
+        try:
+            fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
+            with os.fdopen(fd, "rb") as stream:
+                raw = stream.read(MAX_BYTES + 1)
+        except OSError as exc:
+            raise ServiceError("invalid_source", "Local CSV could not be opened as a regular source") from exc
+        header, rows = parse_csv(raw)
+        source = {"provider": "host-staged-local", "source_filename": filename,
+                  "source_reference": source_reference, "reference_verified": False, "variables": [],
+                  "synthetic": synthetic,
+                  "notice": "Source reference is host-supplied, not independently verified. CSV bytes are copied without normalization."}
+        return self._save("dataset", {"data.csv": raw, "source.json": json_bytes(source)},
+            {"dataset_id": "local:" + filename, "name": filename, "rows": len(rows), "columns": header,
+             "source": source_reference, "synthetic": synthetic, "data_sha256": digest(raw),
+             "metadata_sha256": digest(json_bytes(source)), "missing_tokens": sorted(MISSING)})
+
     def _dataset(self, artifact_id):
         manifest = self._manifest(artifact_id)
         if manifest["kind"] != "dataset":
@@ -318,7 +351,7 @@ class Toolkit:
             raise ServiceError("invalid_request", "Unknown column or title exceeds 160 characters")
         example = examples[example_id]
         if (example_id == "histogram" and y is not None) or (example_id != "histogram" and y is None):
-            raise ServiceError("invalid_request", "Histogram uses x only; scatter and boxplot require x and y")
+            raise ServiceError("invalid_request", "Histogram uses x only; other templates require x and y")
         profiles = {item["name"]: item for item in describe_columns(header, rows, source["variables"])}
         for axis, column in (("x", x), ("y", y)):
             if column is None:

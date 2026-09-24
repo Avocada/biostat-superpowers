@@ -1,0 +1,16 @@
+{
+  "dataset_artifact_id": "3160fbf4c1c04a6b9240f701bb6582a7",
+  "profile_artifact_id": "c74883de0afd431daa369af1a4814b22",
+  "data_sha256": "811bad3c113c26acc64c00ed149993b09dd320cf2540b750738f5656233d2ec6",
+  "metadata_sha256": "664c93faeae6bc6fa2db734f444b3088ebc77993b873e3e7730f6bbf705e63ab",
+  "template_id": "histogram",
+  "template_sha256": "4b4991f2f2826345f2e4a41ee29f22aa69cd3b20bf28d3def13ee3264d5de31c",
+  "template_source": "https://vega.github.io/vega-lite/examples/histogram.html",
+  "renderer": "vl-convert-python",
+  "renderer_version": "1.9.0",
+  "rows_used": 5735,
+  "rows_omitted": 0,
+  "omission_rule": "Exclude only rows missing a selected axis; preserve original dataset",
+  "x": "age",
+  "y": null
+}
