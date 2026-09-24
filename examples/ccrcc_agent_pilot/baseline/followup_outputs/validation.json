@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "all_stage protein BH and eligibility checked",
+    "all_stage rna BH and eligibility checked",
+    "early_stage protein BH and eligibility checked",
+    "early_stage rna BH and eligibility checked",
+    "All tested shortlist intervals/p-values independently checked with scipy ttest_1samp",
+    "All original artifact hashes unchanged",
+    "New source hashes match",
+    "Offline HTML embeds both figures; no scripts or remote assets"
+  ],
+  "original_files_preserved": 80,
+  "visual_inspection": "Both actual new PNG files opened and inspected by assistant; no clipping obscuring results",
+  "review": "Same-agent checks; independent review pending"
+}

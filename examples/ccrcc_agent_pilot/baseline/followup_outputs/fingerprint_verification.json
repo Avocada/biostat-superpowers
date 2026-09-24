@@ -1,0 +1,14 @@
+{
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "verified_files": [
+    "Clinical_Table_S1.xlsx",
+    "HS_CPTAC_CCRCC_CLI.tsi",
+    "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Normal.cct",
+    "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Tumor.cct",
+    "HS_CPTAC_CCRCC_proteome_Normal.cct",
+    "HS_CPTAC_CCRCC_proteome_Tumor.cct",
+    "SOURCE.md",
+    "clinical_annotation.csv",
+    "cptac_metadata.csv.gz"
+  ]
+}

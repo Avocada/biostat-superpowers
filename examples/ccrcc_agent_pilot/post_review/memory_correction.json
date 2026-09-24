@@ -1,0 +1,11 @@
+{
+  "key": "stage_I_II_sensitivity",
+  "supersedes_interpretation_in": "../upgraded/followup_memory_append.json",
+  "correction": {
+    "all_stage": 1,
+    "stage_I_II": 0
+  },
+  "reason": "Original sensitivity summary omitted cohort qualification for VEGFA protein count. Use these cohort-specific counts when continuing. Frozen benchmark database is not modified.",
+  "attribution": "Parent analyst after independent artifact review; not human approval",
+  "source_sha256": "15dc62517affed62398e1fad4551c9cb8c5de90809761e28b6b1ae9a78fb73af"
+}

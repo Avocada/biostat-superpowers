@@ -1,0 +1,257 @@
+{
+  "cohort": {
+    "downloaded_tumors": 110,
+    "histology_excluded": 7,
+    "ccRCC_tumors": 103,
+    "contaminated_normals_excluded": 1,
+    "common_cases": 72,
+    "assay_availability": [
+      {
+        "layer": "protein",
+        "tissue": "Tumor",
+        "downloaded": 110,
+        "eligible": 103,
+        "common": 72
+      },
+      {
+        "layer": "protein",
+        "tissue": "Normal",
+        "downloaded": 84,
+        "eligible": 80,
+        "common": 72
+      },
+      {
+        "layer": "rna",
+        "tissue": "Tumor",
+        "downloaded": 110,
+        "eligible": 103,
+        "common": 72
+      },
+      {
+        "layer": "rna",
+        "tissue": "Normal",
+        "downloaded": 75,
+        "eligible": 72,
+        "common": 72
+      }
+    ],
+    "layer_pairs": {
+      "protein": 80,
+      "rna": 72
+    }
+  },
+  "assays": {
+    "protein": {
+      "rows": 11710,
+      "tested": 10033,
+      "q_below_005": 8219,
+      "up": 4491,
+      "down": 3728,
+      "status_counts": {
+        "tested": 10033,
+        "insufficient_pairs": 1677
+      }
+    },
+    "rna": {
+      "rows": 19275,
+      "tested": 19015,
+      "q_below_005": 15118,
+      "up": 7637,
+      "down": 7481,
+      "status_counts": {
+        "tested": 19015,
+        "zero_variance": 260
+      }
+    }
+  },
+  "concordance": {
+    "both_tested": 9475,
+    "same_direction": 7205,
+    "fraction": 0.7604221635883905,
+    "spearman_descriptive": 0.6967184569101386,
+    "same_finite_case_genes": 9475,
+    "same_finite_direction_fraction": 0.7610554089709762
+  },
+  "shortlist": [
+    {
+      "gene": "CA9",
+      "layer": "protein",
+      "n": 72,
+      "mean_difference": 2.344681824998151,
+      "ci_low": 2.182553249827455,
+      "ci_high": 2.506810400168847,
+      "p_value": 6.208222317013929e-41,
+      "q_value": 1.6766939317833683e-38,
+      "sd_difference": 0.6899426539953044,
+      "median_difference": 2.349052252932104,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "NNMT",
+      "layer": "protein",
+      "n": 72,
+      "mean_difference": 2.784738522058789,
+      "ci_low": 2.59235695630069,
+      "ci_high": 2.977120087816888,
+      "p_value": 5.847774959390479e-41,
+      "q_value": 1.6766939317833683e-38,
+      "sd_difference": 0.8186850955741054,
+      "median_difference": 2.7093244497077005,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "VEGFA",
+      "layer": "protein",
+      "n": 1,
+      "mean_difference": 1.0684955485392982,
+      "ci_low": null,
+      "ci_high": null,
+      "p_value": null,
+      "q_value": null,
+      "sd_difference": null,
+      "median_difference": 1.0684955485392982,
+      "missing_pairs": 71,
+      "status": "insufficient_pairs"
+    },
+    {
+      "gene": "MTOR",
+      "layer": "protein",
+      "n": 72,
+      "mean_difference": -0.1746701641163541,
+      "ci_low": -0.21194113684388893,
+      "ci_high": -0.1373991913888193,
+      "p_value": 5.435932203266045e-14,
+      "q_value": 1.6188396496102174e-13,
+      "sd_difference": 0.15860765946748293,
+      "median_difference": -0.21754946813674889,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "NDUFA4L2",
+      "layer": "protein",
+      "n": 72,
+      "mean_difference": 3.908581756896538,
+      "ci_low": 3.68991864398366,
+      "ci_high": 4.127244869809417,
+      "p_value": 4.770189623027835e-47,
+      "q_value": 4.785931248783827e-43,
+      "sd_difference": 0.9305269493372691,
+      "median_difference": 3.880302709882801,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "MT1H",
+      "layer": "protein",
+      "n": 72,
+      "mean_difference": -3.1789657827277074,
+      "ci_low": -3.505953277493644,
+      "ci_high": -2.8519782879617708,
+      "p_value": 4.49311033689923e-30,
+      "q_value": 6.840572990911984e-29,
+      "sd_difference": 1.391504364511693,
+      "median_difference": -3.1737470764431985,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "CA9",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": 6.45201147094601,
+      "ci_low": 6.197618204576267,
+      "ci_high": 6.7064047373157525,
+      "p_value": 1.9997690142974036e-57,
+      "q_value": 1.226632509898875e-54,
+      "sd_difference": 1.0825776096094284,
+      "median_difference": 6.625960564992189,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "NNMT",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": 4.738401637036335,
+      "ci_low": 4.4215798017821815,
+      "ci_high": 5.055223472290489,
+      "p_value": 6.836830702155167e-42,
+      "q_value": 5.676957895261157e-40,
+      "sd_difference": 1.3482441181560616,
+      "median_difference": 4.94703014022702,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "VEGFA",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": 3.014343994335085,
+      "ci_low": 2.784656260796274,
+      "ci_high": 3.2440317278738964,
+      "p_value": 3.4097329738881123e-38,
+      "q_value": 1.5327676713589234e-36,
+      "sd_difference": 0.977442528567762,
+      "median_difference": 3.1885039280799945,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "MTOR",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": -0.7781365045651277,
+      "ci_low": -0.8436538922141047,
+      "ci_high": -0.7126191169161508,
+      "p_value": 1.988406173130029e-35,
+      "q_value": 5.907741153448047e-34,
+      "sd_difference": 0.2788110625766145,
+      "median_difference": -0.8207042734217098,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "NDUFA4L2",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": 6.912919098271619,
+      "ci_low": 6.664950336299533,
+      "ci_high": 7.1608878602437045,
+      "p_value": 2.8550466531575773e-60,
+      "q_value": 3.0160395616550743e-57,
+      "sd_difference": 1.0552379527348918,
+      "median_difference": 7.11506753046366,
+      "missing_pairs": 0,
+      "status": "tested"
+    },
+    {
+      "gene": "MT1H",
+      "layer": "rna",
+      "n": 72,
+      "mean_difference": -5.38684534687709,
+      "ci_low": -5.843026642123321,
+      "ci_high": -4.930664051630859,
+      "p_value": 2.8600127393266805e-35,
+      "q_value": 8.277495013439395e-34,
+      "sd_difference": 1.9412921702039823,
+      "median_difference": -5.888683197975535,
+      "missing_pairs": 0,
+      "status": "tested"
+    }
+  ],
+  "data_driven_candidates": [
+    "NDUFA4L2",
+    "MT1H"
+  ],
+  "limitations": [
+    "Observed pairs can be selected by abundance-dependent missingness.",
+    "Processed reference-ratio protein and log2 FPKM RNA scales are not interchangeable.",
+    "Paired t inference assumes independent cases and sufficiently regular mean differences; gene correlation affects BH guarantees.",
+    "Processing, TMT compression, batch, purity and adjacent-tissue composition remain unresolved.",
+    "Data-driven selection has winner bias; nominal CIs are not selection adjusted.",
+    "Independent evaluation pending; this is an exploratory draft."
+  ]
+}

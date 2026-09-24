@@ -1,0 +1,3211 @@
+{
+  "new_requests": [
+    {
+      "concept": "CA9",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.cond=kidney+cancer&query.term=CA9+OR+girentuximab&pageSize=50&countTotal=true&format=json",
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "status": 200,
+      "sha256": "872becb0e9b855aac33ba761f6869e4fb853ae05c8c4a54517986028eb34d363",
+      "bytes": 888827,
+      "file": "followup_sources/trials_CA9.json",
+      "total_count": 49,
+      "returned": 49,
+      "truncated": false
+    },
+    {
+      "concept": "NNMT",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.cond=kidney+cancer&query.term=NNMT+OR+%22nicotinamide+N-methyltransferase%22&pageSize=50&countTotal=true&format=json",
+      "retrieved_utc": "2026-09-24T11:47:20.480381+00:00",
+      "status": 200,
+      "sha256": "65ada52ecf891fd38ced571e4305256240495cc18851066d104a2365b0e853c9",
+      "bytes": 9774,
+      "file": "followup_sources/trials_NNMT.json",
+      "total_count": 1,
+      "returned": 1,
+      "truncated": false
+    }
+  ],
+  "trial_records": [
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05663710",
+      "title": "Phase 1b/2 Study of Combination 177Lu Girentuximab Plus Cabozantinib and Nivolumab in Treatment na\u00efve Patients With Advanced Clear Cell RCC",
+      "url": "https://clinicaltrials.gov/study/NCT05663710",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-07-30",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-04",
+      "start": {
+        "date": "2023-06-30",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2027-10-30",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Advanced Cancer",
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu girentuximab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "BMS-936558",
+            "Opdivo"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Cabozantinib",
+          "description": "Given by PO",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "XL-184",
+            "XL184"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "ArabinoFuranosylGuanine [18F]F-AraG",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        }
+      ],
+      "brief_summary": "To learn if giving 177Lu girentuximab in combination with cabozantinib plus nivolumab can help to control advanced clear cell renal cell carcinoma (ccRCC).",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: 177Lu-girentuximab combined with cabozantinib and nivolumab in advanced ccRCC. Combination study does not isolate the effect of CA9 targeting; no posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT01826877",
+      "title": "Autologous Dendritic Cells in Treating Patients With Metastatic Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT01826877",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2021-08-04",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2021-07",
+      "start": {
+        "date": "2013-01-14",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2021-05-27",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma",
+        "Recurrent Renal Cell Cancer",
+        "Stage IV Renal Cell Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "AdGMCAIX-transduced autologous dendritic cells",
+          "description": "Given ID",
+          "armGroupLabels": [
+            "Treatment (autologous dendritic cells)"
+          ],
+          "otherNames": [
+            "DC-AdGMCAIX",
+            "dendritic cells transduced with AdGMCA9 expressing GM-CSF-carbonic anhydrase IX fusion protein"
+          ]
+        },
+        {
+          "type": "BIOLOGICAL",
+          "name": "therapeutic autologous dendritic cells",
+          "description": "Given ID",
+          "armGroupLabels": [
+            "Treatment (autologous dendritic cells)"
+          ],
+          "otherNames": [
+            "ADC",
+            "autologous dendritic cells"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "laboratory biomarker analysis",
+          "description": "Correlative studies",
+          "armGroupLabels": [
+            "Treatment (autologous dendritic cells)"
+          ]
+        }
+      ],
+      "brief_summary": "This phase I trial studies the side effects and best dose of autologous dendritic cells in treating patients with metastatic kidney cancer. Vaccines made from a person's tumor cells and white blood cells may help the body build an effective immune response to kill tumor cells.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00491621",
+      "title": "Evaluation of Diagnostic Value of Molecular Markers in Renal Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00491621",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2015-06-04",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2015-06",
+      "start": {
+        "date": "2007-04"
+      },
+      "completion": {
+        "date": "2014-09",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "NA"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Kidney Neoplasms"
+      ],
+      "interventions": [
+        {
+          "type": "PROCEDURE",
+          "name": "surgery or biopsy of the kidney tumor",
+          "description": "surgery or biopsy of the kidney tumor",
+          "armGroupLabels": [
+            "1"
+          ]
+        }
+      ],
+      "brief_summary": "Renal cancer is frequent and its diagnosis mainly dependant on imaging. More than 50% of renal tumors are currently diagnosed without symptoms. However, 20% of small solid tumors are benign and this percentage is much higher in atypical cystic tumors Bosniak II and III, where 76% and 59% are benign respectively. Determining the malignancy by imaging in these cases is difficult and sometimes impossible. The fine needle aspiration (FNA) cytology or biopsy is necessary. The diagnostic sensitivity and specificity with biopsy are high, but the potential tumor contamination is a major risk. The FNA cytology is simple and safe, but its sensitivity is about 50%. We are conducting a multicentric prospective study to add the molecular markers in FNA cytology as a new diagnostic method in imaging-indeterminate renal tumors.\n\nFour molecular markers including MN/CA9, vimentin, KIT, and S100A1 will be studied. These four markers have been reported to have a differential diagnostic value in renal tumors. MN/CA9 and vimentin are often found in conventional renal cancers. KIT is frequently expressed in renal oncocytomas and chromophobe renal cancers. S100A1 may further distinguish renal oncocytoma from chromophobe renal cancer. These markers will be analyzed by real time polymerase chain reaction (RT-PCR).\n\nThe aim of this study is to evaluate the diagnostic performance of the association cytology-molecular markers in imaging-indeterminate renal tumors (small solid tumors and cystic tumors \u2265 Bosniak III). About 156 patients will be included in five French clinical centers including Saint-Etienne, Marseille, Grenoble, Toulouse, and Nancy.\n\nThe expected results will improve the preoperative diagnostic accuracy in renal tumors.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05861778",
+      "title": "Evaluation of 89Zr-TLX250 PET/CT in Chinese Patients With Indeterminate Renal Masses or Suspected Recurrent Renal Clear Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT05861778",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2023-12-11",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2023-12",
+      "start": {
+        "date": "2023-06-26",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2023-11-27",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma",
+        "Suspected Recurrent Renal Clear Cell Carcinoma",
+        "Recurrent Renal Cell Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "89Zr-Girentuximab",
+          "description": "A single administration of 37 MBq (\u00b110%) 89Zr-TLX250, containing a mass dose of 10 mg of girentuximab, followed by whole body PET/CT scans were performed at 0.5h, 4h, 24h, 72 hours and 7\u00b11 days post administration.",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-DFO-girentuximab",
+            "89Zr-TLX250",
+            "TLX250CDx"
+          ]
+        }
+      ],
+      "brief_summary": "The study is designed to evaluate the safety, tolerability, radiation dosimetry and pharmacokinetics 89Zr-TLX250 (also known as 89Zr-DFO-girentuximab) Positron Emission Tomography/Computed Tomography (PET/CT) in adult Chinese patients with indeterminate renal masses or Suspected Recurrent Renal Clear Cell Carcinoma",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06649682",
+      "title": "68Ga-NYM096/177Lu-NYM096 in Metastatic ccRCC",
+      "url": "https://clinicaltrials.gov/study/NCT06649682",
+      "status": "SUSPENDED",
+      "last_update_posted": {
+        "date": "2025-12-31",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2025-12",
+      "start": {
+        "date": "2024-11-21",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2027-10",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "68Ga-NYM096 PET/CT and 177Lu-NYM096",
+          "description": "Patients recruited in this study will undergo 68Ga-NYM096 PET/CT to evaluate the expression of carbonic anhydrase 9. Those with high CA9 expression will undergo 177Lu-NYM096 treatment, starting from 50mCi and increasing to 100mCi, 150mCi, 200mCi at most using a 3+3 design.",
+          "armGroupLabels": [
+            "Imaging and therapy"
+          ]
+        }
+      ],
+      "brief_summary": "This is a single-center, phase I study. Patients with metastatic clear cell renal cell carcinoma will be recruited in this study to (Phase A) evaluate using 68Ga-NYM096 PET/CT and to (Phase B) treat with 177Lu-NYM096.\n\nThe study will be conducted in two phases. The purpose is Phase A: to evaluate the safety, tolerability, and imaging characteristics of 68Ga-NYM096 Phase B: to evaluate the safety, tolerability, and recommended phase 2 dose of 177Lu-NYM096",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07197580",
+      "title": "Phase 3 Study to Assess Safety and Efficacy of 177Lu-TLX250 in Advanced Relapsed or Recurrent ccRCC",
+      "url": "https://clinicaltrials.gov/study/NCT07197580",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-04-01",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-03",
+      "start": {
+        "date": "2026-03-25",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2029-02-28",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "ccRCC",
+        "Renal Cell Carcinoma (Kidney Cancer)",
+        "Renal Cell Carcinoma (RCC)",
+        "Renal Cell Cancer Metastatic",
+        "Renal Cell Cancer, Recurrent",
+        "Clear Cell Renal Cell Cancer (ccRCC)"
+      ],
+      "interventions": [
+        {
+          "type": "RADIATION",
+          "name": "177Lu-TLX250",
+          "description": "3 infusions of 177Lu-TLX250 at 8-week intervals or 6 infusions 177Lu-TLX250 at 4-week intervals",
+          "armGroupLabels": [
+            "1258 MBq 177Lu-girentuximab tetraxetan",
+            "1887MBq 177Lu-girentuximab tetraxetan"
+          ],
+          "otherNames": [
+            "TLX250-Tx",
+            "177Lu girentuximab tetraxetan"
+          ]
+        }
+      ],
+      "brief_summary": "Multicenter Phase 3 study of 177Lu-TLX250 in adult participants with CAIX-expressing advanced, relapsed or recurrent clear cell renal cell carcinoma (ccRCC). Part 1 will evaluate two dosing regimens to determine the recommended Phase 3 dose (RP3D). Part 2 will compare 177Lu-TLX250 with investigator's choice of monotherapy aligned with Australian standard-of-care.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: advanced relapsed/recurrent ccRCC. Registry intervention explicitly verifies 177Lu-TLX250 as 177Lu girentuximab tetraxetan. Phase 3/recruiting is development status, not demonstrated efficacy; no posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02411968",
+      "title": "Follow up After Cryoablation of Small Renal Masses.",
+      "url": "https://clinicaltrials.gov/study/NCT02411968",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2019-01-11",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2019-01",
+      "start": {
+        "date": "2015-02",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2018-09",
+        "type": "ACTUAL"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Carcinoma, Renal Cell"
+      ],
+      "interventions": [
+        {
+          "type": "OTHER",
+          "name": "111In-Girentuximab DOTA SPECT",
+          "armGroupLabels": [
+            "111In-Girentuximab DOTA SPECT"
+          ]
+        }
+      ],
+      "brief_summary": "Currently there is no consensus on post procedural follow up imaging following percutaneous cryoablation of renal tumors. Interpretation of conventional contrast enhanced imaging (CT and MRI) during follow up can be very challenging. The objective of this study is to evaluate the feasibility of early evaluation of the therapeutic effect by performing early follow up imaging after percutaneous MR-guided cryoablation of pT1a renal cell carcinoma using 111In-Girentuximab-DOTA SPECT CT imaging.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02228954",
+      "title": "IMaging PAtients for Cancer Drug selecTion - Renal Cell Carcinoma (IMPACT-RCC)",
+      "url": "https://clinicaltrials.gov/study/NCT02228954",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2021-12-07",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2021-12",
+      "start": {
+        "date": "2014-12",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2021-10-19",
+        "type": "ACTUAL"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Clear-cell Metastatic Renal Cell Carcinoma",
+        "Kidney Neoplasms"
+      ],
+      "interventions": [
+        {
+          "type": "PROCEDURE",
+          "name": "Molecular imaging",
+          "armGroupLabels": [
+            "Renal Cell Cancer"
+          ]
+        }
+      ],
+      "brief_summary": "Rationale. In part of the patients with good and intermediate risk metastatic renal cell carcinoma (mRCC) the disease course is indolent and immediate start of systemic therapy is not necessary. By now, the investigators are not able to identify those patients with indolent disease and the minor group of patients with rapidly progressive disease. In patients with indolent disease, a watchful waiting period is preferred, since their quality of life will not be unnecessary hampered by adverse events and therapy resistance is not induced. This study aims to identify those patients for whom a watchful waiting period is possible by molecular imaging. Furthermore several types of systemic therapy are possible once the progression is proven. These systemic treatments are comparable in terms of efficacy, but not in terms of toxicity and their impact on quality of life. As a secondary objective, the usefulness of a decision aid guiding the choice of the patients is studied.\n\nObjectives.\n\nTo assess in patients with good or intermediate prognosis mRCC who are eligible for watchful waiting, the added value beyond clinical work-up of:\n\n1. FDG-PET and 89Zr-girentuximab-PET results measured at presentation to predict rapid progression (\u2264 2 months after the baseline scan) under watchful waiting.\n2. FDG-PET and 89Zr-girentuximab-PET results measured at presentation to predict prolonged indolent (\u226512 months after the baseline scan) disease under watchful waiting.\n\nTo assess the value of a therapy choice decision aid for patients with progressive disease.\n\nStudy design. This is a multicenter non-blinded prospective observational study in 80 good and intermediate prognosis mRCC patients.\n\nStudy population. Patients with good or intermediate prognosis mRCC according to the Heng criteria, \u226518 years, without contra-indications for a watchful waiting period, able to provide informed consent.\n\nIntervention. At baseline an FDG-PET-CT and 89Zr-girentuximab-PET will be made. During the watchful waiting period, disease evaluation by CT according to the RECIST criteria will be made frequently, until established progressive disease. At that moment, a second FDG-PET-CT and, in case of a positive 89Zr-girentuximab-PET-scan at baseline, a second 89Zr-girentuximab-PET will be performed and the decision aid is used to help the patient to choose their best treatment out of four options; pazopanib, sunitinib, combined interferon-\u03b1 with bevacizumab and (only in case of a positive 89Zr-girentuximab-PET) radioimmunotherapy (RIT) with 177lutetium labelled girentuximab. Participation in the RIT trial is part of a separate phase II study.\n\nNature and extent of the burden and risks associated with participation, benefit and group relatedness.\n\nAt baseline, a 18F-FDG-PET-CT and 89Zr-Girentuximab-PET will be performed. During the watchful waiting period CT's will be made. During therapy, follow-up will include standard laboratory analysis, and CT-scans on regular visits to the outpatient clinic. Side effects of the medication and adverse events as a consequence of the tumor biopsies may occur. The radiation exposure of both PET investigations is acceptable and requires no shielding after injection of 89Zr-labelled girentuximab. Patients may benefit from disease regression or stabilization. All three treatment choices has proven clinical benefit in this patient population. The risks of participation into the RIT trial are described in the phase II trial protocol, which already has been judged by the Medical Ethics Review Committee.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02883153",
+      "title": "Zirconium-89-girentuximab PET/CT Imaging in Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT02883153",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2017-06-19",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2017-06",
+      "start": {
+        "date": "2015-12",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2017-06-06",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Zirconium-89 girentuximab PET/CT",
+          "description": "Thirty patients (suspected of ccRCC) will be included in whom conventional diagnostics are inconclusive. During a multidisciplinary team (MDT) the hypothetical next step in the clinical process will be noted. Subsequently, in these patients a Zirconium-89-girentuximab PET/CT will be performed 4-5 days after single intravenous injection of 5 mg Zirconium-89-girentuximab (37 MBq). The results of the PET/CT will be discussed during the MDT and will be used to decide what the next step in the clinical process will be. This step will be compared with the hypothetical next step from the MDT before the scan. Whether or not the PET/CT scan had impact on clinical decision making will be assessed for each individual patient.",
+          "armGroupLabels": [
+            "Zirconium-89 girentuximab PET/CT"
+          ],
+          "otherNames": [
+            "girentuximab"
+          ]
+        }
+      ],
+      "brief_summary": "Girentuximab is an antibody against Carbonic Anhydrase IX (CAIX), an antigen that is expressed on the cell surface of 95% of clear cell RCC (ccRCC). Zr-89-girentuximab PET/CT (Positron Emission Tomography) may be a valuable imaging technique in the diagnosis of patients with RCC. The aim of the present study is to show the impact of the Zr-89-girentuximab PET/CT on the clinical management of ccRCC patients.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT03556046",
+      "title": "89Zr-girentuximab ) Dosimetry in CCRC Study - ZIR-DOSE",
+      "url": "https://clinicaltrials.gov/study/NCT03556046",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2019-04-01",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2018-05",
+      "start": {
+        "date": "2018-04-05",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2018-12-17",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-Girentuximab",
+          "description": "Single diagnostic injection on Day 0, followed by diagnostic scans on Days 3 and 7\u00b11, as well as the whole body dosimetric imaging on Days 0, 1, 3 and 7\u00b11",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ]
+        }
+      ],
+      "brief_summary": "The study is designed to explore the safety and tolerability as well as diagnostic 89Zr-girentuximab for imaging CCRC by PET/CT. This study does not offer any treatment for patients with CCRC; therefore, patients will be offered state of the art therapeutic options after imaging with the study drug 89Zr-girentuximab. Cancer treatment will not be delayed by study participation.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00087022",
+      "title": "Monoclonal Antibody Therapy (Rencarex\u00ae) in Treating Patients Who Have Undergone Surgery for Non-metastatic Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00087022",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2018-11-27",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2018-10",
+      "start": {
+        "date": "2004-07"
+      },
+      "completion": {
+        "date": "2012-10",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "girentuximab",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm I"
+          ],
+          "otherNames": [
+            "Rencarex\u00ae, cG250 and WX-G250"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "placebo",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm II"
+          ]
+        }
+      ],
+      "brief_summary": "RATIONALE: Monoclonal antibodies can locate tumor cells and either kill them or deliver tumor-killing substances to them without harming normal cells. It is not yet known whether monoclonal antibody therapy is effective in treating kidney cancer.\n\nPURPOSE: This randomized phase III trial is studying monoclonal antibody therapy to see how well it works in treating patients who have undergone surgery for nonmetastatic primary kidney cancer.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: randomized adjuvant girentuximab versus placebo after surgery for nonmetastatic kidney cancer. Completed phase 3 and posted results do not establish benefit; no efficacy extraction or new efficacy claim made here."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00884520",
+      "title": "An Exploratory, Open Label, Multi-Center, Non-Randomized Study of [F-18]VM4-037",
+      "url": "https://clinicaltrials.gov/study/NCT00884520",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2010-03-16",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2010-03",
+      "start": {
+        "date": "2009-04"
+      },
+      "completion": {
+        "date": "2010-03",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "EARLY_PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Lung Cancer",
+        "Squamous Cell Carcinoma",
+        "Head and Neck Cancer",
+        "Hepatic Carcinoma",
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "[F-18] VM4-037",
+          "description": "The individual doses of \\[F-18\\]VM4-037 contain a maximum of 20 mCi for normal volunteers and 10 mCi for cancer subjects.\n\nThe single IP dose is administered to the study subject immediately prior to the start of PET imaging.",
+          "armGroupLabels": [
+            "VM4-037"
+          ],
+          "otherNames": [
+            "VM4-037"
+          ]
+        }
+      ],
+      "brief_summary": "Phase: Exploratory Study\n\nObjectives: To collect drug bio-distribution data, begin collection of baseline and tumor/background imaging data, acquire experience to improve study design and the conduct of future studies\n\nDesign: Exploratory, open label, nonrandomized, multi-center study\n\nDuration: Three visits - one screening, one imaging, and one follow-up visit at 24 hours post-dose\n\nProcedures: Informed consent, collection of demographic information and medical history, physical examinations, vital signs, 12-lead ECGs, routine blood tests to assess major organ functions, complete blood counts and clinical chemistries for safety, blood sample for CA-IX assay, pre-dose and post-dose blood samples for metabolite analysis, dosing with \\[F-18\\]VM4-037, PET imaging scan, dosimetry estimation (normals), urine collections (normals), tumor immunohistochemistry with CA-IX biomarker, follow up to imaging to collect adverse events\n\nSubjects: Approximately sixteen (16) adult subjects including four (4) healthy volunteers and twelve (12) cancer subjects who have confirmed or highly suspected diagnosis of head \\& neck, lung, large solitary hepatic and renal cell cancer, as defined by protocol criteria",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05728515",
+      "title": "A Small-molecule Carbonic Anhydrase IX Targeting PET Tracer in Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT05728515",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2023-02-15",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2023-02",
+      "start": {
+        "date": "2021-12-25",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2022-03-04",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "EARLY_PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "68Ga-NY104",
+          "description": "Patients will undergo PET/CT scans after receiving an intravenous injection of 68Ga-NY104",
+          "armGroupLabels": [
+            "PET scan"
+          ],
+          "otherNames": [
+            "no other intervention name"
+          ]
+        }
+      ],
+      "brief_summary": "The goal of this pilot clinical trial is to see the potential application of a CAIX targeted PET. tracer in patients with clear cell renal cell carcinoma. The main question\\[s\\] it aims to answer are:\n\n* The biodistribution of the PET tracer\n* Whether RCC lesions can be identified by the PET tracer Participants will undergo 68Ga-NY104 PET/CT scan and images will be reviewed by nuclear medicine specialists.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06447103",
+      "title": "An Investigational Scan (89Zr-DFO-GmAb PET/CT) Compared to Contrast-Enhanced CT for the Detection of Recurrent Clear Cell Renal Cell Cancer After Surgery Comparing Carbonic Anhydrase IX (CAIX) PET CT to Conventional PET CT for Post-Op Staging in Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT06447103",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-06-15",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-06",
+      "start": {
+        "date": "2024-08-06",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2030-12-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma",
+        "Sarcomatoid Renal Cell Carcinoma",
+        "Stage II Renal Cell Cancer",
+        "Stage III Renal Cell Cancer",
+        "Stage IV Renal Cell Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "PROCEDURE",
+          "name": "Biospecimen Collection",
+          "description": "Undergo blood sample collection",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "Biological Sample Collection",
+            "Biospecimen Collected",
+            "Specimen Collection"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Bone Scan",
+          "description": "Undergo bone scan",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "Bone Scintigraphy"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Computed Tomography",
+          "description": "Undergo CT, PET/CT, and CT of the brain",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "CAT",
+            "CAT Scan",
+            "Computed Axial Tomography",
+            "Computerized Axial Tomography",
+            "Computerized axial tomography (procedure)",
+            "Computerized Tomography",
+            "Computerized Tomography (CT) scan",
+            "CT",
+            "CT Scan",
+            "tomography"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Magnetic Resonance Imaging",
+          "description": "Undergo MRI of the brain",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "Magnetic Resonance",
+            "Magnetic Resonance Imaging (MRI)",
+            "Magnetic resonance imaging (procedure)",
+            "Magnetic Resonance Imaging Scan",
+            "Medical Imaging, Magnetic Resonance / Nuclear Magnetic Resonance",
+            "MR",
+            "MR Imaging",
+            "MRI",
+            "MRI Scan",
+            "MRIs",
+            "NMR Imaging",
+            "NMRI",
+            "Nuclear Magnetic Resonance Imaging",
+            "sMRI",
+            "Structural MRI"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Positron Emission Tomography",
+          "description": "Undergo PET/CT",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "Medical Imaging, Positron Emission Tomography",
+            "PET",
+            "PET Scan",
+            "Positron emission tomography (procedure)",
+            "Positron Emission Tomography Scan",
+            "Positron-Emission Tomography",
+            "proton magnetic resonance spectroscopic imaging",
+            "PT"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "Questionnaire Administration",
+          "description": "Ancillary studies",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Zirconium Zr 89 Girentuximab",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Diagnostic (89Zr-DFO-GmAb PET/CT)"
+          ],
+          "otherNames": [
+            "89Zr-DFO-TFP-girentuximab",
+            "89Zr-girentuximab",
+            "89Zr-TLX250",
+            "Zirconium Zr 89 cG250",
+            "Zirconium Zr 89-TLX250"
+          ]
+        }
+      ],
+      "brief_summary": "This phase II trial compares the safety and effectiveness of 89Zr-DFO-GmAb positron emission tomography (PET)/computed tomography (CT) compared to contrast-enhanced CT after surgery in detecting clear cell renal cell cancer that has come back (recurrent). For some patients, the risk of recurrence after surgery remains high. Conventional CT methods, such as contrast-enhanced CT, may not detect small volume or micrometastatic disease. PET/CT with radiotracers, such as 89Zr-DFO-GmAb, may improve detection of tumor cells. Girentuximab (GmAb), a monoclonal antibody, is tagged with zirconium-89, a radioactive atom (which is also known as an isotope). The zirconium-89 (89Zr) isotope is attached to girentuximab with desferrioxamine (DFO) and this combined product is called 89Zr-DFO-girentuximab. 89Zr-DFO-girentuximab attaches itself to a protein on the surface of clear cell renal cell tumor cells called CAIX. PET is an established imaging technique that utilizes small amounts of radioactivity attached to very minimal amounts of tracer, in the case of this research, 89Zr-DFO-GmAb. Because some cancers, including clear cell renal cell cancer, take up 89Zr-DFO-GmAb it can be seen with PET. CT utilizes x-rays that traverse body from the outside. CT images provide an exact outline of organs and potential inflammatory tissue where it occurs in patient's body. Using contrast agents with CT scan to enhance the images (contrast-enhanced CT) is standard of care imaging. 89Zr-DFO-GmAb PET/CT may be safe and effective compared to contrast-enhanced CT in detecting recurrent clear cell renal cell cancer after surgery.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT01582204",
+      "title": "Evaluate The Utility Of 124I-cG250 for The Early Detection Of Response to Therapy In Patients With Metastatic Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT01582204",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-07-08",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-07",
+      "start": {
+        "date": "2012-04"
+      },
+      "completion": {
+        "date": "2027-04",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "NA"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Renal Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "124IcG250",
+          "description": "Pts will undergo baseline disease assessment with CT scans (chest, abd \\& pelvis), 124I-cG250-PET/CT \\& Tc99mMDP bone scan. W/I 7 days of their lst 124I-cG250 PET/CT, pts will start tx with sunitinib or pazopanib, dosed in successive 6-week cycles. At selected time points during the sunitinib or pazopanib cycle 1, repeat imaging with CT scan \\& 124I-cG250 PET/CT will be performed. After cycle 2, pts will be followed per standard of care, i.e., pts will have a standard CT scan of the chest, abd, \\& pelvis with contrast after cycles 2, 3, 4 \\& 6 (or at the time of disease progression if prior to cycle 6) for determination of best response using RECIST 1.1. Each pt will have 2 124I-cG250-PET/CT scans: baseline \\& week 4 (during sunitinib or pazopanib tx). All experimental imaging will take place during tx cycle 1. There will be a dosimetry sub-study for pts willing to undergo 3 additional PET/CT scans, whole body counts, \\& serial blood sampling, following the lst inj of 124I-cG250.",
+          "armGroupLabels": [
+            "124IcG250"
+          ]
+        }
+      ],
+      "brief_summary": "Usually, doctors monitor kidney cancer with CT scans to measure the size of tumors. Sometimes, even when a drug is working, it can take several months before the effects are seen on a regular CT scan. The purpose of this study is to see if a new kind of scan, called 124I-cG250 PET/CT, can determine response to sunitinib or pazopanib earlier than a regular CT scan.\n\nResearch has shown that certain proteins in the blood, called antibodies, can attach themselves to cancer cells without binding to normal cells. In this study, an antibody is used called chimeric G250 (cG250) that is attached to a radioactive isotope. The radioactive isotope in this study is Iodine-124 (124I). If cG250 has attached to tumors in the body, 124I shows up on the PET scan.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07688187",
+      "title": "A Study of Theranostic Pair PD-32766D/T in Participants With Carbonic Anhydrase IX Positive Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT07688187",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-09-18",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-06",
+      "start": {
+        "date": "2026-07-07",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2029-06",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "PD-32766D (a Copper-64 [64Cu] labeled peptide)",
+          "description": "After PD-32766D IV injection, undergo a PET/CT scan.",
+          "armGroupLabels": [
+            "Phase 1a Dose Escalation",
+            "Phase 1b Dose Expansion"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "PD-32766T (an Actinium-225 [225Ac] labeled peptide)",
+          "description": "The PD-32766T of the specified dose per cycle is administered intravenously for up to 6 cycles.",
+          "armGroupLabels": [
+            "Phase 1a Dose Escalation",
+            "Phase 1b Dose Expansion"
+          ]
+        }
+      ],
+      "brief_summary": "This is an open-label, multicenter, Phase 1a/1b study evaluating the theranostic pair 64Cu-PD-32766 Injection (PD-32766D) and 225Ac-PD-32766 Injection (PD-32766T) in adult patients with relapsed or refractory Carbonic Anhydrase IX (CA9)-expressing clear cell renal cell carcinoma (ccRCC). The primary objective is to evaluate the safety and tolerability of PD-32766T, and to characterize its pharmacokinetics and preliminary antitumor activity.\n\nParticipants will first undergo imaging with PD-32766D to assess CA9 expression. Subjects with positive tumor uptake will be eligible to receive PD-32766T. In Phase 1a, PD-32766T will be administered in an escalating dose levels and schedule determined according to protocol and Safety Review Committee recommendations.\n\nIn Phase 1b, participants will receive PD-32766T at the recommended dose and schedule identified from Phase 1a to further evaluate safety, tolerability, and preliminary efficacy.\n\nA total of up to 60 participants will be enrolled in the study.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00003102",
+      "title": "Monoclonal Antibody Therapy in Treating Patients With Advanced Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00003102",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2023-10-04",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2023-10",
+      "start": {
+        "date": "1998-11-17",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2003-05-27",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "Iodine-131 radiolabeled chimeric monoclonal antibody G250 (131I-cG250)",
+          "description": "cG250 is an IgG1 chimeric monoclonal antibody. It was supplied as a sterile solution at a concentration of 1.0 mg/mL in either a 2 mL or a 5 mL vial. cG250 was radiolabeled with Iodine-131 prior to use.",
+          "armGroupLabels": [
+            "Cohort 1 50cGy radiation",
+            "Cohort 2 75cGy radiation",
+            "Cohort 3 100cGy radiation"
+          ]
+        }
+      ],
+      "brief_summary": "RATIONALE: Monoclonal antibodies can locate tumor cells and either kill them or deliver tumor-killing substances to them without harming normal cells.\n\nPURPOSE: Phase I/II trial to study the effectiveness of monoclonal antibody therapy in treating patients with advanced kidney cancer.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06956144",
+      "title": "Exploring the Clinical Application Value of CAIX-Targeted PET Imaging in Renal Cancer Patients",
+      "url": "https://clinicaltrials.gov/study/NCT06956144",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2025-05-29",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2025-04",
+      "start": {
+        "date": "2025-05-09",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-09-30",
+        "type": "ESTIMATED"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Tumor",
+        "Carbonic Anhydrase IX"
+      ],
+      "interventions": [],
+      "brief_summary": "To evaluate the efficacy of targeted CAIX-specific probe PET imaging in the diagnosis and staging of kidney cancer, as well as to assess its role in prognosis prediction and treatment evaluation for kidney cancer.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT01253668",
+      "title": "Brivanib Metastatic Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT01253668",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2021-04-13",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2021-03",
+      "start": {
+        "date": "2011-11",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2013-09",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Brivanib alaninate",
+          "description": "Brivanib by mouth daily at a dose of 800mg.",
+          "armGroupLabels": [
+            "Arm 1"
+          ]
+        },
+        {
+          "type": "GENETIC",
+          "name": "Polymerase chain reaction",
+          "description": "Undergo 1241-cG250 PET/CT imaging (correlative studies)",
+          "armGroupLabels": [
+            "Arm 1"
+          ],
+          "otherNames": [
+            "PCR"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "Iodine I 124 chimeric monoclonal antibody G250",
+          "description": "Undergo 124I-cG250 PET/CT imaging (correlative studies)",
+          "armGroupLabels": [
+            "Arm 1"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Positron emission tomography/computed tomography",
+          "description": "Undergo 1241-cG250 PET/CT imaging (correlative studies)",
+          "armGroupLabels": [
+            "Arm 1"
+          ]
+        },
+        {
+          "type": "GENETIC",
+          "name": "Protein expression analysis",
+          "description": "Correlative studies",
+          "armGroupLabels": [
+            "Arm 1"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "Immunohistochemistry",
+          "description": "correlative studies",
+          "armGroupLabels": [
+            "Arm 1"
+          ],
+          "otherNames": [
+            "immunohistochemistry staining method"
+          ]
+        }
+      ],
+      "brief_summary": "This is a phase II study of an investigational agent, brivanib, in patients with refractory metastatic renal cell carcinoma. This study will evaluate the safety and effectiveness of brivanib in renal cell carcinoma, and explore the activity of this drug in this population to determine whether imaging and molecular features of the tumors can be used to predict response. Approximately 30 people with advanced kidney cancer will be enrolled on this study at the University of Pennsylvania.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05239533",
+      "title": "Study of Nivolumab in Combination With 177Lu-girentuximab for Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT05239533",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-01-14",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-01",
+      "start": {
+        "date": "2022-02-16",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2027-03",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma",
+        "Kidney Cancer",
+        "Advanced Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu-labeled-girentuximab",
+          "description": "The initial starting dose/Dose Level 1 of 177Lu-labeled-girentuximab is 1804 MBq/m2. if 0/3 or 1/6 DLTs, participants will be treated at Dose Level 2 177Lu-girentuximab 2405 MBq/m2. \\>/= 2/6 DLTs, Dose Level -1 is 177Lu-girentuximab 1353 MBq/m2\n\nOnce the MTD is established, a Simon two-stage optimal design will commence.",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Nivolumab 240mg q2wk",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab PET/CT",
+          "description": "All patients will undergo a 89Zr-girentuximab PET/CT scan prior to every 177Lu-girentuximab administration",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "177Lu whole body (WB) planar and SPECT/CT scans",
+          "description": "177Lu whole body (WB) planar and SPECT/CT scans will be performed after each administration of 177Lu-girentuximab",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        }
+      ],
+      "brief_summary": "The purpose of this study is to see if the combination of 177Lu-girentuximab and nivolumab is a safe and effective treatment for advanced clear cell renal cell carcinoma/ccRCC that has the CAIX protein.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: 177Lu-girentuximab plus nivolumab; also includes diagnostic 89Zr-girentuximab scans. The diagnostic component must not be described as treatment. No posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT04496089",
+      "title": "Evaluation of Safety, Biodistibution and Sensitivity/Specificity of PET/CT Imaging With 89Zr-TLX250 in Subjects With RCC",
+      "url": "https://clinicaltrials.gov/study/NCT04496089",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2021-08-24",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2020-10",
+      "start": {
+        "date": "2020-08-01",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2021-04-06",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "HEALTH_SERVICES_RESEARCH",
+      "conditions": [
+        "Carcinoma, Renal Cell",
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab",
+          "description": "A single dose of 37 MBq (\u00b110%) is administered. The dose per dose is equivalent to girentuximab 10 mg (\u00b110%).",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-TLX250",
+            "89Zr-DFO-TFP-girentuximab (GTX)"
+          ]
+        }
+      ],
+      "brief_summary": "89Zr-TLX250 is a carbonic anydrase IX (CAIX)-targeted imaging agent that is under clinical development as a non-invasive diagnostic imaging agent for teh detection of clear cell renal cell carcinoma (ccRCC). The Phase 1 study part of this study is to confirm the safety/tolerability and to evaluate the pharmacokinetics (PK) and pharmacodynamics (PD) in subjects with suspected renal cell carcinoma (RCC) including clear cell renal cell carcinoma. The Phase 2 component of the study is to to evaluate the sensitivity/specificity of using 89Zr-TLX250 PET/CT images to detect RCC and ccRCC in patients with suspected RCC.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00554515",
+      "title": "The High-Dose Aldesleukin (IL-2) \"Select\" Trial for Patients With Metastatic Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT00554515",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2024-08-28",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-08",
+      "start": {
+        "date": "2006-11"
+      },
+      "completion": {
+        "date": "2013-10-31",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Metastatic Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "HD IL2",
+          "armGroupLabels": [
+            "HD IL2"
+          ],
+          "otherNames": [
+            "Proleukin",
+            "Aldesleukin"
+          ]
+        }
+      ],
+      "brief_summary": "High-dose interleukin 2 (Proleukin, Novartis) (IL-2) is approved by the U.S Food and Drug Administration (FDA) for the treatment of metastatic kidney cancer and is a standard treatment of this disease. At the present time, IL-2 is the only therapy for kidney cancer that can produce a remission of disease that lasts after treatment is completed. However, most patients who receive IL-2 do not benefit and all patients experience potentially dangerous side effects.\n\nRecent research has suggested that certain patients may respond better to IL-2 than others. The Cytokine Working Group is currently conducting a clinical trial that aims to identify and confirm this research and narrow the application of IL-2 to those patients most likely to benefit.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07077083",
+      "title": "CAIX PET/CT for Residual or Recurrent Post-ablative ccRCC",
+      "url": "https://clinicaltrials.gov/study/NCT07077083",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-07-21",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-07",
+      "start": {
+        "date": "2026-09-16",
+        "type": "ESTIMATED"
+      },
+      "completion": {
+        "date": "2028-08-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma (ccRCC)",
+        "ccRCC"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "89Zr-Girentuximab",
+          "description": "89Zr-Girentuximab PET",
+          "armGroupLabels": [
+            "Patients with ccRCC undergoing ablation",
+            "Patients with known or suspected recurrent or residual ccRCC"
+          ]
+        }
+      ],
+      "brief_summary": "The goal of this clinical trial is to learn whether 89Zr-Girentuximab PET scans can inform management of renal cell carcinoma. The main questions it aims to answer are:\n\n* Does the 89Zr-Girentuximab PET detect ccRCC that is left behind or has come back after treatment?\n* What differences can be seen on the 89Zr-Girentuximab PET before and after standard of care treatment?\n\nParticipants in arm 1 will be given the study drug followed by a PET scan 3-7 days after injection. Participants in arm 2 will receive the same, but will proceed with their standard of care cryoablation after the initial PET scan. Within 3 days of the cryoablation treatment, participants will receive a repeat PET scan.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06090331",
+      "title": "89Zr-DFO-girentuximab Expanded Access Program (EAP)",
+      "url": "https://clinicaltrials.gov/study/NCT06090331",
+      "status": "NO_LONGER_AVAILABLE",
+      "last_update_posted": {
+        "date": "2026-05-29",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-05",
+      "start": null,
+      "completion": null,
+      "phases": [],
+      "study_type": "EXPANDED_ACCESS",
+      "primary_purpose": null,
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-DFO-girentuximab",
+          "description": "Single IV administration on Day 0, followed by diagnostic scan on Day 5 +/- 2 days."
+        }
+      ],
+      "brief_summary": "The purpose of this Expanded Access Program (EAP) is to enable the use of 89Zr-DFO-girentuximab with positron emission tomography/computed tomography (PET/CT) imaging to non-invasively detect carbonic anhydrase 9 (CAIX)-expressing clear cell renal cell carcinoma (ccRCC) in patients with renal masses as determined by conventional imaging.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00602862",
+      "title": "Effect of Sorafenib on ccRCC Uptake of Radiolabeled Bevacizumab or cG250",
+      "url": "https://clinicaltrials.gov/study/NCT00602862",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2013-12-02",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2012-02",
+      "start": {
+        "date": "2007-07"
+      },
+      "completion": {
+        "date": "2012-06",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "NA"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "BASIC_SCIENCE",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Sorafenib",
+          "description": "Sorafenib 200 mg 2dd2 po for 4 weeks before surgery",
+          "armGroupLabels": [
+            "1",
+            "2"
+          ],
+          "otherNames": [
+            "Bevacizumab",
+            "Avastin",
+            "Nexavar",
+            "cG250",
+            "Rencarex"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "111Indium-bevacizumab",
+          "description": "100 MBq / 1 mg 111Indium/bevacizumab iv",
+          "armGroupLabels": [
+            "1",
+            "3"
+          ],
+          "otherNames": [
+            "avastin",
+            "indium"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "111Indium-cG250",
+          "description": "100 MBq / 10 mg 111Indium-cG250 iv",
+          "armGroupLabels": [
+            "2"
+          ],
+          "otherNames": [
+            "rencarex",
+            "indium"
+          ]
+        }
+      ],
+      "brief_summary": "Sorafenib is a tyrosine kinase inhibitor that is registered for the treatment of metastasized clear cell Renal Cell Carcinoma (ccRCC). It inhibits signal transduction of the Vascular Endothelial Growth Factor Receptor (VEGFR) and the Platelet Derived Growth Factor Receptor (PDGFR). In the tumorigenesis of ccRCC, VEGF and PDGF are upregulated due to the defective Von-Hippel-Lindau (VHL) gene. CcRCC has a high Interstitial Fluid Pressure (IFP) and Tumor Microvascular Density (TMD), hampering the delivery of chemotherapeutics and monoclonal antibodies (mAbs). It was hypothesized that antiangiogenic compounds decrease tumor IFP and TMD, thus normalizing tumor vasculature, before diminishing tumor vasculature. Bevacizumab is an anti-VEGF mAb which depletes soluble VEGF from plasma, depriving VEGFR of its ligand. Chimeric monoclonal antibody cG250 recognizes carbonic anhydrase IX (CAIX), an antigen that is abundantly expressed in Renal Cell Carcinoma (RCC) and has limited expression in normal tissue. The aim of this study was to investigate the effect of Sorafenib on ccRCC physiology, by determining tumor uptake of 111In labeled cG250 or 111In labeled Bevacizumab.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05868174",
+      "title": "Combination of 177Lu-TLX250 and Peposertib in Patients With Carbonic Anhydrase IX -Expressing Solid Tumors",
+      "url": "https://clinicaltrials.gov/study/NCT05868174",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2024-05-01",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-04",
+      "start": {
+        "date": "2023-05-23",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-12",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Solid Tumor, Adult",
+        "Advanced Solid Tumor",
+        "Advanced Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-TLX250",
+          "description": "Single IV administration followed by 89Zr-DFO-girentuximab PET/CT (or PET/MRI) scan at screening and approximately 8-10 weeks (\u00b11 week) after Cycle 3 Day 1, as well as at the end of treatment visit (if feasible). The PET/CT should be obtained within 4-7 days after 89Zr-TLX250 administration",
+          "armGroupLabels": [
+            "89Zr-TLX250, 177Lu-TLX250 and Peposertib"
+          ],
+          "otherNames": [
+            "89Zr-DFO-girentuximab"
+          ]
+        },
+        {
+          "type": "COMBINATION_PRODUCT",
+          "name": "177Lu-TLX250 and Peposertib",
+          "description": "Dose escalation and de-escalation for the determination of the Maximum tolerated combination/ Recommended phase 2 dose.\n\nAll subjects will receive 177Lu-TLX250 intravenously on day 1 and Peposertib BID on days 4-21 of each 84-day cycle.",
+          "armGroupLabels": [
+            "89Zr-TLX250, 177Lu-TLX250 and Peposertib"
+          ],
+          "otherNames": [
+            "177Lu-DOTA-girentuximab"
+          ]
+        }
+      ],
+      "brief_summary": "This is an open label, single-arm, multicentre dose escalation (Part 1) and dose expansion (Part 2) study to evaluate different combinations of 3 radioactive dose levels of 177Lu-TLX250 administered intravenously with 3 different doses of peposertib in patients with CAIX-expressing solid tumors.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02787915",
+      "title": "DC1s-CTL Cellular Therapy for Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT02787915",
+      "status": "UNKNOWN",
+      "last_update_posted": {
+        "date": "2016-06-02",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2016-05",
+      "start": {
+        "date": "2016-09"
+      },
+      "completion": {
+        "date": "2019-08",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "DC1-CTL",
+          "description": "Autologous cytotoxic of T lymphocytes (CTL) were induced by type-1 polarized dendritic cells (DC1) loaded with MAGE-3/MAGE-4/survivin/ her2 /COX-2 CTL epitope peptides .",
+          "armGroupLabels": [
+            "dendritic cell vaccine"
+          ]
+        }
+      ],
+      "brief_summary": "This trial is to evaluate the safety and effectiveness of autologous type-1 polarized dendritic cell vaccines (patients' autologous DC1s loaded with multiple antigens CTL epitope peptide complexes), after radical resection for patients with stage III-IV renal cell carcinoma. Autologous cytotoxic of T lymphocytes (CTL) induced by type-1 polarized dendritic cells (DC1) loaded with MAGE-3/MAGE-4/survivin/ her2 /COX-2 CTL epitope peptides .",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06519760",
+      "title": "68Ga-C1 PET/ CT Imaging in Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT06519760",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2024-11-07",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-11",
+      "start": {
+        "date": "2024-07-30",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-12-31",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "NA"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Carbonic Anhydrase IX",
+        "PET-CT",
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "68Ga-C1",
+          "description": "68Ga-C1 is injected intravenously with a dose of 0.05-0.10 mCi/kg",
+          "armGroupLabels": [
+            "68Ga-C1"
+          ],
+          "otherNames": [
+            "CAIX specific PET imaging"
+          ]
+        }
+      ],
+      "brief_summary": "The goal of this clinical trial is to evaluate the diagnostic value of CAIX protein specific probe 68Ga-C1 in PET/CT imaging in clear cell renal cell carcinoma patients. It will also learn about the safety, tolerability and radiation dosimetry of 68Ga-C1.\n\nResearchers will compare the diagnostic value of 68Ga-C1 PET/CT and 18F-FDG PET/CT in Chinese patients with indeterminate renal masses or confirmed clear cell renal cell carcinoma.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05902377",
+      "title": "68Ga-NY104 PET/CT Imaging in Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT05902377",
+      "status": "UNKNOWN",
+      "last_update_posted": {
+        "date": "2023-06-15",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2023-06",
+      "start": {
+        "date": "2021-12-01",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2023-07-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "68Ga-NY104 PET/CT",
+          "description": "Participants will be administered a single, intravenous bolus of 68Ga-NY104 The recommended administered activity of 68Ga-NY104 is 1.8-2.2 MBq per kilogram bodyweight, subject to variation that may be required owing to variable elution efficiencies obtained during the lifetime of the 68Ga / 68Ga generator.\n\nThe CT and PET imaging session will begin approximately 45 to 75 minutes after 68Ga-NY104 administration.",
+          "armGroupLabels": [
+            "68Ga-NY104 PET/CT"
+          ],
+          "otherNames": [
+            "68Ga-NYM005 PET/CT"
+          ]
+        }
+      ],
+      "brief_summary": "This is a prospective, single-center study in patients with renal cell carcinoma. The goal is to determine the sensitivity and specificity of 68Ga-NY104 PET/CT in the detection of clear cell renal cell carcinoma.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02497599",
+      "title": "Intraoperative Dual-modality Imaging in Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT02497599",
+      "status": "UNKNOWN",
+      "last_update_posted": {
+        "date": "2021-09-29",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2021-03",
+      "start": {
+        "date": "2015-06"
+      },
+      "completion": {
+        "date": "2022-04",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Carcinoma, Renal Cell"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Indium-111-DOTA-Girentuximab-IRDye800CW",
+          "description": "Indium-111-DOTA-Girentuximab-IRDye800CW tracer injection will be administered 7 days before (partial) nephrectomy",
+          "armGroupLabels": [
+            "Intraoperative dual-modality imaging"
+          ],
+          "otherNames": [
+            "Dual-labeled girentuximab"
+          ]
+        },
+        {
+          "type": "RADIATION",
+          "name": "SPECT/CT",
+          "description": "4 or 5 days after tracer injection a SPECT/CT of the abdomen will be acquired.",
+          "armGroupLabels": [
+            "Intraoperative dual-modality imaging"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "Intraoperative dual-modality imaging",
+          "description": "7 days after dual-labeled girentuximab injection standard of care surgery will be performed extended with the use of dual-modality imaging.",
+          "armGroupLabels": [
+            "Intraoperative dual-modality imaging"
+          ],
+          "otherNames": [
+            "Fluorescence and radioguided surgery"
+          ]
+        }
+      ],
+      "brief_summary": "Intraoperative tumor localization and resection can be enhanced using intraoperative fluorescence imaging and radiodetection. Girentuximab specifically recognizes carbonic anhydrase IX expressed on \\> 95% of renal cell carcinoma (RCC). Therefore Indium-111-DOTA-girentuximab-IRDye800CW is a perfect dual-labeled antibody for dual-modality image-guided surgery in RCC.\n\nThe aim of this study is to assess the feasibility and safety of intraoperative dual-modality imaging with Indium-111-DOTA-girentuximab-IRDye800CW in renal cell carcinoma patients.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00199888",
+      "title": "Safety Study With the Antibody, cG250, and Isotope, 124-Iodine, to Diagnose Patients With Renal Masses.",
+      "url": "https://clinicaltrials.gov/study/NCT00199888",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2022-10-10",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2022-10",
+      "start": {
+        "date": "2005-06",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2009-05-29",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Cancer of Kidney",
+        "Kidney Cancer",
+        "Renal Cancer",
+        "Neoplasms, Kidney",
+        "Renal Neoplasms",
+        "Renal Cell Carcinoma (RCC)",
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "124-Iodine-cG250 (124I-cG250)",
+          "armGroupLabels": [
+            "124I-cG250"
+          ]
+        }
+      ],
+      "brief_summary": "The purpose of this study is to see if an antibody (cG250) attached to a radioactive substance (Iodine-124) safely detects clear cell renal cancer in patients with kidney tumors scheduled for surgery.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00942058",
+      "title": "Serum CA9 Level as Biological Marker of the Treatment Response in Metastatic Renal Cell Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00942058",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2014-01-29",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2014-01",
+      "start": {
+        "date": "2009-06"
+      },
+      "completion": {
+        "date": "2013-11",
+        "type": "ACTUAL"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Metastatic Kidney Cancer",
+        "Metastatic Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "OTHER",
+          "name": "Serum and urinary CA9 level",
+          "description": "Blood and urinary samples are collected before treatment and at 1, 3, 6, 9 and 12 months.",
+          "armGroupLabels": [
+            "CA9 level"
+          ]
+        }
+      ],
+      "brief_summary": "One third of patients with kidney cancer are diagnosed in the metastatic stage, and among patients with a localized form, about 30 to 40% will develop metastases after surgery.\n\nMedical treatment of metastatic renal cancer include immunotherapy with interferon \u03b1 and/or IL-2, or targeted therapies such as anti-angiogenic (anti-vascular endothelial growth factor (VEGF), anti-tyrosine kinase inhibitors and m-TOR). These treatments sometimes associated (or IL2 + INF or INF AntiVEGF) do allow for objective response in 15 to 30% of cases (net benefit of targeted therapies), but are carriers of potentially significant side effects and are very expensive. The treatment response is considered on imaging exams repetitive, costly and inconsistently reliable. A serum marker of tumor development would be particularly welcome.\n\nCA9 is an oncogene also know as CA IX, carbonic anhydrase 9 or MN/CA9. The gene encoding an oncoprotein called indifferently membrane antigen MN, MN/CA9 isoenzyme, carbonic anhydrase IX CA9, G250/MN/CA9 or protein G250. It was demonstrated that the level of expression of CA9 in tumor tissue can be used as a predictive marker of response to immunotherapy.\n\nIn previous studies, the investigators tried to use CA9 to improve the differential diagnosis of kidney tumors using tumor biopsy or fine needle aspiration. More recently, the investigators have developed the ELISA and quantitative reat time polymerase chain reaction (RT-PCR) to study the CA9 protein and CA9 mRNA in the serum of patients with non-metastatic kidney cancer. The investigators have thus shown that CA9 was overexpressed prior to surgery and that this expression disappeared after tumor ablation.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT02002312",
+      "title": "Phase II Study of Lutetium-177 Labeled Girentuximab in Patients With Advanced Renal Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT02002312",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2015-08-13",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2015-08",
+      "start": {
+        "date": "2011-08"
+      },
+      "completion": {
+        "date": "2015-06",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Metastatic Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Lu-177-DOTA-girentuximab",
+          "description": "Drug: In-111-DOTA-girentuximab At day 1, every patient received girentuximab at a dose of 10 mg coupled to DOTA and labeled with 5 mCi of In-111.\n\nDrug: Lu-177-DOTA-girentuximab At day 8-10, every patient receives girentuximab at a dose of 10 mg coupled to DOTA and labeled with 65 mCi/m2 of Lu-177. If eligible, patients are retreated at a dose 75% of the previous dose, for a total of not more than three treatments.",
+          "armGroupLabels": [
+            "Lu-177-DOTA-girentuximab"
+          ],
+          "otherNames": [
+            "Lu-177-DOTA-cG250"
+          ]
+        }
+      ],
+      "brief_summary": "To determine the efficacy of multiple doses Lutetium-177-DOTA-girentuximab in patients with advanced clear cell renal cell carcinoma using RECIST criteria.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00908739",
+      "title": "Studying Tumor Tissue Samples From Patients Who Have Undergone Surgery for Localized Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00908739",
+      "status": "WITHDRAWN",
+      "last_update_posted": {
+        "date": "2015-09-30",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2015-09",
+      "start": {
+        "date": "2008-05"
+      },
+      "completion": null,
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "GENETIC",
+          "name": "gene expression analysis",
+          "description": "immunohistochemistry for levels of expression of five different factors related to aggressive tumor behavior (i.e., VEGF expression, E-cadherin regulation, matrix metalloproteinase 2 and 9 activity, and carbonic anhydrase 9 activity)"
+        },
+        {
+          "type": "OTHER",
+          "name": "immunohistochemistry staining method",
+          "description": "immunohistochemistry for levels of expression of five different factors related to aggressive tumor behavior (i.e., VEGF expression, E-cadherin regulation, matrix metalloproteinase 2 and 9 activity, and carbonic anhydrase 9 activity)"
+        },
+        {
+          "type": "OTHER",
+          "name": "laboratory biomarker analysis",
+          "description": "immunohistochemistry for levels of expression of five different factors related to aggressive tumor behavior (i.e., VEGF expression, E-cadherin regulation, matrix metalloproteinase 2 and 9 activity, and carbonic anhydrase 9 activity)"
+        }
+      ],
+      "brief_summary": "RATIONALE: Studying samples of tumor tissue from patients with cancer in the laboratory may help doctors learn more about changes that occur in DNA and identify biomarkers related to cancer.\n\nPURPOSE: This research study is looking at tumor tissue samples from patients who have undergone surgery for localized kidney cancer.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT06750419",
+      "title": "89Zr-TLX250 for PET/CT Imaging of ccRCC - ZIRCON-CP Study",
+      "url": "https://clinicaltrials.gov/study/NCT06750419",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2024-12-27",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-12",
+      "start": {
+        "date": "2024-11-06",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-06-30",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "89Zr-TLX250 PET/CT",
+          "description": "89Zr-TLX250, is a chimeric monoclonal antibody (INN name: girentuximab) with specificity for the CAIX (carbonic anhydrase 9) antigen, radiolabelled with the positron emitting radiometal zirconium- 89. Girentuximab has a CAS number of 916138-87-9. The chemical formula, without the 89Zr and the desferrioxamine, is C6460H1006N1718O2018S48 with a molecular mass of 146.5 kg/mol.\n\n89Zr-TLX250 is formulated as a solution for IV administration in glass vials at the nominal dosage strength of 37 MBq (\u00b110%) for single IV use. The mass dose of 89Zr-TLX250 to be used in this Phase 3 study will be 10 mg, labelled with 37 MBq (\u00b110%) 89Zr per dose.",
+          "armGroupLabels": [
+            "Experimental arm receiving the IP"
+          ],
+          "otherNames": [
+            "89Zr-DFO-girentuximab",
+            "89Zr-girentuximab",
+            "89Zr-DFO-TFP-GTX",
+            "89Zirconium-labelled girentuximab"
+          ]
+        }
+      ],
+      "brief_summary": "89Zr-TLX250 is under clinical development as a diagnostic agent targeting clear cell renal cell carcinoma, and this Phase 3 bridging study in mainland Chinese patients is intended to support the successful ZIRCON data (ZIRCON Clinicaltrial.gov ID: NCT03849118)",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT04053855",
+      "title": "Evaluation of Urinary Exosomes Presence From Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT04053855",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-05-06",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-05",
+      "start": {
+        "date": "2020-01-29",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-08-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "Urinary sample",
+          "description": "Urinary sample (100 ml) will be collected in the urology department to analysis urinary exosomes.",
+          "armGroupLabels": [
+            "Control patients",
+            "Renal mass patients"
+          ]
+        }
+      ],
+      "brief_summary": "Clear cell renal cell carcinoma is diagnosed by imaging, sometimes associated with biopsy. This diagnosis is expensive, invasive and sometimes late. The development of a simple biological test for diagnosis is essential. Exosomes are 30 to 150 nm membrane vesicles secreted into the extracellular space by various living cells. These exosomes can be isolated from biological fluids, including urine. The recent study of urinary exosomes is a promising topic for analyzing tumor markers in urine. The investigator's goal is to develop a reliable technique for detecting tumor exosomes in urine in patients with clear cell renal cell carcinoma. The analysis of urinary exosomes could provide a new liquid biopsy tool for the early diagnosis of clear cell renal cell carcinoma.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00606632",
+      "title": "Pre-surgical Detection of Clear Cell Renal Cell Carcinoma (ccRCC) Using Radiolabeled G250-Antibody",
+      "url": "https://clinicaltrials.gov/study/NCT00606632",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2018-10-02",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2018-09",
+      "start": {
+        "date": "2008-03"
+      },
+      "completion": {
+        "date": "2009-12",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Renal Cell Carcinoma",
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "124-Iodine-cG250 (124I-cG250)",
+          "description": "i.v. and PET/CT scan 4+/-2 days after administration",
+          "armGroupLabels": [
+            "124-Iodine-cG250 (124I-cG250)"
+          ],
+          "otherNames": [
+            "Ca9-SCAN"
+          ]
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "CT",
+          "description": "contrast enhanced CT scan",
+          "armGroupLabels": [
+            "124-Iodine-cG250 (124I-cG250)"
+          ]
+        }
+      ],
+      "brief_summary": "This is a multicenter Phase III study to demonstrate the diagnostic utility of 124I-cG250 PET/CT pre-surgical imaging in patients with operable renal masses.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05698238",
+      "title": "Clinical Study to Evaluate Safety and Dosing of CA9hu-1 in Patients With Advanced Solid Tumours",
+      "url": "https://clinicaltrials.gov/study/NCT05698238",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": {
+        "date": "2023-03-15",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2023-03",
+      "start": {
+        "date": "2024-01",
+        "type": "ESTIMATED"
+      },
+      "completion": {
+        "date": "2027-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma Metastatic",
+        "TNBC - Triple-Negative Breast Cancer",
+        "Head and Neck Cancer",
+        "Non-small-cell Lung Carcinoma",
+        "Mesothelioma, Malignant"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "CA9hu-1",
+          "description": "Humanized monoclonal antibody to human carbonic anhydrase IX",
+          "armGroupLabels": [
+            "Treatment arm"
+          ]
+        }
+      ],
+      "brief_summary": "Carbonic anhydrase IX (CA IX) has been implicated in the progression of most solid tumours and expression has been demonstrated in clinical samples from a variety of solid cancers. High expression is often associated with high grade or metastatic disease and poor prognosis. CA IX is not expressed in normal tissue, potentially providing a cancer-associated target that would not likely result in significant interruption of normal biologic function in organs not affected by cancer. A humanized monoclonal antibody CA9hu-1 has shown robust activity in a variety of tumour models including models of ovarian, prostate, breast, pancreatic, colon and lung where tumour growth and metastasis are inhibited when CA9hu-1 is used as a monotherapy. Enhancement of chemotherapy has also been demonstrated in several models in combination with CA9hu-1. CA IX is also expressed by tumour-associated cells (angiogenic endothelium, tumour-associated macrophages), which also drive cancer progression. Thus, targeting CA IX with CA9hu-1 in cancer patients is expected to affect multiple pathways and multiple tumour compartments that are important to tumour progression. Taken together, there is strong rationale for developing hu-CA91 for the treatment of advanced cancer. The present study was designed to establish safety and toxicity profile and maximum tolerated dose of CA9hu-1, evaluate pharmacokinetics, investigate the presence of anti-drug antibody, to document anti-tumour activity at a clinically relevant dose, and to document the use of \\[18F\\]FLT-PET as a biomarker for detection of early tumour response at a clinically relevant dose.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00199875",
+      "title": "Treatment of Patients With Advanced Renal Cancer With a Radiolabeled Antibody, Yttrium-90 Conjugated Chimeric G250",
+      "url": "https://clinicaltrials.gov/study/NCT00199875",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2022-10-10",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2022-10",
+      "start": {
+        "date": "2005-07-06",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2013-03-14",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma",
+        "Kidney Neoplasm",
+        "Renal Cancer",
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Yttrium-90 conjugated chimeric G250 (^90Y-DOTA-cG250)",
+          "description": "Patients received a single infusion of \\^90Y-DOTA-cG250, with escalating doses administered to sequentially enrolled cohorts until MTD determination.",
+          "armGroupLabels": [
+            "Cohort 1 (0.2 mCi/kg)",
+            "Cohort 2 (0.3 mCi/kg)",
+            "Cohort 3 (0.4 mCi/kg)",
+            "Cohort 4 (0.45 mCi/kg)",
+            "Cohort 5 (0.55 mCi/kg)"
+          ]
+        }
+      ],
+      "brief_summary": "This was a Phase 1, open-label, dose-escalation study of yttrium-90 conjugated chimeric G250 (\\^90Y-DOTA-cG250) in patients with advanced, measurable clear cell renal cell carcinoma (RCC). Study objectives were to determine the safety, targeting, and dosimetry of \\^90Y-DOTA-cG250, using indium-111 conjugated chimeric G250 (\\^111In-DOTA-cG250) as a surrogate, as well as to evaluate the immunogenicity of cG250.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00717587",
+      "title": "Sunitinib Before and After Surgery in Treating Patients With Stage IV Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00717587",
+      "status": "UNKNOWN",
+      "last_update_posted": {
+        "date": "2014-01-10",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2009-01",
+      "start": {
+        "date": "2008-06"
+      },
+      "completion": null,
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "motexafin gadolinium"
+        },
+        {
+          "type": "DRUG",
+          "name": "sunitinib malate"
+        },
+        {
+          "type": "GENETIC",
+          "name": "comparative genomic hybridization"
+        },
+        {
+          "type": "GENETIC",
+          "name": "gene expression analysis"
+        },
+        {
+          "type": "GENETIC",
+          "name": "mutation analysis"
+        },
+        {
+          "type": "GENETIC",
+          "name": "polymorphism analysis"
+        },
+        {
+          "type": "OTHER",
+          "name": "immunohistochemistry staining method"
+        },
+        {
+          "type": "OTHER",
+          "name": "iodine I-124 girentuximab"
+        },
+        {
+          "type": "OTHER",
+          "name": "laboratory biomarker analysis"
+        },
+        {
+          "type": "OTHER",
+          "name": "pharmacological study"
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "adjuvant therapy"
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "neoadjuvant therapy"
+        },
+        {
+          "type": "PROCEDURE",
+          "name": "therapeutic conventional surgery"
+        }
+      ],
+      "brief_summary": "RATIONALE: Sunitinib may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth and by blocking blood flow to the tumor. Giving sunitinib before surgery may make the tumor smaller and reduce the amount of normal tissue that needs to be removed. Giving it after surgery may kill any tumor cells that remain after surgery.\n\nPURPOSE: This phase II trial is studying how well sunitinib works when given before and after surgery in treating patients with stage IV kidney cancer.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07551349",
+      "title": "Dual-target CD70/CAIX CAR-NK Cells for Advanced Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT07551349",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-04-24",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-04",
+      "start": {
+        "date": "2026-02-02",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2028-04-17",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Advanced or Metastatic Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "EB-701/CA9-NK",
+          "description": "dual-target allogeneic CAR-NK cells (single infusion on Day 0; optional second infusion on Day 15 if safety criteria are met)",
+          "armGroupLabels": [
+            "Experimental: Dual-target CD70/CAIX CAR-NK cells after lymphodepletion"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Fludarabine",
+          "description": "lymphodepletion",
+          "armGroupLabels": [
+            "Experimental: Dual-target CD70/CAIX CAR-NK cells after lymphodepletion"
+          ]
+        }
+      ],
+      "brief_summary": "Phase 1/2 study evaluates the safety, feasibility, and preliminary antitumor activity of allogeneic dual-target CD70/CAIX CAR-NK cells after fludarabine/cyclophosphamide lymphodepletion in adults with advanced or metastatic clear cell RCC that has progressed after standard therapy. The study is designed to determine a recommended dose and schedule, characterize hepatobiliary safety, and explore whether CD70-high, CAIX-high, or dual-high tumors derive the greatest benefit. Biomarker-defined activity signals will be used to guide whether later development should prioritize CD70, CAIX/CA9, or continued dual-targeting.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT03849118",
+      "title": "89Zr-TLX250 for PET/CT Imaging of ccRCC- ZIRCON Study",
+      "url": "https://clinicaltrials.gov/study/NCT03849118",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2024-05-17",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-05",
+      "start": {
+        "date": "2019-08-15",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2022-11-07",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab",
+          "description": "Single IV administration on Day 0, followed by diagnostic scan on Day 5 +/- 2 days.",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-TLX250",
+            "89Zr-DFO-TFP-girentuximab (GTX)"
+          ]
+        }
+      ],
+      "brief_summary": "89Zr-TLX250 is under clinical development as a diagnostic agent targeting clear cell renal cell carcinoma.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Diagnostic imaging: ZIRCON uses 89Zr-girentuximab PET/CT. The registry intervention explicitly lists 89Zr-TLX250 as another name. Reused ZIRCON literature concerns this same trial, not an additional independent study. No therapeutic efficacy conclusion."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07833085",
+      "title": "CAIX-targeted PET/CT in Solid Tumors",
+      "url": "https://clinicaltrials.gov/study/NCT07833085",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-09-22",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-09",
+      "start": {
+        "date": "2026-09-21",
+        "type": "ESTIMATED"
+      },
+      "completion": {
+        "date": "2031-12-31",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "NA"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Malignant Solid Tumors",
+        "Clear Cell Renal Cell Carcinoma",
+        "Lung Cancer (NSCLC)",
+        "Breast Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "68Ga-CAIX",
+          "description": "The subjects receive a PET/CT scan 30-60 minutes after intravenous administration of 68Ga-CAIX",
+          "armGroupLabels": [
+            "68Ga-CAIX PET/CT imaging in solid tumors"
+          ]
+        }
+      ],
+      "brief_summary": "Tumor hypoxic microenvironment plays an important role in the initiation and progression of solid tumors, as well as tumor invasion, metastasis, and treatment resistance. Carbonic anhydrase IX (CAIX), as a crucial downstream molecule regulated by hypoxia-inducible factor-1 (HIF-1), is highly expressed in various solid tumors and is closely associated with tumor invasiveness, treatment response, and prognosis; thus, it represents an ideal target for tumor diagnosis and therapy. This study aims to explore the diagnostic value of CAIX-targeted PET/CT imaging in various solid tumors, as well as the correlation between tumor uptake and tissue CAIX expression.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00203866",
+      "title": "Trial of G250 Peptide and IL-2 Following Surgical Resection of Locally Advanced/Metastatic Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT00203866",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2013-09-05",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2013-09",
+      "start": {
+        "date": "2003-10"
+      },
+      "completion": {
+        "date": "2007-03",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Metastatic Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "G250 peptide"
+        },
+        {
+          "type": "DRUG",
+          "name": "IL-2"
+        }
+      ],
+      "brief_summary": "The purpose of this study is to determine whether the experimental vaccine G250 with or without IL-2 can produce an immune response in patients with renal cell carcinoma who have had all their cancer removed by surgery.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT01762592",
+      "title": "REDECT 2: REnal Masses: Pivotal Trial to DEteCT Clear Cell Renal Cell Carcinoma With PET/CT",
+      "url": "https://clinicaltrials.gov/study/NCT01762592",
+      "status": "WITHDRAWN",
+      "last_update_posted": {
+        "date": "2017-12-22",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2017-12",
+      "start": {
+        "date": "2017-12",
+        "type": "ESTIMATED"
+      },
+      "completion": {
+        "date": "2019-12",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Renal Cell Carcinoma",
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Iodine (124I) Girentuximab",
+          "description": "i.v.",
+          "armGroupLabels": [
+            "Iodine (124I) Girentuximab"
+          ],
+          "otherNames": [
+            "124I-cG250"
+          ]
+        }
+      ],
+      "brief_summary": "Study WX-20-002 will confirm diagnostic efficacy and safety of a PET/CT scan using Iodine (124I) Girentuximab performed during the diagnostic work-up in patients with indeterminate cT1-renal masses.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07179770",
+      "title": "Effects of Belzutifan on 89Zr-DFO-girentuximab PET Uptake in Patients With Renal Cell Carcinoma (RCC)",
+      "url": "https://clinicaltrials.gov/study/NCT07179770",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-07-30",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-07",
+      "start": {
+        "date": "2025-09-15",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2028-10-01",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Metastatic Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Belzutifan",
+          "description": "120 mg orally daily for 28 days",
+          "armGroupLabels": [
+            "Previously treated metastatic clear cell RCC"
+          ],
+          "otherNames": [
+            "Welireg\u00ae"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "89Zr-DFO-girentuximab",
+          "description": "10 mg single slow intravenous (IV) administration",
+          "armGroupLabels": [
+            "Previously treated metastatic clear cell RCC"
+          ],
+          "otherNames": [
+            "TLX250-CDx"
+          ]
+        },
+        {
+          "type": "DEVICE",
+          "name": "89Zr-DFO-girentuximab PET",
+          "description": "89Zr-DFO-Girentuximab PET before and after 4 weeks of treatment with standard-of-care (SOC) belzutifan.",
+          "armGroupLabels": [
+            "Previously treated metastatic clear cell RCC"
+          ]
+        }
+      ],
+      "brief_summary": "The purpose of this study is to identify changes in Carbonic Anhydrase IX (CAIX) expression induced by hypoxia-inducible factor 2 alpha (HIF-2\u03b1) inhibition by initiating belzutifan single agent therapy and imaging CAIX expression with 89Zr-DFO-girentuximab PET before and 4 weeks after initiating treatment. This will be the first study to evaluate potential changes in CAIX expression altered by belzutifan. Information gained from this study will be leveraged to develop combinations of belzutifan with CAIX targeted agents including radioimmunotherapy in the future.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05214885",
+      "title": "Novel Biomarkers of Hypoxia and Metabolism in Clear Cell Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT05214885",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2022-03-09",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2022-03",
+      "start": {
+        "date": "2022-02-11",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2026-12-31",
+        "type": "ESTIMATED"
+      },
+      "phases": [],
+      "study_type": "OBSERVATIONAL",
+      "primary_purpose": null,
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "No intervention was required for patients or control group in this study",
+          "description": "The patient was treated normally and no intervention was required in this study",
+          "armGroupLabels": [
+            "the benign kidney disease group",
+            "the ccRCC patient group",
+            "the healthy control group"
+          ]
+        }
+      ],
+      "brief_summary": "Renal cell carcinoma (RCC) is one of the common malignant tumors in human beings and originates from the renal tubular epithelium. Clear cell renal cell carcinoma (ccRCC) is the main pathological type of RCC. Due to the lack of reliable biomarkers and clinical symptoms for early diagnosis, imaging findings such as ultrasound and CT are needed. When the patients presented typical symptoms, for example, hematuria, backache, and abdominal mass, some of them are in advanced stages of cancer. About a quarter of patients had metastasis at the first diagnosis, and the 5-year survival rate of these patients was less than 10%. Therefore, the early diagnosis of ccRCC and the prevention of tumor recurrence and metastasis are of great significance.\n\nThe preliminary studies suggested that some hypoxia and metabolism-related molecules were highly expressed in ccRCC tumors but low in normal kidney tissues. The molecules included carbonic anhydrase IX/9 (CA IX/CA9), the mitochondrial NADH dehydrogenase \\[ubiquinone\\] 1 alpha subcomplex, 4-like 2(NDUFA4L2), angiopoietin-like protein 4(ANGPTL4), hypoxia inducible lipid droplet-associated (HILPDA\uff09, and egl-9 family hypoxia-inducible factor 3( EGLN3) et al . Cell-free DNA methylomes were also highly expressed in the blood of ccRCC patients.\n\nIn order to further verify the expression status of the above novel biomarkers in ccRCC, the investigators will detect the expressions of these molecules in the tumor and adjacent tissues from 140 ccRCC patients by RT-PCR, Western blot, and immunohistochemistry.140 healthy people were selected as the control group. 30 patients with benign kidney diseases were selected as another control group. Blood and urine samples from the ccRCC group and the control group were collected. The mRNA and protein levels of the above molecules in blood or urine samples were detected by qRT-PCR and ELISA. The correlation between the expression of the above new biomarkers and clinical data, such as early diagnosis, pathological grade, recurrence and metastasis, and survival time, was statistically analyzed. The above molecular changes were dynamically detected before surgery, 1 week, and 6 months after surgery. A receiver-operating characteristic curve (ROC) was used to determine the threshold value of these biomarkers for the diagnosis of renal clear cell carcinoma.\n\nThe study is to explore the specific tumor biomarker spectrum for clinical diagnosis, evaluation of recurrence, metastasis, and prognosis of ccRCC, which will be auxiliary early screening and diagnosis, reducing the harm of renal cancer to human health.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07768306",
+      "title": "Evaluation of Safety, Pharmacokinetics, Distribution\uff0cRadiation Safety and Sensitivity/Specificity of PET/CT Imaging With 68Ga-NYM096 in Participants With IRM",
+      "url": "https://clinicaltrials.gov/study/NCT07768306",
+      "status": "NOT_YET_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-08-17",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-08",
+      "start": {
+        "date": "2026-09",
+        "type": "ESTIMATED"
+      },
+      "completion": {
+        "date": "2027-04",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma (ccRCC)"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "68Ga-NYM096 injection",
+          "description": "Using a syringe to withdraw 68Ga-NYM096 injection, the dose will be administered via an intravenous injection",
+          "armGroupLabels": [
+            "\u2076\u2078Ga-NYM096 Injection"
+          ]
+        }
+      ],
+      "brief_summary": "68Ga-NYM096 is a carbonic anhydrase IX (CAIX)-targeted imaging agent that is under clinical development as a non-invasive diagnostic imaging agent for the detection of clear cell renal cell carcinoma (ccRCC). The Phase 1 study is to evaluate the safety, pharmacokinetics, radioactivity distribution, radiation safety and preliminary diagnostic performance in participants with indeterminate renal masses (IRM)",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00520533",
+      "title": "Study of Safety and Functional Imaging of cG250 and Sunitinib in Patients With Advanced Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT00520533",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2022-10-12",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2022-10",
+      "start": {
+        "date": "2008-02",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2012-09",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma (RCC)"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "Chimeric monoclonal antibody cG250",
+          "description": "First Cycle: cG250 10 mg/m\u00b2 intravenous infusion, weekly for five weeks, followed by a two-week break. 1st \\& 5th dose will be trace-labeled with a radioactive substance detectable on a PET scanner (124I-cG250).\n\nSecond cycle (investigator discretion): cG250 10 mg/m\u00b2 intravenous infusion, weekly for four weeks followed by a two-week break. No 124I-cG250 will be used in the 2nd cycle.\n\nUp to 2 cycles available.",
+          "armGroupLabels": [
+            "On Study"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Sunitinib malate",
+          "description": "First Cycle: Sunitinib 50 mg orally daily for 4 weeks (starts 8th day of 1st treatment cycle), followed by a two-week period off sunitinib.\n\nSecond cycle (investigator discretion): Sunitinib 50 mg orally daily for 4 weeks (starts on 1st day of 2nd treatment cycle), followed by a two-week period off sunitinib.\n\nUp to 2 cycles available on-study.",
+          "armGroupLabels": [
+            "On Study"
+          ],
+          "otherNames": [
+            "Sutent"
+          ]
+        }
+      ],
+      "brief_summary": "This clinical trial explores the safety, efficacy, and effects on functional imaging of cG250 monoclonal antibody (mAb) administered intravenously weekly in combination with daily oral sunitinib, in patients with advanced renal cell carcinoma.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json"
+    },
+    {
+      "concept": "NNMT",
+      "nct_id": "NCT01144169",
+      "title": "Study of Hydroxychloroquine Before Surgery in Patients With Primary Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT01144169",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2016-10-26",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2016-10",
+      "start": {
+        "date": "2010-10"
+      },
+      "completion": {
+        "date": "2016-09",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Hydroxychloroquine (HC)",
+          "description": "Subjects will receive HC orally for 14 days prior to surgery. The fixed dose of HC will be 400 mg/day in divided doses (200 mg bid). The final dose will be administered on the evening prior to nephrectomy.",
+          "armGroupLabels": [
+            "Hydroxychloroquine (HC)"
+          ],
+          "otherNames": [
+            "Plaquenil\u00ae"
+          ]
+        }
+      ],
+      "brief_summary": "The main goal of this research study is to determine whether treating patients with renal cell cancer with hydroxychloroquine before surgery can make the cancer easier to kill. Another goal is to see how the study drug affects the body's immune cells which fight cancer cells.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.480381+00:00",
+      "source_file": "followup_sources/trials_NNMT.json",
+      "review_interpretation": "NNMT is a secondary serum biomarker outcome in a hydroxychloroquine study, not a verified drug target. Terminated for accrual barriers (surgery delay/additional visits), not a reported efficacy failure. No posted results. This is not evidence of an NNMT-targeting therapy."
+    }
+  ],
+  "reused_source_manifest": [
+    {
+      "name": "ca9_independent",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28girentuximab+AND+ZIRCON%29&format=json&pageSize=3&resultType=core&sort=RELEVANCE",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:40.591278+00:00",
+      "status": "error",
+      "sha256": "af70b6ea0591810e5a5301702c8ffe856f2fc0bb0e586a5f7883d0a5d00989ce",
+      "bytes": 39,
+      "file": "sources/ca9_independent.json"
+    },
+    {
+      "name": "ca9_zircon",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=girentuximab+AND+ZIRCON&format=json&pageSize=3&resultType=core",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:36:12.959051+00:00",
+      "status": 200,
+      "sha256": "50380bb38e4721ef38f7fc20e5323ed06a216b5ffbfdfd629849fdde0b498153",
+      "bytes": 19572,
+      "file": "sources/ca9_zircon.json"
+    },
+    {
+      "name": "mtor_independent",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A17476008+AND+SRC%3AMED&format=json&pageSize=3&resultType=core&sort=RELEVANCE",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:41.920583+00:00",
+      "status": 200,
+      "sha256": "db3434bb1a135ab5c064e038fc0bc39c03cd0cc3466322edb5c50ac3496aa35a",
+      "bytes": 8036,
+      "file": "sources/mtor_independent.json"
+    },
+    {
+      "name": "mtor_renal",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Temsirolimus%2C+interferon+alfa%2C+or+both+for+advanced+renal-cell+carcinoma%22&format=json&pageSize=3&resultType=core",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:36:14.728313+00:00",
+      "status": 200,
+      "sha256": "bef546dd5a022b43c9f7afff7618129262a44f8a2dd151e57952952fb5ab448a",
+      "bytes": 15636,
+      "file": "sources/mtor_renal.json"
+    },
+    {
+      "name": "ndufa4l2_renal",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NDUFA4L2+AND+renal+AND+carcinoma&format=json&pageSize=3&resultType=core",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:36:15.343423+00:00",
+      "status": 200,
+      "sha256": "3be65cad40a1db3212143f634e98d534ab705886878a9e2e6c89276bbadcdee7",
+      "bytes": 29132,
+      "file": "sources/ndufa4l2_renal.json"
+    },
+    {
+      "name": "nnmt_independent",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%28NNMT+AND+renal+AND+carcinoma%29&format=json&pageSize=3&resultType=core&sort=RELEVANCE",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:41.118092+00:00",
+      "status": "error",
+      "sha256": "af70b6ea0591810e5a5301702c8ffe856f2fc0bb0e586a5f7883d0a5d00989ce",
+      "bytes": 39,
+      "file": "sources/nnmt_independent.json"
+    },
+    {
+      "name": "nnmt_renal",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=NNMT+AND+renal+AND+carcinoma&format=json&pageSize=3&resultType=core",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:36:13.776968+00:00",
+      "status": 200,
+      "sha256": "7201ba583f685350b7fb4a4dc0452d0229545e9975453b160f5400d0c05ea569",
+      "bytes": 25373,
+      "file": "sources/nnmt_renal.json"
+    },
+    {
+      "name": "opentargets_CA9",
+      "url": "https://api.platform.opentargets.org/api/v4/graphql",
+      "method": "POST",
+      "request": {
+        "query": "query($id:String!){target(ensemblId:$id){id approvedSymbol tractability{label modality value} drugAndClinicalCandidates{count rows{id maxClinicalStage drug{id name}}}}}",
+        "variables": {
+          "id": "ENSG00000107159"
+        }
+      },
+      "retrieved_utc": "2026-09-24T11:35:39.378559+00:00",
+      "status": 200,
+      "sha256": "83d08f7506e11dd6a11ce891dc46755eb8c05f98cc25492e765dc4ddf9dce16e",
+      "bytes": 2435,
+      "file": "sources/opentargets_CA9.json"
+    },
+    {
+      "name": "opentargets_MTOR",
+      "url": "https://api.platform.opentargets.org/api/v4/graphql",
+      "method": "POST",
+      "request": {
+        "query": "query($id:String!){target(ensemblId:$id){id approvedSymbol tractability{label modality value} drugAndClinicalCandidates{count rows{id maxClinicalStage drug{id name}}}}}",
+        "variables": {
+          "id": "ENSG00000198793"
+        }
+      },
+      "retrieved_utc": "2026-09-24T11:35:39.989202+00:00",
+      "status": 200,
+      "sha256": "c5cb6fc233c12bc119efa3c713e3f1b94aa0ed7a7aee343171cae965c582c38f",
+      "bytes": 5785,
+      "file": "sources/opentargets_MTOR.json"
+    },
+    {
+      "name": "opentargets_VEGFA",
+      "url": "https://api.platform.opentargets.org/api/v4/graphql",
+      "method": "POST",
+      "request": {
+        "query": "query($id:String!){target(ensemblId:$id){id approvedSymbol tractability{label modality value} drugAndClinicalCandidates{count rows{id maxClinicalStage drug{id name}}}}}",
+        "variables": {
+          "id": "ENSG00000112715"
+        }
+      },
+      "retrieved_utc": "2026-09-24T11:35:39.701490+00:00",
+      "status": 200,
+      "sha256": "dc0ff21e4e0895b78365ac8cf51cba28dc69714f777a9bc06ec162358ef228dc",
+      "bytes": 3845,
+      "file": "sources/opentargets_VEGFA.json"
+    },
+    {
+      "name": "uniprot_CA9",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACA9+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:36.867149+00:00",
+      "status": 200,
+      "sha256": "65c8dab98505298319f786dfdaa39d4ec453750d817bd0fcdc1696c825b5325e",
+      "bytes": 1698,
+      "file": "sources/uniprot_CA9.json"
+    },
+    {
+      "name": "uniprot_MT1H",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMT1H+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:39.061964+00:00",
+      "status": 200,
+      "sha256": "9a2a4f33f7ca91bc4af69b496cc3a3808e5518c1750c0584de274e1330cb44ce",
+      "bytes": 774,
+      "file": "sources/uniprot_MT1H.json"
+    },
+    {
+      "name": "uniprot_MTOR",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMTOR+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:37.833914+00:00",
+      "status": 200,
+      "sha256": "682f183b0acc4e4517735523c962e7246a19e965dc295c89787e0b3ed17645fd",
+      "bytes": 4233,
+      "file": "sources/uniprot_MTOR.json"
+    },
+    {
+      "name": "uniprot_NDUFA4L2",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANDUFA4L2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:37.453126+00:00",
+      "status": 200,
+      "sha256": "a1c8801f5e521204105f61b0a8f27f829bd63b46c4039aef6fb9268fdd5f0f14",
+      "bytes": 1026,
+      "file": "sources/uniprot_NDUFA4L2.json"
+    },
+    {
+      "name": "uniprot_NNMT",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANNMT+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:37.047426+00:00",
+      "status": 200,
+      "sha256": "69816c7fe2d5c30da059072d372c14fc507305dab4059ea776e70fa44fe9f610",
+      "bytes": 4140,
+      "file": "sources/uniprot_NNMT.json"
+    },
+    {
+      "name": "uniprot_VEGFA",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AVEGFA+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:36.858614+00:00",
+      "status": 200,
+      "sha256": "40db1911d6de4addeab3646538bd011712f1b6c447a50888df003a903890477f",
+      "bytes": 5202,
+      "file": "sources/uniprot_VEGFA.json"
+    },
+    {
+      "name": "vegf_independent",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A17215529+AND+SRC%3AMED&format=json&pageSize=3&resultType=core&sort=RELEVANCE",
+      "method": "GET",
+      "request": null,
+      "retrieved_utc": "2026-09-24T11:35:42.359444+00:00",
+      "status": 200,
+      "sha256": "6356a845ec984781cc9e6a14027fdd87cb1547851db05219c5f7c46b87f1ef54",
+      "bytes": 10426,
+      "file": "sources/vegf_independent.json"
+    }
+  ],
+  "reused_annotations": [
+    "sources/annotations.json",
+    "sources/target_evidence_matrix.json",
+    "sources/evidence_records.json"
+  ],
+  "concept_provenance": {
+    "CA9": "Gene from original shortlist; girentuximab agent-target association verified in cached sources/opentargets_CA9.json and sources/ca9_zircon.json. No invented agent aliases.",
+    "NNMT": "Gene and nicotinamide N-methyltransferase name verified in cached sources/uniprot_NNMT.json. No verified targeting agent supplied, so none invented."
+  },
+  "bounds": "Two kidney-cancer concepts, one request each, maximum 50 records per concept, no pagination; query.term searches all record fields and relevance must be reviewed. Search failure or zero hits does not establish absence of trials.",
+  "interpretation": "Registry phase/status and posted results availability are not efficacy estimates. New status/date fields are read from retrieved registry records; sponsor-reported and potentially stale.",
+  "reviewed_records": [
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05663710",
+      "title": "Phase 1b/2 Study of Combination 177Lu Girentuximab Plus Cabozantinib and Nivolumab in Treatment na\u00efve Patients With Advanced Clear Cell RCC",
+      "url": "https://clinicaltrials.gov/study/NCT05663710",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-07-30",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-04",
+      "start": {
+        "date": "2023-06-30",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2027-10-30",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Advanced Cancer",
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu girentuximab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "BMS-936558",
+            "Opdivo"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Cabozantinib",
+          "description": "Given by PO",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "XL-184",
+            "XL184"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "ArabinoFuranosylGuanine [18F]F-AraG",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        }
+      ],
+      "brief_summary": "To learn if giving 177Lu girentuximab in combination with cabozantinib plus nivolumab can help to control advanced clear cell renal cell carcinoma (ccRCC).",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: 177Lu-girentuximab combined with cabozantinib and nivolumab in advanced ccRCC. Combination study does not isolate the effect of CA9 targeting; no posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT07197580",
+      "title": "Phase 3 Study to Assess Safety and Efficacy of 177Lu-TLX250 in Advanced Relapsed or Recurrent ccRCC",
+      "url": "https://clinicaltrials.gov/study/NCT07197580",
+      "status": "RECRUITING",
+      "last_update_posted": {
+        "date": "2026-04-01",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-03",
+      "start": {
+        "date": "2026-03-25",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2029-02-28",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "ccRCC",
+        "Renal Cell Carcinoma (Kidney Cancer)",
+        "Renal Cell Carcinoma (RCC)",
+        "Renal Cell Cancer Metastatic",
+        "Renal Cell Cancer, Recurrent",
+        "Clear Cell Renal Cell Cancer (ccRCC)"
+      ],
+      "interventions": [
+        {
+          "type": "RADIATION",
+          "name": "177Lu-TLX250",
+          "description": "3 infusions of 177Lu-TLX250 at 8-week intervals or 6 infusions 177Lu-TLX250 at 4-week intervals",
+          "armGroupLabels": [
+            "1258 MBq 177Lu-girentuximab tetraxetan",
+            "1887MBq 177Lu-girentuximab tetraxetan"
+          ],
+          "otherNames": [
+            "TLX250-Tx",
+            "177Lu girentuximab tetraxetan"
+          ]
+        }
+      ],
+      "brief_summary": "Multicenter Phase 3 study of 177Lu-TLX250 in adult participants with CAIX-expressing advanced, relapsed or recurrent clear cell renal cell carcinoma (ccRCC). Part 1 will evaluate two dosing regimens to determine the recommended Phase 3 dose (RP3D). Part 2 will compare 177Lu-TLX250 with investigator's choice of monotherapy aligned with Australian standard-of-care.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: advanced relapsed/recurrent ccRCC. Registry intervention explicitly verifies 177Lu-TLX250 as 177Lu girentuximab tetraxetan. Phase 3/recruiting is development status, not demonstrated efficacy; no posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT00087022",
+      "title": "Monoclonal Antibody Therapy (Rencarex\u00ae) in Treating Patients Who Have Undergone Surgery for Non-metastatic Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT00087022",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2018-11-27",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2018-10",
+      "start": {
+        "date": "2004-07"
+      },
+      "completion": {
+        "date": "2012-10",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Kidney Cancer"
+      ],
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "girentuximab",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm I"
+          ],
+          "otherNames": [
+            "Rencarex\u00ae, cG250 and WX-G250"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "placebo",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm II"
+          ]
+        }
+      ],
+      "brief_summary": "RATIONALE: Monoclonal antibodies can locate tumor cells and either kill them or deliver tumor-killing substances to them without harming normal cells. It is not yet known whether monoclonal antibody therapy is effective in treating kidney cancer.\n\nPURPOSE: This randomized phase III trial is studying monoclonal antibody therapy to see how well it works in treating patients who have undergone surgery for nonmetastatic primary kidney cancer.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: randomized adjuvant girentuximab versus placebo after surgery for nonmetastatic kidney cancer. Completed phase 3 and posted results do not establish benefit; no efficacy extraction or new efficacy claim made here."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT05239533",
+      "title": "Study of Nivolumab in Combination With 177Lu-girentuximab for Kidney Cancer",
+      "url": "https://clinicaltrials.gov/study/NCT05239533",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "last_update_posted": {
+        "date": "2026-01-14",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2026-01",
+      "start": {
+        "date": "2022-02-16",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2027-03",
+        "type": "ESTIMATED"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma",
+        "Kidney Cancer",
+        "Advanced Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu-labeled-girentuximab",
+          "description": "The initial starting dose/Dose Level 1 of 177Lu-labeled-girentuximab is 1804 MBq/m2. if 0/3 or 1/6 DLTs, participants will be treated at Dose Level 2 177Lu-girentuximab 2405 MBq/m2. \\>/= 2/6 DLTs, Dose Level -1 is 177Lu-girentuximab 1353 MBq/m2\n\nOnce the MTD is established, a Simon two-stage optimal design will commence.",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Nivolumab 240mg q2wk",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab PET/CT",
+          "description": "All patients will undergo a 89Zr-girentuximab PET/CT scan prior to every 177Lu-girentuximab administration",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "177Lu whole body (WB) planar and SPECT/CT scans",
+          "description": "177Lu whole body (WB) planar and SPECT/CT scans will be performed after each administration of 177Lu-girentuximab",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        }
+      ],
+      "brief_summary": "The purpose of this study is to see if the combination of 177Lu-girentuximab and nivolumab is a safe and effective treatment for advanced clear cell renal cell carcinoma/ccRCC that has the CAIX protein.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Treatment: 177Lu-girentuximab plus nivolumab; also includes diagnostic 89Zr-girentuximab scans. The diagnostic component must not be described as treatment. No posted results in this snapshot."
+    },
+    {
+      "concept": "CA9",
+      "nct_id": "NCT03849118",
+      "title": "89Zr-TLX250 for PET/CT Imaging of ccRCC- ZIRCON Study",
+      "url": "https://clinicaltrials.gov/study/NCT03849118",
+      "status": "COMPLETED",
+      "last_update_posted": {
+        "date": "2024-05-17",
+        "type": "ACTUAL"
+      },
+      "last_verified": "2024-05",
+      "start": {
+        "date": "2019-08-15",
+        "type": "ACTUAL"
+      },
+      "completion": {
+        "date": "2022-11-07",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "DIAGNOSTIC",
+      "conditions": [
+        "Clear Cell Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab",
+          "description": "Single IV administration on Day 0, followed by diagnostic scan on Day 5 +/- 2 days.",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-TLX250",
+            "89Zr-DFO-TFP-girentuximab (GTX)"
+          ]
+        }
+      ],
+      "brief_summary": "89Zr-TLX250 is under clinical development as a diagnostic agent targeting clear cell renal cell carcinoma.",
+      "has_results": true,
+      "retrieved_utc": "2026-09-24T11:47:20.479941+00:00",
+      "source_file": "followup_sources/trials_CA9.json",
+      "review_interpretation": "Diagnostic imaging: ZIRCON uses 89Zr-girentuximab PET/CT. The registry intervention explicitly lists 89Zr-TLX250 as another name. Reused ZIRCON literature concerns this same trial, not an additional independent study. No therapeutic efficacy conclusion."
+    },
+    {
+      "concept": "NNMT",
+      "nct_id": "NCT01144169",
+      "title": "Study of Hydroxychloroquine Before Surgery in Patients With Primary Renal Cell Carcinoma",
+      "url": "https://clinicaltrials.gov/study/NCT01144169",
+      "status": "TERMINATED",
+      "last_update_posted": {
+        "date": "2016-10-26",
+        "type": "ESTIMATED"
+      },
+      "last_verified": "2016-10",
+      "start": {
+        "date": "2010-10"
+      },
+      "completion": {
+        "date": "2016-09",
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "primary_purpose": "TREATMENT",
+      "conditions": [
+        "Renal Cell Carcinoma"
+      ],
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "Hydroxychloroquine (HC)",
+          "description": "Subjects will receive HC orally for 14 days prior to surgery. The fixed dose of HC will be 400 mg/day in divided doses (200 mg bid). The final dose will be administered on the evening prior to nephrectomy.",
+          "armGroupLabels": [
+            "Hydroxychloroquine (HC)"
+          ],
+          "otherNames": [
+            "Plaquenil\u00ae"
+          ]
+        }
+      ],
+      "brief_summary": "The main goal of this research study is to determine whether treating patients with renal cell cancer with hydroxychloroquine before surgery can make the cancer easier to kill. Another goal is to see how the study drug affects the body's immune cells which fight cancer cells.",
+      "has_results": false,
+      "retrieved_utc": "2026-09-24T11:47:20.480381+00:00",
+      "source_file": "followup_sources/trials_NNMT.json",
+      "review_interpretation": "NNMT is a secondary serum biomarker outcome in a hydroxychloroquine study, not a verified drug target. Terminated for accrual barriers (surgery delay/additional visits), not a reported efficacy failure. No posted results. This is not evidence of an NNMT-targeting therapy."
+    }
+  ],
+  "review_scope": "Six illustrative relevant records reviewed against intervention, purpose, status/date and summary fields; remaining search returns are archived but not asserted to be verified target-directed trials. No new literature requests.",
+  "reused_artifact_hashes": {
+    "DECISIONS.md": "7b76043dda17718ee4afd80ab708716ab5113c304e2d7621d26dc3ee5386d098",
+    "analysis_config.json": "10725e575131a712e18777fd4a1931396b75ee95e8aa8473262cab08167d7698",
+    "analysis.py": "a771a8731e717d305af29bfd381aa9e46be56ffa5525260a0e42c33a2334f163",
+    "results.json": "5f70a33e8d23775a0068bc14b9a4d693bb45534eea9076c3a25815a5982ed160",
+    "method_review.json": "f3a47cb0e04fbe93eb782e66e520696199dc0318bc3ab2bfdf7265ce299b855a",
+    "report.md": "732b937b85d34f2842a9ee3ad6bed97729d0d78421b5a1348699138d61bebd68",
+    "sources/annotations.json": "0ffbcda5175c6b2500f8c003ede559951a7c0a84b78f15ed2c19bf95ddaa2098",
+    "sources/target_evidence_matrix.json": "c84331480a0f90ce30bb3aaf524325ea0cbd83128b3a8253b6ffb771e6009813",
+    "sources/evidence_records.json": "dc72758eac9c98e56b5c501050eede04c1672feaa1110a3883ba0c3e2c47c09d",
+    "sources/source_manifest.json": "b65fa04cd097525893f683652f19530e3f6ba4ada1283c4be5e772ff22af7f53",
+    "input/SOURCE.md": "358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55"
+  }
+}

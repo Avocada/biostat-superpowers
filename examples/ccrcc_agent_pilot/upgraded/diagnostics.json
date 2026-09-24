@@ -1,0 +1,112 @@
+[
+  {
+    "gene": "CA9",
+    "layer": "protein",
+    "n": 72,
+    "median": 2.349052252932104,
+    "skew": 0.2192824163585245,
+    "loo_mean_min": 2.318741912187579,
+    "loo_mean_max": 2.361981693600058,
+    "max_abs_standardized_difference": 2.669401288477495
+  },
+  {
+    "gene": "NNMT",
+    "layer": "protein",
+    "n": 72,
+    "median": 2.7093244497077005,
+    "skew": 0.01668011847876254,
+    "loo_mean_min": 2.758931536282589,
+    "loo_mean_max": 2.8106615344129064,
+    "max_abs_standardized_difference": 2.248158525289517
+  },
+  {
+    "gene": "MTOR",
+    "layer": "protein",
+    "n": 72,
+    "median": -0.21754946813674889,
+    "skew": 0.4058623354529063,
+    "loo_mean_min": -0.1798560710900056,
+    "loo_mean_max": -0.169998430556976,
+    "max_abs_standardized_difference": 2.3214477558364286
+  },
+  {
+    "gene": "NDUFA4L2",
+    "layer": "protein",
+    "n": 72,
+    "median": 3.880302709882801,
+    "skew": -0.10191801251022825,
+    "loo_mean_min": 3.878610660935432,
+    "loo_mean_max": 3.9376928723864584,
+    "max_abs_standardized_difference": 2.2868201880172387
+  },
+  {
+    "gene": "MT1H",
+    "layer": "protein",
+    "n": 72,
+    "median": -3.1737470764431985,
+    "skew": -0.0012749545725933994,
+    "loo_mean_min": -3.222023364663507,
+    "loo_mean_max": -3.1341085956995114,
+    "max_abs_standardized_difference": 2.288789284624072
+  },
+  {
+    "gene": "CA9",
+    "layer": "rna",
+    "n": 72,
+    "median": 6.625960564992189,
+    "skew": -3.3666253327805387,
+    "loo_mean_min": 6.431272076501024,
+    "loo_mean_max": 6.5440641798886015,
+    "max_abs_standardized_difference": 6.037204424800304
+  },
+  {
+    "gene": "NNMT",
+    "layer": "rna",
+    "n": 72,
+    "median": 4.94703014022702,
+    "skew": -0.9470092251743573,
+    "loo_mean_min": 4.703157909776848,
+    "loo_mean_max": 4.793414169035401,
+    "max_abs_standardized_difference": 2.897019700909676
+  },
+  {
+    "gene": "VEGFA",
+    "layer": "rna",
+    "n": 72,
+    "median": 3.1885039280799945,
+    "skew": -2.5513647374397848,
+    "loo_mean_min": 2.9937881560392468,
+    "loo_mean_max": 3.090531803923781,
+    "max_abs_standardized_difference": 5.534171393916782
+  },
+  {
+    "gene": "MTOR",
+    "layer": "rna",
+    "n": 72,
+    "median": -0.8207042734217098,
+    "skew": 0.573588742837678,
+    "loo_mean_min": -0.7881351467537047,
+    "loo_mean_max": -0.7692405148918858,
+    "max_abs_standardized_difference": 2.546181592754712
+  },
+  {
+    "gene": "NDUFA4L2",
+    "layer": "rna",
+    "n": 72,
+    "median": 7.11506753046366,
+    "skew": -3.4923386081473446,
+    "loo_mean_min": 6.890264492083338,
+    "loo_mean_max": 7.005369600995266,
+    "max_abs_standardized_difference": 6.220384394218205
+  },
+  {
+    "gene": "MT1H",
+    "layer": "rna",
+    "n": 72,
+    "median": -5.888683197975535,
+    "skew": 1.493151221274781,
+    "loo_mean_min": -5.469303986273149,
+    "loo_mean_max": -5.349500430762054,
+    "max_abs_standardized_difference": 3.0158074539109587
+  }
+]

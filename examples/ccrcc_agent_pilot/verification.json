@@ -1,0 +1,29 @@
+{
+  "unit_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -q",
+    "passed": 140
+  },
+  "browser": {
+    "pages": [
+      "baseline/report.html",
+      "baseline/followup.html",
+      "upgraded/report.html",
+      "upgraded/followup.html",
+      "index.html",
+      "post_review/followup_corrected.html"
+    ],
+    "broken_images": 0,
+    "horizontal_overflow": false,
+    "page_errors": []
+  },
+  "scientific_review": "independent_review.md; all initial/followup exported test families checked; conditional exploratory use",
+  "inputs": "All nine exact hashes reproduced by prepare_inputs.py",
+  "post_review": "Corrected VEGFA label derived from frozen shortlist rows, verified 1/0. Original artifacts unchanged.",
+  "limitations": [
+    "One pilot per configuration",
+    "Unblinded review",
+    "Different evidence query scopes",
+    "Environment and quickstart setup faults included in usage",
+    "Raw inputs, responses and model logs retained only in local ignored archive"
+  ]
+}

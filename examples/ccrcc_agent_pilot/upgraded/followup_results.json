@@ -1,0 +1,960 @@
+{
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "cohorts": {
+    "all_stage": {
+      "cases": 72,
+      "stage_counts": {
+        "Stage I": 28,
+        "Stage III": 23,
+        "Stage IV": 12,
+        "Stage II": 9
+      },
+      "threshold": 58,
+      "layers": {
+        "protein": {
+          "input_genes": 11710,
+          "coverage_eligible": 8054,
+          "tested": 8054,
+          "q_below_005": 6838,
+          "status_counts": {
+            "tested": 8054,
+            "insufficient_pairs": 3656
+          }
+        },
+        "rna": {
+          "input_genes": 19275,
+          "coverage_eligible": 19275,
+          "tested": 19015,
+          "q_below_005": 15118,
+          "status_counts": {
+            "tested": 19015,
+            "zero_variance": 260
+          }
+        }
+      },
+      "reselected_exploratory": [
+        "NDUFA4L2",
+        "MT1H"
+      ],
+      "original_candidate_selection_ranks": {
+        "NDUFA4L2": 1,
+        "MT1H": 2
+      }
+    },
+    "stage_I_II": {
+      "cases": 37,
+      "stage_counts": {
+        "Stage I": 28,
+        "Stage II": 9
+      },
+      "threshold": 30,
+      "layers": {
+        "protein": {
+          "input_genes": 11710,
+          "coverage_eligible": 8087,
+          "tested": 8087,
+          "q_below_005": 6436,
+          "status_counts": {
+            "tested": 8087,
+            "insufficient_pairs": 3623
+          }
+        },
+        "rna": {
+          "input_genes": 19275,
+          "coverage_eligible": 19275,
+          "tested": 18915,
+          "q_below_005": 14077,
+          "status_counts": {
+            "tested": 18915,
+            "zero_variance": 360
+          }
+        }
+      },
+      "reselected_exploratory": [
+        "NDUFA4L2",
+        "MT1H"
+      ],
+      "original_candidate_selection_ranks": {
+        "NDUFA4L2": 1,
+        "MT1H": 2
+      }
+    }
+  },
+  "comparisons": {
+    "protein": {
+      "shared_tested": 8008,
+      "all_only": 46,
+      "early_only": 79,
+      "same_direction_n": 7674,
+      "same_direction_fraction": 0.9582917082917083,
+      "signed_effect_spearman": 0.9904468745287393,
+      "absolute_effect_spearman": 0.9705077096816654,
+      "top100_absolute_shared_universe_overlap": 83,
+      "both_q005": 6239,
+      "all_only_q005": 562,
+      "early_only_q005": 138
+    },
+    "rna": {
+      "shared_tested": 18915,
+      "all_only": 100,
+      "early_only": 0,
+      "same_direction_n": 17983,
+      "same_direction_fraction": 0.9507269362939466,
+      "signed_effect_spearman": 0.9867031458614537,
+      "absolute_effect_spearman": 0.9679898661061239,
+      "top100_absolute_shared_universe_overlap": 96,
+      "both_q005": 13628,
+      "all_only_q005": 1490,
+      "early_only_q005": 449
+    }
+  },
+  "cross_modal_concordance": {
+    "all_stage": {
+      "both_tested": 7638,
+      "same_direction_fraction": 0.7670856245090337,
+      "spearman": 0.7145396943189779,
+      "same_finite_case_direction_fraction": 0.7670856245090337
+    },
+    "stage_I_II": {
+      "both_tested": 7670,
+      "same_direction_fraction": 0.7567144719687092,
+      "spearman": 0.7065957636981722,
+      "same_finite_case_direction_fraction": 0.757496740547588
+    }
+  },
+  "shortlist": [
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "CA9",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 2.344681824998151,
+      "sd_difference": 0.6899426539953044,
+      "ci_low": 2.182553249827455,
+      "ci_high": 2.506810400168847,
+      "p_value": 6.208222317013929e-41,
+      "q_value": 1.3459675995797117e-38,
+      "status": "tested",
+      "absolute_effect_rank": 26.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "NNMT",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 2.784738522058789,
+      "sd_difference": 0.8186850955741054,
+      "ci_low": 2.59235695630069,
+      "ci_high": 2.977120087816888,
+      "p_value": 5.847774959390479e-41,
+      "q_value": 1.3459675995797117e-38,
+      "status": "tested",
+      "absolute_effect_rank": 10.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "VEGFA",
+      "n": 1,
+      "finite_fraction": 0.013888888888888888,
+      "mean_difference": 1.0684955485392982,
+      "sd_difference": null,
+      "ci_low": null,
+      "ci_high": null,
+      "p_value": null,
+      "q_value": null,
+      "status": "insufficient_pairs",
+      "absolute_effect_rank": null
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "MTOR",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": -0.1746701641163541,
+      "sd_difference": 0.15860765946748293,
+      "ci_low": -0.21194113684388893,
+      "ci_high": -0.1373991913888193,
+      "p_value": 5.435932203266045e-14,
+      "q_value": 1.3567089546050427e-13,
+      "status": "tested",
+      "absolute_effect_rank": 5193.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "NDUFA4L2",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 3.908581756896538,
+      "sd_difference": 0.9305269493372691,
+      "ci_low": 3.68991864398366,
+      "ci_high": 4.127244869809417,
+      "p_value": 4.770189623027835e-47,
+      "q_value": 3.841910722386619e-43,
+      "status": "tested",
+      "absolute_effect_rank": 1.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "MT1H",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": -3.1789657827277074,
+      "sd_difference": 1.391504364511693,
+      "ci_low": -3.505953277493644,
+      "ci_high": -2.8519782879617708,
+      "p_value": 4.49311033689923e-30,
+      "q_value": 5.499621679845957e-29,
+      "status": "tested",
+      "absolute_effect_rank": 2.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "CA9",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 6.45201147094601,
+      "sd_difference": 1.0825776096094284,
+      "ci_low": 6.197618204576267,
+      "ci_high": 6.7064047373157525,
+      "p_value": 1.9997690142974036e-57,
+      "q_value": 1.226632509898875e-54,
+      "status": "tested",
+      "absolute_effect_rank": 8.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "NNMT",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 4.738401637036335,
+      "sd_difference": 1.3482441181560616,
+      "ci_low": 4.4215798017821815,
+      "ci_high": 5.055223472290489,
+      "p_value": 6.836830702155167e-42,
+      "q_value": 5.676957895261157e-40,
+      "status": "tested",
+      "absolute_effect_rank": 44.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "VEGFA",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 3.014343994335085,
+      "sd_difference": 0.977442528567762,
+      "ci_low": 2.784656260796274,
+      "ci_high": 3.2440317278738964,
+      "p_value": 3.4097329738881123e-38,
+      "q_value": 1.5327676713589234e-36,
+      "status": "tested",
+      "absolute_effect_rank": 195.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "MTOR",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": -0.7781365045651277,
+      "sd_difference": 0.2788110625766145,
+      "ci_low": -0.8436538922141047,
+      "ci_high": -0.7126191169161508,
+      "p_value": 1.988406173130029e-35,
+      "q_value": 5.907741153448047e-34,
+      "status": "tested",
+      "absolute_effect_rank": 3610.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "NDUFA4L2",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": 6.912919098271619,
+      "sd_difference": 1.0552379527348918,
+      "ci_low": 6.664950336299533,
+      "ci_high": 7.1608878602437045,
+      "p_value": 2.8550466531575773e-60,
+      "q_value": 3.0160395616550743e-57,
+      "status": "tested",
+      "absolute_effect_rank": 6.0
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "MT1H",
+      "n": 72,
+      "finite_fraction": 1.0,
+      "mean_difference": -5.38684534687709,
+      "sd_difference": 1.9412921702039823,
+      "ci_low": -5.843026642123321,
+      "ci_high": -4.930664051630859,
+      "p_value": 2.8600127393266805e-35,
+      "q_value": 8.277495013439395e-34,
+      "status": "tested",
+      "absolute_effect_rank": 24.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "CA9",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 2.4115220104129556,
+      "sd_difference": 0.6808249670781362,
+      "ci_low": 2.184523664748262,
+      "ci_high": 2.638520356077649,
+      "p_value": 3.6714148762697263e-22,
+      "q_value": 7.069221929617447e-20,
+      "status": "tested",
+      "absolute_effect_rank": 26.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "NNMT",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 2.593459360870257,
+      "sd_difference": 0.7884326294978455,
+      "ci_low": 2.3305828342761097,
+      "ci_high": 2.8563358874644043,
+      "p_value": 4.315221702674727e-21,
+      "q_value": 3.793173685818535e-19,
+      "status": "tested",
+      "absolute_effect_rank": 17.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "VEGFA",
+      "n": 0,
+      "finite_fraction": 0.0,
+      "mean_difference": null,
+      "sd_difference": null,
+      "ci_low": null,
+      "ci_high": null,
+      "p_value": null,
+      "q_value": null,
+      "status": "insufficient_pairs",
+      "absolute_effect_rank": null
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "MTOR",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": -0.18784223621732937,
+      "sd_difference": 0.15957375894838421,
+      "ci_low": -0.24104677636255378,
+      "ci_high": -0.13463769607210496,
+      "p_value": 2.0250066670848275e-08,
+      "q_value": 5.085785377861801e-08,
+      "status": "tested",
+      "absolute_effect_rank": 5211.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "NDUFA4L2",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 3.829256387384305,
+      "sd_difference": 0.9832004658627446,
+      "ci_low": 3.5014410310153536,
+      "ci_high": 4.1570717437532565,
+      "p_value": 1.500875678958603e-23,
+      "q_value": 9.16035342335729e-21,
+      "status": "tested",
+      "absolute_effect_rank": 1.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "MT1H",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": -3.3411305205935524,
+      "sd_difference": 1.457841564855351,
+      "ci_low": -3.827199098371507,
+      "ci_high": -2.8550619428155977,
+      "p_value": 4.428862568631678e-16,
+      "q_value": 4.042461805025325e-15,
+      "status": "tested",
+      "absolute_effect_rank": 2.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "CA9",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 6.458845234106993,
+      "sd_difference": 1.2416924225816257,
+      "ci_low": 6.044844368421839,
+      "ci_high": 6.872846099792146,
+      "p_value": 7.187945344101681e-28,
+      "q_value": 1.4778259367791666e-25,
+      "status": "tested",
+      "absolute_effect_rank": 10.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "NNMT",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 4.840280785491725,
+      "sd_difference": 1.3362494500965538,
+      "ci_low": 4.394753037193883,
+      "ci_high": 5.285808533789567,
+      "p_value": 1.7325676328528166e-22,
+      "q_value": 9.610415476660124e-21,
+      "status": "tested",
+      "absolute_effect_rank": 45.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "VEGFA",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 2.968005434880341,
+      "sd_difference": 1.0244483898929464,
+      "ci_low": 2.626437335927429,
+      "ci_high": 3.3095735338332526,
+      "p_value": 2.758161833706803e-19,
+      "q_value": 6.370040425465711e-18,
+      "status": "tested",
+      "absolute_effect_rank": 221.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "MTOR",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": -0.7752950464544858,
+      "sd_difference": 0.2548588498609627,
+      "ci_low": -0.8602692176349699,
+      "ci_high": -0.6903208752740017,
+      "p_value": 5.643793726833801e-20,
+      "q_value": 1.6273225357173987e-18,
+      "status": "tested",
+      "absolute_effect_rank": 3761.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "NDUFA4L2",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": 6.788701550490454,
+      "sd_difference": 1.3117729661019686,
+      "ci_low": 6.351334668264114,
+      "ci_high": 7.226068432716794,
+      "p_value": 8.581436941070068e-28,
+      "q_value": 1.708609260424635e-25,
+      "status": "tested",
+      "absolute_effect_rank": 6.0
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "MT1H",
+      "n": 37,
+      "finite_fraction": 1.0,
+      "mean_difference": -5.482171393941178,
+      "sd_difference": 2.08715775096628,
+      "ci_low": -6.178064434767651,
+      "ci_high": -4.786278353114704,
+      "p_value": 6.367930811628604e-18,
+      "q_value": 1.0147380901596887e-16,
+      "status": "tested",
+      "absolute_effect_rank": 25.0
+    }
+  ],
+  "diagnostics": [
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "CA9",
+      "skew": 0.2192824163585245,
+      "median": 2.349052252932104,
+      "loo_min": 2.318741912187579,
+      "loo_max": 2.361981693600058,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "NNMT",
+      "skew": 0.01668011847876254,
+      "median": 2.7093244497077005,
+      "loo_min": 2.758931536282589,
+      "loo_max": 2.8106615344129064,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "MTOR",
+      "skew": 0.4058623354529063,
+      "median": -0.21754946813674889,
+      "loo_min": -0.1798560710900056,
+      "loo_max": -0.169998430556976,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "NDUFA4L2",
+      "skew": -0.10191801251022825,
+      "median": 3.880302709882801,
+      "loo_min": 3.878610660935432,
+      "loo_max": 3.9376928723864584,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "protein",
+      "gene": "MT1H",
+      "skew": -0.0012749545725933994,
+      "median": -3.1737470764431985,
+      "loo_min": -3.222023364663507,
+      "loo_max": -3.1341085956995114,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "CA9",
+      "skew": -3.3666253327805387,
+      "median": 6.625960564992189,
+      "loo_min": 6.431272076501024,
+      "loo_max": 6.5440641798886015,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "NNMT",
+      "skew": -0.9470092251743573,
+      "median": 4.94703014022702,
+      "loo_min": 4.703157909776848,
+      "loo_max": 4.793414169035401,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "VEGFA",
+      "skew": -2.5513647374397848,
+      "median": 3.1885039280799945,
+      "loo_min": 2.9937881560392468,
+      "loo_max": 3.090531803923781,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "MTOR",
+      "skew": 0.573588742837678,
+      "median": -0.8207042734217098,
+      "loo_min": -0.7881351467537047,
+      "loo_max": -0.7692405148918858,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "NDUFA4L2",
+      "skew": -3.4923386081473446,
+      "median": 7.11506753046366,
+      "loo_min": 6.890264492083338,
+      "loo_max": 7.005369600995266,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "all_stage",
+      "layer": "rna",
+      "gene": "MT1H",
+      "skew": 1.493151221274781,
+      "median": -5.888683197975535,
+      "loo_min": -5.469303986273149,
+      "loo_max": -5.349500430762054,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "CA9",
+      "skew": -0.15329751031963337,
+      "median": 2.3793680947297,
+      "loo_min": 2.3788902038715687,
+      "loo_max": 2.446826834666193,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "NNMT",
+      "skew": 0.6801836802197234,
+      "median": 2.519475643692799,
+      "loo_min": 2.537248940000851,
+      "loo_max": 2.6260735466986147,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "MTOR",
+      "skew": 0.41483872368010244,
+      "median": -0.214788482416796,
+      "loo_min": -0.1984358880848358,
+      "loo_max": -0.17899443036691637,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "NDUFA4L2",
+      "skew": -0.06982379794437703,
+      "median": 3.914881552866203,
+      "loo_min": 3.7679432434190065,
+      "loo_max": 3.8844664937807534,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "protein",
+      "gene": "MT1H",
+      "skew": 0.07495031218969636,
+      "median": -3.2133914899990073,
+      "loo_min": -3.4305542165743175,
+      "loo_max": -3.2571667555619928,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "CA9",
+      "skew": -4.0547134725515255,
+      "median": 6.644319248593909,
+      "loo_min": 6.423316310191505,
+      "loo_max": 6.64058345905379,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "NNMT",
+      "skew": -0.5216808894357048,
+      "median": 4.90485031880662,
+      "loo_min": 4.77360229974261,
+      "loo_max": 4.927019908318421,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "VEGFA",
+      "skew": -3.9862445136482747,
+      "median": 3.1811217393116795,
+      "loo_min": 2.94345938661936,
+      "loo_max": 3.116977543806525,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "MTOR",
+      "skew": 0.5181666424741271,
+      "median": -0.8115545787021095,
+      "loo_min": -0.7949356613788834,
+      "loo_max": -0.7595253957484314,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "NDUFA4L2",
+      "skew": -3.4019152942014035,
+      "median": 7.21335821736854,
+      "loo_min": 6.749338023340143,
+      "loo_max": 6.96758399897928,
+      "loo_direction_stable": true
+    },
+    {
+      "cohort": "stage_I_II",
+      "layer": "rna",
+      "gene": "MT1H",
+      "skew": 1.6694388584658357,
+      "median": -6.2296242472653205,
+      "loo_min": -5.647446100724074,
+      "loo_max": -5.421440960285761,
+      "loo_direction_stable": true
+    }
+  ],
+  "interpretation": "Exploratory overlapping-cohort sensitivity, not independent replication or an interaction test. Nominal paired t intervals are not selection-adjusted.",
+  "software": {
+    "python": "3.11.6",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1"
+  },
+  "trial_evidence": [
+    {
+      "nct_id": "NCT00087022",
+      "title": "Monoclonal Antibody Therapy (Rencarex\u00ae) in Treating Patients Who Have Undergone Surgery for Non-metastatic Kidney Cancer",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE3"
+      ],
+      "status": "COMPLETED",
+      "status_verified_date": "2018-10",
+      "last_update_posted": "2018-11-27",
+      "retrieved_at": "2026-09-24T11:46:12.393546+00:00",
+      "enrollment": {
+        "count": 864,
+        "type": "ACTUAL"
+      },
+      "has_results": true,
+      "url": "https://clinicaltrials.gov/study/NCT00087022",
+      "raw_source": "mcp_artifacts/9c39bd8a36644c07a75483fd600c0301/response.json",
+      "raw_sha256": "fa421c5ae2aa6dc7b04e44baa9b6bdaf0dde4d3b1ae7c6d197861afdb6f5f432",
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "girentuximab",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm I"
+          ],
+          "otherNames": [
+            "Rencarex\u00ae, cG250 and WX-G250"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "placebo",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm II"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Disease-free Survival",
+          "description": "Disease Free Survival (DFS) calculated from the date of randomization up to and including the date of documented relapse as confirmed by the CT, death or start of new anti-tumor therapy.",
+          "timeFrame": "Until signs of recurrence or until 360 local DFS events have occurred (median follow-up of 4.5 years)"
+        },
+        {
+          "measure": "Overall Survival",
+          "description": "Overall Survival (OS) calculated from the date of randomization to the date of death. Patients with no documented death will be censored at the date of their last study evaluation.",
+          "timeFrame": "After 419 OS events or 60 months after the last patient has been enrolled, whichever is the later (median follow-up of 4.5 years)"
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT05239533",
+      "title": "Study of Nivolumab in Combination With 177Lu-girentuximab for Kidney Cancer",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE2"
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "status_verified_date": "2026-01",
+      "last_update_posted": "2026-01-14",
+      "retrieved_at": "2026-09-24T11:46:14.880581+00:00",
+      "enrollment": {
+        "count": 9,
+        "type": "ACTUAL"
+      },
+      "has_results": false,
+      "url": "https://clinicaltrials.gov/study/NCT05239533",
+      "raw_source": "mcp_artifacts/f022ce1e1a7e4467943b767cd3529069/response.json",
+      "raw_sha256": "1fde48a3800f1b0be079123cbbbf8d416581fa6bf14a575ddb98d4f7067e581d",
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu-labeled-girentuximab",
+          "description": "The initial starting dose/Dose Level 1 of 177Lu-labeled-girentuximab is 1804 MBq/m2. if 0/3 or 1/6 DLTs, participants will be treated at Dose Level 2 177Lu-girentuximab 2405 MBq/m2. \\>/= 2/6 DLTs, Dose Level -1 is 177Lu-girentuximab 1353 MBq/m2\n\nOnce the MTD is established, a Simon two-stage optimal design will commence.",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Nivolumab 240mg q2wk",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab PET/CT",
+          "description": "All patients will undergo a 89Zr-girentuximab PET/CT scan prior to every 177Lu-girentuximab administration",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "177Lu whole body (WB) planar and SPECT/CT scans",
+          "description": "177Lu whole body (WB) planar and SPECT/CT scans will be performed after each administration of 177Lu-girentuximab",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Maximal tolerated dose (MTD) of 177Lu-girentuximab",
+          "description": "To determine the maximal tolerated dose (MTD) of 177Lu-girentuximab when given in combination with nivolumab (safety lead-in)",
+          "timeFrame": "24 (+/- 2) weeks"
+        },
+        {
+          "measure": "Overall Response Rate/ORR",
+          "description": "efficacy of the combination at the MTD of 177Lu-labelled girentuximab in patients with advanced ccRCC as assessed by best ORR by 24 (+/- 2) weeks by Response Evaluation Criteria In Solid Tumors (RECIST v1.1).",
+          "timeFrame": "24 (+/- 2) weeks"
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT03849118",
+      "title": "89Zr-TLX250 for PET/CT Imaging of ccRCC- ZIRCON Study",
+      "purpose": "DIAGNOSTIC",
+      "phase": [
+        "PHASE3"
+      ],
+      "status": "COMPLETED",
+      "status_verified_date": "2024-05",
+      "last_update_posted": "2024-05-17",
+      "retrieved_at": "2026-09-24T11:46:09.828946+00:00",
+      "enrollment": {
+        "count": 300,
+        "type": "ACTUAL"
+      },
+      "has_results": true,
+      "url": "https://clinicaltrials.gov/study/NCT03849118",
+      "raw_source": "mcp_artifacts/f374033077fc4566868bfa3a7e30283e/response.json",
+      "raw_sha256": "cb700a6f5a0e9789a9bd71e79728dc0f9fb2c8599a95a8750056c5d5b1df98a6",
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab",
+          "description": "Single IV administration on Day 0, followed by diagnostic scan on Day 5 +/- 2 days.",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-TLX250",
+            "89Zr-DFO-TFP-girentuximab (GTX)"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Sensitivity and Specificity of Qualitative Assessment of PET/CT Imaging With 89Zr-TLX250 to Noninvasively Detect ccRCC in Patients With Indeterminate Renal Masses, Using Histology as Standard of Truth.",
+          "description": "This outcome was evaluated on all patients by using a PET/CT machine to determine the uptake of the Zr89 radiotracer within the renal lesion. This was compared against the histological determination of the lesion type following resection of the lesion",
+          "timeFrame": "Diagnostic PET/CT scan on Day 5 \u00b1 2 days post 89Zr-TLX250 administration. Histological confirmation of the material from nephrectomy conducted within 90 days post 89Zr-TLX250 administration served as standard of truth."
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT05663710",
+      "title": "Phase 1b/2 Study of Combination 177Lu Girentuximab Plus Cabozantinib and Nivolumab in Treatment na\u00efve Patients With Advanced Clear Cell RCC",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "status": "RECRUITING",
+      "status_verified_date": "2026-04",
+      "last_update_posted": "2026-07-30",
+      "retrieved_at": "2026-09-24T11:46:06.997381+00:00",
+      "enrollment": {
+        "count": 100,
+        "type": "ESTIMATED"
+      },
+      "has_results": false,
+      "url": "https://clinicaltrials.gov/study/NCT05663710",
+      "raw_source": "mcp_artifacts/fd992f6d8daa4600b8e85082cceaca14/response.json",
+      "raw_sha256": "395c586f085eb5d9d354a1879e750ee464b59b369fe26bd4859ea9a06d514faf",
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu girentuximab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "BMS-936558",
+            "Opdivo"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Cabozantinib",
+          "description": "Given by PO",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "XL-184",
+            "XL184"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "ArabinoFuranosylGuanine [18F]F-AraG",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Incidence of Adverse Events, Graded According to National Cancer Institute Common Terminology Criteria for Adverse Events (NCI CTCAE) Version (v) 5.0",
+          "timeFrame": "through study completion; an average of 1 year"
+        }
+      ]
+    }
+  ],
+  "source_context": "context_sources.json"
+}

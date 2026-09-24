@@ -1,0 +1,13 @@
+{
+  "project_id": "ccrcc-pilot",
+  "run_id": "followup_stage",
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "memory": "project-memory.sqlite3",
+  "controller": "followup_controller_audit.json",
+  "original_runtime_context": "runtime_context.json",
+  "review": "blocked: independent evaluation pending",
+  "decisions": "followup_memory_retrieval.json",
+  "sensitivity_decision": "followup_memory_append.json",
+  "context_sources": "context_sources.json",
+  "context_units": "bytes, not tokens"
+}

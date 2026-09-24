@@ -1,0 +1,73 @@
+{
+  "usable": true,
+  "issues": [],
+  "context_bytes": 4462,
+  "records": [
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:39:41.544736+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "c18a867d126f46e791ce3ce2eed85c5b",
+      "key": "cohort",
+      "run_id": "initial",
+      "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+      "value": "{\"exclude_histology\": [\"C3L-00359\", \"C3N-00313\", \"C3N-00435\", \"C3N-00492\", \"C3N-00832\", \"C3N-01175\", \"C3N-01180\"], \"exclude_normal\": \"C3N-00314\", \"cohort\": \"intersection of case IDs in all four assays after tissue-specific exclusions\"}"
+    },
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:39:41.545443+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "8bc9fba7e2b84fe6b4eac13c04128251",
+      "key": "missingness",
+      "run_id": "initial",
+      "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+      "value": "{\"min_pairs\": 20, \"imputation\": false}"
+    },
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:39:41.545776+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "6a229cce54f746bba5dcd1202d458e22",
+      "key": "model",
+      "run_id": "initial",
+      "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+      "value": "{\"estimand\": \"mean within-case tumor-minus-normal difference for each gene/layer\", \"alpha\": 0.05, \"ci\": 0.95}"
+    },
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:39:41.545130+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "c4a9a17056424fa5860db705e6f6f366",
+      "key": "scales",
+      "run_id": "initial",
+      "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+      "value": "{\"scales\": {\"protein\": \"processed TMT log2 reference ratios\", \"rna\": \"supplied log2 FPKM\"}, \"extra_log\": false}"
+    },
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:43:01.152261+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "43ee5144f541409b8faf4422154cb2f6",
+      "key": "shortlist",
+      "run_id": "initial",
+      "source": "FOLLOWUP.md sha256=af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a; results.json sha256=344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9; source_index.json",
+      "value": "{\"prespecified\": [\"CA9\", \"NNMT\", \"VEGFA\", \"MTOR\"], \"selection\": \"Among non-prespecified protein genes with n >= 90% of common cohort and q < 0.05, select two largest absolute protein mean differences; ties alphabetical. RNA does not determine selection.\", \"selected_exploratory\": [\"NDUFA4L2\", \"MT1H\"], \"findings\": \"VEGFA protein n=1, untestable. NDUFA4L2 maps to COXFA4L2/Q9NRX3.\"}"
+    },
+    {
+      "confirmed_by": "Codex analyst review, not human approval",
+      "created_at": "2026-09-24T11:43:01.153010+00:00",
+      "dependencies": [],
+      "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+      "item_id": "1354e4870d4a4e47b3a164f635987040",
+      "key": "source interpretation",
+      "run_id": "initial",
+      "source": "FOLLOWUP.md sha256=af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a; results.json sha256=344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9; source_index.json",
+      "value": "{\"source_policy\": \"Native MCP snapshots are annotations and bounded all-indication target records, not enrichment or kidney efficacy. Original Clark cohort is not independent replication. Independent review pending.\", \"followup\": \"Independent evaluation blocked; batch/purity/MNAR unresolved. Read FOLLOWUP.md, validation.json and source_index.json.\"}"
+    }
+  ]
+}

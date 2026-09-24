@@ -14,7 +14,7 @@
       "category": "visualization",
       "url": "https://vega.github.io/vega-lite/examples/",
       "status": "available",
-      "scope": "Three project-authored local templates; no full-gallery search."
+      "scope": "Four project-authored local templates; no full-gallery search."
     },
     {
       "name": "ClinicalTrials.gov",
@@ -62,8 +62,8 @@
       "name": "Open Targets",
       "category": "genetics",
       "url": "https://platform.opentargets.org/",
-      "status": "reference_only",
-      "scope": "No integration implemented."
+      "status": "available",
+      "scope": "Bounded single-human-target tractability and up to ten drug/clinical candidate summary rows across all indications; no exhaustive target prioritization or efficacy inference."
     },
     {
       "name": "GEO",
@@ -169,6 +169,13 @@
       "url": "https://antv.antgroup.com/",
       "status": "reference_only",
       "scope": "No integration implemented."
+    },
+    {
+      "name": "UniProt",
+      "category": "proteomics",
+      "url": "https://www.uniprot.org/",
+      "status": "available",
+      "scope": "Reviewed human protein lookup for 1\u201310 gene symbols with Ensembl and Reactome annotations; not enrichment."
     }
   ]
 }

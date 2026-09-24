@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "file": "Clinical_Table_S1.xlsx",
+      "sha256": "697b8a67a4552f2870f5e0ad14ae309c264d9aca5b74e23b63ddf9c617db3739",
+      "bytes": 115285,
+      "verified": true
+    },
+    {
+      "file": "HS_CPTAC_CCRCC_CLI.tsi",
+      "sha256": "8aa25ede4f4026b28a97afc8af2f836e9caf5ea4390de6d9b8353eea5a2f1306",
+      "bytes": 20452,
+      "verified": true
+    },
+    {
+      "file": "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Normal.cct",
+      "sha256": "6d02b46f1ccbea6b0446768a3f1484639a9692a864c97f6aba9aec549fc987c7",
+      "bytes": 23058226,
+      "verified": true
+    },
+    {
+      "file": "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Tumor.cct",
+      "sha256": "f7cd6fe435c1be7cfe902780432e637d277ea7bb6e63d1805647a29004f3b1c9",
+      "bytes": 23037690,
+      "verified": true
+    },
+    {
+      "file": "HS_CPTAC_CCRCC_proteome_Normal.cct",
+      "sha256": "fdf706c8078d78bad4960dac5deb68704282c7e45f30243148b333129c8169b9",
+      "bytes": 14909484,
+      "verified": true
+    },
+    {
+      "file": "HS_CPTAC_CCRCC_proteome_Tumor.cct",
+      "sha256": "16e75796570a56d854094d119140587814026eb6356240596fa3667da513e9c2",
+      "bytes": 19368136,
+      "verified": true
+    },
+    {
+      "file": "SOURCE.md",
+      "sha256": "358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55",
+      "bytes": 2044,
+      "verified": true
+    },
+    {
+      "file": "clinical_annotation.csv",
+      "sha256": "045a09b17d2fbbb54f1e7cf02d8bae4ec9c198297ddc555689147a00ca57c0a4",
+      "bytes": 13736,
+      "verified": true
+    },
+    {
+      "file": "cptac_metadata.csv.gz",
+      "sha256": "5c73eaec70d07f04495bb8d534c7c7938ec647b8d2014663fd4f59d901faf2b0",
+      "bytes": 7684,
+      "verified": true
+    }
+  ],
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f"
+}

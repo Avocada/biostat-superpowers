@@ -1,0 +1,46 @@
+{
+  "protein_Tumor": {
+    "genes": 11710,
+    "cases": 72,
+    "nonfinite": 180270,
+    "nonfinite_fraction": 0.2138129803586678,
+    "infinite": 0,
+    "finite_range": [
+      -5.26098201344499,
+      3.9816691362437
+    ]
+  },
+  "protein_Normal": {
+    "genes": 11710,
+    "cases": 72,
+    "nonfinite": 180225,
+    "nonfinite_fraction": 0.2137596071733561,
+    "infinite": 0,
+    "finite_range": [
+      -5.5417366795211,
+      4.0977735607003
+    ]
+  },
+  "rna_Tumor": {
+    "genes": 19275,
+    "cases": 72,
+    "nonfinite": 0,
+    "nonfinite_fraction": 0.0,
+    "infinite": 0,
+    "finite_range": [
+      0.0,
+      13.94557
+    ]
+  },
+  "rna_Normal": {
+    "genes": 19275,
+    "cases": 72,
+    "nonfinite": 0,
+    "nonfinite_fraction": 0.0,
+    "infinite": 0,
+    "finite_range": [
+      0.0,
+      14.3414863135948
+    ]
+  }
+}

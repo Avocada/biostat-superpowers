@@ -1,0 +1,36 @@
+{
+  "estimand": "mean within-case tumor-minus-normal difference for each gene/layer",
+  "exclude_histology": [
+    "C3L-00359",
+    "C3N-00313",
+    "C3N-00435",
+    "C3N-00492",
+    "C3N-00832",
+    "C3N-01175",
+    "C3N-01180"
+  ],
+  "exclude_normal": "C3N-00314",
+  "cohort": "intersection of case IDs in all four assays after tissue-specific exclusions",
+  "scales": {
+    "protein": "processed TMT log2 reference ratios",
+    "rna": "supplied log2 FPKM"
+  },
+  "min_pairs": 20,
+  "imputation": false,
+  "extra_log": false,
+  "alpha": 0.05,
+  "ci": 0.95,
+  "prespecified": [
+    "CA9",
+    "NNMT",
+    "VEGFA",
+    "MTOR"
+  ],
+  "selection": "Among non-prespecified protein genes with n >= 90% of common cohort and q < 0.05, select two largest absolute protein mean differences; ties alphabetical. RNA does not determine selection.",
+  "seed": 20260924,
+  "selected_exploratory": [
+    "NDUFA4L2",
+    "MT1H"
+  ],
+  "findings": "VEGFA protein n=1, untestable. NDUFA4L2 maps to COXFA4L2/Q9NRX3."
+}

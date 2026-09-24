@@ -1,0 +1,11 @@
+{
+  "protein_BH_matches_statsmodels": true,
+  "protein_family_count": 10033,
+  "protein_CI_brackets_mean": true,
+  "rna_BH_matches_statsmodels": true,
+  "rna_family_count": 19015,
+  "rna_CI_brackets_mean": true,
+  "source_checksums_match": true,
+  "CA9_direct_ttest_relative_error": 2.475797344914099e-14,
+  "html_no_remote_dependencies": true
+}

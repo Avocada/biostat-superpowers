@@ -1,0 +1,598 @@
+{
+  "CHANGED_FILES.md": {
+    "bytes": 9915,
+    "sha256": "1d754962e71a854d96045dd88a1290dd7a23448ac59ccdf89b2a716257dadc95"
+  },
+  "DATA_SOURCES.md": {
+    "bytes": 2044,
+    "sha256": "358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55"
+  },
+  "INPUT_MANIFEST.json": {
+    "bytes": 1466,
+    "sha256": "ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a"
+  },
+  "README.md": {
+    "bytes": 9959,
+    "sha256": "d293b3477977c2816495eb2136c793e318e943b1083b013ffc876224797f0126"
+  },
+  "baseline/DECISIONS.md": {
+    "bytes": 2178,
+    "sha256": "7b76043dda17718ee4afd80ab708716ab5113c304e2d7621d26dc3ee5386d098"
+  },
+  "baseline/FOLLOWUP.md": {
+    "bytes": 15791,
+    "sha256": "5decff1c5ab4349d2eb7d12a7999442cf4d3f10057c8f2b58f777ef0a54a5e71"
+  },
+  "baseline/FOLLOWUP_NOTES.md": {
+    "bytes": 2716,
+    "sha256": "8a5e008d1751be661d97d05301f38a622c47c3a419a33e6f2a249f14c01bbd8c"
+  },
+  "baseline/analysis.py": {
+    "bytes": 11558,
+    "sha256": "a771a8731e717d305af29bfd381aa9e46be56ffa5525260a0e42c33a2334f163"
+  },
+  "baseline/analysis_config.json": {
+    "bytes": 1568,
+    "sha256": "10725e575131a712e18777fd4a1931396b75ee95e8aa8473262cab08167d7698"
+  },
+  "baseline/artifact_manifest.json": {
+    "bytes": 9419,
+    "sha256": "a506cc36feb3808ced425421daeaf2a8a896f8d6cc9483850932eac9fb09a24d"
+  },
+  "baseline/build_report.py": {
+    "bytes": 22755,
+    "sha256": "e229c27be222bc22d473129f31bc1c613f3674385e9590ad773cd2aad1f6adc7"
+  },
+  "baseline/common_environment.md": {
+    "bytes": 513,
+    "sha256": "2a58cd94f217421f91301c54e0ee6d722def934fdae6406feb0d077516fc283e"
+  },
+  "baseline/context_sources.json": {
+    "bytes": 142352,
+    "sha256": "1bac22ccfca6a3843df8670b958dbf5964c7e7bd85d31d4daf1405a60608136c"
+  },
+  "baseline/evidence.py": {
+    "bytes": 3800,
+    "sha256": "5eb2b51c5cf84ccf5e92482668650bc3801313e4833a76cabf4c0eab18766c2b"
+  },
+  "baseline/final_followup.md": {
+    "bytes": 715,
+    "sha256": "9662ba8e73da3a05021b25e03aa5f689d49c6ce1f38cb4b4439ad918a9afdc70"
+  },
+  "baseline/final_initial.md": {
+    "bytes": 790,
+    "sha256": "65a646775e70e13f2acc466410ffdba0cac2464ea3b6a2f40139bb58b5be66f7"
+  },
+  "baseline/followup.html": {
+    "bytes": 320720,
+    "sha256": "8dfa09044061d06969efd753466ac84938da6bcfe2a27316f815debeb50ca9f9"
+  },
+  "baseline/followup_analysis.py": {
+    "bytes": 10173,
+    "sha256": "3a0baba5504172cf53ee70a5861fd90378b293ef8dca51f20e354eabf10b24e0"
+  },
+  "baseline/followup_artifact_manifest.json": {
+    "bytes": 3526,
+    "sha256": "34ce3983eec803cb71a865278035a8206e400a0b18b03568b736f74c2e3bf927"
+  },
+  "baseline/followup_outputs/all_stage_protein_genes.csv": {
+    "bytes": 1790697,
+    "sha256": "4e3c73d5177a4bb51d252e07f7ca3de805a0928bea5ec8e8c87ce5148b70acd0"
+  },
+  "baseline/followup_outputs/all_stage_rna_genes.csv": {
+    "bytes": 3313652,
+    "sha256": "0e6835ea994455689c97b8f946154e2b02db42c92262847cf3be88173ff38ab2"
+  },
+  "baseline/followup_outputs/early_stage_protein_genes.csv": {
+    "bytes": 1784944,
+    "sha256": "fce2dc387a42df2e0c34e8cd76e0633a5cd6bfb1719322cae013aa8a5ebaaff1"
+  },
+  "baseline/followup_outputs/early_stage_rna_genes.csv": {
+    "bytes": 3293404,
+    "sha256": "e2509b443937bf20517b5c30066661eacfcc451450be5cab19f2311b9b39e68e"
+  },
+  "baseline/followup_outputs/effect_comparison.png": {
+    "bytes": 155172,
+    "sha256": "d3861834e0d7c50e164f76f0c7c43414d54a9696d5b4ed93192c2a2fc6957e9e"
+  },
+  "baseline/followup_outputs/fingerprint_verification.json": {
+    "bytes": 438,
+    "sha256": "ff598d988daf2af6fb9340b7ba3418d748252ec20d9af42dde7938151f895d1b"
+  },
+  "baseline/followup_outputs/original_hashes.json": {
+    "bytes": 8142,
+    "sha256": "162cc10f537c478e1b78abefd676efe71e846543465e66504202f9f9fc3afb0a"
+  },
+  "baseline/followup_outputs/protein_cohort_comparison.csv": {
+    "bytes": 2748642,
+    "sha256": "788639c37c3a565f7d41d25d0b1404632c2c77ea4bc4dca51811710f5cd8641c"
+  },
+  "baseline/followup_outputs/rna_cohort_comparison.csv": {
+    "bytes": 6437941,
+    "sha256": "5e12d390804ff08c7103f527612c06a82a69fc26244bdb59edcef0c4d0990a60"
+  },
+  "baseline/followup_outputs/shortlist_comparison.csv": {
+    "bytes": 6128,
+    "sha256": "1b1135cefba0f3dbedc498d622e2e9ce06c484a176a59bf0c5abd0425f121a07"
+  },
+  "baseline/followup_outputs/shortlist_comparison.png": {
+    "bytes": 71094,
+    "sha256": "4d02c91e17e662ece29ef3ef50db226541373dae4b203084cecc1727a12c9d33"
+  },
+  "baseline/followup_outputs/validation.json": {
+    "bytes": 674,
+    "sha256": "4d385eb6a1e81b7cc035acc3797c8658d8a37aff0d37a0a03485979a098c05c9"
+  },
+  "baseline/followup_report.py": {
+    "bytes": 19122,
+    "sha256": "0699f36af328931ba6aed1512c3b3f0e4120dedfe2bbb8e1a725c2ee88462c0d"
+  },
+  "baseline/followup_results.json": {
+    "bytes": 21072,
+    "sha256": "910660aeeb0456d3233739c815818b1879da45d5674f770796f0a0583746f0e5"
+  },
+  "baseline/followup_trials.py": {
+    "bytes": 3992,
+    "sha256": "a6d589e91714047ee94f929ffdd18c81577059f569167a0a7916e47fe970beb1"
+  },
+  "baseline/method_review.json": {
+    "bytes": 1338,
+    "sha256": "f3a47cb0e04fbe93eb782e66e520696199dc0318bc3ab2bfdf7265ce299b855a"
+  },
+  "baseline/outputs/availability.png": {
+    "bytes": 32359,
+    "sha256": "aea494152564d40336cb14f16409a03dfdbb84ec4a433c83bbebeb7eac7b5b9a"
+  },
+  "baseline/outputs/concordance.png": {
+    "bytes": 123719,
+    "sha256": "804c8064d3db80e5818d933952062b5264f4ad001885171c97c285da17451721"
+  },
+  "baseline/outputs/discordant_examples.csv": {
+    "bytes": 8044,
+    "sha256": "9860b779fb626886d3d25cbc6f594d47b52279d6f9e46f9d51495991597c3747"
+  },
+  "baseline/outputs/fingerprint_verification.json": {
+    "bytes": 1808,
+    "sha256": "9e49f9453d99e3b8644854f639e901e2d3245db7e715604ecafc65b3238c4c5e"
+  },
+  "baseline/outputs/missingness.png": {
+    "bytes": 39835,
+    "sha256": "370ef39cf58dd0803382ea166d2c86dc0a0d3d54ede7e17156bc6cda52cd2962"
+  },
+  "baseline/outputs/protein_all_genes.csv": {
+    "bytes": 1755862,
+    "sha256": "d2ad5f4d3449026343cfc93dbafc215ff53ab4aa87e2d4ebd4e7dbae3a30ef68"
+  },
+  "baseline/outputs/protein_differential.png": {
+    "bytes": 314234,
+    "sha256": "e30307539e73f4e8899e150f048c36e384edf696295fdfad46e3ac3663e7d425"
+  },
+  "baseline/outputs/protein_layer_cohort_sensitivity.csv": {
+    "bytes": 1770933,
+    "sha256": "465c9c95756045ba5d11c758868800e6280b76c89497484e8c3aa66fc33138d5"
+  },
+  "baseline/outputs/rna_all_genes.csv": {
+    "bytes": 3095246,
+    "sha256": "53e8b3b10ec3a879c4a9da79799208976dbe142b10a7af932aff98c3200c1dfa"
+  },
+  "baseline/outputs/rna_layer_cohort_sensitivity.csv": {
+    "bytes": 3095246,
+    "sha256": "53e8b3b10ec3a879c4a9da79799208976dbe142b10a7af932aff98c3200c1dfa"
+  },
+  "baseline/outputs/rna_protein_concordance.csv": {
+    "bytes": 3910075,
+    "sha256": "562ec32892a2aef2751f90f2170bb23191e51ed06c64c558c850feeedbab4055"
+  },
+  "baseline/outputs/shortlist.csv": {
+    "bytes": 3775,
+    "sha256": "3ceeb635cd60e80feab185386e993d81066a56b964985f0da609636f4af5185e"
+  },
+  "baseline/outputs/ui_validation.txt": {
+    "bytes": 199,
+    "sha256": "e172b86120e6b151054dbc7725f48fd210120b50fd855d7e697e1f53db5c6f64"
+  },
+  "baseline/outputs/validation.json": {
+    "bytes": 345,
+    "sha256": "3ed96f7a99960159737070d2480c2ca6cd4b2c40160e3b0a78209186d6f1be2e"
+  },
+  "baseline/report.html": {
+    "bytes": 5964054,
+    "sha256": "fe955dce4379081ba31a28ef2e07e73da7843980df1d9204a7349622556a0f3a"
+  },
+  "baseline/report.md": {
+    "bytes": 10360,
+    "sha256": "732b937b85d34f2842a9ee3ad6bed97729d0d78421b5a1348699138d61bebd68"
+  },
+  "baseline/results.json": {
+    "bytes": 23716,
+    "sha256": "5f70a33e8d23775a0068bc14b9a4d693bb45534eea9076c3a25815a5982ed160"
+  },
+  "baseline/source_guide.md": {
+    "bytes": 1466,
+    "sha256": "7b618cc426efbcd527b5d935d379d2692a9a161d4b6c746dbb0d33bae4042d01"
+  },
+  "baseline/supplement_evidence.py": {
+    "bytes": 763,
+    "sha256": "6929ac9953c0afd93276ad44fbd1811cf546cf7c7e83cbac7f84cac2ededa53d"
+  },
+  "baseline/validate.py": {
+    "bytes": 1974,
+    "sha256": "648d005d048629c69562957eb930e3cfcab17062d922bc06b825937dad1e6b25"
+  },
+  "baseline_followup_prompt.txt": {
+    "bytes": 2534,
+    "sha256": "d1d7c19692401ab986cc9db4131b89a6a2ef443b57ba9ea283f02ab217450abf"
+  },
+  "baseline_initial_prompt.txt": {
+    "bytes": 3521,
+    "sha256": "17cfe9e3df1a56ab3a710fc4d40eab44c6ecbf01274c67bf7089e219234e8fe5"
+  },
+  "build_comparison.py": {
+    "bytes": 5586,
+    "sha256": "aee108c3e14c161b2ede34eb48d48f7a38133a29fe5a3a2cc3dd1c5456906fe3"
+  },
+  "collect.py": {
+    "bytes": 2999,
+    "sha256": "8c0da27f80bda8a783c62eff8b3bdf015a540bb576152b32bf2dac0c7e4c04b7"
+  },
+  "common_environment.md": {
+    "bytes": 513,
+    "sha256": "2a58cd94f217421f91301c54e0ee6d722def934fdae6406feb0d077516fc283e"
+  },
+  "correct_presentation.py": {
+    "bytes": 3832,
+    "sha256": "59cf8ad0a68626bc0cec2c8e96054fd4ecdbb7727b0d726581761bcacda88fda"
+  },
+  "headline.txt": {
+    "bytes": 325,
+    "sha256": "86f3f4220b19ad6e2fc0ad7cb17655e4b0f50cc8b89ea71fafbdb1ef66190ee6"
+  },
+  "independent_review.md": {
+    "bytes": 22681,
+    "sha256": "c5c77148f9e7882f42f4d2758d593086c7409a41461f606817118fea5b27f7ad"
+  },
+  "index.html": {
+    "bytes": 8459,
+    "sha256": "04c5388f231e9f181861bd0b6eac1868fd9febd4525b1820c132a547e8209f7f"
+  },
+  "initial_preservation.json": {
+    "bytes": 481,
+    "sha256": "e45e81d280ea5ec6b3b9effc34356b7b08564189a2e69b4ec0cc5f95505e3a4f"
+  },
+  "launch.py": {
+    "bytes": 2018,
+    "sha256": "e3e5a75a1b1245e959b535197480163e8777945c809a8ad37f3842899872e6b1"
+  },
+  "mcp_calls.json": {
+    "bytes": 3171,
+    "sha256": "194a5e14e19d2c262f8c34ebbe720d5e89343fef638a5c80d24df44ca345c8b2"
+  },
+  "parent_preflight.json": {
+    "bytes": 279,
+    "sha256": "b05c133f4ea4e39ab25a2e91208f4aee998198765e8b2f1df7d8dc1da3d46b8e"
+  },
+  "post_review/FOLLOWUP_corrected.md": {
+    "bytes": 14019,
+    "sha256": "b45d568556f95d7117e06a5a3e90616bc8901f89a843330261e5a3126bd4e12a"
+  },
+  "post_review/README.md": {
+    "bytes": 546,
+    "sha256": "c85b12ca8ebc4983d473b0accd3c2f3ef5cedee0c10b3e53975773ddb35a901d"
+  },
+  "post_review/followup_corrected.html": {
+    "bytes": 285340,
+    "sha256": "f03eb41fe9c6b9eed0aea003e5b4eeb188bac873eda8d6b6c45aa8ea6d524d80"
+  },
+  "post_review/memory_correction.json": {
+    "bytes": 545,
+    "sha256": "cf402329313ff86974cdbbf019bff9d86d7ebd90be6fc23b39c4a08fc853704d"
+  },
+  "post_review/shortlist_comparison.png": {
+    "bytes": 76376,
+    "sha256": "2aa9aad0e12bd947d3c750a71233d55ccdbf267a3419002bfda7a698f213d5f7"
+  },
+  "prepare_inputs.py": {
+    "bytes": 1968,
+    "sha256": "a3013b6534cbfcfa12df5aad12fc23cd0ff4dc3b426de2ef9b6f77837fa9b7e7"
+  },
+  "protocol.json": {
+    "bytes": 992,
+    "sha256": "3c5983e4bcda6a42d9625dba66810c74dbf53a097aa295d527715439cfa8e3f5"
+  },
+  "review_protocol.md": {
+    "bytes": 11506,
+    "sha256": "f397a67865c95fa14feedb50c99dff977148c75c69be9cb37b0b3b04d40200f8"
+  },
+  "runtime_quickstart.md": {
+    "bytes": 2531,
+    "sha256": "38cbe774a5ef49cdcf18936b6bf44d55c7f50014de9e275b9ab46e978adca1d1"
+  },
+  "setup_corrections.json": {
+    "bytes": 1019,
+    "sha256": "569d5731ff31ff47b581fb161cf2151a4796172a32018e55be73d8cc821a0c4a"
+  },
+  "shared_followup_prompt.txt": {
+    "bytes": 2368,
+    "sha256": "f382d1c367f50b7c177c3e7ba9cf3a7b4a94d7f8490e3fca29476d0a4cc47d2b"
+  },
+  "shared_initial_prompt.txt": {
+    "bytes": 3315,
+    "sha256": "2a25c90880663338c9761043690fc33a3ae265b01ce63dea7a593108594a7909"
+  },
+  "source_guide.md": {
+    "bytes": 1466,
+    "sha256": "7b618cc426efbcd527b5d935d379d2692a9a161d4b6c746dbb0d33bae4042d01"
+  },
+  "telemetry.json": {
+    "bytes": 1865,
+    "sha256": "61d635d370bb03806c0a6c6f00dd4be49b804e14c856efae0eb29702df578771"
+  },
+  "upgraded/FOLLOWUP.md": {
+    "bytes": 13737,
+    "sha256": "89c5270193e185b11a2788e2897c8041af2707e02dbd69fb4748c93b632c40c5"
+  },
+  "upgraded/analysis.py": {
+    "bytes": 15534,
+    "sha256": "c9544b23e80416cc4ef2e744c2f6114b86605cf925dca6ea2068cd52bbdf1814"
+  },
+  "upgraded/analysis_config.json": {
+    "bytes": 1000,
+    "sha256": "b8d4f61ba14c773cd5aab39174cdd8d99f5a72f1e80d48713b6a39e2af9ed924"
+  },
+  "upgraded/artifact_manifest.json": {
+    "bytes": 9515,
+    "sha256": "dee9c6fce35c62945698ddfcf933d504f390da224815abfac6efc65855d793aa"
+  },
+  "upgraded/cohort.json": {
+    "bytes": 741,
+    "sha256": "066c1d85b66a042be4a06be2f94f983a7544b2e8366c051bfc80e20717df18b6"
+  },
+  "upgraded/cohort_case_ids.json": {
+    "bytes": 1082,
+    "sha256": "aa3926e8e92b6991e05b77d51e109a498626da4f6b04f97479e20ba1f7fc0228"
+  },
+  "upgraded/common_environment.md": {
+    "bytes": 513,
+    "sha256": "2a58cd94f217421f91301c54e0ee6d722def934fdae6406feb0d077516fc283e"
+  },
+  "upgraded/context_sources.json": {
+    "bytes": 39533,
+    "sha256": "2cdef28d48a3fe0baa5a939712455b865cce252eae9f35d372c82953518752ba"
+  },
+  "upgraded/controller_audit.json": {
+    "bytes": 7188,
+    "sha256": "050cc7fd92431aa07c6ac5006796913c76c741f9014e9be66cc7dcca90941be3"
+  },
+  "upgraded/data_profile.json": {
+    "bytes": 833,
+    "sha256": "0095cb1c65bb33b737521484da55718987c235d57a526a4c6820512a4e143b1d"
+  },
+  "upgraded/diagnostics.json": {
+    "bytes": 2947,
+    "sha256": "e0eb208712b715172e50d8029b979f64a013bb15a400b2ce2bcd4b4ab182bdf0"
+  },
+  "upgraded/evidence_records.json": {
+    "bytes": 48940,
+    "sha256": "d6a20b32b735a645707b41b968d3efdc4d3cbc7fe41f0d680cb9483f08f5d65e"
+  },
+  "upgraded/figures/availability_missingness.png": {
+    "bytes": 58599,
+    "sha256": "434e0af96fa967697a79c950c5572cfb64bcb722a24d637b6ce05d1a380a3827"
+  },
+  "upgraded/figures/concordance.png": {
+    "bytes": 83474,
+    "sha256": "52e23aa7f88c6549353f590f21e85c5dccade62acb5a9edefbb8d1648d3f9118"
+  },
+  "upgraded/figures/protein_differential.png": {
+    "bytes": 202474,
+    "sha256": "2d93543eff645b008740c42764b7d4eefd11985983c1246710605bd38b7c649f"
+  },
+  "upgraded/figures/shortlist_intervals.png": {
+    "bytes": 50122,
+    "sha256": "4fcd785f024c19ee9cb96d5d3a732efe71214021b815b8be23a03872a0e13595"
+  },
+  "upgraded/final_followup.md": {
+    "bytes": 725,
+    "sha256": "8b199dfc05bd6ab2c698f0697e2fb67ab6aa67b23c972fe1be7633c16f652e9c"
+  },
+  "upgraded/final_initial.md": {
+    "bytes": 734,
+    "sha256": "46dc627dd27a7c16bed571bc3030c68085bb6b2c8ffcf2cec8004138f1a1cdd2"
+  },
+  "upgraded/fingerprint_verification.json": {
+    "bytes": 1486,
+    "sha256": "3fd1ae8460450414ba8cbcf94a67b353c1c5cd9786694864bdc8fc9112f1c347"
+  },
+  "upgraded/followup.html": {
+    "bytes": 283165,
+    "sha256": "7d3a522294f89dda3a1fe5dc7a83a0118858f08a67e86e0c853fbee28b644836"
+  },
+  "upgraded/followup_analysis.py": {
+    "bytes": 13668,
+    "sha256": "cf04705a1a948013846a6fd405423dee88420c975c79a39364fca1d9161dc5cd"
+  },
+  "upgraded/followup_cohorts.json": {
+    "bytes": 1898,
+    "sha256": "96f2063b09b8dc82eede5cb6e5c184d4d12ed97c1c82e7f211caea49d568d67e"
+  },
+  "upgraded/followup_config.json": {
+    "bytes": 1107,
+    "sha256": "e0e0893fff5e022f514f168c03a41e03ad1aa86930ceb6b7ed19f89187769e44"
+  },
+  "upgraded/followup_controller_audit.json": {
+    "bytes": 7242,
+    "sha256": "7663c83b670e22792f262cfe92471ab87489910bb1665daacc175a3e79208eb4"
+  },
+  "upgraded/followup_execution_memory.json": {
+    "bytes": 5033,
+    "sha256": "79fd06cd915edefa77de81fc98f364d621fc9f78171993c8ba42c81dbcb4db7b"
+  },
+  "upgraded/followup_figures/effect_comparison.png": {
+    "bytes": 124954,
+    "sha256": "c1a90e3a43df1d6be6b5b849fc6999b5a1e98df089238d1edb762c1d3b27b9d8"
+  },
+  "upgraded/followup_figures/shortlist_comparison.png": {
+    "bytes": 75004,
+    "sha256": "1f25599dbe98744a7d25aa6b2cc10d9033e098f04935143e681aeb7d5e22c45f"
+  },
+  "upgraded/followup_finalize.py": {
+    "bytes": 5602,
+    "sha256": "3d5b5eeaadefd78c3e82710accea1019bc5837decf70a7dd26855fe8c0178f54"
+  },
+  "upgraded/followup_initial_notes.md": {
+    "bytes": 2538,
+    "sha256": "af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a"
+  },
+  "upgraded/followup_memory_append.json": {
+    "bytes": 1833,
+    "sha256": "10482317d016ef3629e932fbd8eb06948e11123e8b7c5137e0975c55b803936a"
+  },
+  "upgraded/followup_memory_retrieval.json": {
+    "bytes": 5651,
+    "sha256": "4c4af1aae7613752d35c176dbff9f5b2c3ed49131e5772db5f9900839266e8a2"
+  },
+  "upgraded/followup_output_manifest.json": {
+    "bytes": 2657,
+    "sha256": "6516c6eddeee0c83ea56e10d6613b5fd331b862e02f1c08ae5a41adf2fa203b5"
+  },
+  "upgraded/followup_preservation.json": {
+    "bytes": 8257,
+    "sha256": "d8035eae43816bcb20f514aedbdc29e6f13c36b627a12c22e5221db53e554046"
+  },
+  "upgraded/followup_report.py": {
+    "bytes": 18168,
+    "sha256": "7fe5d9c7d1b570d1ad336dfe0b27626cbd6e4e1993beff43e2bf8d28bab6cc3c"
+  },
+  "upgraded/followup_results.json": {
+    "bytes": 29608,
+    "sha256": "15dc62517affed62398e1fad4551c9cb8c5de90809761e28b6b1ae9a78fb73af"
+  },
+  "upgraded/followup_runtime_context.json": {
+    "bytes": 542,
+    "sha256": "fc4a93f14c2413a44c925941ffc95573a8697e2666c07c5e0a60d7d98b970c2a"
+  },
+  "upgraded/followup_tables/all_stage_protein.csv": {
+    "bytes": 1554060,
+    "sha256": "fb5297bf11e2e23c9d0c019628f7a59b6bd5b037eaceb893dc0f77ef15422185"
+  },
+  "upgraded/followup_tables/all_stage_rna.csv": {
+    "bytes": 2875611,
+    "sha256": "69e864ac15a4ab5fa484c130be79ce4f2df7b77cfdfd4b501ca2a7fd6d0a696c"
+  },
+  "upgraded/followup_tables/protein_changed_testing_family.csv": {
+    "bytes": 2769,
+    "sha256": "94e46aa62442b99d893ec2f59e02328b39960b25d211fbbcaf3d6458cee2138e"
+  },
+  "upgraded/followup_tables/rna_changed_testing_family.csv": {
+    "bytes": 2233,
+    "sha256": "5de5c2d99b18e469b9bf7994b84ec5fab809327b438811234e111332fa768c92"
+  },
+  "upgraded/followup_tables/shortlist.csv": {
+    "bytes": 3811,
+    "sha256": "72237f89f9178807f25833aa5f2fd1002e7914f3d0a8df09d1652c505e44a7ca"
+  },
+  "upgraded/followup_tables/stage_I_II_protein.csv": {
+    "bytes": 1549154,
+    "sha256": "4438140018e72a506092adeb0bface72af6ac7d60d49d1127be18cc247cafe7e"
+  },
+  "upgraded/followup_tables/stage_I_II_rna.csv": {
+    "bytes": 2857373,
+    "sha256": "cb5850eff845f681a99cf5d01710bcf6880d20ed60414370049070b290035420"
+  },
+  "upgraded/followup_validation.json": {
+    "bytes": 2073,
+    "sha256": "31aa9d12c8b34da663d56d6016aeacb50d1cea2338bf5a5e486fc758d0f601ef"
+  },
+  "upgraded/html_validation.json": {
+    "bytes": 211,
+    "sha256": "2d7d7ef47958749a9a8a0e3964bcdf6fc954cd1e65bcd70322089c8d491e3300"
+  },
+  "upgraded/memory_retrieval.json": {
+    "bytes": 5156,
+    "sha256": "a47fab68a333e238cd06799e04304728c32b68f644f18b6230ed86c64ceb013d"
+  },
+  "upgraded/render_report.py": {
+    "bytes": 20872,
+    "sha256": "14fc975fdf93f8fa3c80797da998bee0be9e7c703faded80157483d8efe6026a"
+  },
+  "upgraded/report.html": {
+    "bytes": 9938136,
+    "sha256": "bbe9f1324908bbde44dfef26decc7c60b748fc97f6997931a3c9dd5eb02882aa"
+  },
+  "upgraded/report.md": {
+    "bytes": 8190,
+    "sha256": "f7b51357c92d3e4d612341595532f07b8f43df0033ffc35adc6de4a38776fb65"
+  },
+  "upgraded/results.json": {
+    "bytes": 7106,
+    "sha256": "344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9"
+  },
+  "upgraded/runtime_context.json": {
+    "bytes": 272,
+    "sha256": "f7c766c68ba348d36d9885f4764c0f64b50377a1d606e48f5fa589b4f1ca7e61"
+  },
+  "upgraded/runtime_quickstart.md": {
+    "bytes": 2531,
+    "sha256": "38cbe774a5ef49cdcf18936b6bf44d55c7f50014de9e275b9ab46e978adca1d1"
+  },
+  "upgraded/software_versions.json": {
+    "bytes": 112,
+    "sha256": "4e3e55d594ad43d47fc5822e61ac6ebe68905ddb1ba2fe2fc6658c87826bdb63"
+  },
+  "upgraded/source_guide.md": {
+    "bytes": 1466,
+    "sha256": "7b618cc426efbcd527b5d935d379d2692a9a161d4b6c746dbb0d33bae4042d01"
+  },
+  "upgraded/source_index.json": {
+    "bytes": 9376,
+    "sha256": "28026ccd9c73bce932f6a6d6e4c7b589ba8c1dc0e2a259818c015c35c6977df5"
+  },
+  "upgraded/tables/common_finite_sensitivity.csv": {
+    "bytes": 514474,
+    "sha256": "ef6a0b71b988b32fb82f9a8d1bde5316a0217e123c5cccf9deb8d5e8478568c8"
+  },
+  "upgraded/tables/discordant_examples.csv": {
+    "bytes": 2022,
+    "sha256": "fc47f3514f2b13c444aa93b72f8a85abfaf57d319ecb37eab944d5170529f775"
+  },
+  "upgraded/tables/protein_all_genes.csv": {
+    "bytes": 1766669,
+    "sha256": "1a404120f5c2bdb2b4c227c328fc2829326615c03521961257357c7705c010ba"
+  },
+  "upgraded/tables/rna_all_genes.csv": {
+    "bytes": 3049999,
+    "sha256": "e9104d6d89c7171c4e5f782f5ae4773624ef7648920b2ef3cfb42612e111197f"
+  },
+  "upgraded/tables/rna_protein_comparison.csv": {
+    "bytes": 3031217,
+    "sha256": "80d6d95901b3d80689e77776ac8eb932ec723ae992704cd2e03e6cdf181dc4d0"
+  },
+  "upgraded/tables/shortlist.csv": {
+    "bytes": 1973,
+    "sha256": "c10338bb8f2bb6ce92382bb5d32975acc20009f6ef5b221fd08d347357eec104"
+  },
+  "upgraded/validate.py": {
+    "bytes": 3089,
+    "sha256": "70d5e73e93b18deb03b93d293543ab9deb4f8abe1eb6ce46db0455a189f21e2b"
+  },
+  "upgraded/validate_html.js": {
+    "bytes": 1431,
+    "sha256": "634485c93037496bfdce348d3b558d8fa6399eb79cc6c653ab9415783e3eb16f"
+  },
+  "upgraded/validation.json": {
+    "bytes": 2616,
+    "sha256": "59721f8fdfff5a6f848aeb0ba6e1c57089754a1f74c092b3404d974e73f8341a"
+  },
+  "upgraded_followup_prompt.txt": {
+    "bytes": 3025,
+    "sha256": "9b056a36d6300f1d91623dd0fab21732cef7397d6ace773c06c9b1c6116ccfde"
+  },
+  "upgraded_initial_prompt.txt": {
+    "bytes": 3496,
+    "sha256": "dbbfd38e2b96259e387663c706bd7780086d8eecba72b9a3d875065bfd8b41d1"
+  },
+  "verification.json": {
+    "bytes": 1012,
+    "sha256": "5ecd0fdb8f933781682d467511510e4df7a665b3254fc386c6466e8b16bcaa93"
+  }
+}

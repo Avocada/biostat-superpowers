@@ -1,0 +1,41 @@
+{
+  "downloaded_tumors": 110,
+  "histology_excluded": 7,
+  "ccRCC_tumors": 103,
+  "contaminated_normals_excluded": 1,
+  "common_cases": 72,
+  "assay_availability": [
+    {
+      "layer": "protein",
+      "tissue": "Tumor",
+      "downloaded": 110,
+      "eligible": 103,
+      "common": 72
+    },
+    {
+      "layer": "protein",
+      "tissue": "Normal",
+      "downloaded": 84,
+      "eligible": 80,
+      "common": 72
+    },
+    {
+      "layer": "rna",
+      "tissue": "Tumor",
+      "downloaded": 110,
+      "eligible": 103,
+      "common": 72
+    },
+    {
+      "layer": "rna",
+      "tissue": "Normal",
+      "downloaded": 75,
+      "eligible": 72,
+      "common": 72
+    }
+  ],
+  "layer_pairs": {
+    "protein": 80,
+    "rna": 72
+  }
+}

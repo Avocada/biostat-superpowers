@@ -1,0 +1,81 @@
+{
+  "scope": "same-session technical checks, not independent evaluation",
+  "checks": [
+    "protein: independent scipy paired t/CI checks for five shortlist genes; scipy BH checked for full tested family",
+    "rna: independent scipy paired t/CI checks for five shortlist genes; scipy BH checked for full tested family",
+    "72 unique common case IDs; contaminated normal pair excluded",
+    "All four PNGs visually inspected: axes/scales readable; revise untestable VEGFA marker to explicit no estimate",
+    "No remote CDN, script or stylesheet dependency",
+    "HTML syntax and gene/layer/significance filtering plus CSV export handler tested in Node VM; no browser screenshot"
+  ],
+  "opposite_direction_both_q005": 1087,
+  "unresolved": [
+    {
+      "severity": "serious",
+      "issue": "No independent evaluation yet",
+      "action": "Fresh-session artifact review; controller remains blocked"
+    },
+    {
+      "severity": "serious",
+      "issue": "Potential tissue/abundance-dependent missingness and assay-selection bias",
+      "action": "Investigate missingness mechanism and targeted orthogonal assays; do not generalize sparse genes"
+    },
+    {
+      "severity": "serious",
+      "issue": "Processed-scale batch/purity and tissue-composition confounding unresolved",
+      "action": "Review processing and sample batches; obtain purity/composition information before mechanistic interpretation"
+    },
+    {
+      "severity": "routine",
+      "issue": "Shortlist data selection and nominal CIs",
+      "action": "Independent validation of exploratory candidates; no selective-inference claim"
+    }
+  ],
+  "profile": {
+    "protein_Tumor": {
+      "genes": 11710,
+      "cases": 72,
+      "nonfinite": 180270,
+      "nonfinite_fraction": 0.2138129803586678,
+      "infinite": 0,
+      "finite_range": [
+        -5.26098201344499,
+        3.9816691362437
+      ]
+    },
+    "protein_Normal": {
+      "genes": 11710,
+      "cases": 72,
+      "nonfinite": 180225,
+      "nonfinite_fraction": 0.2137596071733561,
+      "infinite": 0,
+      "finite_range": [
+        -5.5417366795211,
+        4.0977735607003
+      ]
+    },
+    "rna_Tumor": {
+      "genes": 19275,
+      "cases": 72,
+      "nonfinite": 0,
+      "nonfinite_fraction": 0.0,
+      "infinite": 0,
+      "finite_range": [
+        0.0,
+        13.94557
+      ]
+    },
+    "rna_Normal": {
+      "genes": 19275,
+      "cases": 72,
+      "nonfinite": 0,
+      "nonfinite_fraction": 0.0,
+      "infinite": 0,
+      "finite_range": [
+        0.0,
+        14.3414863135948
+      ]
+    }
+  },
+  "shortlist_leave_one_out_direction_stable": true
+}

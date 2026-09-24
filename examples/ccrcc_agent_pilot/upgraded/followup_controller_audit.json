@@ -1,0 +1,242 @@
+[
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "design",
+      "estimand_ready": false,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 0,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "design",
+      "skill": "study-design-and-power",
+      "reason": "Define the estimand or prediction target"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "Mean paired tumor-minus-normal observed-pair contrast in original cohort and its pathological Stage I/II subset. Retrieved decisions agree with original config; followup_config.json sha256=e0e0893fff5e022f514f168c03a41e03ad1aa86930ceb6b7ed19f89187769e44",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "preparation",
+      "estimand_ready": true,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 1,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "preparation",
+      "estimand_ready": true,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 1,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "preparation",
+      "skill": "data-understanding-preprocessing",
+      "reason": "Establish the analysis-ready data contract"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "Verified all nine input hashes/sizes; revalidated saved original 72-case intersection; authoritative stage exact match, 37 early cases. followup_cohorts.json",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": true
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "missing_data",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 2,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "missing_data",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 2,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "missing_data",
+      "skill": "missing-data",
+      "reason": "Resolve non-trivial missingness before estimation"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "No imputation. Per cohort/layer require >=ceil(0.8*N) finite tumor/normal pairs and >=20. Observed pairs may be abundance selected; MNAR remains unresolved.",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "analysis",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 3,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "analysis",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 3,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "analysis",
+      "skill": "statistical-analysis",
+      "reason": "Execute the goal-appropriate analysis"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "Four cohort/layer paired t families recalculated with BH and explicit excluded/zero-variance states; final followup_results.json sha256=15dc62517affed62398e1fad4551c9cb8c5de90809761e28b6b1ae9a78fb73af",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 4,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 4,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "evaluation",
+      "skill": "method-evaluation",
+      "reason": "Critique before reporting"
+    },
+    "result": {
+      "outcome": "blocked",
+      "evidence": "Independent review remains pending. Same-session checks cannot resolve MNAR, batch/purity, selection bias or scientific readiness.",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 1,
+      "iteration_count": 5,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  }
+]

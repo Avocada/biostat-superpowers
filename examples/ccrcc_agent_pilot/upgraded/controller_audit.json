@@ -1,0 +1,242 @@
+[
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "design",
+      "estimand_ready": false,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 0,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "design",
+      "skill": "study-design-and-power",
+      "reason": "Define the estimand or prediction target"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "User-defined paired, cross-sectional associational estimand; analysis_config.json sha256=b8d4f61ba14c773cd5aab39174cdd8d99f5a72f1e80d48713b6a39e2af9ed924",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "preparation",
+      "estimand_ready": true,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 1,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "preparation",
+      "estimand_ready": true,
+      "data_ready": false,
+      "identification_ready": false,
+      "missing_data_required": false,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 1,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "preparation",
+      "skill": "data-understanding-preprocessing",
+      "reason": "Establish the analysis-ready data contract"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "Verified all input hashes, authoritative 7 exclusions, contaminated normal map, unique gene/case keys; cohort.json and data_profile.json",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": true
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "missing_data",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 2,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "missing_data",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": false,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 2,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "missing_data",
+      "skill": "missing-data",
+      "reason": "Resolve non-trivial missingness before estimation"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "No imputation as requested; finite pairs per gene, minimum 20. Missingness may be abundance-dependent/MNAR; complete observed-pair inference cannot establish full-cohort unbiasedness. data_profile.json",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "analysis",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 3,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "analysis",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": false,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 3,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "analysis",
+      "skill": "statistical-analysis",
+      "reason": "Execute the goal-appropriate analysis"
+    },
+    "result": {
+      "outcome": "complete",
+      "evidence": "Executed paired t estimates, separate BH families, explicit failure states, same-finite-case cross-layer sensitivity and shortlist influence diagnostics; results.json sha256=344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 4,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  },
+  {
+    "before": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 0,
+      "iteration_count": 4,
+      "stop_reason": null,
+      "fatal_flaw": null
+    },
+    "route": {
+      "stage": "evaluation",
+      "skill": "method-evaluation",
+      "reason": "Critique before reporting"
+    },
+    "result": {
+      "outcome": "blocked",
+      "evidence": "Independent artifact evaluation intentionally deferred per user; same-session checks are not independent approval.",
+      "evaluation": null,
+      "revision_target": null,
+      "missing_data_required": null
+    },
+    "after": {
+      "goal": "inferential",
+      "stage": "evaluation",
+      "estimand_ready": true,
+      "data_ready": true,
+      "identification_ready": false,
+      "missing_data_required": true,
+      "missing_data_ready": true,
+      "analysis_ready": true,
+      "evaluation": "pending",
+      "report_ready": false,
+      "revision_count": 0,
+      "no_progress_count": 1,
+      "iteration_count": 5,
+      "stop_reason": null,
+      "fatal_flaw": null
+    }
+  }
+]

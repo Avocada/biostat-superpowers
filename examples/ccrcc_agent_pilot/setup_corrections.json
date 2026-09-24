@@ -1,0 +1,5 @@
+{
+  "runtime_quickstart_correction": "Replaced incorrect max_bytes keyword with actual max_units/count API shortly after launch. Check event log for whether original guide was already read. This setup error is not an intrinsic memory-layer failure. Event log confirms upgraded agent had already read the old guide; corrected guide is on disk and explicitly requested on follow-up.",
+  "font_cache": "Initial setup pointed to an empty prior cache directory. Both arms were supplied the actual existing Matplotlib 3.11 font cache during the initial phase. Baseline had already worked around font discovery; upgraded may need to retry its pending import. Timing and tokens include environment troubleshooting; this limits latency comparisons.",
+  "observed_runtime_guide_effect": "The upgraded initial run encountered TypeError from max_bytes in the supplied quickstart, inspected the API, and corrected its code. Treat this as experimenter-authored setup overhead, not evidence that structured memory inherently fails."
+}

@@ -1,0 +1,797 @@
+{
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "manifest_sha256": "ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a",
+  "memory": {
+    "usable": true,
+    "issues": [],
+    "context_bytes": 4462,
+    "selected_keys": [
+      "cohort",
+      "missingness",
+      "model",
+      "scales",
+      "shortlist",
+      "source interpretation"
+    ],
+    "records": [
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:39:41.544736+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "c18a867d126f46e791ce3ce2eed85c5b",
+        "key": "cohort",
+        "run_id": "initial",
+        "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+        "value": "{\"exclude_histology\": [\"C3L-00359\", \"C3N-00313\", \"C3N-00435\", \"C3N-00492\", \"C3N-00832\", \"C3N-01175\", \"C3N-01180\"], \"exclude_normal\": \"C3N-00314\", \"cohort\": \"intersection of case IDs in all four assays after tissue-specific exclusions\"}"
+      },
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:39:41.545443+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "8bc9fba7e2b84fe6b4eac13c04128251",
+        "key": "missingness",
+        "run_id": "initial",
+        "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+        "value": "{\"min_pairs\": 20, \"imputation\": false}"
+      },
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:39:41.545776+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "6a229cce54f746bba5dcd1202d458e22",
+        "key": "model",
+        "run_id": "initial",
+        "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+        "value": "{\"estimand\": \"mean within-case tumor-minus-normal difference for each gene/layer\", \"alpha\": 0.05, \"ci\": 0.95}"
+      },
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:39:41.545130+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "c4a9a17056424fa5860db705e6f6f366",
+        "key": "scales",
+        "run_id": "initial",
+        "source": "input/manifest.json sha256=ac9b068babeac457277fd1ded18e2559957196b3fb9b2c9c2ca802bc924b7b4a; input/SOURCE.md sha256=358f8745c430d5374d924ae0ddac35b74c2c180d4e99380311a74d035fd1aa55; user analysis contract; analysis.py",
+        "value": "{\"scales\": {\"protein\": \"processed TMT log2 reference ratios\", \"rna\": \"supplied log2 FPKM\"}, \"extra_log\": false}"
+      },
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:43:01.152261+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "43ee5144f541409b8faf4422154cb2f6",
+        "key": "shortlist",
+        "run_id": "initial",
+        "source": "FOLLOWUP.md sha256=af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a; results.json sha256=344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9; source_index.json",
+        "value": "{\"prespecified\": [\"CA9\", \"NNMT\", \"VEGFA\", \"MTOR\"], \"selection\": \"Among non-prespecified protein genes with n >= 90% of common cohort and q < 0.05, select two largest absolute protein mean differences; ties alphabetical. RNA does not determine selection.\", \"selected_exploratory\": [\"NDUFA4L2\", \"MT1H\"], \"findings\": \"VEGFA protein n=1, untestable. NDUFA4L2 maps to COXFA4L2/Q9NRX3.\"}"
+      },
+      {
+        "confirmed_by": "Codex analyst review, not human approval",
+        "created_at": "2026-09-24T11:43:01.153010+00:00",
+        "dependencies": [],
+        "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+        "item_id": "1354e4870d4a4e47b3a164f635987040",
+        "key": "source interpretation",
+        "run_id": "initial",
+        "source": "FOLLOWUP.md sha256=af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a; results.json sha256=344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9; source_index.json",
+        "value": "{\"source_policy\": \"Native MCP snapshots are annotations and bounded all-indication target records, not enrichment or kidney efficacy. Original Clark cohort is not independent replication. Independent review pending.\", \"followup\": \"Independent evaluation blocked; batch/purity/MNAR unresolved. Read FOLLOWUP.md, validation.json and source_index.json.\"}"
+      }
+    ],
+    "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+    "hash_checks": {
+      "Clinical_Table_S1.xlsx": true,
+      "HS_CPTAC_CCRCC_CLI.tsi": true,
+      "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Normal.cct": true,
+      "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Tumor.cct": true,
+      "HS_CPTAC_CCRCC_proteome_Normal.cct": true,
+      "HS_CPTAC_CCRCC_proteome_Tumor.cct": true,
+      "SOURCE.md": true,
+      "clinical_annotation.csv": true,
+      "cptac_metadata.csv.gz": true
+    }
+  },
+  "configuration": {
+    "path": "followup_config.json",
+    "sha256": "e0e0893fff5e022f514f168c03a41e03ad1aa86930ceb6b7ed19f89187769e44",
+    "validation": "followup_validation.json",
+    "original_config_sha256": "b8d4f61ba14c773cd5aab39174cdd8d99f5a72f1e80d48713b6a39e2af9ed924"
+  },
+  "reused_artifacts": {
+    "analysis.py": "c9544b23e80416cc4ef2e744c2f6114b86605cf925dca6ea2068cd52bbdf1814",
+    "analysis_config.json": "b8d4f61ba14c773cd5aab39174cdd8d99f5a72f1e80d48713b6a39e2af9ed924",
+    "controller_audit.json": "050cc7fd92431aa07c6ac5006796913c76c741f9014e9be66cc7dcca90941be3",
+    "FOLLOWUP.md": "af0d6f8a0b4f4ca7a1f00cba2a88a9e50c2cca54a880a07282a4717c6a7eb86a",
+    "report.md": "f7b51357c92d3e4d612341595532f07b8f43df0033ffc35adc6de4a38776fb65",
+    "runtime_context.json": "f7c766c68ba348d36d9885f4764c0f64b50377a1d606e48f5fa589b4f1ca7e61",
+    "results.json": "344f6241d1b0fe73f2ae0ec927558ffde8b4d9f7974f3c9e22291a11d00be3e9",
+    "cohort_case_ids.json": "aa3926e8e92b6991e05b77d51e109a498626da4f6b04f97479e20ba1f7fc0228",
+    "evidence_records.json": "d6a20b32b735a645707b41b968d3efdc4d3cbc7fe41f0d680cb9483f08f5d65e",
+    "validation.json": "59721f8fdfff5a6f848aeb0ba6e1c57089754a1f74c092b3404d974e73f8341a",
+    "source_index.json": "28026ccd9c73bce932f6a6d6e4c7b589ba8c1dc0e2a259818c015c35c6977df5",
+    "mcp_artifacts/0f7cc8c7e0634e42a19630450915c2b5/query.json": "4e8b6b6a25c3ed87767bdbff848da99d824cbb1572467ba11cd02b6bff2359b3",
+    "mcp_artifacts/0f7cc8c7e0634e42a19630450915c2b5/manifest.json": "c2191f47f139ae5645ea5d10c2f50f94505ce911b70b6a114658e61777a732e7",
+    "mcp_artifacts/0f7cc8c7e0634e42a19630450915c2b5/response.json": "83d08f7506e11dd6a11ce891dc46755eb8c05f98cc25492e765dc4ddf9dce16e",
+    "mcp_artifacts/753d80ef68a344fe9243991b24b5f2a7/query.json": "a6b6653a2c2f068cc9f6566ec0fdc14a4a97b8d02e2cde2f0326bc84e4f944eb",
+    "mcp_artifacts/753d80ef68a344fe9243991b24b5f2a7/manifest.json": "e0df8e903a223437c48d787f19fc6de93e6dfafe9f57271d2b458f8adefc5d8a",
+    "mcp_artifacts/753d80ef68a344fe9243991b24b5f2a7/response.json": "c5cb6fc233c12bc119efa3c713e3f1b94aa0ed7a7aee343171cae965c582c38f",
+    "mcp_artifacts/af69a8685f4b49f9a8abca5a7ff74701/literature.json": "05297873249e3f7634b8636b09fc29d58564c3caab211430f735e99c75282db0",
+    "mcp_artifacts/af69a8685f4b49f9a8abca5a7ff74701/manifest.json": "2f3e2a60a66bf0d59358248a09f8a1bd02f00bc6e5da8eaf5160f671315746b3",
+    "mcp_artifacts/af69a8685f4b49f9a8abca5a7ff74701/response.json": "6f3879b51daa91d72ca82e0b84b2ff22efdeb36d77edd3e330a55fa0665d4235",
+    "mcp_artifacts/15701f5509ad41d599ff9fde1d9cb6eb/literature.json": "55041fae0803022b946c8c47a65b964e24aa956cc58c5e2d31f3697fe002ea33",
+    "mcp_artifacts/15701f5509ad41d599ff9fde1d9cb6eb/manifest.json": "97da4a8f739384938c89576fa69d49a4b050b1663c78c9e284d4584935c3db6d",
+    "mcp_artifacts/15701f5509ad41d599ff9fde1d9cb6eb/response.json": "6e924c322cf69c07a343e0f4a842cd5c89b683bf3bb690ace8f0689cf4eee3b9",
+    "mcp_artifacts/e23476bd095142568a70745025ddc254/query.json": "22a0b6dbd87e2a374c9b97748f44aa73721f7b95dde0b638cef53002510fc10f",
+    "mcp_artifacts/e23476bd095142568a70745025ddc254/manifest.json": "08162e0be436635446fa7348aaca53fc8e2d3383ca84cdcb3ade0e63fb950033",
+    "mcp_artifacts/e23476bd095142568a70745025ddc254/response.json": "dc0ff21e4e0895b78365ac8cf51cba28dc69714f777a9bc06ec162358ef228dc",
+    "mcp_artifacts/24498b8db775482aa348b96191269c70/summary.json": "ca44df7aa530f4f8cc5b0f90e64e6c0cc68321e8665421a2d98855b9347c9f57",
+    "mcp_artifacts/24498b8db775482aa348b96191269c70/NDUFA4L2.json": "a1c8801f5e521204105f61b0a8f27f829bd63b46c4039aef6fb9268fdd5f0f14",
+    "mcp_artifacts/24498b8db775482aa348b96191269c70/manifest.json": "b9e8bd7dec67ffef28fdc5cb9e908ef99dfe014d6365f0a8144938da791bc5d6",
+    "mcp_artifacts/24498b8db775482aa348b96191269c70/MT1H.json": "9a2a4f33f7ca91bc4af69b496cc3a3808e5518c1750c0584de274e1330cb44ce",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/summary.json": "b4f3b597f9409a14616ab339d2304ea6eed4a156ff0846decbbf347c8272e490",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/MTOR.json": "682f183b0acc4e4517735523c962e7246a19e965dc295c89787e0b3ed17645fd",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/VEGFA.json": "40db1911d6de4addeab3646538bd011712f1b6c447a50888df003a903890477f",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/NNMT.json": "69816c7fe2d5c30da059072d372c14fc507305dab4059ea776e70fa44fe9f610",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/manifest.json": "dbf40e6dafb9bc601e772e636ea2599fe15084294f36ed2012a1d00c552b3482",
+    "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/CA9.json": "65c8dab98505298319f786dfdaa39d4ec453750d817bd0fcdc1696c825b5325e"
+  },
+  "reused_source_manifests": [
+    {
+      "manifest": "mcp_artifacts/0f7cc8c7e0634e42a19630450915c2b5/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "0f7cc8c7e0634e42a19630450915c2b5",
+      "kind": "omics_evidence",
+      "created_at": "2026-09-24T11:33:10.255933+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "Open Targets",
+      "source_urls": [
+        "https://api.platform.opentargets.org/api/v4/graphql"
+      ],
+      "ensembl_id": "ENSG00000107159",
+      "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+      "files": {
+        "response.json": {
+          "sha256": "83d08f7506e11dd6a11ce891dc46755eb8c05f98cc25492e765dc4ddf9dce16e",
+          "bytes": 2435
+        },
+        "query.json": {
+          "sha256": "4e8b6b6a25c3ed87767bdbff848da99d824cbb1572467ba11cd02b6bff2359b3",
+          "bytes": 236
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/753d80ef68a344fe9243991b24b5f2a7/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "753d80ef68a344fe9243991b24b5f2a7",
+      "kind": "omics_evidence",
+      "created_at": "2026-09-24T11:33:19.972352+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "Open Targets",
+      "source_urls": [
+        "https://api.platform.opentargets.org/api/v4/graphql"
+      ],
+      "ensembl_id": "ENSG00000198793",
+      "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+      "files": {
+        "response.json": {
+          "sha256": "c5cb6fc233c12bc119efa3c713e3f1b94aa0ed7a7aee343171cae965c582c38f",
+          "bytes": 5785
+        },
+        "query.json": {
+          "sha256": "a6b6653a2c2f068cc9f6566ec0fdc14a4a97b8d02e2cde2f0326bc84e4f944eb",
+          "bytes": 236
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/af69a8685f4b49f9a8abca5a7ff74701/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "af69a8685f4b49f9a8abca5a7ff74701",
+      "kind": "literature_search",
+      "created_at": "2026-09-24T11:33:25.590733+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "europepmc",
+      "synthetic": false,
+      "requests": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22renal+cell%22+AND+TITLE_ABS%3A%22nicotinamide+N-methyltransferase%22&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+          "retrieved_at": "2026-09-24T11:33:25.585892+00:00",
+          "sha256": "6f3879b51daa91d72ca82e0b84b2ff22efdeb36d77edd3e330a55fa0665d4235",
+          "file": "response.json"
+        }
+      ],
+      "returned_count": 3,
+      "rights": "Abstracts may be copyrighted. No full-text articles are downloaded. https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+      "previous_search_id": null,
+      "page": 1,
+      "query": "TITLE_ABS:\"renal cell\" AND TITLE_ABS:\"nicotinamide N-methyltransferase\"",
+      "total_count": 27,
+      "has_next_page": true,
+      "files": {
+        "response.json": {
+          "sha256": "6f3879b51daa91d72ca82e0b84b2ff22efdeb36d77edd3e330a55fa0665d4235",
+          "bytes": 23030
+        },
+        "literature.json": {
+          "sha256": "05297873249e3f7634b8636b09fc29d58564c3caab211430f735e99c75282db0",
+          "bytes": 8289
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/15701f5509ad41d599ff9fde1d9cb6eb/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "15701f5509ad41d599ff9fde1d9cb6eb",
+      "kind": "literature_search",
+      "created_at": "2026-09-24T11:33:29.621382+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "europepmc",
+      "synthetic": false,
+      "requests": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3Agirentuximab+AND+TITLE_ABS%3AARISER&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+          "retrieved_at": "2026-09-24T11:33:29.619162+00:00",
+          "sha256": "6e924c322cf69c07a343e0f4a842cd5c89b683bf3bb690ace8f0689cf4eee3b9",
+          "file": "response.json"
+        }
+      ],
+      "returned_count": 2,
+      "rights": "Abstracts may be copyrighted. No full-text articles are downloaded. https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+      "previous_search_id": null,
+      "page": 1,
+      "query": "TITLE_ABS:girentuximab AND TITLE_ABS:ARISER",
+      "total_count": 2,
+      "has_next_page": false,
+      "files": {
+        "response.json": {
+          "sha256": "6e924c322cf69c07a343e0f4a842cd5c89b683bf3bb690ace8f0689cf4eee3b9",
+          "bytes": 19507
+        },
+        "literature.json": {
+          "sha256": "55041fae0803022b946c8c47a65b964e24aa956cc58c5e2d31f3697fe002ea33",
+          "bytes": 7773
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/e23476bd095142568a70745025ddc254/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "e23476bd095142568a70745025ddc254",
+      "kind": "omics_evidence",
+      "created_at": "2026-09-24T11:33:15.013431+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "Open Targets",
+      "source_urls": [
+        "https://api.platform.opentargets.org/api/v4/graphql"
+      ],
+      "ensembl_id": "ENSG00000112715",
+      "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+      "files": {
+        "response.json": {
+          "sha256": "dc0ff21e4e0895b78365ac8cf51cba28dc69714f777a9bc06ec162358ef228dc",
+          "bytes": 3845
+        },
+        "query.json": {
+          "sha256": "22a0b6dbd87e2a374c9b97748f44aa73721f7b95dde0b638cef53002510fc10f",
+          "bytes": 236
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/24498b8db775482aa348b96191269c70/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "24498b8db775482aa348b96191269c70",
+      "kind": "omics_evidence",
+      "created_at": "2026-09-24T11:40:32.863026+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "UniProt",
+      "source_urls": [
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANDUFA4L2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMT1H+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome"
+      ],
+      "notice": "Human reviewed entries; mappings can be ambiguous. Reactome cross-references are annotations, not enrichment tests. Response is capped at five entries per symbol and twenty pathways per entry; retain raw snapshot for complete returned annotations.",
+      "files": {
+        "NDUFA4L2.json": {
+          "sha256": "a1c8801f5e521204105f61b0a8f27f829bd63b46c4039aef6fb9268fdd5f0f14",
+          "bytes": 1026
+        },
+        "MT1H.json": {
+          "sha256": "9a2a4f33f7ca91bc4af69b496cc3a3808e5518c1750c0584de274e1330cb44ce",
+          "bytes": 774
+        },
+        "summary.json": {
+          "sha256": "ca44df7aa530f4f8cc5b0f90e64e6c0cc68321e8665421a2d98855b9347c9f57",
+          "bytes": 937
+        }
+      }
+    },
+    {
+      "manifest": "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/manifest.json",
+      "schema_version": 1,
+      "artifact_id": "26457a40dfc743c1a9aee44f96badee2",
+      "kind": "omics_evidence",
+      "created_at": "2026-09-24T11:32:44.309702+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "UniProt",
+      "source_urls": [
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACA9+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANNMT+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AVEGFA+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+        "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMTOR+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome"
+      ],
+      "notice": "Human reviewed entries; mappings can be ambiguous. Reactome cross-references are annotations, not enrichment tests. Response is capped at five entries per symbol and twenty pathways per entry; retain raw snapshot for complete returned annotations.",
+      "files": {
+        "CA9.json": {
+          "sha256": "65c8dab98505298319f786dfdaa39d4ec453750d817bd0fcdc1696c825b5325e",
+          "bytes": 1698
+        },
+        "NNMT.json": {
+          "sha256": "69816c7fe2d5c30da059072d372c14fc507305dab4059ea776e70fa44fe9f610",
+          "bytes": 4140
+        },
+        "VEGFA.json": {
+          "sha256": "40db1911d6de4addeab3646538bd011712f1b6c447a50888df003a903890477f",
+          "bytes": 5202
+        },
+        "MTOR.json": {
+          "sha256": "682f183b0acc4e4517735523c962e7246a19e965dc295c89787e0b3ed17645fd",
+          "bytes": 4233
+        },
+        "summary.json": {
+          "sha256": "b4f3b597f9409a14616ab339d2304ea6eed4a156ff0846decbbf347c8272e490",
+          "bytes": 5223
+        }
+      }
+    }
+  ],
+  "new_source_manifests": [
+    {
+      "path": "mcp_artifacts/69fa987e9d4a423ca882851632443b18/manifest.json",
+      "manifest_sha256": "1b143d6f3ff8a2ba5466679d7f3095254b634d68a8577e65ff00088e70e3f3c1",
+      "schema_version": 1,
+      "artifact_id": "69fa987e9d4a423ca882851632443b18",
+      "kind": "trial_search",
+      "created_at": "2026-09-24T11:45:49.728353+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=20&countTotal=true&query.cond=kidney+cancer&query.intr=NNMT",
+      "retrieved_at": "2026-09-24T11:45:49.727370+00:00",
+      "response_sha256": "b54968c05ff881a1ef7ce604b6a340248f8e2aee8637bef06da0f5693f520df8",
+      "returned_count": 0,
+      "total_count": 0,
+      "page": 1,
+      "has_next_page": false,
+      "query": {
+        "condition": "kidney cancer",
+        "intervention": "NNMT",
+        "status": null,
+        "phase": null,
+        "page_size": 20
+      },
+      "previous_search_id": null,
+      "files": {
+        "response.json": {
+          "sha256": "b54968c05ff881a1ef7ce604b6a340248f8e2aee8637bef06da0f5693f520df8",
+          "bytes": 31
+        },
+        "trials.json": {
+          "sha256": "9b2fa55749a93d6eb591df2d3368f81738845b21a530d81384893565c795b0ff",
+          "bytes": 249
+        }
+      }
+    },
+    {
+      "path": "mcp_artifacts/9c39bd8a36644c07a75483fd600c0301/manifest.json",
+      "manifest_sha256": "ddd8d32a49f1f96d35954a1302618f280ab3e174d4e87d47d0f7fe343ae4cf22",
+      "schema_version": 1,
+      "artifact_id": "9c39bd8a36644c07a75483fd600c0301",
+      "kind": "trial_detail",
+      "created_at": "2026-09-24T11:46:12.393930+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT00087022",
+      "retrieved_at": "2026-09-24T11:46:12.393546+00:00",
+      "response_sha256": "fa421c5ae2aa6dc7b04e44baa9b6bdaf0dde4d3b1ae7c6d197861afdb6f5f432",
+      "nct_id": "NCT00087022",
+      "files": {
+        "response.json": {
+          "sha256": "fa421c5ae2aa6dc7b04e44baa9b6bdaf0dde4d3b1ae7c6d197861afdb6f5f432",
+          "bytes": 45641
+        },
+        "trials.json": {
+          "sha256": "da00ba664ad2a0756c46552307bf92fd897f0f1b240f661e404d8b361461a583",
+          "bytes": 16305
+        }
+      }
+    },
+    {
+      "path": "mcp_artifacts/f022ce1e1a7e4467943b767cd3529069/manifest.json",
+      "manifest_sha256": "593b8f908e5d02fc121df75536656d8326adf9c84580a714d9668f0896ee35ce",
+      "schema_version": 1,
+      "artifact_id": "f022ce1e1a7e4467943b767cd3529069",
+      "kind": "trial_detail",
+      "created_at": "2026-09-24T11:46:14.881567+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05239533",
+      "retrieved_at": "2026-09-24T11:46:14.880581+00:00",
+      "response_sha256": "1fde48a3800f1b0be079123cbbbf8d416581fa6bf14a575ddb98d4f7067e581d",
+      "nct_id": "NCT05239533",
+      "files": {
+        "response.json": {
+          "sha256": "1fde48a3800f1b0be079123cbbbf8d416581fa6bf14a575ddb98d4f7067e581d",
+          "bytes": 16764
+        },
+        "trials.json": {
+          "sha256": "30cac66f152482d9178aee3dbc9853d9764f511980f46e8ca089e6aac7b87cef",
+          "bytes": 9969
+        }
+      }
+    },
+    {
+      "path": "mcp_artifacts/f374033077fc4566868bfa3a7e30283e/manifest.json",
+      "manifest_sha256": "9b77bda2b2d57e6e1579445f06573361a41b2e3b1ae4f5782718398e845c08b7",
+      "schema_version": 1,
+      "artifact_id": "f374033077fc4566868bfa3a7e30283e",
+      "kind": "trial_detail",
+      "created_at": "2026-09-24T11:46:09.830567+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT03849118",
+      "retrieved_at": "2026-09-24T11:46:09.828946+00:00",
+      "response_sha256": "cb700a6f5a0e9789a9bd71e79728dc0f9fb2c8599a95a8750056c5d5b1df98a6",
+      "nct_id": "NCT03849118",
+      "files": {
+        "response.json": {
+          "sha256": "cb700a6f5a0e9789a9bd71e79728dc0f9fb2c8599a95a8750056c5d5b1df98a6",
+          "bytes": 35059
+        },
+        "trials.json": {
+          "sha256": "f9e891522ff9bac1a2fb2b7430e00c6200bb9c9edc728616fb02d482112426a9",
+          "bytes": 11014
+        }
+      }
+    },
+    {
+      "path": "mcp_artifacts/fba0ca8bf95a4c94ae04f0f6453b4ff8/manifest.json",
+      "manifest_sha256": "ebfd3e5b5a74fda6334ebf730fe3ab9795ffa7051e1aba482f4cf74d6bf9e518",
+      "schema_version": 1,
+      "artifact_id": "fba0ca8bf95a4c94ae04f0f6453b4ff8",
+      "kind": "trial_search",
+      "created_at": "2026-09-24T11:45:45.468424+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=20&countTotal=true&query.cond=kidney+cancer&query.intr=girentuximab",
+      "retrieved_at": "2026-09-24T11:45:45.466418+00:00",
+      "response_sha256": "26790886f6cc6e4190e85004631e20dfb242a690e7b80bf5f46e5c7563dee306",
+      "returned_count": 20,
+      "total_count": 20,
+      "page": 1,
+      "has_next_page": true,
+      "query": {
+        "condition": "kidney cancer",
+        "intervention": "girentuximab",
+        "status": null,
+        "phase": null,
+        "page_size": 20
+      },
+      "previous_search_id": null,
+      "files": {
+        "response.json": {
+          "sha256": "26790886f6cc6e4190e85004631e20dfb242a690e7b80bf5f46e5c7563dee306",
+          "bytes": 314145
+        },
+        "trials.json": {
+          "sha256": "e5901c56df403f46fa1d614c10838ba5bd66bfe9574b6bb56255acc798521494",
+          "bytes": 133673
+        }
+      }
+    },
+    {
+      "path": "mcp_artifacts/fd992f6d8daa4600b8e85082cceaca14/manifest.json",
+      "manifest_sha256": "4a2ee43e94430771462701dd89412fcdb4e67cbbfd525e302976109837791a02",
+      "schema_version": 1,
+      "artifact_id": "fd992f6d8daa4600b8e85082cceaca14",
+      "kind": "trial_detail",
+      "created_at": "2026-09-24T11:46:06.999243+00:00",
+      "status": "exploratory_unreviewed",
+      "provider": "ClinicalTrials.gov API v2",
+      "synthetic": false,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies/NCT05663710",
+      "retrieved_at": "2026-09-24T11:46:06.997381+00:00",
+      "response_sha256": "395c586f085eb5d9d354a1879e750ee464b59b369fe26bd4859ea9a06d514faf",
+      "nct_id": "NCT05663710",
+      "files": {
+        "response.json": {
+          "sha256": "395c586f085eb5d9d354a1879e750ee464b59b369fe26bd4859ea9a06d514faf",
+          "bytes": 13220
+        },
+        "trials.json": {
+          "sha256": "e9d5c10c095e4433678c6b7bb5e6eba32a188c71ff298b546001506c25b1a54f",
+          "bytes": 8373
+        }
+      }
+    }
+  ],
+  "source_requests": "Actual native MCP: two search_trials calls, kidney cancer + girentuximab and kidney cancer + NNMT; four get_trial calls. No annotation or literature request rerun. No direct API requests made by host.",
+  "search_limitations": [
+    "One page of up to 20 per concept; no pagination. Girentuximab raw response reports totalCount=20 and also has nextPageToken; preserve discrepancy and do not claim completeness.",
+    "NNMT literal intervention query returned zero; no verified NNMT agent was established in prior artifacts, so no invented drug alias was searched. Negative bounded search is not evidence of no trials."
+  ],
+  "statistics_rerun": [
+    "Four paired mean/t-test/95% CI/BH families with within-cohort >=80% coverage and >=20 pairs",
+    "Descriptive cross-cohort effect/rank/direction and top-100 comparisons; within-cohort cross-layer concordance and exact-four-finite-case directional check",
+    "Original exploratory selection rule reapplied, frozen candidates also reported; shortlist leave-one-out diagnostics",
+    "Input verification, memory/config agreement, cohort reconstruction and SciPy numerical checks"
+  ],
+  "not_rerun": [
+    "Original >=20-pair-only analysis and original report/figures",
+    "UniProt/Open Targets annotation and literature retrieval",
+    "Independent scientific evaluation"
+  ],
+  "scientific_gate": "Blocked at evaluation; no human approval or causal readiness",
+  "context_units": "UTF-8 bytes, not tokens",
+  "trial_details": [
+    {
+      "nct_id": "NCT00087022",
+      "title": "Monoclonal Antibody Therapy (Rencarex\u00ae) in Treating Patients Who Have Undergone Surgery for Non-metastatic Kidney Cancer",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE3"
+      ],
+      "status": "COMPLETED",
+      "status_verified_date": "2018-10",
+      "last_update_posted": "2018-11-27",
+      "retrieved_at": "2026-09-24T11:46:12.393546+00:00",
+      "enrollment": {
+        "count": 864,
+        "type": "ACTUAL"
+      },
+      "has_results": true,
+      "url": "https://clinicaltrials.gov/study/NCT00087022",
+      "raw_source": "mcp_artifacts/9c39bd8a36644c07a75483fd600c0301/response.json",
+      "raw_sha256": "fa421c5ae2aa6dc7b04e44baa9b6bdaf0dde4d3b1ae7c6d197861afdb6f5f432",
+      "interventions": [
+        {
+          "type": "BIOLOGICAL",
+          "name": "girentuximab",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm I"
+          ],
+          "otherNames": [
+            "Rencarex\u00ae, cG250 and WX-G250"
+          ]
+        },
+        {
+          "type": "OTHER",
+          "name": "placebo",
+          "description": "Given IV",
+          "armGroupLabels": [
+            "Arm II"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Disease-free Survival",
+          "description": "Disease Free Survival (DFS) calculated from the date of randomization up to and including the date of documented relapse as confirmed by the CT, death or start of new anti-tumor therapy.",
+          "timeFrame": "Until signs of recurrence or until 360 local DFS events have occurred (median follow-up of 4.5 years)"
+        },
+        {
+          "measure": "Overall Survival",
+          "description": "Overall Survival (OS) calculated from the date of randomization to the date of death. Patients with no documented death will be censored at the date of their last study evaluation.",
+          "timeFrame": "After 419 OS events or 60 months after the last patient has been enrolled, whichever is the later (median follow-up of 4.5 years)"
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT05239533",
+      "title": "Study of Nivolumab in Combination With 177Lu-girentuximab for Kidney Cancer",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE2"
+      ],
+      "status": "ACTIVE_NOT_RECRUITING",
+      "status_verified_date": "2026-01",
+      "last_update_posted": "2026-01-14",
+      "retrieved_at": "2026-09-24T11:46:14.880581+00:00",
+      "enrollment": {
+        "count": 9,
+        "type": "ACTUAL"
+      },
+      "has_results": false,
+      "url": "https://clinicaltrials.gov/study/NCT05239533",
+      "raw_source": "mcp_artifacts/f022ce1e1a7e4467943b767cd3529069/response.json",
+      "raw_sha256": "1fde48a3800f1b0be079123cbbbf8d416581fa6bf14a575ddb98d4f7067e581d",
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu-labeled-girentuximab",
+          "description": "The initial starting dose/Dose Level 1 of 177Lu-labeled-girentuximab is 1804 MBq/m2. if 0/3 or 1/6 DLTs, participants will be treated at Dose Level 2 177Lu-girentuximab 2405 MBq/m2. \\>/= 2/6 DLTs, Dose Level -1 is 177Lu-girentuximab 1353 MBq/m2\n\nOnce the MTD is established, a Simon two-stage optimal design will commence.",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Nivolumab 240mg q2wk",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab PET/CT",
+          "description": "All patients will undergo a 89Zr-girentuximab PET/CT scan prior to every 177Lu-girentuximab administration",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        },
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "177Lu whole body (WB) planar and SPECT/CT scans",
+          "description": "177Lu whole body (WB) planar and SPECT/CT scans will be performed after each administration of 177Lu-girentuximab",
+          "armGroupLabels": [
+            "Phase 2 Participants",
+            "Safety lead-in Phase: Participants with Advanced or Metastatic Clear Cell Renal Cell Carcinoma/RCC"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Maximal tolerated dose (MTD) of 177Lu-girentuximab",
+          "description": "To determine the maximal tolerated dose (MTD) of 177Lu-girentuximab when given in combination with nivolumab (safety lead-in)",
+          "timeFrame": "24 (+/- 2) weeks"
+        },
+        {
+          "measure": "Overall Response Rate/ORR",
+          "description": "efficacy of the combination at the MTD of 177Lu-labelled girentuximab in patients with advanced ccRCC as assessed by best ORR by 24 (+/- 2) weeks by Response Evaluation Criteria In Solid Tumors (RECIST v1.1).",
+          "timeFrame": "24 (+/- 2) weeks"
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT03849118",
+      "title": "89Zr-TLX250 for PET/CT Imaging of ccRCC- ZIRCON Study",
+      "purpose": "DIAGNOSTIC",
+      "phase": [
+        "PHASE3"
+      ],
+      "status": "COMPLETED",
+      "status_verified_date": "2024-05",
+      "last_update_posted": "2024-05-17",
+      "retrieved_at": "2026-09-24T11:46:09.828946+00:00",
+      "enrollment": {
+        "count": 300,
+        "type": "ACTUAL"
+      },
+      "has_results": true,
+      "url": "https://clinicaltrials.gov/study/NCT03849118",
+      "raw_source": "mcp_artifacts/f374033077fc4566868bfa3a7e30283e/response.json",
+      "raw_sha256": "cb700a6f5a0e9789a9bd71e79728dc0f9fb2c8599a95a8750056c5d5b1df98a6",
+      "interventions": [
+        {
+          "type": "DIAGNOSTIC_TEST",
+          "name": "89Zr-girentuximab",
+          "description": "Single IV administration on Day 0, followed by diagnostic scan on Day 5 +/- 2 days.",
+          "armGroupLabels": [
+            "89Zr-girentuximab"
+          ],
+          "otherNames": [
+            "89Zr-TLX250",
+            "89Zr-DFO-TFP-girentuximab (GTX)"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Sensitivity and Specificity of Qualitative Assessment of PET/CT Imaging With 89Zr-TLX250 to Noninvasively Detect ccRCC in Patients With Indeterminate Renal Masses, Using Histology as Standard of Truth.",
+          "description": "This outcome was evaluated on all patients by using a PET/CT machine to determine the uptake of the Zr89 radiotracer within the renal lesion. This was compared against the histological determination of the lesion type following resection of the lesion",
+          "timeFrame": "Diagnostic PET/CT scan on Day 5 \u00b1 2 days post 89Zr-TLX250 administration. Histological confirmation of the material from nephrectomy conducted within 90 days post 89Zr-TLX250 administration served as standard of truth."
+        }
+      ]
+    },
+    {
+      "nct_id": "NCT05663710",
+      "title": "Phase 1b/2 Study of Combination 177Lu Girentuximab Plus Cabozantinib and Nivolumab in Treatment na\u00efve Patients With Advanced Clear Cell RCC",
+      "purpose": "TREATMENT",
+      "phase": [
+        "PHASE1",
+        "PHASE2"
+      ],
+      "status": "RECRUITING",
+      "status_verified_date": "2026-04",
+      "last_update_posted": "2026-07-30",
+      "retrieved_at": "2026-09-24T11:46:06.997381+00:00",
+      "enrollment": {
+        "count": 100,
+        "type": "ESTIMATED"
+      },
+      "has_results": false,
+      "url": "https://clinicaltrials.gov/study/NCT05663710",
+      "raw_source": "mcp_artifacts/fd992f6d8daa4600b8e85082cceaca14/response.json",
+      "raw_sha256": "395c586f085eb5d9d354a1879e750ee464b59b369fe26bd4859ea9a06d514faf",
+      "interventions": [
+        {
+          "type": "DRUG",
+          "name": "177Lu girentuximab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Nivolumab",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "BMS-936558",
+            "Opdivo"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "Cabozantinib",
+          "description": "Given by PO",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ],
+          "otherNames": [
+            "XL-184",
+            "XL184"
+          ]
+        },
+        {
+          "type": "DRUG",
+          "name": "ArabinoFuranosylGuanine [18F]F-AraG",
+          "description": "Given by IV (vein)",
+          "armGroupLabels": [
+            "Cohort 1 (Biopsy)",
+            "Cohort 2 (Biopsy)",
+            "Cohort 3 (Biopsy)"
+          ]
+        }
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Incidence of Adverse Events, Graded According to National Cancer Institute Common Terminology Criteria for Adverse Events (NCI CTCAE) Version (v) 5.0",
+          "timeFrame": "through study completion; an average of 1 year"
+        }
+      ]
+    }
+  ],
+  "validation_sha256": "31aa9d12c8b34da663d56d6016aeacb50d1cea2338bf5a5e486fc758d0f601ef",
+  "memory_append": "followup_memory_append.json",
+  "original_continuation_note": "followup_initial_notes.md",
+  "preservation": "followup_validation.json",
+  "controller": "followup_controller_audit.json",
+  "existing_followup_audit_refreshed": "followup_memory_retrieval.json",
+  "final_code_hashes": {
+    "followup_analysis.py": "cf04705a1a948013846a6fd405423dee88420c975c79a39364fca1d9161dc5cd",
+    "followup_report.py": "7fe5d9c7d1b570d1ad336dfe0b27626cbd6e4e1993beff43e2bf8d28bab6cc3c",
+    "followup_finalize.py": "3d5b5eeaadefd78c3e82710accea1019bc5837decf70a7dd26855fe8c0178f54"
+  }
+}

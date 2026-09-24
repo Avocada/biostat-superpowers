@@ -1,0 +1,1312 @@
+{
+  "targets": [
+    {
+      "gene": "CA9",
+      "selection": "prespecified",
+      "annotation": {
+        "query_symbol": "CA9",
+        "matches": [
+          {
+            "accession": "Q16790",
+            "gene_names": [
+              "CA9"
+            ],
+            "protein": "Carbonic anhydrase 9",
+            "ensembl_gene_ids": [
+              "ENSG00000107159"
+            ],
+            "reactome_pathways": [
+              {
+                "id": "R-HSA-1234158",
+                "name": "Regulation of gene expression by Hypoxia-inducible Factor"
+              },
+              {
+                "id": "R-HSA-1475029",
+                "name": "Reversible hydration of carbon dioxide"
+              }
+            ],
+            "pathway_count": 2
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": {
+        "id": "ENSG00000107159",
+        "approvedSymbol": "CA9",
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 4,
+          "rows": [
+            {
+              "id": "4e0ef8a00267d56becd607155841e61b5b9124074b90206220add8fc289c6b5c",
+              "maxClinicalStage": "WITHDRAWAL",
+              "drug": {
+                "id": "CHEMBL18",
+                "name": "ETHOXZOLAMIDE"
+              }
+            },
+            {
+              "id": "9cd4b3f9c4ab6792b64f1d1b541fdcb3c68d1a97b4017a39e72dcad39c5eba96",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL1743027",
+                "name": "GIRENTUXIMAB"
+              }
+            },
+            {
+              "id": "c48e93540466dd30345a2b4fcde3538cf5e36bc40c9c79e3fddc1c24509b7df1",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL2108713",
+                "name": "IODINE I 124 GIRENTUXIMAB"
+              }
+            },
+            {
+              "id": "f6202e7ed4011b44fc3c8203f3622ea346e913ce5caa85466a60d2b86b95d64e",
+              "maxClinicalStage": "PHASE_4",
+              "drug": {
+                "id": "CHEMBL328560",
+                "name": "SULTHIAME"
+              }
+            }
+          ]
+        }
+      },
+      "priority": "Strong tissue-contrast research candidate; separate imaging/biology from therapy.",
+      "independent": "ARISER: 864 randomized patients; no significant DFS advantage (HR 0.97, 95% CI 0.79\u20131.18) or OS advantage (HR 0.99, 0.74\u20131.32) for adjuvant girentuximab. This independent trial limits therapeutic extrapolation; it does not negate differential expression.",
+      "pmids": [
+        "27787547"
+      ]
+    },
+    {
+      "gene": "NNMT",
+      "selection": "prespecified",
+      "annotation": {
+        "query_symbol": "NNMT",
+        "matches": [
+          {
+            "accession": "P40261",
+            "gene_names": [
+              "NNMT"
+            ],
+            "protein": "Nicotinamide N-methyltransferase",
+            "ensembl_gene_ids": [
+              "ENSG00000166741"
+            ],
+            "reactome_pathways": [
+              {
+                "id": "R-HSA-156581",
+                "name": "Methylation"
+              },
+              {
+                "id": "R-HSA-196807",
+                "name": "Nicotinate metabolism"
+              },
+              {
+                "id": "R-HSA-2408508",
+                "name": "Metabolism of ingested SeMet, Sec, MeSec into H2Se"
+              }
+            ],
+            "pathway_count": 3
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": null,
+      "priority": "Prioritize metabolic biology and orthogonal tissue validation.",
+      "independent": "Kim et al. 2025: a separate 14-patient paired RNA study reported NNMT upregulation, with knockdown experiments in SNU1272/Caki-1 cells. TCGA survival analysis is a separate secondary component. This supports biological follow-up, not validated prognosis or human efficacy. Wang et al. 2026 report NNMT/FN1 experiments and clinical specimens; independence of their reused multiomics data from CPTAC is not established from the abstract.",
+      "pmids": [
+        "41399267",
+        "42440812"
+      ]
+    },
+    {
+      "gene": "VEGFA",
+      "selection": "prespecified",
+      "annotation": {
+        "query_symbol": "VEGFA",
+        "matches": [
+          {
+            "accession": "P15692",
+            "gene_names": [
+              "VEGFA"
+            ],
+            "protein": "Vascular endothelial growth factor A, long form",
+            "ensembl_gene_ids": [
+              "ENSG00000112715"
+            ],
+            "reactome_pathways": [
+              {
+                "id": "R-HSA-114608",
+                "name": "Platelet degranulation"
+              },
+              {
+                "id": "R-HSA-1234158",
+                "name": "Regulation of gene expression by Hypoxia-inducible Factor"
+              },
+              {
+                "id": "R-HSA-194138",
+                "name": "Signaling by VEGF"
+              },
+              {
+                "id": "R-HSA-194313",
+                "name": "VEGF ligand-receptor interactions"
+              },
+              {
+                "id": "R-HSA-195399",
+                "name": "VEGF binds to VEGFR leading to receptor dimerization"
+              },
+              {
+                "id": "R-HSA-4420097",
+                "name": "VEGFA-VEGFR2 Pathway"
+              },
+              {
+                "id": "R-HSA-5218921",
+                "name": "VEGFR2 mediated cell proliferation"
+              },
+              {
+                "id": "R-HSA-6785807",
+                "name": "Interleukin-4 and Interleukin-13 signaling"
+              },
+              {
+                "id": "R-HSA-8866910",
+                "name": "TFAP2 (AP-2) family regulates transcription of growth factors and their receptors"
+              },
+              {
+                "id": "R-HSA-9679191",
+                "name": "Potential therapeutics for SARS"
+              }
+            ],
+            "pathway_count": 10
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": {
+        "id": "ENSG00000112715",
+        "approvedSymbol": "VEGFA",
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 13,
+          "rows": [
+            {
+              "id": "08ecc0428d2b5f65ddb0d3f64a69c4518292a7a4b8b2a64933eb2bba300a3676",
+              "maxClinicalStage": "PHASE_4",
+              "drug": {
+                "id": "CHEMBL4297750",
+                "name": "FARICIMAB"
+              }
+            },
+            {
+              "id": "174901f6d53ad6e3c6c1511e2344855e6a45a2b5c1ca39d0e338226d4fc2b920",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL2108752",
+                "name": "PEGAPTANIB OCTASODIUM"
+              }
+            },
+            {
+              "id": "350c0fcaf8b39c316d1848ce9820a2f8c09bd55020573aed65a4badc3b9d9f23",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3545259",
+                "name": "VANUCIZUMAB"
+              }
+            },
+            {
+              "id": "3698f3f4aa1b1aace6d68c1001b26b65e9979e0b25b1805d1e92cce8a3ac004d",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL4297163",
+                "name": "MUPARFOSTAT"
+              }
+            },
+            {
+              "id": "3b76715bdb524563d6d5e3328848ccb8020cd5a9b30b51ac2bc3266f0ef79c77",
+              "maxClinicalStage": "PHASE_4",
+              "drug": {
+                "id": "CHEMBL1201825",
+                "name": "RANIBIZUMAB"
+              }
+            },
+            {
+              "id": "56a26db0e9ff56befd507a8f84185db1c393c2fc54110f3e3622117ec173dd6b",
+              "maxClinicalStage": "WITHDRAWAL",
+              "drug": {
+                "id": "CHEMBL1201583",
+                "name": "BEVACIZUMAB"
+              }
+            },
+            {
+              "id": "5e022e5910d0165f953b15eb5f93fb74d93c2023e989c5c56f605a1bdd2ee201",
+              "maxClinicalStage": "WITHDRAWAL",
+              "drug": {
+                "id": "CHEMBL1201421",
+                "name": "PEGAPTANIB SODIUM"
+              }
+            },
+            {
+              "id": "6268283bc2afa91197d60a83b5e96a36f2140ae56c8452f828c7ceb281f9d5bb",
+              "maxClinicalStage": "APPROVAL",
+              "drug": {
+                "id": "CHEMBL4297684",
+                "name": "ABICIPAR PEGOL"
+              }
+            },
+            {
+              "id": "865b6a9762b8d7600bfd335845d5e3bc7950da2844480b160b7f262994c0d51f",
+              "maxClinicalStage": "PHASE_4",
+              "drug": {
+                "id": "CHEMBL1742982",
+                "name": "AFLIBERCEPT"
+              }
+            },
+            {
+              "id": "94d66863ab810a98a9f9f456a5ecec128f75b3785f6ed3009ebf45f70e3649f5",
+              "maxClinicalStage": "PHASE_4",
+              "drug": {
+                "id": "CHEMBL3707357",
+                "name": "BROLUCIZUMAB"
+              }
+            },
+            {
+              "id": "9a17d75896a39b3739e47eaf8de0ca4eb4d3019f01f044e7ac60c5af482099ca",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL2110581",
+                "name": "BEVASIRANIB"
+              }
+            },
+            {
+              "id": "cb1dd118227ac87ae239ec7741ce4dbf6c70fc07afa89a1ad54650d91b45c1bd",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL2103797",
+                "name": "BEVASIRANIB SODIUM"
+              }
+            },
+            {
+              "id": "cf91648a2b11516190079cca2cde36413d3c6bf6ef7ae33105ecb16ad33dadef",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL2108313",
+                "name": "CONBERCEPT"
+              }
+            }
+          ]
+        }
+      },
+      "priority": "RNA upregulation; protein is untestable (only one finite pair), so protein prioritization is unsupported here.",
+      "independent": "No independent VEGFA-specific outcome study retrieved in this bounded search. Live pathway/target annotations support context only.",
+      "pmids": []
+    },
+    {
+      "gene": "MTOR",
+      "selection": "prespecified",
+      "annotation": {
+        "query_symbol": "MTOR",
+        "matches": [
+          {
+            "accession": "P42345",
+            "gene_names": [
+              "MTOR"
+            ],
+            "protein": "Serine/threonine-protein kinase mTOR",
+            "ensembl_gene_ids": [
+              "ENSG00000198793"
+            ],
+            "reactome_pathways": [
+              {
+                "id": "R-HSA-1257604",
+                "name": "PIP3 activates AKT signaling"
+              },
+              {
+                "id": "R-HSA-1632852",
+                "name": "Macroautophagy"
+              },
+              {
+                "id": "R-HSA-165159",
+                "name": "MTOR signalling"
+              },
+              {
+                "id": "R-HSA-166208",
+                "name": "mTORC1-mediated signalling"
+              },
+              {
+                "id": "R-HSA-3371571",
+                "name": "HSF1-dependent transactivation"
+              },
+              {
+                "id": "R-HSA-380972",
+                "name": "Energy dependent regulation of mTOR by LKB1-AMPK"
+              },
+              {
+                "id": "R-HSA-389357",
+                "name": "CD28 dependent PI3K/Akt signaling"
+              },
+              {
+                "id": "R-HSA-5218920",
+                "name": "VEGFR2 mediated vascular permeability"
+              },
+              {
+                "id": "R-HSA-5628897",
+                "name": "TP53 Regulates Metabolic Genes"
+              },
+              {
+                "id": "R-HSA-5674400",
+                "name": "Constitutive Signaling by AKT1 E17K in Cancer"
+              },
+              {
+                "id": "R-HSA-6804757",
+                "name": "Regulation of TP53 Degradation"
+              },
+              {
+                "id": "R-HSA-8943724",
+                "name": "Regulation of PTEN gene transcription"
+              },
+              {
+                "id": "R-HSA-9639288",
+                "name": "Amino acids regulate mTORC1"
+              },
+              {
+                "id": "R-HSA-9856530",
+                "name": "High laminar flow shear stress activates signaling by PIEZO1 and PECAM1:CDH5:KDR in endothelial cells"
+              },
+              {
+                "id": "R-HSA-9920951",
+                "name": "Dengue virus modulates apoptosis"
+              }
+            ],
+            "pathway_count": 15
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": {
+        "id": "ENSG00000198793",
+        "approvedSymbol": "MTOR",
+        "tractability": [
+          {
+            "label": "Approved Drug",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Structure with Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Ligand",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "High-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Med-Quality Pocket",
+            "modality": "SM",
+            "value": false
+          },
+          {
+            "label": "Druggable Family",
+            "modality": "SM",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt loc high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "GO CC high conf",
+            "modality": "AB",
+            "value": true
+          },
+          {
+            "label": "UniProt loc med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "UniProt SigP or TMHMM",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "GO CC med conf",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Human Protein Atlas loc",
+            "modality": "AB",
+            "value": false
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "Literature",
+            "modality": "PR",
+            "value": false
+          },
+          {
+            "label": "UniProt Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Database Ubiquitination",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Half-life Data",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Small Molecule Binder",
+            "modality": "PR",
+            "value": true
+          },
+          {
+            "label": "Approved Drug",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Advanced Clinical",
+            "modality": "OC",
+            "value": false
+          },
+          {
+            "label": "Phase 1 Clinical",
+            "modality": "OC",
+            "value": false
+          }
+        ],
+        "drugAndClinicalCandidates": {
+          "count": 26,
+          "rows": [
+            {
+              "id": "2d8ea069134c1ba5f8306ed428b91f14d46a9fb789d8db0becc00d9080c8083f",
+              "maxClinicalStage": "APPROVAL",
+              "drug": {
+                "id": "CHEMBL75880",
+                "name": "PERHEXILINE"
+              }
+            },
+            {
+              "id": "31a19ca47c80d94c89b79d9726107759e18d1057969306d91d3805fb8ace1394",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL3545248",
+                "name": "DS-7423"
+              }
+            },
+            {
+              "id": "3369a1d0f3f7cafee0a1ee3a3b9da7e822dc719a4bbd19738742c50dd19667f6",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3586573",
+                "name": "CC-115"
+              }
+            },
+            {
+              "id": "3b82e95b76b050d5ae236d0cc9d577a8b3f37f9f0abee9aefde1b522c7e39d01",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL592445",
+                "name": "GEDATOLISIB"
+              }
+            },
+            {
+              "id": "3befc477b49881659513b251f07018ca391516f274c3ca3698ce15be33483de4",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL5095025",
+                "name": "PANULISIB"
+              }
+            },
+            {
+              "id": "42d352a883292c8555c2e87f4bd59188f5e3fea0529ea36b70844bf885fcbd06",
+              "maxClinicalStage": "PHASE_1_2",
+              "drug": {
+                "id": "CHEMBL1801204",
+                "name": "AZD-8055"
+              }
+            },
+            {
+              "id": "4864e4df8943bc156a122fcf630bfa1631c193d85d4e333669fefb815d7ae577",
+              "maxClinicalStage": "PHASE_1_2",
+              "drug": {
+                "id": "CHEMBL3545096",
+                "name": "BGT-226"
+              }
+            },
+            {
+              "id": "4ad29a878e0ca85c62f2a0eae7ae74f1dfddfd59c984098abcb872dddbc1b603",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL4297181",
+                "name": "SAMOTOLISIB"
+              }
+            },
+            {
+              "id": "6944fe4ed4488ab9d7e8b5edd1913ed04df7357469557f37356bad538ffb69aa",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL1236962",
+                "name": "OMIPALISIB"
+              }
+            },
+            {
+              "id": "6a5df59252db96a0ceb802921f4844701580bcac4119f014367416dde180ebf3",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3120215",
+                "name": "OSI-027"
+              }
+            },
+            {
+              "id": "709f79af020e1162f4043e77acbcd23d30c3dcf0da45028f9a422c11337a49c1",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL2331680",
+                "name": "RG-7603"
+              }
+            },
+            {
+              "id": "725092d695d8892251d9790ced14d74437a03116f21c9c34b91f18379fac9f08",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL2336325",
+                "name": "VISTUSERTIB"
+              }
+            },
+            {
+              "id": "72bf58b712243aea3050f668302b22a6d736920ea6dd62dba88c32eb99f7c0f9",
+              "maxClinicalStage": "PHASE_3",
+              "drug": {
+                "id": "CHEMBL1879463",
+                "name": "DACTOLISIB"
+              }
+            },
+            {
+              "id": "7cdacceb259eb8553bb177f8312924e2abf1b9b8f4fda991ecfdedd48c35fca5",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3545097",
+                "name": "SAPANISERTIB"
+              }
+            },
+            {
+              "id": "8f4f932163d25db2ded08b720e234f5ef2893e90460aeffabee6434cc613269c",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL2141712",
+                "name": "PALOMID-529"
+              }
+            },
+            {
+              "id": "9988297afd14df2241d6bb1cd1eb022504b9b3e643d4ab942d2e347096014fef",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3545366",
+                "name": "VOXTALISIB"
+              }
+            },
+            {
+              "id": "ba7adc9e24e524f9ee0b82b45addd201a06ab88fa196093baa130481834b4d29",
+              "maxClinicalStage": "WITHDRAWAL",
+              "drug": {
+                "id": "CHEMBL1334033",
+                "name": "PERHEXILINE MALEATE"
+              }
+            },
+            {
+              "id": "bb12bae352626bc56030dfca866309162ce84acfb15fa3f372fd40ce6231573f",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL1922094",
+                "name": "APITOLISIB"
+              }
+            },
+            {
+              "id": "bc67fb971ed42d8f563439a7248d8485219894e84f5192d112dae8c6ab623a47",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL1234354",
+                "name": "PF-04691502"
+              }
+            },
+            {
+              "id": "c2f4e66b27385e025915af55dbedac980a0bf3866aaac8325bee773a016a5722",
+              "maxClinicalStage": "APPROVAL",
+              "drug": {
+                "id": "CHEMBL2103839",
+                "name": "RIDAFOROLIMUS"
+              }
+            },
+            {
+              "id": "d9a9821f15cf2fef58f8c9524db72eb587d0b73bd0f742886ead11be98fe4c59",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL1258517",
+                "name": "PKI-179"
+              }
+            },
+            {
+              "id": "dfccb42b6d7ffda02aa534aaebe606bfd3817c90645456e3a5ff44a2cbd56100",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL2326966",
+                "name": "SF-1126"
+              }
+            },
+            {
+              "id": "e0076fbb0c4a06a067c88dcb730d85f9e99a1640a29b1ff17c43a96df894c87b",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL3544963",
+                "name": "DS-3078A"
+              }
+            },
+            {
+              "id": "e0110929a001dcd53d316c38d64fff648976d44b6bf1352284eec20c8729699b",
+              "maxClinicalStage": "PHASE_2",
+              "drug": {
+                "id": "CHEMBL3586404",
+                "name": "ONATASERTIB"
+              }
+            },
+            {
+              "id": "ec4bda3bb99df2e27185a3d711c752b8ca04ec93529eb8700ff56aa01efbcedd",
+              "maxClinicalStage": "PHASE_1",
+              "drug": {
+                "id": "CHEMBL3393066",
+                "name": "VS-5584"
+              }
+            },
+            {
+              "id": "fc6691db61cfc028035860da816c0e5d755cead65e7528d0028dde14a4000f40",
+              "maxClinicalStage": "PHASE_2_3",
+              "drug": {
+                "id": "CHEMBL571209",
+                "name": "INDOXIMOD"
+              }
+            }
+          ]
+        }
+      },
+      "priority": "Pathway-context comparator; total abundance is not kinase activity.",
+      "independent": "No independent MTOR-specific outcome study retrieved in this bounded search. Protein abundance alone cannot establish pathway activation or drug sensitivity.",
+      "pmids": []
+    },
+    {
+      "gene": "NDUFA4L2",
+      "selection": "data-driven",
+      "annotation": {
+        "query_symbol": "NDUFA4L2",
+        "matches": [
+          {
+            "accession": "Q9NRX3",
+            "gene_names": [
+              "COXFA4L2"
+            ],
+            "protein": "Cytochrome c oxidase hypoxia associated subunit FA4L2",
+            "ensembl_gene_ids": [
+              "ENSG00000185633"
+            ],
+            "reactome_pathways": [],
+            "pathway_count": 0
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": null,
+      "priority": "Large concordant upward contrast; current UniProt symbol is COXFA4L2 (legacy matrix symbol NDUFA4L2), accession Q9NRX3. No Reactome pathways returned; this is not evidence of no pathway membership.",
+      "independent": "No candidate-specific independent literature retrieved in bounded search; annotation is not validation.",
+      "pmids": []
+    },
+    {
+      "gene": "MT1H",
+      "selection": "data-driven",
+      "annotation": {
+        "query_symbol": "MT1H",
+        "matches": [
+          {
+            "accession": "P80294",
+            "gene_names": [
+              "MT1H"
+            ],
+            "protein": "Metallothionein-1H",
+            "ensembl_gene_ids": [
+              "ENSG00000205358"
+            ],
+            "reactome_pathways": [
+              {
+                "id": "R-HSA-5661231",
+                "name": "Metallothioneins bind metals"
+              }
+            ],
+            "pathway_count": 1
+          }
+        ],
+        "ambiguous": false,
+        "possibly_truncated": false
+      },
+      "target_evidence": null,
+      "priority": "Large concordant downward contrast; metal-binding annotation supports a tissue-biology hypothesis, not therapeutic targeting.",
+      "independent": "No candidate-specific independent literature retrieved in bounded search; annotation is not validation.",
+      "pmids": []
+    }
+  ],
+  "literature": [
+    {
+      "provider": "europepmc",
+      "source": "MED",
+      "id": "42440812",
+      "pmid": "42440812",
+      "pmcid": "PMC13334132",
+      "doi": "10.1002/mco2.70831",
+      "title": "Nicotinamide N-Methyltransferase Epigenetically Activates Fibronectin 1 Through H3K9me3 Remodeling in Clear Cell Renal Cell Carcinoma.",
+      "authors": [
+        "Wang L",
+        "Wang Y",
+        "Han Q",
+        "Zhou X",
+        "Wu C",
+        "Zhang H",
+        "Liang Z",
+        "Lai M"
+      ],
+      "journal": "MedComm",
+      "publication_date": "2026-07-05",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "abstract_sections": [
+        {
+          "label": null,
+          "text": "Clear cell renal cell carcinoma (ccRCC) is among the most prevalent malignancies of the urinary system. Patients with advanced ccRCC have poor clinical outcomes. This study aimed to investigate the role of nicotinamide N-methyltransferase (NNMT) in ccRCC. Multiomics analyses revealed aberrant expression of two enzymes in the nicotinamide metabolic pathway, both of which are associated with poor prognosis, with NNMT exhibiting the most pronounced alteration. NNMT modulation per se induces a malignant phenotype, irrespective of substrate or product supplementation. Mechanistically, using western blotting and chromatin immunoprecipitation assays, we demonstrated that NNMT decreases S-adenosylmethionine, thereby reducing histone H3 lysine 9 trimethylation (H3K9me3) at the fibronectin 1 (FN1) promoter and activating FN1 transcription. Exogenous FN1 rescued the migration and invasion in NNMT knockout cells. In clinical specimens, NNMT expression levels were markedly elevated in tumor tissues and correlated with tumor stage. NNMT inhibitor suppressed FN1 expression and tumor progression both in vitro and in vivo. Collectively, our findings establish NNMT as a pivotal epigenetic regulator that drives ccRCC progression through extracellular matrix remodeling, providing novel early-stage diagnostic and therapeutic strategies for ccRCC."
+        }
+      ],
+      "is_open_access": true,
+      "is_retracted": null,
+      "corrections": {},
+      "trial_id_mentions": [],
+      "copyright": null,
+      "license": "cc by",
+      "source_url": "https://europepmc.org/article/MED/42440812"
+    },
+    {
+      "provider": "europepmc",
+      "source": "MED",
+      "id": "42503404",
+      "pmid": "42503404",
+      "pmcid": null,
+      "doi": "10.1016/j.metabol.2026.156714",
+      "title": "Metabolic control of renal cell fate in kidney disease: nutrient rewiring, senescence and fibrosis.",
+      "authors": [
+        "Hu H",
+        "Ji R",
+        "Hu J"
+      ],
+      "journal": "Metabolism: clinical and experimental",
+      "publication_date": "2026-07-27",
+      "publication_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "abstract_sections": [
+        {
+          "label": null,
+          "text": "The kidney is a metabolically demanding organ in which epithelial, endothelial, stromal and immune compartments operate within spatially specialized nutrient and oxygen microenvironments. Renal metabolic remodeling is not uniformly harmful: transient changes can preserve adenosine triphosphate production, redox balance and tissue repair, whereas persistent nutrient stress can lock cells into maladaptive states. We therefore define metabolic control of renal cell fate as a three-level framework linking context modifiers (cell type, nephron segment, injury stage, sex, age and comorbidity), shared metabolic control modules and downstream fate decisions. In tubular epithelial cells, sustained loss of fatty acid oxidation (FAO), impaired oxidative phosphorylation (OXPHOS) and persistent glycolytic switching promote senescence, inflammatory secretion and failed repair. In podocytes, branched-chain amino acid (BCAA) overload, impaired serine metabolism and mitochondrial injury promote apoptosis, cytoskeletal instability and proteinuria. In renal endothelial cells, disturbed nitric oxide-redox coupling and mitochondrial stress contribute to barrier dysfunction, endothelial-to-mesenchymal transition and capillary rarefaction. In stromal and immune compartments, glycolysis, lactate signaling and macrophage-fibroblast crosstalk sustain inflammatory and matrix-producing states. Metabolic-epigenetic pathways involving nicotinamide adenine dinucleotide (NAD+), nicotinamide N-methyltransferase (NNMT) and lactate-derived histone lactylation further convert transient stress into pathological memory. This framework integrates spatial niche, injury duration and cell identity to explain how nutrient rewiring directs repair or progression and identifies stage-specific, cell-selective therapeutic opportunities in kidney disease."
+        }
+      ],
+      "is_open_access": false,
+      "is_retracted": null,
+      "corrections": {},
+      "trial_id_mentions": [],
+      "copyright": null,
+      "license": null,
+      "source_url": "https://europepmc.org/article/MED/42503404"
+    },
+    {
+      "provider": "europepmc",
+      "source": "MED",
+      "id": "41399267",
+      "pmid": "41399267",
+      "pmcid": "PMC12708974",
+      "doi": "10.3346/jkms.2025.40.e333",
+      "title": "Prognostic and Therapeutic Potential of Nicotinamide N-Methyltransferase and Hypoxia Inducible Lipid Droplet Associated in Clear Cell Renal Cell Carcinoma.",
+      "authors": [
+        "Kim M",
+        "Song G",
+        "Joung JY",
+        "Seo HK",
+        "Lee HH",
+        "Chung J"
+      ],
+      "journal": "Journal of Korean medical science",
+      "publication_date": "2025-12-15",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "abstract_sections": [
+        {
+          "label": null,
+          "text": "BackgroundClear cell renal cell carcinoma (ccRCC) is the most aggressive subtype of renal cancer, characterized by profound metabolic reprogramming and lipid accumulation. Despite therapeutic advancements, reliable prognostic biomarkers remain limited. This study investigates the prognostic and functional relevance of nicotinamide N-methyltransferase (NNMT), and hypoxia inducible lipid droplet associated (HILPDA) in ccRCC.\nMethodsRNA sequencing was performed on tumor and matched normal tissues from 14 ccRCC patients. Differential gene expression and pathway enrichment analyses were conducted. Receiver operating characteristic (ROC) curves were generated to assess diagnostic value. Kaplan-Meier survival analysis using The Cancer Genome Atlas data evaluated prognostic significance. NNMT knockdown experiments were conducted in ccRCC cell lines (SNU1272 and Caki-1) to assess functional relevance.\nResultsNNMT and HILPDA were significantly upregulated in tumor tissues. Pathway analyses revealed associations with lipid metabolism and biosynthesis. ROC analysis showed high diagnostic accuracy (NNMT area under the curve [AUC], 0.923; HILPDA AUC, 0.943). Kaplan-Meier analysis demonstrated that high NNMT expression correlated with worse overall and disease-specific survival (P < 0.001), whereas HILPDA expression showed no prognostic impact. NNMT knockdown significantly reduced cell viability (P < 0.001), supporting its role in tumor progression.\nConclusionNNMT is a promising prognostic biomarker and potential therapeutic target in ccRCC, supported by transcriptomic, clinical, and functional validation. While the prognostic relevance of HILPDA remains inconclusive, its metabolic associations suggest potential biological significance. Further studies with larger cohorts and in vivo validation are warranted."
+        }
+      ],
+      "is_open_access": true,
+      "is_retracted": null,
+      "corrections": {},
+      "trial_id_mentions": [],
+      "copyright": null,
+      "license": "cc by-nc",
+      "source_url": "https://europepmc.org/article/MED/41399267"
+    },
+    {
+      "provider": "europepmc",
+      "source": "MED",
+      "id": "27787547",
+      "pmid": "27787547",
+      "pmcid": "PMC5824229",
+      "doi": "10.1001/jamaoncol.2016.4419",
+      "title": "Adjuvant Weekly Girentuximab Following Nephrectomy for High-Risk Renal Cell Carcinoma: The ARISER Randomized Clinical Trial.",
+      "authors": [
+        "Chamie K",
+        "Donin NM",
+        "Kl\u00f6pfer P",
+        "Bevan P",
+        "Fall B",
+        "Wilhelm O",
+        "St\u00f6rkel S",
+        "Said J",
+        "Gambla M",
+        "Hawkins RE",
+        "Jankilevich G",
+        "Kapoor A",
+        "Kopyltsov E",
+        "Staehler M",
+        "Taari K",
+        "Wainstein AJA",
+        "Pantuck AJ",
+        "Belldegrun AS"
+      ],
+      "journal": "JAMA oncology",
+      "publication_date": "2017-07-01",
+      "publication_types": [
+        "Clinical Trial, Phase III",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "abstract_sections": [
+        {
+          "label": null,
+          "text": "ImportanceGirentuximab is a chimeric monoclonal antibody that binds carbonic anhydrase IX, a cell surface glycoprotein ubiquitously expressed in clear cell renal cell carcinoma (ccRCC). Its safety and activity in phase 2 studies prompted investigation into its use as adjuvant monotherapy in participants with high-risk ccRCC.\nObjectiveTo evaluate the safety and efficacy of adjuvant girentuximab on disease-free survival (DFS) and overall survival (OS) in patients with localized completely resected high-risk ccRCC.\nDesign, setting, and participantsThe ARISER trial (Adjuvant Rencarex Immunotherapy Phase 3 Trial to Study Efficacy in Nonmetastatic RCC) was a randomized, double-blind, placebo-controlled phase 3 clinical trial that took place between June 10, 2004, and April 2, 2013, at 142 academic medical centers in 15 countries in North and South America and Europe. Eligible adult patients had undergone partial or radical nephrectomy for histologically confirmed ccRCC and fell into 1 of the following high-risk groups: pT3/pT4Nx/N0M0 or pTanyN+M0 or pT1b/pT2Nx/N0M0 with nuclear grade 3 or greater. Patients were assigned via central computerized double-blind 1:1 randomization to receive either a single loading dose of girentuximab, 50 mg (week 1), followed by weekly intravenous infusions of girentuximab, 20 mg (weeks 2-24), or placebo, stratified by risk group and region. The data were analyzed from March 31, 2012, to April 2, 2013.\nMain outcomes and measuresCo-primary end points were DFS and OS, based on imaging studies assessed by independent radiological review committee. Secondary end points included safety, assessed as the rate and grade of adverse events.\nResultsA total of 864 patients (66% male; median [interquartile range] age, 58 [51-65] years) were randomized to girentuximab (n\u2009=\u2009433) or placebo (n\u2009=\u2009431). Compared with placebo, participants treated with girentuximab had no statistically significant DFS (hazard ratio, 0.97; 95% CI, 0.79-1.18) or OS advantage (hazard ratio, 0.99; 95% CI, 0.74-1.32). Median DFS was 71.4 months (interquartile range, 3 months to not reached) for girentuximab and never reached for placebo group. Median OS was never reached regardless of treatment. Drug-related adverse events occurred in 185 patients (21.6%), reported comparably between arms. Serious adverse events occurred in 72 patients (8.4%), reported comparably between arms. One drug-related serious adverse event occurred in a patient receiving placebo.\nConclusions and relevanceGirentuximab had no clinical benefit as adjuvant treatment for patients with high-risk ccRCC. The surprisingly long DFS and OS in these patients represent a challenge to adjuvant ccRCC drug development.\nTrial registrationclinicaltrials.gov Identifier: NCT00087022."
+        }
+      ],
+      "is_open_access": false,
+      "is_retracted": null,
+      "corrections": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "27787546",
+            "reference": "JAMA Oncol. 2017 Jul 1;3(7):895-896. doi: 10.1001/jamaoncol.2016.4409",
+            "type": "Comment in",
+            "orderIn": 1
+          },
+          {
+            "source": "MED",
+            "id": "28854471",
+            "reference": "Aktuelle Urol. 2017 Sep;48(5):419. doi: 10.1055/s-0043-118396",
+            "type": "Comment in",
+            "orderIn": 2
+          }
+        ]
+      },
+      "trial_id_mentions": [
+        "NCT00087022"
+      ],
+      "copyright": null,
+      "license": null,
+      "source_url": "https://europepmc.org/article/MED/27787547"
+    },
+    {
+      "provider": "europepmc",
+      "source": "MED",
+      "id": "30464696",
+      "pmid": "30464696",
+      "pmcid": "PMC6209555",
+      "doi": "10.3747/co.25.3865",
+      "title": "Is there a role for adjuvant therapy after surgery in \"high risk for recurrence\" kidney cancer? An update on current concepts.",
+      "authors": [
+        "Sharma T",
+        "Tajzler C",
+        "Kapoor A"
+      ],
+      "journal": "Current oncology (Toronto, Ont.)",
+      "publication_date": "2018-10-31",
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article"
+      ],
+      "abstract_sections": [
+        {
+          "label": null,
+          "text": "BackgroundAlthough surgical resection remains the standard of care for localized kidney cancers, a significant proportion of patients experience systemic recurrence after surgery and hence might benefit from effective adjuvant therapy. So far, several treatment options have been evaluated in adjuvant clinical trials, but only a few have provided promising results. Nevertheless, with the recent development of targeted therapy and immunomodulatory therapy, a series of clinical trials are in progress to evaluate the potential of those novel agents in the adjuvant setting. In this paper, we provide a narrative review of the progress in this field, and we summarize the results from recent adjuvant trials that have been completed.\nMethodsA literature search was conducted. The primary search strategy at the medline, Cochrane reviews, and http://ClinicalTrials.gov/databases included the keywords \"adjuvant therapy,\" \"renal cell carcinoma,\" and \"targeted therapy or/and immunotherapy.\"\nConclusionsData from the s-trac study indicated that, in the \"highest risk for recurrence\" patient population, disease-free survival was increased with the use of adjuvant sunitinib compared with placebo. The assure trial showed no benefit for adjuvant sunitinib or sorafenib in the \"intermediate- to high-risk\" patient population. The ariser (adjuvant girentuximab) and protect (adjuvant pazopanib) trials indicated no survival benefit, but subgroup analyses in both trials recommended further investigation. The inconsistency in some of the current results can be attributed to a variety of factors pertaining to the lack of standardization across the trials. Nevertheless, patients in the \"high risk of recurrence\" category after surgery for their disease would benefit from a discussion about the potential benefits of adjuvant treatment and enrolment in ongoing adjuvant trials."
+        }
+      ],
+      "is_open_access": false,
+      "is_retracted": null,
+      "corrections": {},
+      "trial_id_mentions": [],
+      "copyright": null,
+      "license": "cc by",
+      "source_url": "https://europepmc.org/article/MED/30464696"
+    }
+  ],
+  "original_study": {
+    "pmid": "31675502",
+    "role": "source cohort, not independent evidence"
+  },
+  "source_index": "source_index.json",
+  "scope": "2 bounded literature searches, first page only; abstracts reviewed, no systematic review; 3 target queries; live UniProt shortlist annotations"
+}

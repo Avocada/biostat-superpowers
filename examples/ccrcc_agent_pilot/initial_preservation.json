@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "report.html": true,
+    "results.json": true,
+    "outputs/concordance.png": true,
+    "outputs/missingness.png": true,
+    "outputs/availability.png": true,
+    "outputs/protein_differential.png": true
+  },
+  "upgraded": {
+    "report.html": true,
+    "results.json": true,
+    "figures/availability_missingness.png": true,
+    "figures/concordance.png": true,
+    "figures/protein_differential.png": true,
+    "figures/shortlist_intervals.png": true
+  }
+}

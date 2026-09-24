@@ -1,0 +1,161 @@
+[
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "annotate_proteins",
+    "arguments": {
+      "symbols": [
+        "CA9",
+        "NNMT",
+        "VEGFA",
+        "MTOR"
+      ]
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "get_target_evidence",
+    "arguments": {
+      "ensembl_id": "ENSG00000107159"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "get_target_evidence",
+    "arguments": {
+      "ensembl_id": "ENSG00000112715"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "get_target_evidence",
+    "arguments": {
+      "ensembl_id": "ENSG00000198793"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "search_literature",
+    "arguments": {
+      "provider": "europepmc",
+      "query": "TITLE_ABS:\"renal cell\" AND TITLE_ABS:\"nicotinamide N-methyltransferase\"",
+      "page_size": 3
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "search_literature",
+    "arguments": {
+      "provider": "europepmc",
+      "query": "TITLE_ABS:girentuximab AND TITLE_ABS:ARISER",
+      "page_size": 3
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "initial",
+    "server": "biostat",
+    "tool": "annotate_proteins",
+    "arguments": {
+      "symbols": [
+        "NDUFA4L2",
+        "MT1H"
+      ]
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "search_trials",
+    "arguments": {
+      "condition": "kidney cancer",
+      "intervention": "girentuximab",
+      "page_size": 20
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "search_trials",
+    "arguments": {
+      "condition": "kidney cancer",
+      "intervention": "NNMT",
+      "page_size": 20
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "get_trial",
+    "arguments": {
+      "nct_id": "NCT05663710"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "get_trial",
+    "arguments": {
+      "nct_id": "NCT03849118"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "get_trial",
+    "arguments": {
+      "nct_id": "NCT00087022"
+    },
+    "status": "completed",
+    "ok": true
+  },
+  {
+    "arm": "upgraded",
+    "phase": "followup",
+    "server": "biostat",
+    "tool": "get_trial",
+    "arguments": {
+      "nct_id": "NCT05239533"
+    },
+    "status": "completed",
+    "ok": true
+  }
+]

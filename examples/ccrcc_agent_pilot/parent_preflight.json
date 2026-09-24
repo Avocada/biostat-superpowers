@@ -1,0 +1,10 @@
+{
+  "eligible_by_file": {
+    "HS_CPTAC_CCRCC_proteome_Tumor.cct": 103,
+    "HS_CPTAC_CCRCC_proteome_Normal.cct": 80,
+    "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Tumor.cct": 103,
+    "HS_CPTAC_CCRCC_RNAseq_fpkm_log2_Normal.cct": 72
+  },
+  "common_cases": 72,
+  "early_stage_cases": 37
+}

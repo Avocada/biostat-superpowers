@@ -1,0 +1,1 @@
+Offline JavaScript syntax, initial rendering, gene search and layer filter passed in Node DOM stub. Search uses substring matching. Actual PNGs visually inspected. Full browser rendering not tested.

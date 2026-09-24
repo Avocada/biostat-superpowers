@@ -1,0 +1,22 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "configurations": [
+    "original skills + ordinary notes/files + direct APIs",
+    "same skills + controller + memory + MCP"
+  ],
+  "initial_seconds": 900,
+  "followup_seconds": 600,
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "primary_analysis": "common paired ccRCC cases, per-layer paired t contrasts, n>=20, BH separately per layer",
+  "followup": "fresh session: repeat paired contrasts for Stage I/II restriction and 80% coverage sensitivity, update candidate evidence",
+  "fairness": [
+    "same source guide and direct API access",
+    "both can save/reuse code, notes and source snapshots",
+    "same model/effort/budgets/data",
+    "one pilot, not replicated; bundled effects not separable",
+    "upgraded quickstart/runtime tool schema overhead counted",
+    "setup and review tokens separate from measured analysis turns"
+  ],
+  "review": "frozen review_protocol.md"
+}

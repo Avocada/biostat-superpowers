@@ -24,7 +24,7 @@ This is an actual MCP implementation: a separate client discovers and invokes to
 
 No LangGraph is needed. Transport is a thin wrapper around ordinary functions; the existing Python controller remains the workflow control layer. Retrieval operations do not automatically update workflow readiness or project memory. The reviewed-handoff adapter now prepares proposals; a separate host confirmation commits memory and an optional controller result atomically.
 
-The ClinicalTrials.gov extension is documented in [CLINICAL_TRIALS.md](CLINICAL_TRIALS.md), including its four additional tools and protocol demo. The server now exposes nineteen tools. [REVIEWED_HANDOFF.md](REVIEWED_HANDOFF.md) documents project runs, review proposals and confirmed context. [LITERATURE.md](LITERATURE.md) describes the PubMed/Europe PMC extension.
+The ClinicalTrials.gov extension is documented in [CLINICAL_TRIALS.md](CLINICAL_TRIALS.md), including its four additional tools and protocol demo. The server now exposes twenty-two tools. [REVIEWED_HANDOFF.md](REVIEWED_HANDOFF.md) documents project runs, review proposals and confirmed context. [LITERATURE.md](LITERATURE.md) describes the PubMed/Europe PMC extension.
 
 ## Available capabilities
 
@@ -33,7 +33,7 @@ The ClinicalTrials.gov extension is documented in [CLINICAL_TRIALS.md](CLINICAL_
 | `list_datasets` | Optional text query | Three curated entries with availability |
 | `fetch_dataset` | `demo`, `uci:53`, or `uci:45` | Saved snapshot and source manifest; no full dataset in tool response |
 | `profile_dataset` | Dataset artifact ID | Types, roles, missingness and numeric summaries; saved profile |
-| `list_chart_examples` | Optional text query | Three local templates and source links |
+| `list_chart_examples` | Optional text query | Four local templates and source links |
 | `render_chart` | Dataset ID, matching profile ID, template, columns, optional title | SVG, PNG, Vega-Lite specification and provenance |
 | `inspect_artifact` | Artifact ID | Manifest, checksums and local directory |
 | `search_trials` | Condition/intervention, optional status/phase, page size | Saved ClinicalTrials.gov search page |
@@ -52,12 +52,12 @@ The ClinicalTrials.gov extension is documented in [CLINICAL_TRIALS.md](CLINICAL_
 
 Resources:
 
-- `biostat://catalog`: 24 entries, clearly distinguishing available capabilities from reference-only links.
-- `biostat://chart-examples`: project-authored histogram, scatter and boxplot examples.
+- `biostat://catalog`: Curated entries, clearly distinguishing available capabilities from reference-only links.
+- `biostat://chart-examples`: project-authored histogram, scatter, boxplot and bar examples.
 - `biostat://artifacts/{artifact_id}/manifest`: saved result description.
 - `biostat://artifacts/{artifact_id}/figure`: generated SVG, fetched only on request.
 
-UCI support currently covers Iris and Heart Disease only. Discovery does not search the complete UCI repository. ClinicalTrials.gov search, detail retrieval and comparisons are implemented. PubMed and Europe PMC now support citation/abstract retrieval and reference lists. Genomic sources, books, other visualization galleries and external tool platforms remain catalog references. No books or galleries are bulk downloaded. The three templates are authored in this project using Vega-Lite grammar.
+UCI support currently covers Iris and Heart Disease only. Discovery does not search the complete UCI repository. ClinicalTrials.gov search, detail retrieval and comparisons are implemented. PubMed and Europe PMC now support citation/abstract retrieval and reference lists. Genomic sources, books, other visualization galleries and external tool platforms remain catalog references. No books or galleries are bulk downloaded. The four templates are authored in this project using Vega-Lite grammar.
 
 ## Install and run
 
@@ -127,3 +127,7 @@ The server also accepts `--input-dir /absolute/study/input`. With that explicitl
 A local snapshot uses the same checksum, profile-before-render and artifact provenance mechanisms as catalog datasets. `list_chart_examples` now also includes a `bar` template for precomputed category/value summaries. Use one row per category; aggregation and statistical inference remain the caller's responsibility. The original histogram, scatter and boxplot templates remain available. Purpose-built scientific figures such as effect intervals can still be rendered by the host; do not describe those as MCP-rendered figures.
 
 This path lets a host stage the public RHC study (removing its unlabeled archive row-number column explicitly) and then exercise actual MCP profiling and visualization. No unrestricted file reader or arbitrary Vega specification endpoint was added.
+
+## Protein and target evidence
+
+[OMICS_MCP.md](OMICS_MCP.md) documents the bounded UniProt `annotate_proteins` and Open Targets `get_target_evidence` operations. Reactome cross-references are annotations, not an implemented enrichment service. Full omics matrices remain in local statistical code.

@@ -1,0 +1,666 @@
+{
+  "cohort_n": 72,
+  "availability": [
+    {
+      "layer": "protein",
+      "tissue": "Tumor",
+      "downloaded": 110,
+      "after_histology": 103,
+      "after_contamination": 103
+    },
+    {
+      "layer": "protein",
+      "tissue": "Normal",
+      "downloaded": 84,
+      "after_histology": 81,
+      "after_contamination": 80
+    },
+    {
+      "layer": "rna",
+      "tissue": "Tumor",
+      "downloaded": 110,
+      "after_histology": 103,
+      "after_contamination": 103
+    },
+    {
+      "layer": "rna",
+      "tissue": "Normal",
+      "downloaded": 75,
+      "after_histology": 73,
+      "after_contamination": 72
+    }
+  ],
+  "summary": {
+    "protein": {
+      "genes": 11710,
+      "status_counts": {
+        "tested": 10033,
+        "insufficient_pairs": 1677
+      },
+      "q_lt_005": 8219,
+      "up_q_lt_005": 4491,
+      "down_q_lt_005": 3728,
+      "paired_n_quantiles": {
+        "0.0": 0.0,
+        "0.25": 43.0,
+        "0.5": 72.0,
+        "0.75": 72.0,
+        "1.0": 72.0
+      },
+      "tumor_nonfinite_fraction": 0.2138129803586678,
+      "normal_nonfinite_fraction": 0.2137596071733561,
+      "layer_specific_cohort_n": 80
+    },
+    "rna": {
+      "genes": 19275,
+      "status_counts": {
+        "tested": 19015,
+        "zero_variance": 260
+      },
+      "q_lt_005": 15118,
+      "up_q_lt_005": 7637,
+      "down_q_lt_005": 7481,
+      "paired_n_quantiles": {
+        "0.0": 72.0,
+        "0.25": 72.0,
+        "0.5": 72.0,
+        "0.75": 72.0,
+        "1.0": 72.0
+      },
+      "tumor_nonfinite_fraction": 0.0,
+      "normal_nonfinite_fraction": 0.0,
+      "layer_specific_cohort_n": 72
+    }
+  },
+  "concordance": {
+    "both_tested": 9475,
+    "same_direction": 7205,
+    "fraction_same_direction": 0.7604221635883905,
+    "spearman_mean_differences": 0.6967184569101386,
+    "joint_finite_genes": 9482,
+    "joint_fraction_same_direction": 0.7604935667580679,
+    "warning": "Descriptive gene-level association; correlated genes are not independent replicates. No test of raw cross-layer effect differences."
+  },
+  "shortlist": [
+    "CA9",
+    "NNMT",
+    "VEGFA",
+    "MTOR",
+    "NDUFA4L2",
+    "MT1H"
+  ],
+  "shortlist_results": [
+    {
+      "n": 72,
+      "mean_difference": 2.344681825,
+      "sd_difference": 0.689942654,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 2.1825532498,
+      "ci95_high": 2.5068104002,
+      "t": 28.8361429794,
+      "p": 6.208222317e-41,
+      "q": 1.676693932e-38,
+      "gene": "CA9",
+      "layer": "protein",
+      "selection": "prespecified",
+      "loo_mean_min": 2.3187419122,
+      "loo_mean_max": 2.3619816936,
+      "median_difference": 2.3490522529,
+      "skewness": 0.2192824164,
+      "bootstrap_ci_low": 2.1904729219,
+      "bootstrap_ci_high": 2.5000223109,
+      "layer_cohort_mean": 2.3113340997,
+      "layer_cohort_n": 80
+    },
+    {
+      "n": 72,
+      "mean_difference": 6.4520114709,
+      "sd_difference": 1.0825776096,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 6.1976182046,
+      "ci95_high": 6.7064047373,
+      "t": 50.5710928019,
+      "p": 1.999769014e-57,
+      "q": 1.22663251e-54,
+      "gene": "CA9",
+      "layer": "rna",
+      "selection": "prespecified",
+      "loo_mean_min": 6.4312720765,
+      "loo_mean_max": 6.5440641799,
+      "median_difference": 6.625960565,
+      "skewness": -3.3666253328,
+      "bootstrap_ci_low": 6.1791646028,
+      "bootstrap_ci_high": 6.6713138722,
+      "layer_cohort_mean": 6.4520114709,
+      "layer_cohort_n": 72
+    },
+    {
+      "n": 72,
+      "mean_difference": 2.7847385221,
+      "sd_difference": 0.8186850956,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 2.5923569563,
+      "ci95_high": 2.9771200878,
+      "t": 28.8624894249,
+      "p": 5.847774959e-41,
+      "q": 1.676693932e-38,
+      "gene": "NNMT",
+      "layer": "protein",
+      "selection": "prespecified",
+      "loo_mean_min": 2.7589315363,
+      "loo_mean_max": 2.8106615344,
+      "median_difference": 2.7093244497,
+      "skewness": 0.0166801185,
+      "bootstrap_ci_low": 2.5964837485,
+      "bootstrap_ci_high": 2.9747149693,
+      "layer_cohort_mean": 2.7352803061,
+      "layer_cohort_n": 80
+    },
+    {
+      "n": 72,
+      "mean_difference": 4.738401637,
+      "sd_difference": 1.3482441182,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 4.4215798018,
+      "ci95_high": 5.0552234723,
+      "t": 29.8215068124,
+      "p": 6.836830702e-42,
+      "q": 5.676957895e-40,
+      "gene": "NNMT",
+      "layer": "rna",
+      "selection": "prespecified",
+      "loo_mean_min": 4.7031579098,
+      "loo_mean_max": 4.793414169,
+      "median_difference": 4.9470301402,
+      "skewness": -0.9470092252,
+      "bootstrap_ci_low": 4.4289245695,
+      "bootstrap_ci_high": 5.0192366808,
+      "layer_cohort_mean": 4.738401637,
+      "layer_cohort_n": 72
+    },
+    {
+      "n": 1,
+      "mean_difference": 1.0684955485,
+      "sd_difference": null,
+      "tumor_nonfinite": 71,
+      "normal_nonfinite": 71,
+      "status": "insufficient_pairs",
+      "ci95_low": null,
+      "ci95_high": null,
+      "t": null,
+      "p": null,
+      "q": null,
+      "gene": "VEGFA",
+      "layer": "protein",
+      "selection": "prespecified",
+      "loo_mean_min": null,
+      "loo_mean_max": null,
+      "median_difference": null,
+      "skewness": null,
+      "bootstrap_ci_low": null,
+      "bootstrap_ci_high": null,
+      "layer_cohort_mean": 1.3155013831,
+      "layer_cohort_n": 2
+    },
+    {
+      "n": 72,
+      "mean_difference": 3.0143439943,
+      "sd_difference": 0.9774425286,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 2.7846562608,
+      "ci95_high": 3.2440317279,
+      "t": 26.1678371905,
+      "p": 3.409732974e-38,
+      "q": 1.532767671e-36,
+      "gene": "VEGFA",
+      "layer": "rna",
+      "selection": "prespecified",
+      "loo_mean_min": 2.993788156,
+      "loo_mean_max": 3.0905318039,
+      "median_difference": 3.1885039281,
+      "skewness": -2.5513647374,
+      "bootstrap_ci_low": 2.7717090951,
+      "bootstrap_ci_high": 3.2225446053,
+      "layer_cohort_mean": 3.0143439943,
+      "layer_cohort_n": 72
+    },
+    {
+      "n": 72,
+      "mean_difference": -0.1746701641,
+      "sd_difference": 0.1586076595,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": -0.2119411368,
+      "ci95_high": -0.1373991914,
+      "t": -9.3446022417,
+      "p": 0.0,
+      "q": 0.0,
+      "gene": "MTOR",
+      "layer": "protein",
+      "selection": "prespecified",
+      "loo_mean_min": -0.1798560711,
+      "loo_mean_max": -0.1699984306,
+      "median_difference": -0.2175494681,
+      "skewness": 0.4058623355,
+      "bootstrap_ci_low": -0.2114701073,
+      "bootstrap_ci_high": -0.1374935432,
+      "layer_cohort_mean": -0.181129109,
+      "layer_cohort_n": 80
+    },
+    {
+      "n": 72,
+      "mean_difference": -0.7781365046,
+      "sd_difference": 0.2788110626,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": -0.8436538922,
+      "ci95_high": -0.7126191169,
+      "t": -23.6816542636,
+      "p": 1.988406173e-35,
+      "q": 5.907741153e-34,
+      "gene": "MTOR",
+      "layer": "rna",
+      "selection": "prespecified",
+      "loo_mean_min": -0.7881351468,
+      "loo_mean_max": -0.7692405149,
+      "median_difference": -0.8207042734,
+      "skewness": 0.5735887428,
+      "bootstrap_ci_low": -0.8444738956,
+      "bootstrap_ci_high": -0.7149034411,
+      "layer_cohort_mean": -0.7781365046,
+      "layer_cohort_n": 72
+    },
+    {
+      "n": 72,
+      "mean_difference": 3.9085817569,
+      "sd_difference": 0.9305269493,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 3.689918644,
+      "ci95_high": 4.1272448698,
+      "t": 35.6415426819,
+      "p": 4.770189623e-47,
+      "q": 4.785931249e-43,
+      "gene": "NDUFA4L2",
+      "layer": "protein",
+      "selection": "exploratory",
+      "loo_mean_min": 3.8786106609,
+      "loo_mean_max": 3.9376928724,
+      "median_difference": 3.8803027099,
+      "skewness": -0.1019180125,
+      "bootstrap_ci_low": 3.6915071299,
+      "bootstrap_ci_high": 4.1295799987,
+      "layer_cohort_mean": 3.8457327833,
+      "layer_cohort_n": 80
+    },
+    {
+      "n": 72,
+      "mean_difference": 6.9129190983,
+      "sd_difference": 1.0552379527,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": 6.6649503363,
+      "ci95_high": 7.1608878602,
+      "t": 55.5875227139,
+      "p": 2.855046653e-60,
+      "q": 3.016039562e-57,
+      "gene": "NDUFA4L2",
+      "layer": "rna",
+      "selection": "exploratory",
+      "loo_mean_min": 6.8902644921,
+      "loo_mean_max": 7.005369601,
+      "median_difference": 7.1150675305,
+      "skewness": -3.4923386081,
+      "bootstrap_ci_low": 6.6411012696,
+      "bootstrap_ci_high": 7.131915875,
+      "layer_cohort_mean": 6.9129190983,
+      "layer_cohort_n": 72
+    },
+    {
+      "n": 72,
+      "mean_difference": -3.1789657827,
+      "sd_difference": 1.3915043645,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": -3.5059532775,
+      "ci95_high": -2.851978288,
+      "t": -19.3850769236,
+      "p": 4.493110337e-30,
+      "q": 6.840572991e-29,
+      "gene": "MT1H",
+      "layer": "protein",
+      "selection": "exploratory",
+      "loo_mean_min": -3.2220233647,
+      "loo_mean_max": -3.1341085957,
+      "median_difference": -3.1737470764,
+      "skewness": -0.0012749546,
+      "bootstrap_ci_low": -3.4886068077,
+      "bootstrap_ci_high": -2.8576988621,
+      "layer_cohort_mean": -3.2640422505,
+      "layer_cohort_n": 80
+    },
+    {
+      "n": 72,
+      "mean_difference": -5.3868453469,
+      "sd_difference": 1.9412921702,
+      "tumor_nonfinite": 0,
+      "normal_nonfinite": 0,
+      "status": "tested",
+      "ci95_low": -5.8430266421,
+      "ci95_high": -4.9306640516,
+      "t": -23.5456049271,
+      "p": 2.860012739e-35,
+      "q": 8.277495013e-34,
+      "gene": "MT1H",
+      "layer": "rna",
+      "selection": "exploratory",
+      "loo_mean_min": -5.4693039863,
+      "loo_mean_max": -5.3495004308,
+      "median_difference": -5.888683198,
+      "skewness": 1.4931512213,
+      "bootstrap_ci_low": -5.8166164445,
+      "bootstrap_ci_high": -4.9198833234,
+      "layer_cohort_mean": -5.3868453469,
+      "layer_cohort_n": 72
+    }
+  ],
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "target_evidence": [
+    {
+      "gene": "CA9",
+      "accession": "Q16790",
+      "ensembl": [
+        "ENSG00000107159"
+      ],
+      "current_symbol": "CA9",
+      "pathways": [
+        "R-HSA-1234158: Regulation of gene expression by Hypoxia-inducible Factor",
+        "R-HSA-1475029: Reversible hydration of carbon dioxide"
+      ],
+      "tractability_positive": [
+        "SM: Approved Drug",
+        "SM: Structure with Ligand",
+        "SM: High-Quality Ligand",
+        "SM: Med-Quality Pocket",
+        "SM: Druggable Family",
+        "AB: Advanced Clinical",
+        "AB: UniProt loc high conf",
+        "AB: GO CC high conf",
+        "AB: UniProt SigP or TMHMM",
+        "AB: Human Protein Atlas loc",
+        "PR: Small Molecule Binder"
+      ],
+      "drug_record_count": 4,
+      "drug_examples": [
+        {
+          "id": "9cd4b3f9c4ab6792b64f1d1b541fdcb3c68d1a97b4017a39e72dcad39c5eba96",
+          "maxClinicalStage": "PHASE_3",
+          "drug": {
+            "id": "CHEMBL1743027",
+            "name": "GIRENTUXIMAB"
+          }
+        },
+        {
+          "id": "c48e93540466dd30345a2b4fcde3538cf5e36bc40c9c79e3fddc1c24509b7df1",
+          "maxClinicalStage": "PHASE_2",
+          "drug": {
+            "id": "CHEMBL2108713",
+            "name": "IODINE I 124 GIRENTUXIMAB"
+          }
+        },
+        {
+          "id": "4e0ef8a00267d56becd607155841e61b5b9124074b90206220add8fc289c6b5c",
+          "maxClinicalStage": "WITHDRAWAL",
+          "drug": {
+            "id": "CHEMBL18",
+            "name": "ETHOXZOLAMIDE"
+          }
+        }
+      ],
+      "priority_rationale": "Prioritize orthogonal abundance/localization work. Large concordant increase; CAIX-targeted girentuximab literature supplies independent imaging evidence, not proof of therapeutic benefit."
+    },
+    {
+      "gene": "NNMT",
+      "accession": "P40261",
+      "ensembl": [
+        "ENSG00000166741"
+      ],
+      "current_symbol": "NNMT",
+      "pathways": [
+        "R-HSA-156581: Methylation",
+        "R-HSA-196807: Nicotinate metabolism",
+        "R-HSA-2408508: Metabolism of ingested SeMet, Sec, MeSec into H2Se"
+      ],
+      "tractability_positive": [],
+      "drug_record_count": null,
+      "drug_examples": [],
+      "priority_rationale": "Prioritize metabolic and cell-type follow-up. Concordant increase and nicotinamide-related annotation. Retrieved mechanistic abstracts are supportive but their multiomics cohort overlap was not audited; do not label those components independent replication."
+    },
+    {
+      "gene": "VEGFA",
+      "accession": "P15692",
+      "ensembl": [
+        "ENSG00000112715"
+      ],
+      "current_symbol": "VEGFA",
+      "pathways": [
+        "R-HSA-114608: Platelet degranulation",
+        "R-HSA-1234158: Regulation of gene expression by Hypoxia-inducible Factor",
+        "R-HSA-194138: Signaling by VEGF",
+        "R-HSA-194313: VEGF ligand-receptor interactions",
+        "R-HSA-195399: VEGF binds to VEGFR leading to receptor dimerization",
+        "R-HSA-4420097: VEGFA-VEGFR2 Pathway",
+        "R-HSA-5218921: VEGFR2 mediated cell proliferation",
+        "R-HSA-6785807: Interleukin-4 and Interleukin-13 signaling",
+        "R-HSA-8866910: TFAP2 (AP-2) family regulates transcription of growth factors and their receptors",
+        "R-HSA-9679191: Potential therapeutics for SARS"
+      ],
+      "tractability_positive": [
+        "SM: Structure with Ligand",
+        "SM: High-Quality Ligand",
+        "SM: Med-Quality Pocket",
+        "AB: Approved Drug",
+        "AB: UniProt loc high conf",
+        "AB: GO CC high conf",
+        "AB: UniProt loc med conf",
+        "PR: Small Molecule Binder",
+        "OC: Approved Drug"
+      ],
+      "drug_record_count": 13,
+      "drug_examples": [
+        {
+          "id": "865b6a9762b8d7600bfd335845d5e3bc7950da2844480b160b7f262994c0d51f",
+          "maxClinicalStage": "PHASE_4",
+          "drug": {
+            "id": "CHEMBL1742982",
+            "name": "AFLIBERCEPT"
+          }
+        },
+        {
+          "id": "56a26db0e9ff56befd507a8f84185db1c393c2fc54110f3e3622117ec173dd6b",
+          "maxClinicalStage": "WITHDRAWAL",
+          "drug": {
+            "id": "CHEMBL1201583",
+            "name": "BEVACIZUMAB"
+          }
+        },
+        {
+          "id": "6268283bc2afa91197d60a83b5e96a36f2140ae56c8452f828c7ceb281f9d5bb",
+          "maxClinicalStage": "APPROVAL",
+          "drug": {
+            "id": "CHEMBL4297684",
+            "name": "ABICIPAR PEGOL"
+          }
+        }
+      ],
+      "priority_rationale": "RNA-supported pathway candidate only: protein is effectively unavailable (n=1). VEGF-pathway trial evidence is independent, but receptor inhibitor efficacy does not validate VEGFA abundance as a response biomarker."
+    },
+    {
+      "gene": "MTOR",
+      "accession": "P42345",
+      "ensembl": [
+        "ENSG00000198793"
+      ],
+      "current_symbol": "MTOR",
+      "pathways": [
+        "R-HSA-1257604: PIP3 activates AKT signaling",
+        "R-HSA-1632852: Macroautophagy",
+        "R-HSA-165159: MTOR signalling",
+        "R-HSA-166208: mTORC1-mediated signalling",
+        "R-HSA-3371571: HSF1-dependent transactivation",
+        "R-HSA-380972: Energy dependent regulation of mTOR by LKB1-AMPK",
+        "R-HSA-389357: CD28 dependent PI3K/Akt signaling",
+        "R-HSA-5218920: VEGFR2 mediated vascular permeability",
+        "R-HSA-5628897: TP53 Regulates Metabolic Genes",
+        "R-HSA-5674400: Constitutive Signaling by AKT1 E17K in Cancer",
+        "R-HSA-6804757: Regulation of TP53 Degradation",
+        "R-HSA-8943724: Regulation of PTEN gene transcription",
+        "R-HSA-9639288: Amino acids regulate mTORC1",
+        "R-HSA-9856530: High laminar flow shear stress activates signaling by PIEZO1 and PECAM1:CDH5:KDR in endothelial cells",
+        "R-HSA-9920951: Dengue virus modulates apoptosis"
+      ],
+      "tractability_positive": [
+        "SM: Approved Drug",
+        "SM: Structure with Ligand",
+        "SM: High-Quality Ligand",
+        "SM: Druggable Family",
+        "AB: UniProt loc high conf",
+        "AB: GO CC high conf",
+        "PR: UniProt Ubiquitination",
+        "PR: Database Ubiquitination",
+        "PR: Half-life Data",
+        "PR: Small Molecule Binder"
+      ],
+      "drug_record_count": 26,
+      "drug_examples": [
+        {
+          "id": "c2f4e66b27385e025915af55dbedac980a0bf3866aaac8325bee773a016a5722",
+          "maxClinicalStage": "APPROVAL",
+          "drug": {
+            "id": "CHEMBL2103839",
+            "name": "RIDAFOROLIMUS"
+          }
+        },
+        {
+          "id": "7cdacceb259eb8553bb177f8312924e2abf1b9b8f4fda991ecfdedd48c35fca5",
+          "maxClinicalStage": "PHASE_2",
+          "drug": {
+            "id": "CHEMBL3545097",
+            "name": "SAPANISERTIB"
+          }
+        },
+        {
+          "id": "725092d695d8892251d9790ced14d74437a03116f21c9c34b91f18379fac9f08",
+          "maxClinicalStage": "PHASE_2",
+          "drug": {
+            "id": "CHEMBL2336325",
+            "name": "VISTUSERTIB"
+          }
+        }
+      ],
+      "priority_rationale": "Pathway benchmark rather than overexpression lead. Decreased total abundance does not establish pathway inactivity. Independent temsirolimus trial supports historical RCC pathway relevance, not efficacy inferred from these tissue values."
+    },
+    {
+      "gene": "NDUFA4L2",
+      "accession": "Q9NRX3",
+      "ensembl": [
+        "ENSG00000185633"
+      ],
+      "current_symbol": "COXFA4L2",
+      "pathways": [],
+      "tractability_positive": [],
+      "drug_record_count": null,
+      "drug_examples": [],
+      "priority_rationale": "Exploratory abundance lead; UniProt renamed it COXFA4L2. Retrieved renal cell/model literature motivates mechanistic work; observational cohort overlap is unverified. No tractability query performed for this target."
+    },
+    {
+      "gene": "MT1H",
+      "accession": "P80294",
+      "ensembl": [
+        "ENSG00000205358"
+      ],
+      "current_symbol": "MT1H",
+      "pathways": [
+        "R-HSA-5661231: Metallothioneins bind metals"
+      ],
+      "tractability_positive": [],
+      "drug_record_count": null,
+      "drug_examples": [],
+      "priority_rationale": "Exploratory decrease suitable for orthogonal validation; examine metallothionein isoform specificity and cellular composition. No independent target-specific paper or tractability assessment in this bounded search."
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "17538086",
+      "title": "Temsirolimus, interferon alfa, or both for advanced renal-cell carcinoma.",
+      "year": "2007",
+      "doi": "10.1056/nejmoa066838",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17538086/",
+      "evidence_type": "Independent randomized trial, not CPTAC",
+      "interpretation": "626 poor-prognosis metastatic RCC patients; temsirolimus versus interferon reported an overall-survival HR of 0.73 (95% CI 0.58\u20130.92). Historical trial context, not a recommendation or an abundance-response link.",
+      "source_file": "sources/mtor_renal.json",
+      "scope": "Bibliographic record and abstract reviewed; no full-text audit"
+    },
+    {
+      "pmid": "17215529",
+      "title": "Sunitinib versus interferon alfa in metastatic renal-cell carcinoma.",
+      "year": "2007",
+      "doi": "10.1056/nejmoa065044",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17215529/",
+      "evidence_type": "Independent randomized trial, not CPTAC",
+      "interpretation": "750 untreated metastatic RCC patients; sunitinib versus interferon reported progression-free-survival HR 0.42 (95% CI 0.32\u20130.54). Multi-target receptor inhibition provides pathway-level context, not direct validation of VEGFA protein or a ligand-specific effect.",
+      "source_file": "sources/vegf_independent.json",
+      "scope": "Bibliographic record and abstract reviewed; no full-text audit"
+    },
+    {
+      "pmid": "42025513",
+      "title": "Performance of [&lt;sup&gt;89&lt;/sup&gt;Zr]girentuximab PET/CT in Predicting the Presence of Any Renal Malignancy: A Reanalysis of the ZIRCON Trial.",
+      "year": "2026",
+      "doi": "10.1016/j.eururo.2026.03.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42025513/",
+      "evidence_type": "Independent of CPTAC; reanalysis of ZIRCON, not a new trial",
+      "interpretation": "CAIX-directed radiotracer study supports imaging/localization relevance. Reanalysis is not independent of the original ZIRCON trial; diagnostic performance is not drug efficacy.",
+      "source_file": "sources/ca9_zircon.json",
+      "scope": "Bibliographic record and abstract reviewed; no full-text audit"
+    },
+    {
+      "pmid": "42440812",
+      "title": "Nicotinamide N-Methyltransferase Epigenetically Activates Fibronectin 1 Through H3K9me3 Remodeling in Clear Cell Renal Cell Carcinoma.",
+      "year": "2026",
+      "doi": "10.1002/mco2.70831",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42440812/",
+      "evidence_type": "Mechanistic abstract; cohort overlap unverified",
+      "interpretation": "Reports NNMT/FN1 experiments and clinical specimens. Functional model evidence is distinct from this association analysis; independent human tissue replication and drug selectivity were not established here.",
+      "source_file": "sources/nnmt_renal.json",
+      "scope": "Bibliographic record and abstract reviewed; no full-text audit"
+    },
+    {
+      "pmid": "42331208",
+      "title": "NDUFA4L2 acts as a mitochondrial checkpoint against ferroptosis in hypoxic clear cell renal cell carcinoma.",
+      "year": "2026",
+      "doi": "10.1016/j.cellsig.2026.112686",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42331208/",
+      "evidence_type": "Mechanistic abstract; cohort overlap unverified",
+      "interpretation": "Reports knockdown/rescue, cell and in vivo work concerning ferroptosis. Supports research motivation; abstract-level evidence does not establish clinical benefit.",
+      "source_file": "sources/ndufa4l2_renal.json",
+      "scope": "Bibliographic record and abstract reviewed; no full-text audit"
+    }
+  ],
+  "limitations": "These are exploratory tissue associations, not causal effects, treatment-response predictions or clinical advice. Adjacent tissue is not healthy-donor kidney. Cell composition, tumor purity, clinical heterogeneity and unmodeled processing/batch effects may explain differences. Pairing controls stable case characteristics but does not remove tissue-confounded technical effects. TMT reference ratios may show ratio compression; supplied RNA normalization and original processing are accepted, not reproduced. No extra log transform was applied. Protein missingness may depend on abundance (MNAR); available-pair results need not represent all 72 cases or all ccRCC. The common-assay cohort may be selected. Many significant genes can reflect broad tissue and technical differences. No enrichment analysis was performed; pathway annotations are not enrichment evidence.",
+  "source_manifest": "sources/source_manifest.json"
+}

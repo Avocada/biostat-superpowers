@@ -218,7 +218,7 @@ class Toolkit:
         try:
             manifest = json.loads(path.read_text())
             if (not isinstance(manifest, dict) or manifest.get("artifact_id") != artifact_id
-                    or manifest.get("schema_version") != 1 or manifest.get("kind") not in {"dataset", "profile", "chart", "trial_search", "trial_detail", "trial_comparison", "literature_search", "literature_article", "literature_references", "review_handoff"}
+                    or manifest.get("schema_version") != 1 or manifest.get("kind") not in {"dataset", "profile", "chart", "trial_search", "trial_detail", "trial_comparison", "literature_search", "literature_article", "literature_references", "review_handoff", "omics_evidence"}
                     or not isinstance(manifest.get("files"), dict)):
                 raise ValueError("manifest identity")
             return manifest

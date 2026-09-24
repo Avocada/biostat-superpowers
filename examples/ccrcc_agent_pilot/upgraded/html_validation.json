@@ -1,0 +1,9 @@
+{
+  "syntax": true,
+  "initial_table": true,
+  "gene_filter": true,
+  "layer_filter": true,
+  "significance_filter": true,
+  "csv_export_handler": true,
+  "method": "Node VM DOM stub; not a browser screenshot"
+}

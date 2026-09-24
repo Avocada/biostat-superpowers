@@ -1,0 +1,98 @@
+{
+  "FOLLOWUP.md": {
+    "sha256": "5decff1c5ab4349d2eb7d12a7999442cf4d3f10057c8f2b58f777ef0a54a5e71",
+    "bytes": 15791
+  },
+  "FOLLOWUP_NOTES.md": {
+    "sha256": "8a5e008d1751be661d97d05301f38a622c47c3a419a33e6f2a249f14c01bbd8c",
+    "bytes": 2716
+  },
+  "followup_report.py": {
+    "sha256": "0699f36af328931ba6aed1512c3b3f0e4120dedfe2bbb8e1a725c2ee88462c0d",
+    "bytes": 19122
+  },
+  "context_sources.json": {
+    "sha256": "1bac22ccfca6a3843df8670b958dbf5964c7e7bd85d31d4daf1405a60608136c",
+    "bytes": 142352
+  },
+  "followup_analysis.py": {
+    "sha256": "3a0baba5504172cf53ee70a5861fd90378b293ef8dca51f20e354eabf10b24e0",
+    "bytes": 10173
+  },
+  "followup_trials.py": {
+    "sha256": "a6d589e91714047ee94f929ffdd18c81577059f569167a0a7916e47fe970beb1",
+    "bytes": 3992
+  },
+  "followup.html": {
+    "sha256": "8dfa09044061d06969efd753466ac84938da6bcfe2a27316f815debeb50ca9f9",
+    "bytes": 320720
+  },
+  "followup_results.json": {
+    "sha256": "910660aeeb0456d3233739c815818b1879da45d5674f770796f0a0583746f0e5",
+    "bytes": 21072
+  },
+  "followup_outputs/effect_comparison.png": {
+    "sha256": "d3861834e0d7c50e164f76f0c7c43414d54a9696d5b4ed93192c2a2fc6957e9e",
+    "bytes": 155172
+  },
+  "followup_outputs/early_stage_protein_genes.csv": {
+    "sha256": "fce2dc387a42df2e0c34e8cd76e0633a5cd6bfb1719322cae013aa8a5ebaaff1",
+    "bytes": 1784944
+  },
+  "followup_outputs/all_stage_protein_genes.csv": {
+    "sha256": "4e3c73d5177a4bb51d252e07f7ca3de805a0928bea5ec8e8c87ce5148b70acd0",
+    "bytes": 1790697
+  },
+  "followup_outputs/rna_cohort_comparison.csv": {
+    "sha256": "5e12d390804ff08c7103f527612c06a82a69fc26244bdb59edcef0c4d0990a60",
+    "bytes": 6437941
+  },
+  "followup_outputs/shortlist_comparison.csv": {
+    "sha256": "1b1135cefba0f3dbedc498d622e2e9ce06c484a176a59bf0c5abd0425f121a07",
+    "bytes": 6128
+  },
+  "followup_outputs/protein_cohort_comparison.csv": {
+    "sha256": "788639c37c3a565f7d41d25d0b1404632c2c77ea4bc4dca51811710f5cd8641c",
+    "bytes": 2748642
+  },
+  "followup_outputs/early_stage_rna_genes.csv": {
+    "sha256": "e2509b443937bf20517b5c30066661eacfcc451450be5cab19f2311b9b39e68e",
+    "bytes": 3293404
+  },
+  "followup_outputs/original_hashes.json": {
+    "sha256": "162cc10f537c478e1b78abefd676efe71e846543465e66504202f9f9fc3afb0a",
+    "bytes": 8142
+  },
+  "followup_outputs/validation.json": {
+    "sha256": "4d385eb6a1e81b7cc035acc3797c8658d8a37aff0d37a0a03485979a098c05c9",
+    "bytes": 674
+  },
+  "followup_outputs/all_stage_rna_genes.csv": {
+    "sha256": "0e6835ea994455689c97b8f946154e2b02db42c92262847cf3be88173ff38ab2",
+    "bytes": 3313652
+  },
+  "followup_outputs/fingerprint_verification.json": {
+    "sha256": "ff598d988daf2af6fb9340b7ba3418d748252ec20d9af42dde7938151f895d1b",
+    "bytes": 438
+  },
+  "followup_outputs/shortlist_comparison.png": {
+    "sha256": "4d02c91e17e662ece29ef3ef50db226541373dae4b203084cecc1727a12c9d33",
+    "bytes": 71094
+  },
+  "followup_sources/trials_NNMT.provenance.json": {
+    "sha256": "3ade884baaf491a0a8884baa3704429938c0206fab726e3f8dc45b32084f0c2c",
+    "bytes": 416
+  },
+  "followup_sources/trials_NNMT.json": {
+    "sha256": "65ada52ecf891fd38ced571e4305256240495cc18851066d104a2365b0e853c9",
+    "bytes": 9774
+  },
+  "followup_sources/trials_CA9.provenance.json": {
+    "sha256": "7d9e0a5b1cff1b80e7585fa6b91452991329de50ab6da4068b8cfff94c81021c",
+    "bytes": 389
+  },
+  "followup_sources/trials_CA9.json": {
+    "sha256": "872becb0e9b855aac33ba761f6869e4fb853ae05c8c4a54517986028eb34d363",
+    "bytes": 888827
+  }
+}

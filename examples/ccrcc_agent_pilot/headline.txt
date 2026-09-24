@@ -1,0 +1,1 @@
+Both configurations recovered the same scientific results and continued successfully. The upgraded bundle made 13 native MCP calls and retrieved six structured decisions, but used 28.5% more uncached input tokens and 14.0% more output tokens. This pilot demonstrates auditable reuse, not an efficiency or overall quality win.

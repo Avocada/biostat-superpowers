@@ -1,0 +1,270 @@
+{
+  "source_guide.md": {
+    "bytes": 1466,
+    "sha256": "7b618cc426efbcd527b5d935d379d2692a9a161d4b6c746dbb0d33bae4042d01"
+  },
+  "supplement_evidence.py": {
+    "bytes": 763,
+    "sha256": "6929ac9953c0afd93276ad44fbd1811cf546cf7c7e83cbac7f84cac2ededa53d"
+  },
+  "analysis.py": {
+    "bytes": 11558,
+    "sha256": "a771a8731e717d305af29bfd381aa9e46be56ffa5525260a0e42c33a2334f163"
+  },
+  "analysis_config.json": {
+    "bytes": 1568,
+    "sha256": "10725e575131a712e18777fd4a1931396b75ee95e8aa8473262cab08167d7698"
+  },
+  "report.md": {
+    "bytes": 10360,
+    "sha256": "732b937b85d34f2842a9ee3ad6bed97729d0d78421b5a1348699138d61bebd68"
+  },
+  "results.json": {
+    "bytes": 23716,
+    "sha256": "5f70a33e8d23775a0068bc14b9a4d693bb45534eea9076c3a25815a5982ed160"
+  },
+  "build_report.py": {
+    "bytes": 22755,
+    "sha256": "e229c27be222bc22d473129f31bc1c613f3674385e9590ad773cd2aad1f6adc7"
+  },
+  "validate.py": {
+    "bytes": 1974,
+    "sha256": "648d005d048629c69562957eb930e3cfcab17062d922bc06b825937dad1e6b25"
+  },
+  "method_review.json": {
+    "bytes": 1338,
+    "sha256": "f3a47cb0e04fbe93eb782e66e520696199dc0318bc3ab2bfdf7265ce299b855a"
+  },
+  "AGENTS.md": {
+    "bytes": 454,
+    "sha256": "19876a14949ee2b92278cfd5967c05df70288576f9b58991275d83b07e0e32e7"
+  },
+  "report.html": {
+    "bytes": 5964054,
+    "sha256": "fe955dce4379081ba31a28ef2e07e73da7843980df1d9204a7349622556a0f3a"
+  },
+  "evidence.py": {
+    "bytes": 3800,
+    "sha256": "5eb2b51c5cf84ccf5e92482668650bc3801313e4833a76cabf4c0eab18766c2b"
+  },
+  "common_environment.md": {
+    "bytes": 513,
+    "sha256": "2a58cd94f217421f91301c54e0ee6d722def934fdae6406feb0d077516fc283e"
+  },
+  "DECISIONS.md": {
+    "bytes": 2178,
+    "sha256": "7b76043dda17718ee4afd80ab708716ab5113c304e2d7621d26dc3ee5386d098"
+  },
+  "sources/ndufa4l2_renal.json": {
+    "bytes": 29132,
+    "sha256": "3be65cad40a1db3212143f634e98d534ab705886878a9e2e6c89276bbadcdee7"
+  },
+  "sources/uniprot_NNMT.json": {
+    "bytes": 4140,
+    "sha256": "69816c7fe2d5c30da059072d372c14fc507305dab4059ea776e70fa44fe9f610"
+  },
+  "sources/opentargets_VEGFA.provenance.json": {
+    "bytes": 590,
+    "sha256": "922e4617aa7bb237bbbee1cbf97d4843cdc7acda84c31c1f955bdb5ce0cf8fe5"
+  },
+  "sources/uniprot_MTOR.json": {
+    "bytes": 4233,
+    "sha256": "682f183b0acc4e4517735523c962e7246a19e965dc295c89787e0b3ed17645fd"
+  },
+  "sources/mtor_independent.json": {
+    "bytes": 8036,
+    "sha256": "db3434bb1a135ab5c064e038fc0bc39c03cd0cc3466322edb5c50ac3496aa35a"
+  },
+  "sources/vegf_independent.provenance.json": {
+    "bytes": 443,
+    "sha256": "6b7a495ae9f7e463bf622cfabc47f70138e084319559c34f05d5ef70ab7214d8"
+  },
+  "sources/ca9_zircon.json": {
+    "bytes": 19572,
+    "sha256": "50380bb38e4721ef38f7fc20e5323ed06a216b5ffbfdfd629849fdde0b498153"
+  },
+  "sources/source_manifest.json": {
+    "bytes": 8672,
+    "sha256": "b65fa04cd097525893f683652f19530e3f6ba4ada1283c4be5e772ff22af7f53"
+  },
+  "sources/opentargets_MTOR.provenance.json": {
+    "bytes": 588,
+    "sha256": "336459736666af8af310dae133fb8de421e0e8e9bed583942e214c35afc9ab6d"
+  },
+  "sources/uniprot_VEGFA.provenance.json": {
+    "bytes": 493,
+    "sha256": "a8acabb0a64d4b5c1c9a3446926f2071200ab40fbccbcd563a1be0f6be88b947"
+  },
+  "sources/opentargets_VEGFA.json": {
+    "bytes": 3845,
+    "sha256": "dc0ff21e4e0895b78365ac8cf51cba28dc69714f777a9bc06ec162358ef228dc"
+  },
+  "sources/uniprot_MTOR.provenance.json": {
+    "bytes": 490,
+    "sha256": "7b6dfd14f2f559ee9bc0de06f687d445737fa12e048cbc2643d3a5317af72119"
+  },
+  "sources/nnmt_renal.json": {
+    "bytes": 25373,
+    "sha256": "7201ba583f685350b7fb4a4dc0452d0229545e9975453b160f5400d0c05ea569"
+  },
+  "sources/opentargets_CA9.provenance.json": {
+    "bytes": 586,
+    "sha256": "790077a84d1b3726e2d3f6bb237334e82bcf733f139084315a61399fe751d497"
+  },
+  "sources/mtor_independent.provenance.json": {
+    "bytes": 442,
+    "sha256": "811bfc01489d41ec002a6c11f2d0571a36d8e68ccef5f31f2c087d520e018a9c"
+  },
+  "sources/uniprot_VEGFA.json": {
+    "bytes": 5202,
+    "sha256": "40db1911d6de4addeab3646538bd011712f1b6c447a50888df003a903890477f"
+  },
+  "sources/uniprot_NDUFA4L2.provenance.json": {
+    "bytes": 502,
+    "sha256": "23e2f703545f1cadef0b9e1ee69e9e9372d1f3d7f6072f0d36b26a562cd22246"
+  },
+  "sources/target_evidence_matrix.json": {
+    "bytes": 7972,
+    "sha256": "c84331480a0f90ce30bb3aaf524325ea0cbd83128b3a8253b6ffb771e6009813"
+  },
+  "sources/mtor_renal.provenance.json": {
+    "bytes": 475,
+    "sha256": "866a3a5279a5cc5a19daa0e9d0b8641542467dbe01ad8e3bfa933926a507e044"
+  },
+  "sources/ca9_zircon.provenance.json": {
+    "bytes": 408,
+    "sha256": "a3fd191a957123bd413ed918598100ebe9736cf6f788bcc58dbcf51c84066f45"
+  },
+  "sources/uniprot_CA9.json": {
+    "bytes": 1698,
+    "sha256": "65c8dab98505298319f786dfdaa39d4ec453750d817bd0fcdc1696c825b5325e"
+  },
+  "sources/ca9_independent.json": {
+    "bytes": 39,
+    "sha256": "af70b6ea0591810e5a5301702c8ffe856f2fc0bb0e586a5f7883d0a5d00989ce"
+  },
+  "sources/uniprot_NNMT.provenance.json": {
+    "bytes": 490,
+    "sha256": "1a0797e238ff3e730a63d2c2171a5c5d92a2cc229e8d65e478550019f4b05e2d"
+  },
+  "sources/mtor_renal.json": {
+    "bytes": 15636,
+    "sha256": "bef546dd5a022b43c9f7afff7618129262a44f8a2dd151e57952952fb5ab448a"
+  },
+  "sources/opentargets_MTOR.json": {
+    "bytes": 5785,
+    "sha256": "c5cb6fc233c12bc119efa3c713e3f1b94aa0ed7a7aee343171cae965c582c38f"
+  },
+  "sources/uniprot_MT1H.provenance.json": {
+    "bytes": 489,
+    "sha256": "f9051444d911ed62f54565e3a5103c347b93af57513659ac58a7d2a0767c7402"
+  },
+  "sources/uniprot_MT1H.json": {
+    "bytes": 774,
+    "sha256": "9a2a4f33f7ca91bc4af69b496cc3a3808e5518c1750c0584de274e1330cb44ce"
+  },
+  "sources/uniprot_CA9.provenance.json": {
+    "bytes": 487,
+    "sha256": "1716479ff0deafd699f3cf30f6bd7ec5942fc0b09cbd81dffb0a88e1fdd703e1"
+  },
+  "sources/evidence_records.json": {
+    "bytes": 3499,
+    "sha256": "dc72758eac9c98e56b5c501050eede04c1672feaa1110a3883ba0c3e2c47c09d"
+  },
+  "sources/vegf_independent.json": {
+    "bytes": 10426,
+    "sha256": "6356a845ec984781cc9e6a14027fdd87cb1547851db05219c5f7c46b87f1ef54"
+  },
+  "sources/nnmt_renal.provenance.json": {
+    "bytes": 413,
+    "sha256": "27ff0e9f2789bd7999a017b6ce9c0c0b7e43ff50ebedf006544f531ce5e37b9b"
+  },
+  "sources/opentargets_CA9.json": {
+    "bytes": 2435,
+    "sha256": "83d08f7506e11dd6a11ce891dc46755eb8c05f98cc25492e765dc4ddf9dce16e"
+  },
+  "sources/nnmt_independent.provenance.json": {
+    "bytes": 459,
+    "sha256": "af6a70335dc77446874483c7b6acf2bf890bb660c80fcf202e1f4cecfc6550a7"
+  },
+  "sources/nnmt_independent.json": {
+    "bytes": 39,
+    "sha256": "af70b6ea0591810e5a5301702c8ffe856f2fc0bb0e586a5f7883d0a5d00989ce"
+  },
+  "sources/ca9_independent.provenance.json": {
+    "bytes": 452,
+    "sha256": "e15f6563c95d93f3e17d3a641f1b1b1c10390d47a119050bdc2278d063a7f7ca"
+  },
+  "sources/annotations.json": {
+    "bytes": 42027,
+    "sha256": "0ffbcda5175c6b2500f8c003ede559951a7c0a84b78f15ed2c19bf95ddaa2098"
+  },
+  "sources/ndufa4l2_renal.provenance.json": {
+    "bytes": 425,
+    "sha256": "2b5c0f11795e9cea7514aa0604aa767ae64bd2b29ba5ebeadc96a31f42e32046"
+  },
+  "sources/uniprot_NDUFA4L2.json": {
+    "bytes": 1026,
+    "sha256": "a1c8801f5e521204105f61b0a8f27f829bd63b46c4039aef6fb9268fdd5f0f14"
+  },
+  "outputs/run_summary.log": {
+    "bytes": 2156,
+    "sha256": "2b883984c63762f6fbbf5486335f5be7c64a5e699f0dd3f6f23b627a806a2f21"
+  },
+  "outputs/concordance.png": {
+    "bytes": 123719,
+    "sha256": "804c8064d3db80e5818d933952062b5264f4ad001885171c97c285da17451721"
+  },
+  "outputs/missingness.png": {
+    "bytes": 39835,
+    "sha256": "370ef39cf58dd0803382ea166d2c86dc0a0d3d54ede7e17156bc6cda52cd2962"
+  },
+  "outputs/availability.png": {
+    "bytes": 32359,
+    "sha256": "aea494152564d40336cb14f16409a03dfdbb84ec4a433c83bbebeb7eac7b5b9a"
+  },
+  "outputs/rna_layer_cohort_sensitivity.csv": {
+    "bytes": 3095246,
+    "sha256": "53e8b3b10ec3a879c4a9da79799208976dbe142b10a7af932aff98c3200c1dfa"
+  },
+  "outputs/protein_all_genes.csv": {
+    "bytes": 1755862,
+    "sha256": "d2ad5f4d3449026343cfc93dbafc215ff53ab4aa87e2d4ebd4e7dbae3a30ef68"
+  },
+  "outputs/protein_layer_cohort_sensitivity.csv": {
+    "bytes": 1770933,
+    "sha256": "465c9c95756045ba5d11c758868800e6280b76c89497484e8c3aa66fc33138d5"
+  },
+  "outputs/ui_validation.txt": {
+    "bytes": 199,
+    "sha256": "e172b86120e6b151054dbc7725f48fd210120b50fd855d7e697e1f53db5c6f64"
+  },
+  "outputs/shortlist.csv": {
+    "bytes": 3775,
+    "sha256": "3ceeb635cd60e80feab185386e993d81066a56b964985f0da609636f4af5185e"
+  },
+  "outputs/rna_protein_concordance.csv": {
+    "bytes": 3910075,
+    "sha256": "562ec32892a2aef2751f90f2170bb23191e51ed06c64c558c850feeedbab4055"
+  },
+  "outputs/protein_differential.png": {
+    "bytes": 314234,
+    "sha256": "e30307539e73f4e8899e150f048c36e384edf696295fdfad46e3ac3663e7d425"
+  },
+  "outputs/validation.json": {
+    "bytes": 345,
+    "sha256": "3ed96f7a99960159737070d2480c2ca6cd4b2c40160e3b0a78209186d6f1be2e"
+  },
+  "outputs/rna_all_genes.csv": {
+    "bytes": 3095246,
+    "sha256": "53e8b3b10ec3a879c4a9da79799208976dbe142b10a7af932aff98c3200c1dfa"
+  },
+  "outputs/fingerprint_verification.json": {
+    "bytes": 1808,
+    "sha256": "9e49f9453d99e3b8644854f639e901e2d3245db7e715604ecafc65b3238c4c5e"
+  },
+  "outputs/discordant_examples.csv": {
+    "bytes": 8044,
+    "sha256": "9860b779fb626886d3d25cbc6f594d47b52279d6f9e46f9d51495991597c3747"
+  }
+}

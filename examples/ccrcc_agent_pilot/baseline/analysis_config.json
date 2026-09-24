@@ -1,0 +1,35 @@
+{
+  "goal": "Exploratory paired tissue associations; not causal or efficacy",
+  "estimand": "Mean within-case tumor-minus-normal difference on supplied layer log2 scale",
+  "scales": {
+    "protein": "processed TMT log2 reference ratio",
+    "rna": "supplied log2 FPKM"
+  },
+  "min_finite_pairs": 20,
+  "primary_cohort": "Authoritative ccRCC histology; uncontaminated NAT; all four assays",
+  "cohort_n": 72,
+  "excluded_non_ccrcc": [
+    "C3L-00359",
+    "C3N-00313",
+    "C3N-00435",
+    "C3N-00492",
+    "C3N-00832",
+    "C3N-01175",
+    "C3N-01180"
+  ],
+  "excluded_normal": "C3N-00314 (CPT0012090003); tumor retained in availability counts",
+  "missingness": "Available finite pairs per gene, no imputation",
+  "inference": "Two-sided one-sample t test of paired differences; pointwise t 95% CI; BH separately over finite valid p-values per layer",
+  "zero_variance": "Flag; mean retained; CI/p/q undefined, excluded from tested family",
+  "selection_rule": "Up to two non-prespecified genes with protein q<0.05, >=90% finite pairs, RNA test available; rank descending absolute protein mean difference, tie by gene. No RNA direction or drug filter.",
+  "seed": 20260924,
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "sensitivity": "Layer-specific eligible paired cohorts; shortlist leave-one-pair-out means and bootstrap mean CIs; same-case cross-layer direction summaries",
+  "versions": {
+    "python": "3.11.6",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

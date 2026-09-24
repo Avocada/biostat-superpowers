@@ -1,0 +1,8 @@
+{
+  "project_id": "ccrcc-pilot",
+  "run_id": "initial",
+  "input_fingerprint": "ff08dba38c4df7e1f899b4ebecb713f6aa49d24cb074d9f9c30478a1e1571f0f",
+  "memory": "project-memory.sqlite3",
+  "controller": "controller_audit.json",
+  "review": "independent evaluation pending"
+}
