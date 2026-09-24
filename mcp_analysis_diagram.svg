@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1100" viewBox="0 0 1400 1100" role="img" aria-labelledby="title desc"><title id="title">How MCP supports a better informed biomedical analysis</title><desc id="desc">Local paired RNA and protein analysis produces a gene shortlist. The agent uses MCP to retrieve UniProt annotations, Open Targets evidence, publications and trial records. Saved sources with dates and hashes support checking identity, biological relevance and clinical interpretation. Scientific judgment, review and persistent memory are separate. This pilot demonstrates traceability, not superior numerical results or token savings.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#457581" stroke-width="1.5"/></marker></defs><rect width="1400" height="1100" rx="24" fill="#f3f7fa"/><style>text{font-family:Arial,sans-serif;fill:#183044}.title{font-size:36px;font-weight:700}.h{font-size:23px;font-weight:700}.body{font-size:19px}.small{font-size:17px}.tag{font-size:15px;font-weight:700;letter-spacing:1px}.arrow{fill:none;stroke:#457581;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<text x="40" y="47" class="tag" style="fill:#007783">EVIDENCE CONNECTIONS · KIDNEY-CANCER CASE STUDY</text>
+<text x="40" y="96" class="title">How MCP makes analysis better informed</text>
+<text x="40" y="131" class="body">The benefit is traceable external evidence that the analyst can check and interpret.</text>
+<rect x="40" y="165" width="415" height="120" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="60" y="199" class="h">1  Local statistical analysis</text>
+<text x="60" y="230" class="body">72 paired cases · RNA + protein</text>
+<text x="60" y="256" class="body">Estimates, uncertainty and gene shortlist</text>
+<path d="M455 225 H510" class="arrow"/>
+<rect x="515" y="165" width="375" height="120" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="535" y="199" class="h">2  Agent asks evidence questions</text>
+<text x="535" y="230" class="body">What is this protein? What is known?</text>
+<text x="535" y="256" class="body">Which clinical studies are relevant?</text>
+<path d="M890 225 H945" class="arrow"/>
+<rect x="950" y="165" width="410" height="120" rx="15" fill="#dff3ef" stroke="#59a99b"/>
+<text x="970" y="199" class="h">3  MCP tool interface</text>
+<text x="970" y="230" class="body">Structured requests to source adapters</text>
+<text x="970" y="256" class="body">13 successful calls in this study</text>
+<path d="M1155 285 V320 H205 M565 320 H1195" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M205 320 V350" class="arrow"/>
+<path d="M535 320 V350" class="arrow"/>
+<path d="M865 320 V350" class="arrow"/>
+<path d="M1195 320 V350" class="arrow"/>
+<rect x="40" y="355" width="310" height="150" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="60" y="389" class="h">UniProt</text>
+<text x="60" y="420" class="body">2 annotation calls</text>
+<text x="60" y="446" class="body">Protein identity and aliases</text>
+<text x="60" y="472" class="body">Reactome cross-references</text>
+<rect x="370" y="355" width="310" height="150" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="390" y="389" class="h">Open Targets</text>
+<text x="390" y="420" class="body">3 target-evidence calls</text>
+<text x="390" y="446" class="body">Tractability and candidates</text>
+<text x="390" y="472" class="body">Across multiple indications</text>
+<rect x="700" y="355" width="310" height="150" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="720" y="389" class="h">Literature</text>
+<text x="720" y="420" class="body">2 searches</text>
+<text x="720" y="446" class="body">Biological studies</text>
+<text x="720" y="472" class="body">Positive and negative findings</text>
+<rect x="1030" y="355" width="310" height="150" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="1050" y="389" class="h">ClinicalTrials.gov</text>
+<text x="1050" y="420" class="body">2 searches + 4 detail calls</text>
+<text x="1050" y="446" class="body">Imaging versus treatment</text>
+<text x="1050" y="472" class="body">Study status and outcomes</text>
+<path d="M195 505 V535" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M525 505 V535" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M855 505 V535" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M1185 505 V535" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M195 535 H1185" fill="none" stroke="#457581" stroke-width="2.5"/>
+<path d="M700 535 V565" class="arrow"/>
+<rect x="40" y="570" width="1320" height="105" rx="15" fill="#e3eef9" stroke="#90b5d6"/>
+<text x="60" y="604" class="h">4  Evidence with provenance</text>
+<text x="60" y="635" class="body">Save source URL, retrieval date, returned content and checksum; disclose ambiguity and incomplete searches.</text>
+<path d="M700 675 V710" class="arrow"/>
+<rect x="40" y="715" width="850" height="180" rx="15" fill="#ffffff" stroke="#c5d8df"/>
+<text x="60" y="749" class="h">5  Analyst + scientific review</text>
+<text x="60" y="780" class="body">Check identity before connecting a gene to a drug or paper.</text>
+<text x="60" y="806" class="body">Separate tissue abundance from activity and treatment benefit.</text>
+<text x="60" y="832" class="body">Example: CA9 is higher in tumors, but retrieved ARISER evidence</text>
+<text x="60" y="858" class="body">did not show an overall therapeutic benefit. Avoid overclaiming.</text>
+<path d="M890 800 H940" class="arrow"/>
+<rect x="945" y="715" width="415" height="180" rx="15" fill="#eeeafa" stroke="#b3a3d2"/>
+<text x="965" y="749" class="h">Project memory · separate</text>
+<text x="965" y="780" class="body">Retain reviewed decisions and limits</text>
+<text x="965" y="806" class="body">with the correct input fingerprint.</text>
+<text x="965" y="832" class="body">Retrieve them for the next session.</text>
+<text x="965" y="858" class="body">MCP does not itself supply memory.</text>
+<rect x="40" y="925" width="1320" height="135" rx="15" fill="#fff4df" stroke="#d6b373"/>
+<text x="60" y="959" class="h">Interpretation boundaries</text>
+<text x="60" y="990" class="body">Source retrieval and saved decisions support a traceable research record.</text>
+<text x="60" y="1016" class="body">Annotations and trial records require scientific review before drawing biological or clinical conclusions.</text>
+<text x="60" y="1042" class="body">Statistics and scientific plots ran locally in Python; MCP supplied external evidence.</text>
+</svg>

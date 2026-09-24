@@ -1,0 +1,210 @@
+[
+  {
+    "manifest": "mcp_artifacts/0f7cc8c7e0634e42a19630450915c2b5/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "0f7cc8c7e0634e42a19630450915c2b5",
+    "kind": "omics_evidence",
+    "created_at": "2026-09-24T11:33:10.255933+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "Open Targets",
+    "source_urls": [
+      "https://api.platform.opentargets.org/api/v4/graphql"
+    ],
+    "ensembl_id": "ENSG00000107159",
+    "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+    "files": {
+      "response.json": {
+        "sha256": "83d08f7506e11dd6a11ce891dc46755eb8c05f98cc25492e765dc4ddf9dce16e",
+        "bytes": 2435
+      },
+      "query.json": {
+        "sha256": "4e8b6b6a25c3ed87767bdbff848da99d824cbb1572467ba11cd02b6bff2359b3",
+        "bytes": 236
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/753d80ef68a344fe9243991b24b5f2a7/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "753d80ef68a344fe9243991b24b5f2a7",
+    "kind": "omics_evidence",
+    "created_at": "2026-09-24T11:33:19.972352+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "Open Targets",
+    "source_urls": [
+      "https://api.platform.opentargets.org/api/v4/graphql"
+    ],
+    "ensembl_id": "ENSG00000198793",
+    "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+    "files": {
+      "response.json": {
+        "sha256": "c5cb6fc233c12bc119efa3c713e3f1b94aa0ed7a7aee343171cae965c582c38f",
+        "bytes": 5785
+      },
+      "query.json": {
+        "sha256": "a6b6653a2c2f068cc9f6566ec0fdc14a4a97b8d02e2cde2f0326bc84e4f944eb",
+        "bytes": 236
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/af69a8685f4b49f9a8abca5a7ff74701/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "af69a8685f4b49f9a8abca5a7ff74701",
+    "kind": "literature_search",
+    "created_at": "2026-09-24T11:33:25.590733+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "europepmc",
+    "synthetic": false,
+    "requests": [
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22renal+cell%22+AND+TITLE_ABS%3A%22nicotinamide+N-methyltransferase%22&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "retrieved_at": "2026-09-24T11:33:25.585892+00:00",
+        "sha256": "6f3879b51daa91d72ca82e0b84b2ff22efdeb36d77edd3e330a55fa0665d4235",
+        "file": "response.json"
+      }
+    ],
+    "returned_count": 3,
+    "rights": "Abstracts may be copyrighted. No full-text articles are downloaded. https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+    "previous_search_id": null,
+    "page": 1,
+    "query": "TITLE_ABS:\"renal cell\" AND TITLE_ABS:\"nicotinamide N-methyltransferase\"",
+    "total_count": 27,
+    "has_next_page": true,
+    "files": {
+      "response.json": {
+        "sha256": "6f3879b51daa91d72ca82e0b84b2ff22efdeb36d77edd3e330a55fa0665d4235",
+        "bytes": 23030
+      },
+      "literature.json": {
+        "sha256": "05297873249e3f7634b8636b09fc29d58564c3caab211430f735e99c75282db0",
+        "bytes": 8289
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/15701f5509ad41d599ff9fde1d9cb6eb/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "15701f5509ad41d599ff9fde1d9cb6eb",
+    "kind": "literature_search",
+    "created_at": "2026-09-24T11:33:29.621382+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "europepmc",
+    "synthetic": false,
+    "requests": [
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3Agirentuximab+AND+TITLE_ABS%3AARISER&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "retrieved_at": "2026-09-24T11:33:29.619162+00:00",
+        "sha256": "6e924c322cf69c07a343e0f4a842cd5c89b683bf3bb690ace8f0689cf4eee3b9",
+        "file": "response.json"
+      }
+    ],
+    "returned_count": 2,
+    "rights": "Abstracts may be copyrighted. No full-text articles are downloaded. https://www.ncbi.nlm.nih.gov/About/disclaimer.html",
+    "previous_search_id": null,
+    "page": 1,
+    "query": "TITLE_ABS:girentuximab AND TITLE_ABS:ARISER",
+    "total_count": 2,
+    "has_next_page": false,
+    "files": {
+      "response.json": {
+        "sha256": "6e924c322cf69c07a343e0f4a842cd5c89b683bf3bb690ace8f0689cf4eee3b9",
+        "bytes": 19507
+      },
+      "literature.json": {
+        "sha256": "55041fae0803022b946c8c47a65b964e24aa956cc58c5e2d31f3697fe002ea33",
+        "bytes": 7773
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/e23476bd095142568a70745025ddc254/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "e23476bd095142568a70745025ddc254",
+    "kind": "omics_evidence",
+    "created_at": "2026-09-24T11:33:15.013431+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "Open Targets",
+    "source_urls": [
+      "https://api.platform.opentargets.org/api/v4/graphql"
+    ],
+    "ensembl_id": "ENSG00000112715",
+    "notice": "First ten drug records across all indications, not kidney-specific efficacy. Count may exceed returned rows. Evidence may overlap literature. Retrieval date/hash pins snapshot, not database release.",
+    "files": {
+      "response.json": {
+        "sha256": "dc0ff21e4e0895b78365ac8cf51cba28dc69714f777a9bc06ec162358ef228dc",
+        "bytes": 3845
+      },
+      "query.json": {
+        "sha256": "22a0b6dbd87e2a374c9b97748f44aa73721f7b95dde0b638cef53002510fc10f",
+        "bytes": 236
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/24498b8db775482aa348b96191269c70/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "24498b8db775482aa348b96191269c70",
+    "kind": "omics_evidence",
+    "created_at": "2026-09-24T11:40:32.863026+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "UniProt",
+    "source_urls": [
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANDUFA4L2+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMT1H+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome"
+    ],
+    "notice": "Human reviewed entries; mappings can be ambiguous. Reactome cross-references are annotations, not enrichment tests. Response is capped at five entries per symbol and twenty pathways per entry; retain raw snapshot for complete returned annotations.",
+    "files": {
+      "NDUFA4L2.json": {
+        "sha256": "a1c8801f5e521204105f61b0a8f27f829bd63b46c4039aef6fb9268fdd5f0f14",
+        "bytes": 1026
+      },
+      "MT1H.json": {
+        "sha256": "9a2a4f33f7ca91bc4af69b496cc3a3808e5518c1750c0584de274e1330cb44ce",
+        "bytes": 774
+      },
+      "summary.json": {
+        "sha256": "ca44df7aa530f4f8cc5b0f90e64e6c0cc68321e8665421a2d98855b9347c9f57",
+        "bytes": 937
+      }
+    }
+  },
+  {
+    "manifest": "mcp_artifacts/26457a40dfc743c1a9aee44f96badee2/manifest.json",
+    "schema_version": 1,
+    "artifact_id": "26457a40dfc743c1a9aee44f96badee2",
+    "kind": "omics_evidence",
+    "created_at": "2026-09-24T11:32:44.309702+00:00",
+    "status": "exploratory_unreviewed",
+    "provider": "UniProt",
+    "source_urls": [
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ACA9+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ANNMT+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AVEGFA+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome",
+      "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AMTOR+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5&fields=accession%2Cgene_names%2Cprotein_name%2Cxref_ensembl%2Cxref_reactome"
+    ],
+    "notice": "Human reviewed entries; mappings can be ambiguous. Reactome cross-references are annotations, not enrichment tests. Response is capped at five entries per symbol and twenty pathways per entry; retain raw snapshot for complete returned annotations.",
+    "files": {
+      "CA9.json": {
+        "sha256": "65c8dab98505298319f786dfdaa39d4ec453750d817bd0fcdc1696c825b5325e",
+        "bytes": 1698
+      },
+      "NNMT.json": {
+        "sha256": "69816c7fe2d5c30da059072d372c14fc507305dab4059ea776e70fa44fe9f610",
+        "bytes": 4140
+      },
+      "VEGFA.json": {
+        "sha256": "40db1911d6de4addeab3646538bd011712f1b6c447a50888df003a903890477f",
+        "bytes": 5202
+      },
+      "MTOR.json": {
+        "sha256": "682f183b0acc4e4517735523c962e7246a19e965dc295c89787e0b3ed17645fd",
+        "bytes": 4233
+      },
+      "summary.json": {
+        "sha256": "b4f3b597f9409a14616ab339d2304ea6eed4a156ff0846decbbf347c8272e490",
+        "bytes": 5223
+      }
+    }
+  }
+]
