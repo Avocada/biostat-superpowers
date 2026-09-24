@@ -1,4 +1,4 @@
-# Modernization groundwork
+# Modernization: workflow, memory and MCP
 
 Prepared 2026-09-23. This branch establishes the development baseline and now includes the first executable workflow-controller increment. An optional project-memory layer and paired context-token demo are also implemented; an optional local MCP server is now implemented. Jev (TypeSafe AI) routing is optional and deferred; the next priority is end-to-end behavioral evaluation.
 
@@ -8,15 +8,17 @@ See [MEMORY.md](MEMORY.md) for confirmed project memory, context selection, inva
 
 See [MCP_SERVER.md](MCP_SERVER.md) for the optional stdio server, UCI retrieval, local profiling/visualization, resource catalog, setup and protocol demo. See [CLINICAL_TRIALS.md](CLINICAL_TRIALS.md) for live trial search, details, pagination and comparison charts. [LITERATURE.md](LITERATURE.md) covers PubMed/Europe PMC citation retrieval and provenance-preserving reference lists. [REVIEWED_HANDOFF.md](REVIEWED_HANDOFF.md) connects source-reviewed proposals to confirmed project memory and versioned workflow checkpoints.
 
+See [INSTALL_V2.md](INSTALL_V2.md) for current fresh-install and update commands, [OMICS_MCP.md](OMICS_MCP.md) for UniProt/Open Targets, and the [live kidney-cancer report](https://avocada.github.io/biostat-superpowers/) for a worked analysis. The server exposes 22 tools; the repository contains nine original domain skills plus the optional workflow companion.
+
 ## Repository setup
 
 - Personal fork: https://github.com/Avocada/biostat-superpowers
 - Original upstream: https://github.com/z-x-yang/biostat-superpowers
-- Local development checkout: `/Users/amiee/Projects_code/biostat-superpowers`
+- Use a development checkout separate from the installed runtime.
 - Development branch: `v2`
 - Baseline commit: `a1007c3e0a295a294fab21bd7ee94565c55f9916`
 - `origin` targets the personal fork; `upstream` targets the original project.
-- Installed skills still use `/Users/amiee/.codex/biostat-superpowers`. Do not run the installer from this development checkout until deliberately testing an installation.
+- Recommended runtime checkout: `~/.codex/biostat-superpowers-v2`. Existing original domain-skill installations may remain separate; follow the companion-only installation instructions to preserve them.
 
 The upstream clone is a complete Git repository used as the backing store for installed skill symlinks. Keeping a separate development checkout prevents work in progress from changing the installed skills.
 

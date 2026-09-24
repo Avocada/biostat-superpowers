@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "description": "Biomedical statistics research superpowers: composable skills for Claude Code and Codex (study design, data prep, analysis, causal inference, missing data, method critique, reproducible reporting).",
   "license": "MIT",
-  "contributors": ["Amiee Huang", "Shuang Song", "Zongxin Yang"],
-  "homepage": "https://github.com/z-x-yang/biostat-superpowers",
+  "contributors": [
+    "Amiee Huang",
+    "Shuang Song",
+    "Zongxin Yang"
+  ],
+  "homepage": "https://github.com/Avocada/biostat-superpowers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/z-x-yang/biostat-superpowers.git"
+    "url": "https://github.com/Avocada/biostat-superpowers.git"
   },
   "keywords": [
     "claude-code",

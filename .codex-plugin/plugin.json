@@ -6,8 +6,8 @@
     "name": "Amiee Huang, Shuang Song, Zongxin Yang",
     "url": "https://github.com/z-x-yang"
   },
-  "homepage": "https://github.com/z-x-yang/biostat-superpowers",
-  "repository": "https://github.com/z-x-yang/biostat-superpowers",
+  "homepage": "https://github.com/Avocada/biostat-superpowers",
+  "repository": "https://github.com/Avocada/biostat-superpowers",
   "license": "MIT",
   "keywords": [
     "biostatistics",
@@ -35,7 +35,7 @@
       "Critique the statistical methods in this analysis.",
       "I have a clinical dataset and a research question — where do I start?"
     ],
-    "websiteURL": "https://github.com/z-x-yang/biostat-superpowers",
+    "websiteURL": "https://github.com/Avocada/biostat-superpowers",
     "screenshots": []
   }
 }

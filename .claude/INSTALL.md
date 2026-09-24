@@ -1,59 +1,34 @@
-# Install Biostatistics Superpowers (Claude Code)
+# Install this fork in Claude Code
 
-This file is written to be followed by **either a person or a coding agent**. The commands are
-the same either way. If you are an agent a user pointed here, confirm before running anything
-that writes to their home directory.
+The current fork is **Avocada/biostat-superpowers**; its default branch is **v2**.
 
-There are two ways to install. **The plugin route is recommended** (cleaner updates, proper
-namespacing); the manual route is a fallback that an agent can run end-to-end.
+## Skills through the plugin
 
-## Option A — Install as a plugin (recommended)
-
-Run these in Claude Code (replace `z-x-yang`):
+In Claude Code:
 
 ```text
-/plugin marketplace add z-x-yang/biostat-superpowers
+/plugin marketplace add Avocada/biostat-superpowers
 /plugin install biostat-superpowers@biostat-superpowers
 ```
 
-Or open the interactive menu with `/plugin` and install it from the marketplace. These are slash
-commands a **person** runs in the Claude Code prompt (an agent cannot type slash commands for
-you — if you're an agent, use Option B).
+The fork and upstream use the same marketplace name. If you already installed the upstream marketplace, inspect it first. To intentionally switch, remove the old marketplace registration and add the fork, then reinstall the plugin. Removing a marketplace can affect other plugins installed from it; preserve an existing setup unless the switch is intended. Do not install the same skills through both plugin and manual links.
 
-## Option B — Manual install into personal skills
+The plugin exposes the nine original statistical skills plus `biostat-workflow`. **It does not install the Python environment or automatically register the MCP server.** Complete the [runtime and MCP setup](../docs/modernization/INSTALL_V2.md), including the Claude-specific registration command. When reading raw files, fetch https://raw.githubusercontent.com/Avocada/biostat-superpowers/v2/docs/modernization/INSTALL_V2.md.
 
-1. **Clone (or update)** the repository:
+## Manual alternative
 
-   ```bash
-   REPO_DIR="$HOME/.claude/biostat-superpowers"
-   if [ -d "$REPO_DIR/.git" ]; then
-     git -C "$REPO_DIR" pull --ff-only
-   else
-     git clone --depth 1 \
-       https://github.com/z-x-yang/biostat-superpowers "$REPO_DIR"
-   fi
-   ```
+Use the separate v2 runtime checkout from that guide and run:
 
-2. **Link each skill** into your personal skills directory (Claude Code's personal-skill
-   discovery looks for `~/.claude/skills/<skill>/SKILL.md`):
+```sh
+bash "$BIOSTAT_DIR/install.sh" claude
+```
 
-   ```bash
-   mkdir -p "$HOME/.claude/skills"
-   for d in "$REPO_DIR"/skills/*/; do
-     ln -sfn "${d%/}" "$HOME/.claude/skills/$(basename "$d")"
-   done
-   ```
+This creates ten links under `~/.claude/skills`. For an existing original skill installation, follow the guide's companion-only instructions with `BIOSTAT_SKILLS_DIR="$HOME/.claude/skills"`. Inspect existing destinations before replacing anything.
 
-   (Equivalently, from inside the repo: `./install.sh claude`.)
+## Verify and update
 
-3. **Restart Claude Code** (or run `/doctor`) so it re-scans skills.
+Start a fresh session and ask which biostatistics skills are available; use `claude mcp list` to check the separately registered server. For runtime updates, follow the v2 guide. For plugin updates, refresh the configured fork marketplace and update the installed plugin through Claude's plugin manager. Keep the companion and runtime aligned.
 
-## Verify
+To uninstall, use `/plugin uninstall biostat-superpowers` for the plugin, or remove only the manual symlinks pointing to this checkout. Use `claude mcp remove biostat` to remove the server registration. Preserve research artifacts and project memory.
 
-Ask Claude: *“What skills do you have available?”* — you should see `biostatistics` and its eight
-specialist skills. Then start with the **`biostatistics`** skill or just describe a research task.
-
-## Uninstall
-
-- Plugin: `/plugin uninstall biostat-superpowers`
-- Manual: remove the symlinks from `~/.claude/skills/` and delete the clone.
+Reference: [Claude marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces).

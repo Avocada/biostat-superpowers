@@ -30,6 +30,26 @@ agent *think like one*: name the estimand before the model, design before touchi
 before estimating, handle missing data honestly, critique itself adversarially (ideally in a fresh
 sub-agent), and report so another scientist can reproduce it.
 
+## Current v2 capabilities
+
+This fork's default branch is **`v2`**. It retains the nine original statistical domain skills and adds the **`biostat-workflow`** companion skill, an optional Python workflow controller, persistent project decision memory, and **one local MCP server with 22 tools**. The domain skills provide statistical policy; the runtime records stages, readiness gates, revision/iteration limits and stop reasons. The host agent still performs the analysis and scientific review. Jev is not implemented.
+
+[**Browse the kidney-cancer analysis and figures**](https://avocada.github.io/biostat-superpowers/) · [Architecture and roadmap](docs/modernization/README.md) · [Runtime installation](docs/modernization/INSTALL_V2.md)
+
+| Implemented integration | What is available |
+|---|---|
+| UCI datasets and local CSV | Fetch Iris and Heart Disease; import explicitly staged CSV files and profile them |
+| ClinicalTrials.gov | Search, paginate, retrieve trial details and compare selected records |
+| PubMed and Europe PMC | Citation/abstract search, pagination, article records and reference lists; no full-text downloader |
+| UniProt | Reviewed human protein lookup, gene/protein identifiers and Reactome cross-references |
+| Open Targets | Bounded target tractability and drug/candidate records across indications; not proof of treatment efficacy |
+| Vega-Lite | Four local chart templates and rendering; not a searchable copy of the full gallery |
+| Project context | Retrieve fingerprint-scoped decisions, propose reviewed handoffs and inspect the audit trail |
+
+Source artifacts retain URLs, dates and checksums. Reactome annotations are not pathway enrichment. ClinVar, gnomAD, GWAS Catalog, GEO, GDC, UCSC, textbooks, ToolUniverse and other catalog links remain **reference-only**, not implemented connectors. See [MCP scope](docs/modernization/MCP_SERVER.md) and [protein/target evidence](docs/modernization/OMICS_MCP.md).
+
+The [kidney-cancer pilot](examples/ccrcc_agent_pilot/README.md) demonstrated real MCP calls and decision reuse, but did not demonstrate token savings or superior numerical results. Scientific inference and its figures ran in local Python. Memory stores selected project decisions; it does not replace the host's conversation management.
+
 ### Who it's for
 
 - **You already do biostatistics.** You know the right way — enforcing it on every analysis is the
@@ -51,8 +71,8 @@ cohorts, causal effects), but the discipline applies to any quantitative field.
 
 - **Easy to use — just talk to it.** No commands to memorize, no new DSL, no statistics jargon
   required: describe your situation in plain English and the `biostatistics` orchestrator routes you
-  to the right specialist. In our demo, a single one-line prompt drove the *entire* analysis. Install
-  is one line, inside the agent you already use.
+  to the right specialist. In our demo, a single one-line prompt drove the *entire* analysis. Installation
+  can be delegated to your agent using the guide below; the optional MCP runtime requires additional setup.
 - **The whole research lifecycle, not one step** — design → data → analysis → causal inference →
   prediction → missing data → method critique → reproducible reporting. One orchestrator routing to
   eight specialist skills.
@@ -131,6 +151,7 @@ flowchart LR
 | **`predictive-modeling`** | Build and validate a prediction/prognostic model — a clinical prediction model (TRIPOD) or any score-optimization task: leakage-safe cross-validation, regularization & ensembles, discrimination **and** calibration, internal (bootstrap) + external validation. |
 | **`missing-data`** | Diagnose MCAR / MAR / MNAR, choose complete-case vs multiple imputation (`mice` / scikit-learn), apply Rubin's rules, and run MNAR sensitivity analyses. |
 | **`method-evaluation`** | The adversarial reviewer. Critiques assumptions, diagnostics, robustness, and fair comparison; assigns a **readiness rating** and emits a structured evaluation report. |
+| **`biostat-workflow`** | Optional companion for executable stage gates, project memory, MCP provenance and reviewed handoffs. Requires the separately installed runtime for those capabilities. |
 | **`reporting-and-reproducibility`** | Produce Table 1, effect sizes with CIs (not just p-values), CONSORT / STROBE / TRIPOD-aligned reporting, figures, and a reproducible project (seeds, `renv` / `targets`, session info, data/code availability). |
 
 Each skill is a folder under [`skills/`](./skills/) containing a `SKILL.md` plus references,
@@ -146,9 +167,9 @@ standard. Three design choices make it work:
 - **Orchestrator + composable specialists.** No monolithic mega-prompt; each skill is small,
   independently invocable, and cross-links to the others, so the agent loads only what the task
   needs (*progressive disclosure* — references, templates, and scripts are read on demand).
-- **Discipline encoded as control flow.** The orchestrator enforces an order (define → prepare →
+- **Discipline encoded as instructions.** The skill asks the host agent to follow an order (define → prepare →
   identify → fit → critique → report) and hard guard rails (no causal claim without identification,
-  no leakage, effect sizes over p-values), so rigor is structural rather than incidental.
+  no leakage, effect sizes over p-values). The optional v2 controller makes stage transitions and stopping policies executable; it does not independently certify scientific correctness.
 - **Cross-platform by construction.** Plain `SKILL.md` files are discovered natively by Claude Code
   (as a plugin) and by Codex (via its skills directory), and by any agent that reads the standard;
   the skills are written tool-agnostically so the same files run on each.
@@ -157,49 +178,53 @@ standard. Three design choices make it work:
 
 ## Install
 
-### The easy way — let your agent install it
+**Use this fork (`Avocada/biostat-superpowers`, branch `v2`) for the new capabilities.** The original upstream installation commands install a different checkout.
 
-The install guides ([`.codex/INSTALL.md`](./.codex/INSTALL.md),
-[`.claude/INSTALL.md`](./.claude/INSTALL.md)) are written to be followed by a **person or an
-agent** — same steps either way. To let your agent do it, paste one line:
+### Let your agent install it
 
-**Codex (and other agents):**
+For Codex, paste:
 
-> Fetch `https://raw.githubusercontent.com/z-x-yang/biostat-superpowers/main/.codex/INSTALL.md` and follow the instructions.
+> Fetch `https://raw.githubusercontent.com/Avocada/biostat-superpowers/v2/.codex/INSTALL.md` and install the skills plus the optional workflow, memory and MCP runtime. Preserve any existing domain-skill installation.
 
-**Claude Code:**
+For Claude Code, use the same request with [`.claude/INSTALL.md`](https://raw.githubusercontent.com/Avocada/biostat-superpowers/v2/.claude/INSTALL.md).
 
-> Fetch `https://raw.githubusercontent.com/z-x-yang/biostat-superpowers/main/.claude/INSTALL.md` and follow the instructions.
+### Fresh Codex installation (macOS/Linux shell)
 
-The agent clones the repo, links the skills into place, and verifies — asking before it touches
-your home directory.
+Requires Git, Python **3.10+** and the Codex CLI. This command links all ten skills; if you already have the original domain skills, use the [existing-installation instructions](docs/modernization/INSTALL_V2.md#existing-domain-skill-installation) instead.
 
-### Or do it yourself
+```sh
+BIOSTAT_DIR="$HOME/.codex/biostat-superpowers-v2"
+git clone --branch v2 https://github.com/Avocada/biostat-superpowers.git "$BIOSTAT_DIR"
+bash "$BIOSTAT_DIR/install.sh" codex
+python3 -m venv "$BIOSTAT_DIR/.venv"
+"$BIOSTAT_DIR/.venv/bin/python" -m pip install -e "${BIOSTAT_DIR}[mcp]"
+codex mcp add biostat -- "$BIOSTAT_DIR/.venv/bin/biostat-mcp" --artifact-dir "$BIOSTAT_DIR/outputs/mcp"
+codex mcp list
+```
 
-**Claude Code (plugin):**
+The skills-only installer creates links; it **does not install Python dependencies or register MCP**. Start a fresh agent session after setup. Use `biostat-workflow` alongside `biostatistics` to request runtime use. Built-in public-source connectors do not require API keys; network access and provider limits still apply.
+
+### Claude Code
 
 ```text
-/plugin marketplace add z-x-yang/biostat-superpowers
+/plugin marketplace add Avocada/biostat-superpowers
 /plugin install biostat-superpowers@biostat-superpowers
 ```
 
-**Codex / cross-platform:**
+The fork currently defaults to `v2`. If an upstream marketplace with the same name is already installed, check its source before installing; see [Claude setup](.claude/INSTALL.md). The plugin supplies skills; follow [runtime setup](docs/modernization/INSTALL_V2.md) separately for Python dependencies and MCP registration.
 
-```bash
-git clone https://github.com/z-x-yang/biostat-superpowers ~/.codex/biostat-superpowers
-mkdir -p ~/.codex/skills
-# link each skill individually so ~/.codex/skills/<skill>/SKILL.md is discoverable
-for d in ~/.codex/biostat-superpowers/skills/*/; do
-  ln -sfn "${d%/}" ~/.codex/skills/"$(basename "$d")"
-done
+### Update an existing v2 runtime
+
+```sh
+BIOSTAT_DIR="$HOME/.codex/biostat-superpowers-v2"
+git -C "$BIOSTAT_DIR" remote get-url origin
+git -C "$BIOSTAT_DIR" status --short
+git -C "$BIOSTAT_DIR" switch v2
+git -C "$BIOSTAT_DIR" pull --ff-only origin v2
+"$BIOSTAT_DIR/.venv/bin/python" -m pip install -e "${BIOSTAT_DIR}[mcp]"
 ```
 
-**From a local clone:** run `./install.sh` (auto-detects your agent; pass `codex`, `claude`, or
-`all` to be explicit).
-
-Restart your agent after installing. The skills are plain `SKILL.md` files and work wherever the
-open Agent Skills standard is supported; if a platform command above has changed, check that
-agent's current plugin docs.
+Check that the remote is your intended fork and preserve local edits before updating. Existing symlinks and MCP registration still work when paths are unchanged; restart the server/session to load new code. See [complete setup, verification and removal](docs/modernization/INSTALL_V2.md).
 
 ---
 
@@ -239,6 +264,9 @@ yourself:
 
 Worked examples:
 
+- [**Live kidney-cancer proteogenomics report**](https://avocada.github.io/biostat-superpowers/) — paired RNA/protein analysis, source evidence, figures and early-stage sensitivity.
+- [RHC agent pilot](examples/rhc_agent_pilot/README.md) — causal-analysis workflow, provenance and fresh-session continuation.
+
 - **[`examples/demo/`](./examples/demo/) — flagship.** A real agent, given a *one-line plain-English
   prompt* and a cohort with a **hidden, injected ground truth**, autonomously ran the whole pipeline
   and recovered it: it flipped a naively "harmful" drug to its true protective effect and reported an
@@ -272,7 +300,8 @@ The skills generate code; you run it. Reference implementations assume:
 
 - **R** (≥ 4.1): `stats`, `survival`, `lme4`, `MASS`, `mice`, `MatchIt`, `WeightIt`, `sandwich`,
   `gtsummary`/`tableone`, `dagitty`, `pwr`, `tidymodels`/`glmnet`, `rms` — installed as needed.
-- **Python** (≥ 3.9): `pandas`, `numpy`, `statsmodels`, `lifelines`, `scikit-learn`. Optional:
+- **Optional workflow/MCP runtime:** Python ≥ 3.10; install the `[mcp]` extra as shown above. R and analysis packages remain separate.
+- **Python analysis** (≥ 3.9): `pandas`, `numpy`, `statsmodels`, `lifelines`, `scikit-learn`. Optional:
   `dowhy`, `econml`, `zEpid`.
 
 Every script checks for and reports missing packages instead of silently installing them.
