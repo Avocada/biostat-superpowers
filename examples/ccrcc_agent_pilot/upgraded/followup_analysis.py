@@ -94,7 +94,7 @@ for ax,l in zip(axs,['protein','rna']):
  for i,(name,label,color) in enumerate([('all_stage','All stages (72)','#0072B2'),('stage_I_II','Stage I/II (37)','#D55E00')]):
   r=results[name,l].loc[genes];x=r.mean_difference.where(r.status=='tested');ax.errorbar(x,np.arange(6)+(i-.5)*.2,xerr=[x-r.ci_low,r.ci_high-x],fmt='o',capsize=3,label=label,color=color)
  ax.set_yticks(range(6),genes);ax.invert_yaxis();ax.axvline(0,color='gray',ls=':');ax.set_title(l+' • paired mean and nominal 95% CI');ax.set_xlabel(cfg['scales'][l]+'\ntumor − normal');ax.legend(loc='lower right',fontsize=9)
- if l=='protein':ax.text(.98,2,'VEGFA: n=1 / 1; not tested',transform=ax.get_yaxis_transform(),ha='right',fontsize=9)
+ if l=='protein':ax.text(.98,2,f"VEGFA: n={int(results['all_stage',l].loc['VEGFA','n'])} / {int(results['stage_I_II',l].loc['VEGFA','n'])}; not tested",transform=ax.get_yaxis_transform(),ha='right',fontsize=9)
 fig.suptitle('Original shortlist under stage restriction • overlapping cohorts');fig.tight_layout();fig.savefig('followup_figures/shortlist_comparison.png');plt.close(fig)
 fig,axs=plt.subplots(1,2,figsize=(11,5))
 for ax,l in zip(axs,['protein','rna']):

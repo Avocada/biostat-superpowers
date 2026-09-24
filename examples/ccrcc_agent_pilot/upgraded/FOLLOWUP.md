@@ -1,3 +1,5 @@
+> Post-review correction by the parent analyst: VEGFA protein n=1 all-stage / n=0 early-stage. The plot label is now generated from frozen result rows. No estimates were changed or refitted. Original benchmark artifacts, review scores and token totals remain unchanged.
+
 # Stage I/II sensitivity of paired ccRCC findings
 
 Exploratory sensitivity report; independent scientific evaluation remains blocked.
@@ -33,7 +35,7 @@ Within-cohort RNA/protein direction agreement is 76.71% across 7,638 all-stage g
 
 ## Four prespecified genes and frozen exploratory shortlist
 
-CA9 and NNMT remain higher in both layers. MTOR total abundance remains lower in both layers; this does not establish reduced kinase activity. VEGFA RNA remains higher, while protein has one finite pair in each cohort and no valid test or interval. The two original data-selected genes, NDUFA4L2 (current UniProt COXFA4L2) and MT1H, retain their upward/downward directions. Reapplying the original selection rule (non-prespecified proteins, >=90% finite pairs, q<.05, largest absolute mean, alphabetical ties) selects them in ranks 1 and 2 in both cohorts. This selection result is exploratory and subject to winner bias; early-stage data overlap the data that selected them.
+CA9 and NNMT remain higher in both layers. MTOR total abundance remains lower in both layers; this does not establish reduced kinase activity. VEGFA RNA remains higher, while protein has one finite pair all-stage and zero early-stage and no valid test or interval. The two original data-selected genes, NDUFA4L2 (current UniProt COXFA4L2) and MT1H, retain their upward/downward directions. Reapplying the original selection rule (non-prespecified proteins, >=90% finite pairs, q<.05, largest absolute mean, alphabetical ties) selects them in ranks 1 and 2 in both cohorts. This selection result is exploratory and subject to winner bias; early-stage data overlap the data that selected them.
 
 | Gene | Layer | Cohort | n | Mean Δ [95% CI] | p | BH q | Abs-effect rank |
 |---|---|---|---:|---|---:|---:|---:|

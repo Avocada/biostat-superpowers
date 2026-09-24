@@ -160,3 +160,7 @@ Runtime: bounded protein annotation and target evidence tools, catalog and tests
 - `examples/ccrcc_agent_pilot/upgraded_initial_prompt.txt`
 - `examples/ccrcc_agent_pilot/verification.json`
 - `tests/test_omics.py`
+
+## Consolidated presentation update
+
+The corrected follow-up is now the main report. Removed redundant companion pages; original measured artifacts are archived locally and in commit 5820278. Added MCP evidence-flow SVG/PNG. Updated main report builder, review context, presentation code, exported memory summary, documentation and current publication checksums. Runtime and domain skills are unchanged.

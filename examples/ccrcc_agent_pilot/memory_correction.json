@@ -1,6 +1,6 @@
 {
   "key": "stage_I_II_sensitivity",
-  "supersedes_interpretation_in": "../upgraded/followup_memory_append.json",
+  "supersedes_interpretation_in": "Original measured upgraded/followup_memory_append.json (Git commit 5820278; local audit archive)",
   "correction": {
     "all_stage": 1,
     "stage_I_II": 0

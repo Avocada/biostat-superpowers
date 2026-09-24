@@ -1,3 +1,5 @@
+> Audit note: this review assesses the original measured runs. The main published follow-up and figure now include the requested post-review VEGFA count correction; original artifacts remain in Git history and the local audit archive.
+
 # Independent initial-artifact evaluation
 
 Reviewed 2026-09-24 against the protocol frozen at `/tmp/ccrcc_review_protocol.md`. Arm identities were visible; this was not blinded. Sources were the immutable `baseline_initial_snapshot` and `upgraded_initial_snapshot` directories. I inspected both analysis scripts, full result tables, Markdown reports, all eight actual PNGs, saved source responses and provenance, upgraded memory retrieval and controller records, and setup-correction notes. I did not modify either arm or rerun its analysis script. Independent calculations below are verification of exported results, not a new scientific analysis. Follow-up performance is pending and unscored.

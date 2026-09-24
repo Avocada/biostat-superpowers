@@ -10,7 +10,7 @@
       "upgraded/report.html",
       "upgraded/followup.html",
       "index.html",
-      "post_review/followup_corrected.html"
+      "mcp_analysis_diagram.svg"
     ],
     "broken_images": 0,
     "horizontal_overflow": false,
@@ -18,12 +18,17 @@
   },
   "scientific_review": "independent_review.md; all initial/followup exported test families checked; conditional exploratory use",
   "inputs": "All nine exact hashes reproduced by prepare_inputs.py",
-  "post_review": "Corrected VEGFA label derived from frozen shortlist rows, verified 1/0. Original artifacts unchanged.",
+  "post_review": "Main upgraded report, figure, presentation code and exported sensitivity memory summary corrected to VEGFA counts 1/0. No statistical refit. Original measured artifacts retained in commit 5820278 and local audit archive.",
   "limitations": [
     "One pilot per configuration",
     "Unblinded review",
     "Different evidence query scopes",
     "Environment and quickstart setup faults included in usage",
     "Raw inputs, responses and model logs retained only in local ignored archive"
-  ]
+  ],
+  "presentation_checks": {
+    "updated_report_and_diagram": "No broken images, horizontal overflow or page errors at 1440px; diagram visually inspected",
+    "analysis_scripts": "Syntax parsed after result-driven annotation change",
+    "unit_tests": "Prior 140-test result applies to unchanged runtime; not rerun for this presentation update"
+  }
 }

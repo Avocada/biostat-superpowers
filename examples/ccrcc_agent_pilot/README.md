@@ -1,10 +1,12 @@
 # Kidney-cancer proteogenomics: two configurations
 
-Completed 2026-09-24. [Open the comparison](index.html), [independent review](independent_review.md), or [corrected upgraded follow-up](post_review/followup_corrected.html).
+Completed 2026-09-24. [Open the comparison](index.html), [independent review](independent_review.md), or [updated upgraded follow-up](upgraded/followup.html).
 
 Both configurations produced matching, independently checked numerical analyses and successfully continued in a fresh session. The upgraded bundle demonstrated structured decision retrieval and evidence provenance, **not token savings or superior scientific results**. Jev was excluded.
 
-**Correction:** the frozen upgraded follow-up prose and figure incorrectly say VEGFA protein n=1 in both cohorts. Correct counts are **1 all-stage / 0 early-stage**. Its tables were correct, and neither cohort was tested. The clearly separated [post-review companion](post_review/README.md) fixes the prose and regenerates the plot label from saved result rows, without refitting. The associated memory summary is qualified by a correction sidecar. Original artifacts, scores and telemetry remain unchanged; these corrections were made outside the measured runs.
+**Updated report:** the main upgraded report and figure now correctly show VEGFA protein n=1 all-stage / n=0 early-stage. No estimates were refitted. The presentation code and exported memory summary also contain the correction. Original measured artifacts are retained in Git history (commit 5820278) and the local audit archive, rather than a second user-facing report. Review scores and token totals still describe the original measured runs; presentation corrections are outside those runs. See `memory_correction.json` for continuation context.
+
+[How MCP supports this analysis](mcp_analysis_diagram.svg) shows source retrieval, provenance and scientific interpretation as separate steps.
 
 ## Comparison design
 
@@ -67,4 +69,6 @@ The arm folders contain the actual scripts, aggregate tables, reports, versions 
 
 The complete local archive is `outputs/ccrcc-agent-pilot` (Git-ignored), including input matrices, raw source responses, model logs and the frozen memory database. Public exports omit raw matrices and provider response bodies; aggregate gene tables and public cohort identifiers remain. Raw source hashes/indexes remain auditable against the local archive. Generated preview screenshots are not published.
 
-For continuing the upgraded study, first apply/read `post_review/memory_correction.json`; do not reuse the unqualified frozen VEGFA summary. Preserve original benchmark files. The next useful engineering steps are a compact resume helper, a single validated configuration driving all computation, source-query comparability and figure labels generated from result tables. Test these on repeated cases before claiming efficiency gains.
+For continuing the upgraded study, read `memory_correction.json`; the published memory export is corrected, but the frozen database in the audit archive is unchanged. Preserve those original benchmark files. The next useful engineering steps are a compact resume helper, a single validated configuration driving all computation, source-query comparability and figure labels generated from result tables. Test these on repeated cases before claiming efficiency gains.
+
+The per-arm manifests describe the measured runs and remain historical audit records; use `PUBLIC_MANIFEST.json` for checksums of the current corrected publication. The [MCP diagram](mcp_analysis_diagram.svg) is also available as [PNG](mcp_analysis_diagram.png).
