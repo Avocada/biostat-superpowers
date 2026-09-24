@@ -228,8 +228,8 @@
     "sha256": "17cfe9e3df1a56ab3a710fc4d40eab44c6ecbf01274c67bf7089e219234e8fe5"
   },
   "build_comparison.py": {
-    "bytes": 6055,
-    "sha256": "33b1e5beefbdbd421cca0d7901f639be52b9dbd412a1659566e74d707f1a024e"
+    "bytes": 4766,
+    "sha256": "66eb2e39d0643175009991f656274ef083fd7c5b96e3467cd4b78c34f47f0086"
   },
   "collect.py": {
     "bytes": 2999,
@@ -248,8 +248,8 @@
     "sha256": "9b980449ce62cfe81bfac430e1387ce9ea00c17b2de48f043bab79794f70b349"
   },
   "index.html": {
-    "bytes": 8928,
-    "sha256": "a846615a62b41f556c2c0674475111850640c18313371ccb3fa33ef2aabfdc40"
+    "bytes": 5516,
+    "sha256": "3f8d0d78fbe18e1e6bc37f781c3665445fd52672388ef3802ad733bf7a39c419"
   },
   "initial_preservation.json": {
     "bytes": 481,
@@ -260,12 +260,12 @@
     "sha256": "e3e5a75a1b1245e959b535197480163e8777945c809a8ad37f3842899872e6b1"
   },
   "mcp_analysis_diagram.png": {
-    "bytes": 225819,
-    "sha256": "e180a08b720dacad07a27b9e01dd1504b64cca0d2b2ef2626269be4c15c2f89b"
+    "bytes": 227417,
+    "sha256": "9aecee2da383b235ac85902f7ba45456bde9a3ca988f4125785a87c233d7ab49"
   },
   "mcp_analysis_diagram.svg": {
-    "bytes": 6547,
-    "sha256": "7b0f923244c06d58b9e32efa8b9c736b6fe678b9a1fabedcb0754a604db7c9b7"
+    "bytes": 6552,
+    "sha256": "9b36ec95e4135fd2fee1f3b422e6625a05093a3b2853f618067807ea2e814934"
   },
   "mcp_calls.json": {
     "bytes": 3171,

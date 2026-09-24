@@ -65,8 +65,8 @@
 <text x="965" y="832" class="body">Retrieve them for the next session.</text>
 <text x="965" y="858" class="body">MCP does not itself supply memory.</text>
 <rect x="40" y="925" width="1320" height="135" rx="15" fill="#fff4df" stroke="#d6b373"/>
-<text x="60" y="959" class="h">What this pilot established</text>
-<text x="60" y="990" class="body">Demonstrated: structured source retrieval, provenance and decision reuse.</text>
-<text x="60" y="1016" class="body">Not established: better numerical results, consistently better figures or lower token use.</text>
-<text x="60" y="1042" class="body">Direct APIs can access the same sources. Statistics and scientific plots ran locally in Python.</text>
+<text x="60" y="959" class="h">Interpretation boundaries</text>
+<text x="60" y="990" class="body">Source retrieval and saved decisions support a traceable research record.</text>
+<text x="60" y="1016" class="body">Annotations and trial records require scientific review before drawing biological or clinical conclusions.</text>
+<text x="60" y="1042" class="body">Statistics and scientific plots ran locally in Python; MCP supplied external evidence.</text>
 </svg>
